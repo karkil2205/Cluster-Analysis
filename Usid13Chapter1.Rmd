@@ -16,7 +16,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
+Bon on ne joue plus
 
 # Definition of a distance
 
@@ -344,5 +344,5 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNzc3ODczNl19
+eyJoaXN0b3J5IjpbLTE2MjI1ODQ0NDksLTkwNzc3ODczNl19
 -->
