@@ -30,7 +30,7 @@ where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{
 * We should use the term _dissimilarity_ rather than _distance_ when not all the three axioms A1-A3 are valid.
 * Most of the time, we shall use, with some abuse of vocabulary, the term distance.
 
-## Exercice 1
+# Exercice 1
 
 * Prove that the three axioms A1-A3 imply the non-negativity condition: $$d(\mathbf{x},\mathbf{y})\geq 0.$$
 
@@ -88,7 +88,7 @@ dist(rbind(x, y), method = "canberra")
 ```
 
 
-## Exercice 2
+# Exercice 2
 
 * Prove that the Canberra distance is a true distance.
 
@@ -343,6 +343,6 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzMwMDM5NywyMDYwNzA4OTY2LDE3Mj
+eyJoaXN0b3J5IjpbMjA4NDY2NzM5MSwyMDYwNzA4OTY2LDE3Mj
 U0NjQ2NzMsLTkwNzc3ODczNl19
 -->
