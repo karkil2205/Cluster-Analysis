@@ -339,7 +339,6 @@ df <- USArrests[ss, ] # Subset the 15 rows
 df.scaled <- scale(df) # Standardize the variables
 ```
 
-ggggg
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjk5OTU0OTgsMTY4NTM5OTkxXX0=
+eyJoaXN0b3J5IjpbLTE1MjE0OTIxMTksMTY4NTM5OTkxXX0=
 -->
