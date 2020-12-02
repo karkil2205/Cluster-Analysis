@@ -15,7 +15,7 @@ output:
 ```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-Cette fois ci c'est bon
+
 
 # Definition of a distance
 
