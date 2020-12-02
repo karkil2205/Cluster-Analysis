@@ -340,6 +340,6 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTE0MjkzLC0xNTIxNDkyMTE5LDE2OD
-UzOTk5MV19
+eyJoaXN0b3J5IjpbLTE1MjE0OTIxMTksLTE1MjE0OTIxMTksMT
+Y4NTM5OTkxXX0=
 -->
