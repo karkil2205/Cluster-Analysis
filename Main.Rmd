@@ -223,7 +223,7 @@ d(\mathbf{x},\mathbf{y})=1-\rho(\mathbf{x},\mathbf{y}).$$
 $$
 \cos(\theta)=\frac{\mathbf{x}\cdot \mathbf{y}}{\|\mathbf{x}\|_2\|\mathbf{y}\|_2}=\frac{\sum_{i=1}^n x_i y_i}{{\sqrt{\sum_{i=1}^n x_i^2\sum_{i=1}^n y_i^2}}}.
 $$
-* Note that the cosine of the angle between the two centred vectors $\mathbf{x}(x_1-\bar{\mathbf{x}},\cdots,x_n-\bar{\mathbf{x}})$ and $(y_1-\bar{\mathbf{y}},\cdots,y_n-\bar{\mathbf{y}})$ coincides with the Pearson correlation coefficient of $\mathbf{x}$ and $\mathbf{y}$.  
+* Note that the cosine of the angle between the two centred vectors $\mathbf{x}-\bar{\mathbf{x}}\mathbf{1}$ and $\mathbf{y}-\bar{\mathbf{y}}\mathbf{1}$ coincides with the Pearson correlation coefficient of $\mathbf{x}$ and $\mathbf{y}$.  
 Where $\mathbf{1}$ is a vector of units of $\mathbb{R}^n$.
 * The cosine correlation distance is defined by:
 $$
@@ -348,7 +348,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MTE2MjExNCw0OTMwNTM0NzUsLTE1Mj
+eyJoaXN0b3J5IjpbMTIzNjM0NDA3MCw0OTMwNTM0NzUsLTE1Mj
 E0OTIxMTksNzAzNDE5NjI1LC0xNTIxNDkyMTE5LC0xNTIxNDky
 MTE5LDE2ODUzOTk5MV19
 -->
