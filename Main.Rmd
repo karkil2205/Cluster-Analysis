@@ -15,7 +15,7 @@ output:
 ```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+tttt
 
 # Definition of a distance
 
@@ -340,6 +340,6 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjE0OTIxMTksLTE1MjE0OTIxMTksMT
-Y4NTM5OTkxXX0=
+eyJoaXN0b3J5IjpbNzAzNDE5NjI1LC0xNTIxNDkyMTE5LC0xNT
+IxNDkyMTE5LDE2ODUzOTk5MV19
 -->
