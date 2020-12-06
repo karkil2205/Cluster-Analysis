@@ -2022,47 +2022,6 @@ y=c(30,2 , 9, 20, 48)
 <li>A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986).</li>
 <li>The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain</li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Counts of binary outcomes</th>
-<th align="left"></th>
-<th align="left"></th>
-<th align="left"></th>
-<th align="left"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">1</td>
-<td align="left">0</td>
-<td align="left">Total</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">1</td>
-<td align="left">a</td>
-<td align="left">b</td>
-<td align="left">a+b</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">0</td>
-<td align="left">c</td>
-<td align="left">d</td>
-<td align="left">c+d</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">Total</td>
-<td align="left">a+c</td>
-<td align="left">b+d</td>
-<td align="left">c+d</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
 .tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:0px;color:#669;
@@ -2193,11 +2152,11 @@ ss &lt;- sample(1:50, 15) # Take 15 random rows
 df &lt;- USArrests[ss, ] # Subset the 15 rows
 df.scaled &lt;- scale(df) # Standardize the variables</code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzI0MjM4MDMsODUxOTgzMDIyLC0xOD
-U4MDc5NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMsLTI1NzA1ODY2
-OSwtMTYzMTYyMDYzMiw0NDIzNzU2NzQsMzg4NjM3OTQ2LDQ5Mz
-A1MzQ3NSwtMTUyMTQ5MjExOSw3MDM0MTk2MjUsLTE1MjE0OTIx
-MTksLTE1MjE0OTIxMTksMTY4NTM5OTkxXX0=
+eyJoaXN0b3J5IjpbNTQwMDQ2NDM5LC0xMzcyNDIzODAzLDg1MT
+k4MzAyMiwtMTg1ODA3OTc4MSwtNDQwMDIzOTUsMzM3MDc0NjUz
+LC0yNTcwNTg2NjksLTE2MzE2MjA2MzIsNDQyMzc1Njc0LDM4OD
+YzNzk0Niw0OTMwNTM0NzUsLTE1MjE0OTIxMTksNzAzNDE5NjI1
+LC0xNTIxNDkyMTE5LC0xNTIxNDkyMTE5LDE2ODUzOTk5MV19
 -->
 </div>
 
