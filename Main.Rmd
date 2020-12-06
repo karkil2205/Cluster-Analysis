@@ -11,7 +11,7 @@ output:
     toc: yes
 ---
 
-LAST TEST
+
 
 
 ```{r setup, include=TRUE}
@@ -349,7 +349,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyMzc1Njc0LDM4ODYzNzk0Niw0OTMwNT
-M0NzUsLTE1MjE0OTIxMTksNzAzNDE5NjI1LC0xNTIxNDkyMTE5
-LC0xNTIxNDkyMTE5LDE2ODUzOTk5MV19
+eyJoaXN0b3J5IjpbLTI5MTYxMTk0Niw0NDIzNzU2NzQsMzg4Nj
+M3OTQ2LDQ5MzA1MzQ3NSwtMTUyMTQ5MjExOSw3MDM0MTk2MjUs
+LTE1MjE0OTIxMTksLTE1MjE0OTIxMTksMTY4NTM5OTkxXX0=
 -->
