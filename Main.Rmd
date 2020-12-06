@@ -336,67 +336,6 @@ the general version of this cross-classification is shown in Table 3.2.
 
 
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
-.tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:0px;color:#669;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#b9c9fe;border-color:#aabcfe;border-style:solid;border-width:0px;color:#039;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky">Counts of binary outcomes for two individuals</th>
-    <th class="tg-c3ow"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Individual 1</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Individual 2</td>
-    <td class="tg-0pky">Outcome</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">0</td>
-    <td class="tg-0pky">Total</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">a</td>
-    <td class="tg-0pky">b</td>
-    <td class="tg-0pky">a+b</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">0</td>
-    <td class="tg-0pky">c</td>
-    <td class="tg-0pky">d</td>
-    <td class="tg-0pky">c+d</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Total</td>
-    <td class="tg-0pky">a+c</td>
-    <td class="tg-0pky">b+d</td>
-    <td class="tg-0pky">n=a+b+c+d</td>
-  </tr>
-</tbody>
-</table>
-
-
-
-
 
 
 # Distance matrix computation
@@ -416,9 +355,10 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQwMDQ2NDM5LC0xMzcyNDIzODAzLDg1MT
-k4MzAyMiwtMTg1ODA3OTc4MSwtNDQwMDIzOTUsMzM3MDc0NjUz
-LC0yNTcwNTg2NjksLTE2MzE2MjA2MzIsNDQyMzc1Njc0LDM4OD
-YzNzk0Niw0OTMwNTM0NzUsLTE1MjE0OTIxMTksNzAzNDE5NjI1
-LC0xNTIxNDkyMTE5LC0xNTIxNDkyMTE5LDE2ODUzOTk5MV19
+eyJoaXN0b3J5IjpbLTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNz
+I0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5NzgxLC00NDAwMjM5
+NSwzMzcwNzQ2NTMsLTI1NzA1ODY2OSwtMTYzMTYyMDYzMiw0ND
+IzNzU2NzQsMzg4NjM3OTQ2LDQ5MzA1MzQ3NSwtMTUyMTQ5MjEx
+OSw3MDM0MTk2MjUsLTE1MjE0OTIxMTksLTE1MjE0OTIxMTksMT
+Y4NTM5OTkxXX0=
 -->
