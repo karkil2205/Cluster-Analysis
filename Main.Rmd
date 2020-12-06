@@ -333,6 +333,15 @@ scale(y)
 the general version of this cross-classification is shown in Table 3.2.
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
+
+|              	   	 Counts of binary outcomes for two individuals 	        	|
+|--------------	|---------	|:---------------------------------------------:	|-----	|-----------	|
+|              	|         	| Individual 1                                  	|     	|           	|
+| Individual 1 	| Outcome 	| 1                                             	| 0   	| Total     	|
+|              	| 1       	| a                                             	| b   	| a+b       	|
+|              	| 0       	| c                                             	| d   	| c+d       	|
+|              	| Total   	| a+c                                           	| b+d 	| n=a+b+c+d 	|
+
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
 *  We’ll use only a by taking 15 random rows among the 50 rows in the data set. 
@@ -350,8 +359,8 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NzA1ODY2OSwtMTYzMTYyMDYzMiw0ND
-IzNzU2NzQsMzg4NjM3OTQ2LDQ5MzA1MzQ3NSwtMTUyMTQ5MjEx
-OSw3MDM0MTk2MjUsLTE1MjE0OTIxMTksLTE1MjE0OTIxMTksMT
-Y4NTM5OTkxXX0=
+eyJoaXN0b3J5IjpbMTkyODIyNTEzLC0yNTcwNTg2NjksLTE2Mz
+E2MjA2MzIsNDQyMzc1Njc0LDM4ODYzNzk0Niw0OTMwNTM0NzUs
+LTE1MjE0OTIxMTksNzAzNDE5NjI1LC0xNTIxNDkyMTE5LC0xNT
+IxNDkyMTE5LDE2ODUzOTk5MV19
 -->
