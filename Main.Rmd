@@ -2,11 +2,11 @@
 ---
 title: "Distance and dissimilarities"
 output:
-  html_notebook:
-    toc: yes
   html_document:
     toc: yes
     df_print: paged
+  html_notebook:
+    toc: yes
   pdf_document:
     toc: yes
 ---
@@ -340,6 +340,69 @@ the general version of this cross-classification is shown in Table 3.2.
 |1        |a|b|a+b
 |0       |c|d|c+d
 |Total|a+c|b+d|c+d
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
+.tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:0px;color:#669;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#b9c9fe;border-color:#aabcfe;border-style:solid;border-width:0px;color:#039;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">Counts of binary outcomes for two individuals</th>
+    <th class="tg-c3ow"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Individual 1</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Individual 2</td>
+    <td class="tg-0pky">Outcome</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">Total</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">b</td>
+    <td class="tg-0pky">a+b</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">c</td>
+    <td class="tg-0pky">d</td>
+    <td class="tg-0pky">c+d</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Total</td>
+    <td class="tg-0pky">a+c</td>
+    <td class="tg-0pky">b+d</td>
+    <td class="tg-0pky">n=a+b+c+d</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
 
 
 # Distance matrix computation
