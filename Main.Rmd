@@ -334,60 +334,6 @@ the general version of this cross-classification is shown in Table 3.2.
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
-.tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:1px;color:#669;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#b9c9fe;border-color:#aabcfe;border-style:solid;border-width:1px;color:#039;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-phtq{background-color:#D2E4FC;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky" colspan="4">Counts of binary</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-phtq"></td>
-    <td class="tg-phtq"></td>
-    <td class="tg-phtq">Individual 1</td>
-    <td class="tg-phtq"></td>
-    <td class="tg-phtq"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Individual 1</td>
-    <td class="tg-0pky">Outcome</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">0</td>
-    <td class="tg-0pky">Total</td>
-  </tr>
-  <tr>
-    <td class="tg-phtq"></td>
-    <td class="tg-phtq">1</td>
-    <td class="tg-phtq">a</td>
-    <td class="tg-phtq">b</td>
-    <td class="tg-phtq">a+b</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">0</td>
-    <td class="tg-0pky">c</td>
-    <td class="tg-0pky">d</td>
-    <td class="tg-0pky">c+d</td>
-  </tr>
-  <tr>
-    <td class="tg-phtq"></td>
-    <td class="tg-phtq">Total</td>
-    <td class="tg-phtq">a+c</td>
-    <td class="tg-phtq">b+d</td>
-    <td class="tg-phtq">n=a+b+c+d</td>
-  </tr>
-</tbody>
-</table>
 
 
 
