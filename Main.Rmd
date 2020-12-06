@@ -327,7 +327,7 @@ scale(y)
 
 # Similarity measures for binary data
 * We consider here the case where all the $n$ variables are binary.
-* 
+* We assume for simlicity they are coded
 * A large number of similarity measures have been proposed for binary data. 
 * All the measures are defined in terms of the entries in a cross-classification of the counts of matches and mismatches in the p variables for two individuals; 
 the general version of this cross-classification is shown in Table 3.2.
@@ -397,10 +397,10 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5ODY5MDA5LC05MzcxODc5NjMsLTMwOD
-AzMTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUxOTgzMDIy
-LC0xODU4MDc5NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMsLTI1Nz
-A1ODY2OSwtMTYzMTYyMDYzMiw0NDIzNzU2NzQsMzg4NjM3OTQ2
-LDQ5MzA1MzQ3NSwtMTUyMTQ5MjExOSw3MDM0MTk2MjUsLTE1Mj
-E0OTIxMTksLTE1MjE0OTIxMTksMTY4NTM5OTkxXX0=
+eyJoaXN0b3J5IjpbLTE4MzIyNjc1NDgsLTkzNzE4Nzk2MywtMz
+A4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQyMzgwMyw4NTE5ODMw
+MjIsLTE4NTgwNzk3ODEsLTQ0MDAyMzk1LDMzNzA3NDY1MywtMj
+U3MDU4NjY5LC0xNjMxNjIwNjMyLDQ0MjM3NTY3NCwzODg2Mzc5
+NDYsNDkzMDUzNDc1LC0xNTIxNDkyMTE5LDcwMzQxOTYyNSwtMT
+UyMTQ5MjExOSwtMTUyMTQ5MjExOSwxNjg1Mzk5OTFdfQ==
 -->
