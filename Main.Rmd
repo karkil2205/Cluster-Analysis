@@ -336,9 +336,9 @@ the general version of this cross-classification is shown in Table 3.2.
 
 |Counts of binary outcomes |  | |||
 |:---	|:---	|:---	|:---|:---
-||1|0|Total
-|1|a|b|a+b
-|0|c|d|c+d
+|           |1|0|Total
+|1        |a|b|a+b
+|0       |c|d|c+d
 |Total|a+c|b+d|c+d
 
 
@@ -359,9 +359,9 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTIyOTg0MSw4NTE5ODMwMjIsLTE4NT
-gwNzk3ODEsLTQ0MDAyMzk1LDMzNzA3NDY1MywtMjU3MDU4NjY5
-LC0xNjMxNjIwNjMyLDQ0MjM3NTY3NCwzODg2Mzc5NDYsNDkzMD
-UzNDc1LC0xNTIxNDkyMTE5LDcwMzQxOTYyNSwtMTUyMTQ5MjEx
-OSwtMTUyMTQ5MjExOSwxNjg1Mzk5OTFdfQ==
+eyJoaXN0b3J5IjpbLTEzNzI0MjM4MDMsODUxOTgzMDIyLC0xOD
+U4MDc5NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMsLTI1NzA1ODY2
+OSwtMTYzMTYyMDYzMiw0NDIzNzU2NzQsMzg4NjM3OTQ2LDQ5Mz
+A1MzQ3NSwtMTUyMTQ5MjExOSw3MDM0MTk2MjUsLTE1MjE0OTIx
+MTksLTE1MjE0OTIxMTksMTY4NTM5OTkxXX0=
 -->
