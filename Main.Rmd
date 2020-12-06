@@ -334,8 +334,8 @@ the general version of this cross-classification is shown in Table 3.2.
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
 
-|              	| Counts of binary outcomes for two individuals 	|     	|     	|           	|
-|--------------	|-----------------------------------------------	|:---:	|-----	|-----------	|
+|              	| Counts of binary outcomes|     	|     	|           	|
+|---	|:---	|:---:	|-----	|-----------	|
 |              	| Individual 1                                  	|     	|     	|           	|
 | Individual 2 	| Outcome                                       	| 1   	| 0   	| Total     	|
 |              	| 1                                             	| a   	| b   	| a+b       	|
@@ -360,7 +360,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1Njk4NTQwLC0xODU4MDc5NzgxLC00ND
+eyJoaXN0b3J5IjpbODUxOTgzMDIyLC0xODU4MDc5NzgxLC00ND
 AwMjM5NSwzMzcwNzQ2NTMsLTI1NzA1ODY2OSwtMTYzMTYyMDYz
 Miw0NDIzNzU2NzQsMzg4NjM3OTQ2LDQ5MzA1MzQ3NSwtMTUyMT
 Q5MjExOSw3MDM0MTk2MjUsLTE1MjE0OTIxMTksLTE1MjE0OTIx
