@@ -384,8 +384,14 @@ scale(y)
 </tbody>
 </table>
 
-|a|||
-|---|---|---|---
+|Measure|Value|
+|---|---|
+|hhh||
+|hhh||
+|hhh||
+|hhh||
+|hhh||
+
 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
 
@@ -408,7 +414,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MDgzMzcyOCwtMTgwNTI5NzQ3MSwtMT
+eyJoaXN0b3J5IjpbMTI3NzE4MjU2MiwtMTgwNTI5NzQ3MSwtMT
 Q0NTYzMzAyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2
 MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLT
 kzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQy
