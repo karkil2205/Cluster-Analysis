@@ -326,7 +326,9 @@ scale(y)
 ```
 
 # Similarity measures for binary data
-*
+* The other type of information pertains to observed values o qualitative or quantitative properties of existing characters.
+*  An absent character cannot have any associated properties and this suggests that the two types of information might be viewed hierarchically, a topic returned to in section 4.
+* A common simple situation occurs when all information is of the presence/absence type (or from 2-level qualitative characters). This gives the familiar 2 X 2 association table shown in Table 1, where presence is denoted by + and absence by -. Many different coe
 Assume all the $n$ dimensions of the variables $\mathbf{x}$ and $\mathbf{y}$ are binary.
 * The used codes are: $0$ and $1$.
 * A large number of similarity measures have been proposed for such binary data. 
@@ -386,11 +388,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2ODQ3MTY2MiwtMTk1MDkyMjIyOCw3MT
-I2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1
-LDE2MjMwNjE5MDgsLTkzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MD
-A0NjQzOSwtMTM3MjQyMzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3
-ODEsLTQ0MDAyMzk1LDMzNzA3NDY1MywtMjU3MDU4NjY5LC0xNj
-MxNjIwNjMyLDQ0MjM3NTY3NCwzODg2Mzc5NDYsNDkzMDUzNDc1
-XX0=
+eyJoaXN0b3J5IjpbMzYwNzQ4NjE0LC0xOTUwOTIyMjI4LDcxMj
+Y2NzY4LDg2OTc1ODYyOCwtNjE2ODMwODA1LDE0Njc0NTg0NTUs
+MTYyMzA2MTkwOCwtOTM3MTg3OTYzLC0zMDgwMzEyMzUsNTQwMD
+Q2NDM5LC0xMzcyNDIzODAzLDg1MTk4MzAyMiwtMTg1ODA3OTc4
+MSwtNDQwMDIzOTUsMzM3MDc0NjUzLC0yNTcwNTg2NjksLTE2Mz
+E2MjA2MzIsNDQyMzc1Njc0LDM4ODYzNzk0Niw0OTMwNTM0NzVd
+fQ==
 -->
