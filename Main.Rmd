@@ -332,6 +332,9 @@ scale(y)
 * This gives the familiar 2 X 2 association table shown in 
 * The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (+,-) and (-,+)) in the $n$ characters for two individuals.
 
+* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
+* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
 .tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:1px;color:#669;
@@ -383,51 +386,6 @@ scale(y)
 </table>
 
 
-<table>
-<thead>
-  <tr>
-    <th></th>
-    <th colspan="3">Individual 1</th>
-    <th></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td rowspan="3">Individual 2</td>
-    <td></td>
-    <td>+</td>
-    <td>-</td>
-    <td>Total</td>
-  </tr>
-  <tr>
-    <td>+</td>
-    <td>a</td>
-    <td>b</td>
-    <td>a+b</td>
-  </tr>
-  <tr>
-    <td>-</td>
-    <td>c</td>
-    <td>d</td>
-    <td>c+d</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Total</td>
-    <td>a+c</td>
-    <td>b+d</td>
-    <td>n=a+b+c+d</td>
-  </tr>
-</tbody>
-</table>
-
-
-
-* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
-* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
-
-
-
 
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
@@ -446,7 +404,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NzA1ODYzLC0xNDQ1NjMzMDI1LC0xOT
+eyJoaXN0b3J5IjpbOTc5OTI3MTE1LC0xNDQ1NjMzMDI1LC0xOT
 UwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2ODMwODA1
 LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwtOTM3MTg3OTYzLC0zMD
 gwMzEyMzUsNTQwMDQ2NDM5LC0xMzcyNDIzODAzLDg1MTk4MzAy
