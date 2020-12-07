@@ -340,6 +340,17 @@ scale(y)
 
 
 Basically, it allows you to turn:
+let MarkdownIt =  require('markdown-it'),
+
+ MarkdownItMergeCells =  require('markdown-it-merge-cells'),
+
+ md =  new  MarkdownIt();
+
+md.use(MarkdownItMergeCells);
+
+// Browser (use dist/bundle.min.js)
+
+let md =  new  window.markdownit();
 
 
 |             |          Grouping           ||
@@ -352,7 +363,57 @@ Content       |   **Cell**    |         Cell |
 New section   |     More      |         Data |
 And more      | With an escaped '\|'         ||  
 
+<table>
 
+ <thead>
+
+ <tr>
+
+ <th  colspan="2">1</th>
+
+ <th>3</th>
+
+ <th>4</th>
+
+ <th>5</th>
+
+ </tr>
+
+ </thead>
+
+ <tbody>
+
+ <tr>
+
+ <td  rowspan="3">1</td>
+
+ <td  rowspan="2">1</td>
+
+ <td  rowspan="2"  colspan="2">2</td>
+
+ <td>6</td>
+
+ </tr>
+
+ <tr>
+
+ <td>7</td>
+
+ </tr>
+
+ <tr>
+
+ <td>4</td>
+
+ <td>3</td>
+
+ <td  colspan="2">5</td>
+
+ </tr>
+
+ </tbody>
+
+</table>
 
 
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
@@ -378,7 +439,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjY2NTAyMDEsNzEyNjY3NjgsODY5Nz
+eyJoaXN0b3J5IjpbLTE5NTA5MjIyMjgsNzEyNjY3NjgsODY5Nz
 U4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4
 LC05MzcxODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNz
 I0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5NzgxLC00NDAwMjM5
