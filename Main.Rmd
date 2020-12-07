@@ -339,6 +339,21 @@ scale(y)
 | Total                                         	| a+c 	| b+d 	| n=a+b+c+d 	|
 
 
+Basically, it allows you to turn:
+
+
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
+
+
+
 
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
@@ -363,11 +378,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4Mz
-A4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5NjMs
-LTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUxOT
-gzMDIyLC0xODU4MDc5NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMs
-LTI1NzA1ODY2OSwtMTYzMTYyMDYzMiw0NDIzNzU2NzQsMzg4Nj
-M3OTQ2LDQ5MzA1MzQ3NSwtMTUyMTQ5MjExOSw3MDM0MTk2MjVd
-fQ==
+eyJoaXN0b3J5IjpbLTE5MTIzMzM1NjUsNzEyNjY3NjgsODY5Nz
+U4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4
+LC05MzcxODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNz
+I0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5NzgxLC00NDAwMjM5
+NSwzMzcwNzQ2NTMsLTI1NzA1ODY2OSwtMTYzMTYyMDYzMiw0ND
+IzNzU2NzQsMzg4NjM3OTQ2LDQ5MzA1MzQ3NSwtMTUyMTQ5MjEx
+OV19
 -->
