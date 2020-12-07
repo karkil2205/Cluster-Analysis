@@ -331,14 +331,43 @@ scale(y)
 * The presence is denoted by + and absence by -. 
 * This gives the familiar 2 X 2 association table shown in 
 * The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (+,-) and (-,+)) in the $n$ characters for two individuals.
-
-|   	|     	Individual 1|     	|           	|
-|:-----------------------------------------------	|:---:	|-----	|:-----------	|
-|                                               	| +   	| -   	| a     	|
-| 1                                             	| +   	| -   	| b       	|
-| 0                                             	| c   	| d   	| d       	|
-| Total                                         	| a+c 	| b+d 	| n=a+b+c+d 	|
-
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th colspan="3">Individual 1</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="3">Individual 2</td>
+    <td></td>
+    <td>+</td>
+    <td>-</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>a</td>
+    <td>b</td>
+    <td>a+b</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>c</td>
+    <td>d</td>
+    <td>c+d</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Total</td>
+    <td>a+c</td>
+    <td>b+d</td>
+    <td>n=a+b+c+d</td>
+  </tr>
+</tbody>
+</table>
 
 * A large number of similarity measures have been proposed for such binary data. 
 
@@ -388,11 +417,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNz
-EyNjY3NjgsODY5NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1
-NSwxNjIzMDYxOTA4LC05MzcxODc5NjMsLTMwODAzMTIzNSw1ND
-AwNDY0MzksLTEzNzI0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5
-NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMsLTI1NzA1ODY2OSwtMT
-YzMTYyMDYzMiw0NDIzNzU2NzQsMzg4NjM3OTQ2LDQ5MzA1MzQ3
-NV19
+eyJoaXN0b3J5IjpbMTMwODA3OTM1NiwtMTQ0NTYzMzAyNSwtMT
+k1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMDgw
+NSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLTkzNzE4Nzk2MywtMz
+A4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQyMzgwMyw4NTE5ODMw
+MjIsLTE4NTgwNzk3ODEsLTQ0MDAyMzk1LDMzNzA3NDY1MywtMj
+U3MDU4NjY5LC0xNjMxNjIwNjMyLDQ0MjM3NTY3NCwzODg2Mzc5
+NDZdfQ==
 -->
