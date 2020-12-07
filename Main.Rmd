@@ -361,7 +361,7 @@ scale(y)
     <td class="tg-phtq"></td>
     <td class="tg-phtq">+</td>
     <td class="tg-phtq">-</td>
-    <td class="tg-phtq">Total</td>
+    <td class="tg-phtq">Totals</td>
   </tr>
   <tr>
     <td class="tg-0pky">+</td>
@@ -377,13 +377,15 @@ scale(y)
   </tr>
   <tr>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">Total</td>
+    <td class="tg-0lax">Totals</td>
     <td class="tg-0lax">a+c</td>
     <td class="tg-0lax">b+d</td>
     <td class="tg-0lax">n=a+b+c+d</td>
   </tr>
 </tbody>
 </table>
+
+
 
 
 
@@ -404,11 +406,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc5OTI3MTE1LC0xNDQ1NjMzMDI1LC0xOT
-UwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2ODMwODA1
-LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwtOTM3MTg3OTYzLC0zMD
-gwMzEyMzUsNTQwMDQ2NDM5LC0xMzcyNDIzODAzLDg1MTk4MzAy
-MiwtMTg1ODA3OTc4MSwtNDQwMDIzOTUsMzM3MDc0NjUzLC0yNT
-cwNTg2NjksLTE2MzE2MjA2MzIsNDQyMzc1Njc0LDM4ODYzNzk0
-Nl19
+eyJoaXN0b3J5IjpbLTc1NzgxMTA5OSwtMTQ0NTYzMzAyNSwtMT
+k1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMDgw
+NSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLTkzNzE4Nzk2MywtMz
+A4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQyMzgwMyw4NTE5ODMw
+MjIsLTE4NTgwNzk3ODEsLTQ0MDAyMzk1LDMzNzA3NDY1MywtMj
+U3MDU4NjY5LC0xNjMxNjIwNjMyLDQ0MjM3NTY3NCwzODg2Mzc5
+NDZdfQ==
 -->
