@@ -330,65 +330,15 @@ scale(y)
 * We assume there are $n$ measured characters.
 * The presence is denoted by + and absence by -. 
 * This gives the familiar 2 X 2 association table shown in 
-* The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (+,-) and (-,+)) in the $n$ characters for two individuals.
+* The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (1,-) and (-,+)) in the $n$ characters for two individuals.
 
-|    |    |Individual 1||Totals|
+|    |    |Individual 1|||
 |:---|:---|:---|:---|:---|
-|  |    |1  |0
+|  |    |1  |0|*Totals*
 |**Individual 2**|1|a|b|a+b|
 |             |0|c|d|c+d|
-|**Totals**||a+c|b+d|n=a+b+c+d|
+|*Totals*||a+c|b+d|n=a+b+c+d|
 
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
-.tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:1px;color:#669;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#b9c9fe;border-color:#aabcfe;border-style:solid;border-width:1px;color:#039;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-phtq{background-color:#D2E4FC;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-j0tj{background-color:#D2E4FC;text-align:center;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0lax"></th>
-    <th class="tg-c3ow" colspan="3">Individual 1</th>
-    <th class="tg-0pky"></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-j0tj" rowspan="3">Individual 2</td>
-    <td class="tg-phtq"></td>
-    <td class="tg-phtq">+</td>
-    <td class="tg-phtq">-</td>
-    <td class="tg-phtq">Totals</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">+</td>
-    <td class="tg-0pky">a</td>
-    <td class="tg-0pky">b</td>
-    <td class="tg-0pky">a+b</td>
-  </tr>
-  <tr>
-    <td class="tg-phtq">-</td>
-    <td class="tg-phtq">c</td>
-    <td class="tg-phtq">d</td>
-    <td class="tg-phtq">c+d</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">Totals</td>
-    <td class="tg-0lax">a+c</td>
-    <td class="tg-0lax">b+d</td>
-    <td class="tg-0lax">n=a+b+c+d</td>
-  </tr>
-</tbody>
-</table>
 
 
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
@@ -432,11 +382,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzUzMTgzNjksLTE3NTY0NzExMzEsLT
-E5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4MDUy
-OTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNzEyNjY3Nj
-gsODY5NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIz
-MDYxOTA4LC05MzcxODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0Mz
-ksLTEzNzI0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5NzgxLC00
-NDAwMjM5NV19
+eyJoaXN0b3J5IjpbLTI2NTM0ODQ3OSwtMTc1NjQ3MTEzMSwtMT
+k3NDU4OTM2OCwxMTY3NjAzODU4LDU1MTE1NDM5OCwtMTgwNTI5
+NzQ3MSwtMTQ0NTYzMzAyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OC
+w4Njk3NTg2MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMw
+NjE5MDgsLTkzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MDA0NjQzOS
+wtMTM3MjQyMzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3ODEsLTQ0
+MDAyMzk1XX0=
 -->
