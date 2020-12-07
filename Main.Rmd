@@ -335,8 +335,9 @@ scale(y)
 |    |    |Individual 1||Totals|
 |:---|:---|:---|:---|:---|
 |  |    |1  |0
-|*Individual 2|1|a|b|gg|
-|             |0|c|d|gg|
+|**Individual 2**|1|a|b|a+b|
+|             |0|c|d|c+d|
+|**Totals**||a+c|b+d|n=a+b+c+d|
 
 
 <style type="text/css">
@@ -431,11 +432,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NTIzOTM2NCwtMTc1NjQ3MTEzMSwtMT
-k3NDU4OTM2OCwxMTY3NjAzODU4LDU1MTE1NDM5OCwtMTgwNTI5
-NzQ3MSwtMTQ0NTYzMzAyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OC
-w4Njk3NTg2MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMw
-NjE5MDgsLTkzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MDA0NjQzOS
-wtMTM3MjQyMzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3ODEsLTQ0
-MDAyMzk1XX0=
+eyJoaXN0b3J5IjpbLTE5NzUzMTgzNjksLTE3NTY0NzExMzEsLT
+E5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4MDUy
+OTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNzEyNjY3Nj
+gsODY5NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIz
+MDYxOTA4LC05MzcxODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0Mz
+ksLTEzNzI0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5NzgxLC00
+NDAwMjM5NV19
 -->
