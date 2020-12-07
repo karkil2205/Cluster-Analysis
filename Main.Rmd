@@ -395,6 +395,7 @@ scale(y)
 
 The data are taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
 
+![Kauffman & Rousseeuw data](KAUFMANBinarydata)
 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
@@ -419,11 +420,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NT
-ExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5
-MjIyMjgsNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4MzA4MDUsMT
-Q2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5NjMsLTMwODAz
-MTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUxOTgzMDIyLC
-0xODU4MDc5NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMsLTI1NzA1
-ODY2OV19
+eyJoaXN0b3J5IjpbLTE3NTY0NzExMzEsLTE5NzQ1ODkzNjgsMT
+E2NzYwMzg1OCw1NTExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2
+MzMwMjUsLTE5NTA5MjIyMjgsNzEyNjY3NjgsODY5NzU4NjI4LC
+02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05Mzcx
+ODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MD
+MsODUxOTgzMDIyLC0xODU4MDc5NzgxLC00NDAwMjM5NSwzMzcw
+NzQ2NTNdfQ==
 -->
