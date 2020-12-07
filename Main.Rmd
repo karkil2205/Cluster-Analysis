@@ -330,16 +330,17 @@ scale(y)
 * We assume there are $n$ measured characters.
 * The presence is denoted by + and absence by -. 
 * This gives the familiar 2 X 2 association table shown in 
-* A large number of similarity measures have been proposed for such binary data. 
-* The entries are the counts of matches (i) and mismatches in the $n$ variables for two individuals.
+* The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (+,-) and (-,+)) in the $n$ characters for two individuals.
 
-| ??  	|     	|     	|Frequency           	|
+|   	|     	|     	|Frequency           	|
 |:-----------------------------------------------	|:---:	|-----	|:-----------	|
 |                                               	| +   	| +   	| a     	|
 | 1                                             	| +   	| -   	| b       	|
 | 0                                             	| c   	| d   	| d       	|
 | Total                                         	| a+c 	| b+d 	| n=a+b+c+d 	|
 
+
+* A large number of similarity measures have been proposed for such binary data. 
 
 Basically, it allows you to turn:
 let MarkdownIt =  require('markdown-it'),
@@ -387,11 +388,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk5NzUyODMwLC0xOTUwOTIyMjI4LDcxMj
-Y2NzY4LDg2OTc1ODYyOCwtNjE2ODMwODA1LDE0Njc0NTg0NTUs
-MTYyMzA2MTkwOCwtOTM3MTg3OTYzLC0zMDgwMzEyMzUsNTQwMD
-Q2NDM5LC0xMzcyNDIzODAzLDg1MTk4MzAyMiwtMTg1ODA3OTc4
-MSwtNDQwMDIzOTUsMzM3MDc0NjUzLC0yNTcwNTg2NjksLTE2Mz
-E2MjA2MzIsNDQyMzc1Njc0LDM4ODYzNzk0Niw0OTMwNTM0NzVd
-fQ==
+eyJoaXN0b3J5IjpbLTUwNTM0NTU3MywtMTk1MDkyMjIyOCw3MT
+I2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1
+LDE2MjMwNjE5MDgsLTkzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MD
+A0NjQzOSwtMTM3MjQyMzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3
+ODEsLTQ0MDAyMzk1LDMzNzA3NDY1MywtMjU3MDU4NjY5LC0xNj
+MxNjIwNjMyLDQ0MjM3NTY3NCwzODg2Mzc5NDYsNDkzMDUzNDc1
+XX0=
 -->
