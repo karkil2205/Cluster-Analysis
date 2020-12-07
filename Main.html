@@ -2015,12 +2015,12 @@ y=c(30,2 , 9, 20, 48)
 <div id="similarity-measures-for-binary-data" class="section level1">
 <h1>Similarity measures for binary data</h1>
 <ul>
-<li>We consider here the case where all the <span class="math inline">\(n\)</span> variables are binary.</li>
-<li></li>
-<li>A large number of similarity measures have been proposed for binary data.</li>
-<li>All the measures are defined in terms of the entries in a cross-classification of the counts of matches and mismatches in the p variables for two individuals; the general version of this cross-classification is shown in Table 3.2.</li>
-<li>A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986).</li>
-<li>The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain</li>
+<li><p>A common simple situation occurs when all information is of the presence/absence of 2-level qualitative characters.</p></li>
+<li><p>We assume there are <span class="math inline">\(n\)</span> measured characters.</p></li>
+<li><p>The presence is denoted by + and absence by -.</p></li>
+<li><p>This gives the familiar 2 X 2 association table shown in</p></li>
+<li><p>The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (+,-) and (-,+)) in the <span class="math inline">\(n\)</span> characters for two individuals.</p></li>
+<li><p>A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986).</p></li>
 </ul>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
@@ -2029,33 +2029,43 @@ y=c(30,2 , 9, 20, 48)
 .tg th{background-color:#b9c9fe;border-color:#aabcfe;border-style:solid;border-width:1px;color:#039;
   font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-phtq{background-color:#D2E4FC;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-j0tj{background-color:#D2E4FC;text-align:center;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
 <tr>
-<th class="tg-0pky" colspan="4">
-<span style="font-weight:400;font-style:normal">Counts of binary outcomes for two individuals</span>
+<th class="tg-0lax">
+</th>
+<th class="tg-c3ow" colspan="3">
+Individual 1
+</th>
+<th class="tg-0pky">
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td class="tg-j0tj" rowspan="3">
+Individual 2
+</td>
 <td class="tg-phtq">
 </td>
 <td class="tg-phtq">
-1
++
 </td>
 <td class="tg-phtq">
-0
+-
 </td>
 <td class="tg-phtq">
-Total
+Totals
 </td>
 </tr>
 <tr>
 <td class="tg-0pky">
-1
++
 </td>
 <td class="tg-0pky">
 a
@@ -2069,7 +2079,7 @@ a+b
 </tr>
 <tr>
 <td class="tg-phtq">
-0
+-
 </td>
 <td class="tg-phtq">
 c
@@ -2082,21 +2092,59 @@ c+d
 </td>
 </tr>
 <tr>
-<td class="tg-0pky">
-Total
+<td class="tg-0lax">
 </td>
-<td class="tg-0pky">
+<td class="tg-0lax">
+Totals
+</td>
+<td class="tg-0lax">
 a+c
 </td>
-<td class="tg-0pky">
+<td class="tg-0lax">
 b+d
 </td>
-<td class="tg-0pky">
+<td class="tg-0lax">
 n=a+b+c+d
 </td>
 </tr>
 </tbody>
 </table>
+<table>
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Matching coefficient</td>
+<td><span class="math inline">\((a+d)/(a+b+c+d)\)</span></td>
+</tr>
+<tr class="even">
+<td>Jaccard coefficient</td>
+<td><span class="math inline">\(a/(a+b+c)\)</span></td>
+</tr>
+<tr class="odd">
+<td>Rogers and Tanimoto (1960)</td>
+<td><span class="math inline">\((a+d)/[a+2(b+c)+d]\)</span></td>
+</tr>
+<tr class="even">
+<td>Gower and Legendre (1986)</td>
+<td><span class="math inline">\((a+d)/[a+\frac{1}{2}(b+c)+d]\)</span></td>
+</tr>
+<tr class="odd">
+<td>Gower and Legendre (1986)</td>
+<td><span class="math inline">\(a/[a+\frac{1}{2}(b+c)]\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).</li>
+<li>In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.</li>
+<li>An example is gender, where there is no preference as to which of the two categories should be coded zero or one.</li>
+<li>But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects.</li>
+</ul>
 </div>
 <div id="distance-matrix-computation" class="section level1">
 <h1>Distance matrix computation</h1>
@@ -2121,12 +2169,13 @@ ss &lt;- sample(1:50, 15) # Take 15 random rows
 df &lt;- USArrests[ss, ] # Subset the 15 rows
 df.scaled &lt;- scale(df) # Standardize the variables</code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MD
-A0NjQzOSwtMTM3MjQyMzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3
-ODEsLTQ0MDAyMzk1LDMzNzA3NDY1MywtMjU3MDU4NjY5LC0xNj
-MxNjIwNjMyLDQ0MjM3NTY3NCwzODg2Mzc5NDYsNDkzMDUzNDc1
-LC0xNTIxNDkyMTE5LDcwMzQxOTYyNSwtMTUyMTQ5MjExOSwtMT
-UyMTQ5MjExOSwxNjg1Mzk5OTFdfQ==
+eyJoaXN0b3J5IjpbNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0xND
+Q1NjMzMDI1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYy
+OCwtNjE2ODMwODA1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwtOT
+M3MTg3OTYzLC0zMDgwMzEyMzUsNTQwMDQ2NDM5LC0xMzcyNDIz
+ODAzLDg1MTk4MzAyMiwtMTg1ODA3OTc4MSwtNDQwMDIzOTUsMz
+M3MDc0NjUzLC0yNTcwNTg2NjksLTE2MzE2MjA2MzIsNDQyMzc1
+Njc0XX0=
 -->
 </div>
 
