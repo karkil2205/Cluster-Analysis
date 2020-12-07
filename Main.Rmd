@@ -332,9 +332,9 @@ scale(y)
 * This gives the familiar 2 X 2 association table shown in 
 * The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (+,-) and (-,+)) in the $n$ characters for two individuals.
 
-||Individual 1|
-|---|---||---|
-||1|0|
+|   ||Individual 1|
+|---|---|---|---|
+| Individual 2|1|0|0
 
 
 <style type="text/css">
@@ -429,11 +429,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDk0Mzc0MzUsLTE3NTY0NzExMzEsLT
-E5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4MDUy
-OTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNzEyNjY3Nj
-gsODY5NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIz
-MDYxOTA4LC05MzcxODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0Mz
-ksLTEzNzI0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5NzgxLC00
-NDAwMjM5NV19
+eyJoaXN0b3J5IjpbLTc4MzAyOTYxOSwtMTc1NjQ3MTEzMSwtMT
+k3NDU4OTM2OCwxMTY3NjAzODU4LDU1MTE1NDM5OCwtMTgwNTI5
+NzQ3MSwtMTQ0NTYzMzAyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OC
+w4Njk3NTg2MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMw
+NjE5MDgsLTkzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MDA0NjQzOS
+wtMTM3MjQyMzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3ODEsLTQ0
+MDAyMzk1XX0=
 -->
