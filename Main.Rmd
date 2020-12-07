@@ -392,6 +392,10 @@ scale(y)
 |Gower and Legendre (1986)|$(a+d)/[a+\frac{1}{2}(b+c)+d]$|
 |Gower and Legendre (1986)|$a/[a+\frac{1}{2}(b+c)]$|
 
+
+The data are taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
+
+
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
@@ -415,11 +419,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4MD
-UyOTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNzEyNjY3
-NjgsODY5NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNj
-IzMDYxOTA4LC05MzcxODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0
-MzksLTEzNzI0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5NzgxLC
-00NDAwMjM5NSwzMzcwNzQ2NTMsLTI1NzA1ODY2OSwtMTYzMTYy
-MDYzMl19
+eyJoaXN0b3J5IjpbLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NT
+ExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5
+MjIyMjgsNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4MzA4MDUsMT
+Q2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5NjMsLTMwODAz
+MTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUxOTgzMDIyLC
+0xODU4MDc5NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMsLTI1NzA1
+ODY2OV19
 -->
