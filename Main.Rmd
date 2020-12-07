@@ -395,7 +395,7 @@ scale(y)
 
 The data are taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
 
-![Kauffman & Rousseeuw data](KAUFMANBinarydata)
+![Drag Racing](KAUFMANBinarydata.jpg)
 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
