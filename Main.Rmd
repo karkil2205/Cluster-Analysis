@@ -332,8 +332,6 @@ scale(y)
 * This gives the familiar 2 X 2 association table shown in 
 * The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (+,-) and (-,+)) in the $n$ characters for two individuals.
 
-* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
-
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
 .tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:1px;color:#669;
@@ -384,6 +382,12 @@ scale(y)
 </tbody>
 </table>
 
+
+* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
+
+
+
+
 |Measure|Formula|
 |---|---|
 |Matching coefficient|$(a+d)/(a+b+c+d)$|
@@ -395,7 +399,7 @@ scale(y)
 
 The data are taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
 
-![Drag Racing](KAUFMANBinarydata.jpg)
+![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
@@ -420,7 +424,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODQzNzY1NDcsLTE3NTY0NzExMzEsLT
+eyJoaXN0b3J5IjpbLTExMzU1NzYwMzEsLTE3NTY0NzExMzEsLT
 E5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4MDUy
 OTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNzEyNjY3Nj
 gsODY5NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIz
