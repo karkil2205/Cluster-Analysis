@@ -384,9 +384,9 @@ scale(y)
 </tbody>
 </table>
 
-|Measure|Value|
+|Measure|Formula|
 |---|---|
-|hhh||
+|Matching coefficient|$(a+b)/(a+b+c+d)$|
 |hhh||
 |hhh||
 |hhh||
@@ -414,7 +414,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzE4MjU2MiwtMTgwNTI5NzQ3MSwtMT
+eyJoaXN0b3J5IjpbLTc4MDE0NDQ0OSwtMTgwNTI5NzQ3MSwtMT
 Q0NTYzMzAyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2
 MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLT
 kzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQy
