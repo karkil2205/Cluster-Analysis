@@ -343,7 +343,7 @@ Basically, it allows you to turn:
 
 
 |             |          Grouping           ||
-|             |          Grouping           ||
+|     ---        |                    |---
 First Header  | Second Header | Third Header |
  ------------ | :-----------: | -----------: |
 Content       |          *Long Cell*        ||
@@ -378,11 +378,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgwOTkwMTUwLDcxMjY2NzY4LDg2OTc1OD
-YyOCwtNjE2ODMwODA1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwt
-OTM3MTg3OTYzLC0zMDgwMzEyMzUsNTQwMDQ2NDM5LC0xMzcyND
-IzODAzLDg1MTk4MzAyMiwtMTg1ODA3OTc4MSwtNDQwMDIzOTUs
-MzM3MDc0NjUzLC0yNTcwNTg2NjksLTE2MzE2MjA2MzIsNDQyMz
-c1Njc0LDM4ODYzNzk0Niw0OTMwNTM0NzUsLTE1MjE0OTIxMTld
-fQ==
+eyJoaXN0b3J5IjpbLTIwNjY2NTAyMDEsNzEyNjY3NjgsODY5Nz
+U4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4
+LC05MzcxODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNz
+I0MjM4MDMsODUxOTgzMDIyLC0xODU4MDc5NzgxLC00NDAwMjM5
+NSwzMzcwNzQ2NTMsLTI1NzA1ODY2OSwtMTYzMTYyMDYzMiw0ND
+IzNzU2NzQsMzg4NjM3OTQ2LDQ5MzA1MzQ3NSwtMTUyMTQ5MjEx
+OV19
 -->
