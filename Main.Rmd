@@ -333,7 +333,6 @@ scale(y)
 * The entries are the counts of matches (i.e. (+,+) and (-,-)) and mismatches (i.e. (+,-) and (-,+)) in the $n$ characters for two individuals.
 
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
-* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
@@ -385,6 +384,11 @@ scale(y)
 </tbody>
 </table>
 
+|a|||
+|---|---|---|---
+
+* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches(d in Table 3.2). In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure. An example is gender, where there is no preference as to which of the two categories should be coded zero or one. But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. The question that then needs to be asked is do the co-absences contain
+
 
 
 # Distance matrix computation
@@ -404,11 +408,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDUyOTc0NzEsLTE0NDU2MzMwMjUsLT
-E5NTA5MjIyMjgsNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4MzA4
-MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5NjMsLT
-MwODAzMTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUxOTgz
-MDIyLC0xODU4MDc5NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMsLT
-I1NzA1ODY2OSwtMTYzMTYyMDYzMiw0NDIzNzU2NzQsMzg4NjM3
-OTQ2XX0=
+eyJoaXN0b3J5IjpbMTg0MDgzMzcyOCwtMTgwNTI5NzQ3MSwtMT
+Q0NTYzMzAyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2
+MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLT
+kzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQy
+MzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3ODEsLTQ0MDAyMzk1LD
+MzNzA3NDY1MywtMjU3MDU4NjY5LC0xNjMxNjIwNjMyLDQ0MjM3
+NTY3NF19
 -->
