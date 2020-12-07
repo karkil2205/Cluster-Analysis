@@ -331,11 +331,11 @@ scale(y)
 * A large number of similarity measures have been proposed for such binary data. 
 * All the measures are defined in terms of the entries in a cross-classification of the counts of matches and mismatches in the $n$ variables for two individuals.
 
-| Counts  	|     	|     	|Frequency           	|
+| ??  	|     	|     	|Frequency           	|
 |:-----------------------------------------------	|:---:	|-----	|:-----------	|
-|                                               	| 1   	| 0   	| Total     	|
-| 1                                             	| a   	| b   	| a+b       	|
-| 0                                             	| c   	| d   	| c+d       	|
+|                                               	| +   	| +   	| a     	|
+| 1                                             	| +   	| -   	| b       	|
+| 0                                             	| c   	| d   	| d       	|
 | Total                                         	| a+c 	| b+d 	| n=a+b+c+d 	|
 
 
@@ -363,11 +363,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTYyMzUyNyw4Njk3NTg2MjgsLTYxNj
-gzMDgwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLTkzNzE4Nzk2
-MywtMzA4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQyMzgwMyw4NT
-E5ODMwMjIsLTE4NTgwNzk3ODEsLTQ0MDAyMzk1LDMzNzA3NDY1
-MywtMjU3MDU4NjY5LC0xNjMxNjIwNjMyLDQ0MjM3NTY3NCwzOD
-g2Mzc5NDYsNDkzMDUzNDc1LC0xNTIxNDkyMTE5LDcwMzQxOTYy
-NV19
+eyJoaXN0b3J5IjpbNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4Mz
+A4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5NjMs
+LTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUxOT
+gzMDIyLC0xODU4MDc5NzgxLC00NDAwMjM5NSwzMzcwNzQ2NTMs
+LTI1NzA1ODY2OSwtMTYzMTYyMDYzMiw0NDIzNzU2NzQsMzg4Nj
+M3OTQ2LDQ5MzA1MzQ3NSwtMTUyMTQ5MjExOSw3MDM0MTk2MjVd
+fQ==
 -->
