@@ -356,7 +356,7 @@ scale(y)
   </tr>
   <tr>
     <td class="tg-0pky">1</td>
-    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">a=$$</td>
     <td class="tg-0pky">b</td>
     <td class="tg-0pky">a+b</td>
   </tr>
@@ -399,7 +399,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNjgzMDgwNSwxNDY3NDU4NDU1LDE2Mj
+eyJoaXN0b3J5IjpbLTg4MDY4NjIwMCwxNDY3NDU4NDU1LDE2Mj
 MwNjE5MDgsLTkzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MDA0NjQz
 OSwtMTM3MjQyMzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3ODEsLT
 Q0MDAyMzk1LDMzNzA3NDY1MywtMjU3MDU4NjY5LC0xNjMxNjIw
