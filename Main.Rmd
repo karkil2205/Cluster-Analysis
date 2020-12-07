@@ -387,9 +387,9 @@ scale(y)
 |Measure|Formula|
 |---|---|
 |Matching coefficient|$(a+d)/(a+b+c+d)$|
-|Jaccard coefficient|$(a+b)/(a+b+c)$|
-|Rogers and Tanimoto (1960)| $(a+b)/(a+b+c)$|
-|hhh||
+|Jaccard coefficient|$a/(a+b+c)$|
+|Rogers and Tanimoto (1960)| $(a+d)/[a+2(b+c)+d]$|
+|Gower and Legendre (1986)|$(a+d)/[a+\frac2(b+c)+d]$|
 |hhh||
 
 
@@ -414,11 +414,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTA4MjAyMywtMTgwNTI5NzQ3MSwtMT
-Q0NTYzMzAyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2
-MjgsLTYxNjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLT
-kzNzE4Nzk2MywtMzA4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQy
-MzgwMyw4NTE5ODMwMjIsLTE4NTgwNzk3ODEsLTQ0MDAyMzk1LD
-MzNzA3NDY1MywtMjU3MDU4NjY5LC0xNjMxNjIwNjMyLDQ0MjM3
-NTY3NF19
+eyJoaXN0b3J5IjpbMjQwNzAyNDk0LC0xODA1Mjk3NDcxLC0xND
+Q1NjMzMDI1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYy
+OCwtNjE2ODMwODA1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwtOT
+M3MTg3OTYzLC0zMDgwMzEyMzUsNTQwMDQ2NDM5LC0xMzcyNDIz
+ODAzLDg1MTk4MzAyMiwtMTg1ODA3OTc4MSwtNDQwMDIzOTUsMz
+M3MDc0NjUzLC0yNTcwNTg2NjksLTE2MzE2MjA2MzIsNDQyMzc1
+Njc0XX0=
 -->
