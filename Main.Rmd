@@ -330,8 +330,8 @@ scale(y)
 * We assume there are $n$ measured characters.
 * *The presence of the character or type is coded $1$ and the absence by 0. 
 * We have have at our disposal two vectors.
-* $\mathbf{x}$ is observed for first indiviual.
-* $\mathbf{y}$ is observed for a second indiviual. 
+* $\mathbf{x}$ is observed for first indiviual (or object).
+* $\mathbf{y}$ is observed for a second individual. 
 * We can then calculate the following statistics:
  
    $a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$
@@ -351,9 +351,10 @@ scale(y)
 |    |    |Second individual|||
 |:---|:---|:---|:---|:---|
 |  |    |1  |0|*Totals*
-|**First individual**|1|a|b|a+b|
-|             |0|c|d|c+d|
-|*Totals*||a+c|b+d|n=a+b+c+d|
+|**First individual**|1|$a$|$b$|$a+b$|
+|             |0|$c$|$d$|$c+d$|
+|*Totals*||$a+c
+|b+d|n=a+b+c+d|
 
 
 
@@ -398,11 +399,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzY5MTIxNzEsLTEzNTQxOTA1MDIsLT
-IzOTY1OTIxMywtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3
-NjAzODU4LDU1MTE1NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMz
-AyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYx
-NjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLTkzNzE4Nz
-k2MywtMzA4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQyMzgwMyw4
-NTE5ODMwMjJdfQ==
+eyJoaXN0b3J5IjpbOTEyODc5MTQwLC0xMzU0MTkwNTAyLC0yMz
+k2NTkyMTMsLTE3NTY0NzExMzEsLTE5NzQ1ODkzNjgsMTE2NzYw
+Mzg1OCw1NTExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMj
+UsLTE5NTA5MjIyMjgsNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4
+MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5Nj
+MsLTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUx
+OTgzMDIyXX0=
 -->
