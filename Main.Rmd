@@ -377,9 +377,13 @@ scale(y)
 ![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
 
 * For $8$ people, $10$ binary variables were considered,:
-* male/female, blue eyes/brown eyes, round face/oval face, and so on. The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0. When comparing Ilan with Talia, we make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5. Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
+* male/female, blue eyes/brown eyes, round face/oval face, and so on.
+* The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0.
+* When comparing Ilan with Talia.
+* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
+* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
 
-The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
+* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
 * But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
@@ -402,7 +406,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNjAxOTk1OCwtMTM1NDE5MDUwMiwtMj
+eyJoaXN0b3J5IjpbLTIyMDgzNDA4NCwtMTM1NDE5MDUwMiwtMj
 M5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2
 MDM4NTgsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMD
 I1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2
