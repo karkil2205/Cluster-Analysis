@@ -348,10 +348,10 @@ scale(y)
 * The entries are the counts of matches , $a$ for $(1,1)$,  and $d$ for $(0,0)$.
 * The counts of mismatches are for $b$ for $(1,0)$ and $c$ for $(0,1)$).
 
-|    |    |First Individual|||
+|    |    |Second individual|||
 |:---|:---|:---|:---|:---|
 |  |    |1  |0|*Totals*
-|**Second Individual**|1|a|b|a+b|
+|**First individual**|1|a|b|a+b|
 |             |0|c|d|c+d|
 |*Totals*||a+c|b+d|n=a+b+c+d|
 
@@ -398,7 +398,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDEzNTUwMjMsLTEzNTQxOTA1MDIsLT
+eyJoaXN0b3J5IjpbLTExNzY5MTIxNzEsLTEzNTQxOTA1MDIsLT
 IzOTY1OTIxMywtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3
 NjAzODU4LDU1MTE1NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMz
 AyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYx
