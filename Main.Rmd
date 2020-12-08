@@ -334,8 +334,8 @@ scale(y)
 * $\mathbf{y}$ is observed for a second indiviual. 
 * We can then calculate the following statistics:
  
-   $$a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$$
-   $$b=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i=.$$
+   $a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$$
+   $$b=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i$$
 
 * This gives the familiar 2 X 2 association table . 
 * The entries are the counts of matches (i.e. $(1,1)$ and $(0,0)$) and mismatches (i.e. $(1,0)$ or $(0,1)$) in the $n$ characters for two individuals.
@@ -390,11 +390,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNDEyNjI4NiwtMTM1NDE5MDUwMiwtMj
-M5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2
-MDM4NTgsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMD
-I1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2
-ODMwODA1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwtOTM3MTg3OT
-YzLC0zMDgwMzEyMzUsNTQwMDQ2NDM5LC0xMzcyNDIzODAzLDg1
-MTk4MzAyMl19
+eyJoaXN0b3J5IjpbMzU4MTQzMDQzLC0xMzU0MTkwNTAyLC0yMz
+k2NTkyMTMsLTE3NTY0NzExMzEsLTE5NzQ1ODkzNjgsMTE2NzYw
+Mzg1OCw1NTExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMj
+UsLTE5NTA5MjIyMjgsNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4
+MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5Nj
+MsLTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUx
+OTgzMDIyXX0=
 -->
