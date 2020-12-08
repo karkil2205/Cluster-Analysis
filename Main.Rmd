@@ -369,7 +369,9 @@ scale(y)
 * Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
 
 
-
+data=c("rlan","Jacqueline","Kim","Lieve","Leon","Peter","Talia","Tina",
+1,0,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,1,0,1, 1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0)
+data.frame(matrix(data, nrow=8, byrow=F))
 
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
 
@@ -408,11 +410,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLT
-IzOTY1OTIxMywtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3
-NjAzODU4LDU1MTE1NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMz
-AyNSwtMTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYx
-NjgzMDgwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLTkzNzE4Nz
-k2MywtMzA4MDMxMjM1LDU0MDA0NjQzOSwtMTM3MjQyMzgwMyw4
-NTE5ODMwMjJdfQ==
+eyJoaXN0b3J5IjpbNDIyMDQ5NzI4LC0xMjYzODcyOTY4LC0xMz
+U0MTkwNTAyLC0yMzk2NTkyMTMsLTE3NTY0NzExMzEsLTE5NzQ1
+ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4MDUyOTc0Nz
+EsLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNzEyNjY3NjgsODY5
+NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOT
+A4LC05MzcxODc5NjMsLTMwODAzMTIzNSw1NDAwNDY0MzksLTEz
+NzI0MjM4MDNdfQ==
 -->
