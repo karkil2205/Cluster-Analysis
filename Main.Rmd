@@ -328,7 +328,7 @@ scale(y)
 # Similarity measures for binary data
 * A common simple situation occurs when all information is of the presence/absence of 2-level qualitative characters.
 * We assume there are $n$ measured characters.
-* *The presence is denoted by 1 and absence by 0. 
+* *The presence of the character or type is coded $1$ and the absence by 0. 
 * We have have at our disposal two vectors.
 * $\mathbf{x}$ is observed for indiviual 1.
 * $\mathbf{y}$ is observed for indiviual 2. 
@@ -389,11 +389,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTAyOTE0NTQsLTIzOTY1OTIxMywtMT
-c1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1MTE1
-NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMzAyNSwtMTk1MDkyMj
-IyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMDgwNSwxNDY3
-NDU4NDU1LDE2MjMwNjE5MDgsLTkzNzE4Nzk2MywtMzA4MDMxMj
-M1LDU0MDA0NjQzOSwtMTM3MjQyMzgwMyw4NTE5ODMwMjIsLTE4
-NTgwNzk3ODFdfQ==
+eyJoaXN0b3J5IjpbMTc2NzI2ODU5OCwtMjM5NjU5MjEzLC0xNz
+U2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2MDM4NTgsNTUxMTU0
+Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMDI1LC0xOTUwOTIyMj
+I4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2ODMwODA1LDE0Njc0
+NTg0NTUsMTYyMzA2MTkwOCwtOTM3MTg3OTYzLC0zMDgwMzEyMz
+UsNTQwMDQ2NDM5LC0xMzcyNDIzODAzLDg1MTk4MzAyMiwtMTg1
+ODA3OTc4MV19
 -->
