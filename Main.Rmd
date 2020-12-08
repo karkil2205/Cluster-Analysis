@@ -342,9 +342,7 @@ scale(y)
 
    $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).$
 
-   
-
-* This gives a familiar 2 X 2 association table . 
+* This gives a familiar $2 \times 2$ association table . 
 * The entries are the counts of matches , $a$ for $(1,1)$,  and $d$ for $(0,0)$.
 * The counts of mismatches are for $b$ for $(1,0)$ and $c$ for $(0,1)$).
 * Obviously, $a+b+c+d=n$.
@@ -355,6 +353,21 @@ scale(y)
 |**First individual**|1|$a$|$b$|$a+b$|
 |             |0|$c$|$d$|$c+d$|
 |*Totals*||$a+c$|$b+d$|$n$|
+
+
+
+
+* We will use data taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
+
+![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
+
+* For $8$ people, $10$ binary variables were considered,:
+* male/female, blue eyes/brown eyes, round face/oval face, and so on.
+* The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0.
+* When comparing Ilan with Talia.
+* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
+* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
+
 
 
 
@@ -371,17 +384,6 @@ scale(y)
 |Gower and Legendre (1986)|$(a+d)/[a+\frac{1}{2}(b+c)+d]$|
 |Gower and Legendre (1986)|$a/[a+\frac{1}{2}(b+c)]$|
 
-
-* We will use data taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
-
-![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
-
-* For $8$ people, $10$ binary variables were considered,:
-* male/female, blue eyes/brown eyes, round face/oval face, and so on.
-* The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0.
-* When comparing Ilan with Talia.
-* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
-* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
@@ -406,7 +408,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMDgzNDA4NCwtMTM1NDE5MDUwMiwtMj
+eyJoaXN0b3J5IjpbLTc2MDc3Njc2OCwtMTM1NDE5MDUwMiwtMj
 M5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2
 MDM4NTgsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMD
 I1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2
