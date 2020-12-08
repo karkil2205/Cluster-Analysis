@@ -332,7 +332,7 @@ scale(y)
 * We have have at our disposal two vectors.
 * $\mathbf{x}$ is observed for indiviual 1.
 * $\mathbf{y}$ is observed for indiviual 2. 
-* We can then calate the following statistics:
+* We can then calculate the following statistics:
    $$a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_.$$
    $$b=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_iy_.$$
  
@@ -389,7 +389,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjYyNDQ2NTAsLTIzOTY1OTIxMywtMT
+eyJoaXN0b3J5IjpbLTEwNTAyOTE0NTQsLTIzOTY1OTIxMywtMT
 c1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1MTE1
 NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMzAyNSwtMTk1MDkyMj
 IyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMDgwNSwxNDY3
