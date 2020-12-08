@@ -331,7 +331,9 @@ scale(y)
 * *The presence is denoted by 1 and absence by 0. 
 * We have have at our disposal two vectors $\mathbf{x}$ and $\mathbf{y}$ with ones and zeros. 
 * We can then calate the following statistics:
-* $$a=\mathbf{x}$$
+   $$a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_.$$
+   $$b=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_.$$
+ 
 * This gives the familiar 2 X 2 association table . 
 * The entries are the counts of matches (i.e. $(1,1)$ and $(0,0)$) and mismatches (i.e. $(1,0)$ or $(0,1)$) in the $n$ characters for two individuals.
 
@@ -385,7 +387,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjc4ODQzNSwtMjM5NjU5MjEzLC0xNz
+eyJoaXN0b3J5IjpbMTQ3MTYzMjEwMiwtMjM5NjU5MjEzLC0xNz
 U2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2MDM4NTgsNTUxMTU0
 Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMDI1LC0xOTUwOTIyMj
 I4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2ODMwODA1LDE0Njc0
