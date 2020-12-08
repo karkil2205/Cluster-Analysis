@@ -353,8 +353,7 @@ scale(y)
 |  |    |1  |0|*Totals*
 |**First individual**|1|$a$|$b$|$a+b$|
 |             |0|$c$|$d$|$c+d$|
-|*Totals*||$a+c
-|b+d|n=a+b+c+d|
+|*Totals*||$a+c$|$b+d$|$n$|
 
 
 
@@ -399,11 +398,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyODc5MTQwLC0xMzU0MTkwNTAyLC0yMz
-k2NTkyMTMsLTE3NTY0NzExMzEsLTE5NzQ1ODkzNjgsMTE2NzYw
-Mzg1OCw1NTExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMj
-UsLTE5NTA5MjIyMjgsNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4
-MzA4MDUsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5Nj
-MsLTMwODAzMTIzNSw1NDAwNDY0MzksLTEzNzI0MjM4MDMsODUx
-OTgzMDIyXX0=
+eyJoaXN0b3J5IjpbLTY2ODM0NDMwOCwtMTM1NDE5MDUwMiwtMj
+M5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2
+MDM4NTgsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMD
+I1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2
+ODMwODA1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwtOTM3MTg3OT
+YzLC0zMDgwMzEyMzUsNTQwMDQ2NDM5LC0xMzcyNDIzODAzLDg1
+MTk4MzAyMl19
 -->
