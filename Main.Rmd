@@ -365,7 +365,6 @@ scale(y)
 * The data shows $8$ people (individuals) and $10$ binary variables:
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
 
-
 ```{r}
 data=c(
 1,0,1,1,0,0,1,0,0,0,
@@ -382,6 +381,9 @@ row.names(data)=c("Ilan","Jacqueline","Kim","Lieve","Leon","Peter","Talia","Tina
 names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Round Face", "Pessimist", "Evening Type", "Is an Only Child", "Left-Handed")
 data
 ```
+
+* We are comparing the records for Ilan with Talia.
+
 
 
 
@@ -429,7 +431,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNzQxNTgyNSwxODc0MzQyNjAwLC05ND
+eyJoaXN0b3J5IjpbLTE3MzYzOTY5NiwxODc0MzQyNjAwLC05ND
 QzNDUxNzksLTE2MjU1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3
 MjgsLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMy
 wtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1
