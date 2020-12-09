@@ -336,9 +336,9 @@ scale(y)
  
    $a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$
    
-   $b=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i.$
+   $b=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_i(1-y_i).$
    
-   $c=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_i(1-y_i).$
+   $c=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i.$
 
    $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).$
 
@@ -420,11 +420,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDI2MDk0MzEsMTMzODYxNDE3OSw0Mj
-IwNDk3MjgsLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLTIzOTY1
-OTIxMywtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzOD
-U4LDU1MTE1NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMzAyNSwt
-MTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMD
-gwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLTkzNzE4Nzk2Mywt
-MzA4MDMxMjM1XX0=
+eyJoaXN0b3J5IjpbMTU0NzU3ODk4NSwxMzM4NjE0MTc5LDQyMj
+A0OTcyOCwtMTI2Mzg3Mjk2OCwtMTM1NDE5MDUwMiwtMjM5NjU5
+MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2MDM4NT
+gsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMDI1LC0x
+OTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2ODMwOD
+A1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwtOTM3MTg3OTYzLC0z
+MDgwMzEyMzVdfQ==
 -->
