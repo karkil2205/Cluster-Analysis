@@ -379,12 +379,13 @@ data=c(
 data=data.frame(matrix(data, nrow=8,byrow=T))
 row.names(data)=c("Ilan","Jacqueline","Kim","Lieve","Leon","Peter","Talia","Tina")
 names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Round Face", "Pessimist", "Evening Type", "Is an Only Child", "Left-Handed")
-x=data["Ilan",]
-y=data["Ilan",]
 ```
 
 * We are comparing the records for Ilan with Talia.
-
+```{r}
+x=data["Ilan",]
+y=data["Talia",]
+```
 
 
 
@@ -432,7 +433,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjc3MzAxMywtMTczNjM5Njk2LDE4Nz
+eyJoaXN0b3J5IjpbMTgyMjk3MTcyNCwtMTczNjM5Njk2LDE4Nz
 QzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNTU0NzUyOSwxMzM4NjE0
 MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2OCwtMTM1NDE5MDUwMi
 wtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDEx
