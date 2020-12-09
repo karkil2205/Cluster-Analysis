@@ -364,7 +364,7 @@ scale(y)
 
 * The data shows $8$ people (individuals) and $10$ binary variables:
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
-* When comparing Ilan with Talia.
+
 
 ```{r}
 data=c(
@@ -429,7 +429,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxODUyODAxNiwxODc0MzQyNjAwLC05ND
+eyJoaXN0b3J5IjpbLTYwNzQxNTgyNSwxODc0MzQyNjAwLC05ND
 QzNDUxNzksLTE2MjU1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3
 MjgsLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMy
 wtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1
