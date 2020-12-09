@@ -358,7 +358,7 @@ scale(y)
 
 
 
-* We are using data from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
+* We are using a data set from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
 
 ![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
 
@@ -420,11 +420,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjU1NDc1MjksMTMzODYxNDE3OSw0Mj
-IwNDk3MjgsLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLTIzOTY1
-OTIxMywtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzOD
-U4LDU1MTE1NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMzAyNSwt
-MTk1MDkyMjIyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMD
-gwNSwxNDY3NDU4NDU1LDE2MjMwNjE5MDgsLTkzNzE4Nzk2Mywt
-MzA4MDMxMjM1XX0=
+eyJoaXN0b3J5IjpbMTk4MjEyMTkxMCwtMTYyNTU0NzUyOSwxMz
+M4NjE0MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2OCwtMTM1NDE5
+MDUwMiwtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5Mz
+Y4LDExNjc2MDM4NTgsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0x
+NDQ1NjMzMDI1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1OD
+YyOCwtNjE2ODMwODA1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwt
+OTM3MTg3OTYzXX0=
 -->
