@@ -364,14 +364,7 @@ scale(y)
 
 * The data shows $8$ people (individuals) and $10$ binary variables:
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
-* The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0.
 * When comparing Ilan with Talia.
-* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
-* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
-
-
-
-* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
 
 data=c(
 "Ilan",1,0,1,1,0,0,1,0,0,0,
@@ -384,6 +377,15 @@ data=c(
 "Tina",0,0,0,1,0,1,0,0,0,0
 )
 data.frame(matrix(data, nrow=8,byrow=T))
+
+
+
+* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
+* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
+
+
+
+* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
 
 
 
@@ -420,7 +422,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTk2MTAxMiwtOTQ0MzQ1MTc5LC0xNj
+eyJoaXN0b3J5IjpbMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0xNj
 I1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC0xMjYzODcy
 OTY4LC0xMzU0MTkwNTAyLC0yMzk2NTkyMTMsLTE3NTY0NzExMz
 EsLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4
