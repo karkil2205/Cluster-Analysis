@@ -362,7 +362,7 @@ scale(y)
 
 ![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
 
-* For $8$ people, $10$ binary variables were considered:
+* The data shows $8$ people (individuals) and $10$ binary variables:
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
 * The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0.
 * When comparing Ilan with Talia.
@@ -420,11 +420,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDM0NTE3OSwtMTYyNTU0NzUyOSwxMz
-M4NjE0MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2OCwtMTM1NDE5
-MDUwMiwtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5Mz
-Y4LDExNjc2MDM4NTgsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0x
-NDQ1NjMzMDI1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1OD
-YyOCwtNjE2ODMwODA1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwt
-OTM3MTg3OTYzXX0=
+eyJoaXN0b3J5IjpbMTQ5MTk2MTAxMiwtOTQ0MzQ1MTc5LC0xNj
+I1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC0xMjYzODcy
+OTY4LC0xMzU0MTkwNTAyLC0yMzk2NTkyMTMsLTE3NTY0NzExMz
+EsLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4
+MDUyOTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNzEyNj
+Y3NjgsODY5NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwx
+NjIzMDYxOTA4XX0=
 -->
