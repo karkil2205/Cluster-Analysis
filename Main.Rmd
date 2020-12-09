@@ -344,8 +344,8 @@ scale(y)
 
 * The counts of  matches are $a$ for $(1,1)$ and $d$ for $(0,0)$;
 * The counts of mismatches are $b$ for $(1,0)$ and $c$ for $(0,1)$).
-* Obviously, $a+b+c+d=n$.
-* * This gives a $2 \times 2$ association table. 
+* Obviously, $a+b+c+d= n$.
+* This gives a very useful $2 \times 2$ association table. 
 
 
 |    |    |Second individual|||
@@ -358,7 +358,7 @@ scale(y)
 
 
 
-* We will use data taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
+* We are using data taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
 
 ![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
 
@@ -420,11 +420,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NzU3ODk4NSwxMzM4NjE0MTc5LDQyMj
-A0OTcyOCwtMTI2Mzg3Mjk2OCwtMTM1NDE5MDUwMiwtMjM5NjU5
-MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2MDM4NT
-gsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMDI1LC0x
-OTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwtNjE2ODMwOD
-A1LDE0Njc0NTg0NTUsMTYyMzA2MTkwOCwtOTM3MTg3OTYzLC0z
-MDgwMzEyMzVdfQ==
+eyJoaXN0b3J5IjpbNjU3NTM2MzY4LDEzMzg2MTQxNzksNDIyMD
+Q5NzI4LC0xMjYzODcyOTY4LC0xMzU0MTkwNTAyLC0yMzk2NTky
+MTMsLTE3NTY0NzExMzEsLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OC
+w1NTExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMjUsLTE5
+NTA5MjIyMjgsNzEyNjY3NjgsODY5NzU4NjI4LC02MTY4MzA4MD
+UsMTQ2NzQ1ODQ1NSwxNjIzMDYxOTA4LC05MzcxODc5NjMsLTMw
+ODAzMTIzNV19
 -->
