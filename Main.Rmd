@@ -366,6 +366,7 @@ scale(y)
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
 * When comparing Ilan with Talia.
 
+```{r}
 data=c(
 1,0,1,1,0,0,1,0,0,0,
 0,1,0,0,1,0,0,0,0,0,
@@ -380,6 +381,7 @@ data=data.frame(matrix(data, nrow=8,byrow=T))
 row.names(data)=c("Ilan","Jacqueline","Kim","Lieve","Leon","Peter","Talia","Tina")
 names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Round Face", "Pessimist", "Evening Type", "Is an Only Child", "Left-Handed")
 data
+```
 
 
 
@@ -427,7 +429,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2Mjc0MTIxNiwxODc0MzQyNjAwLC05ND
+eyJoaXN0b3J5IjpbMTYxODUyODAxNiwxODc0MzQyNjAwLC05ND
 QzNDUxNzksLTE2MjU1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3
 MjgsLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMy
 wtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1
