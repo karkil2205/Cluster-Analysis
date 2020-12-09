@@ -367,16 +367,21 @@ scale(y)
 * When comparing Ilan with Talia.
 
 data=c(
-"Ilan",1,0,1,1,0,0,1,0,0,0,
-"Jacqueline",0,1,0,0,1,0,0,0,0,0,
-"Kim",0,0,1,0,0,0,1,0,0,1,
-"Lieve",0,1,0,0,0,0,0,1,1,0,
-"Leon",1,1,0,0,1,1,0,1,1,0,
-"Peter",1,1,0,0,1,0,1,1,0,0,
-"Talia",0,0,0,1,0,1,0,0,0,0,
-"Tina",0,0,0,1,0,1,0,0,0,0
+1,0,1,1,0,0,1,0,0,0,
+0,1,0,0,1,0,0,0,0,0,
+0,0,1,0,0,0,1,0,0,1,
+0,1,0,0,0,0,0,1,1,0,
+1,1,0,0,1,1,0,1,1,0,
+1,1,0,0,1,0,1,1,0,0,
+0,0,0,1,0,1,0,0,0,0,
+0,0,0,1,0,1,0,0,0,0
 )
-data.frame(matrix(data, nrow=8,byrow=T))
+data=data.frame(matrix(data, nrow=8,byrow=T))
+row.names(data)=c("Ilan","Jacqueline","Kim","Lieve","Leon","Peter","Talia","Tina")
+names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Round Face", "Pessimist", "Evening Type", "Is an Only Child", "Left-Handed")
+data
+
+
 
 
 
@@ -422,11 +427,11 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0xNj
-I1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC0xMjYzODcy
-OTY4LC0xMzU0MTkwNTAyLC0yMzk2NTkyMTMsLTE3NTY0NzExMz
-EsLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4
-MDUyOTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5MjIyMjgsNzEyNj
-Y3NjgsODY5NzU4NjI4LC02MTY4MzA4MDUsMTQ2NzQ1ODQ1NSwx
-NjIzMDYxOTA4XX0=
+eyJoaXN0b3J5IjpbMTc2Mjc0MTIxNiwxODc0MzQyNjAwLC05ND
+QzNDUxNzksLTE2MjU1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3
+MjgsLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMy
+wtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1
+MTE1NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMzAyNSwtMTk1MD
+kyMjIyOCw3MTI2Njc2OCw4Njk3NTg2MjgsLTYxNjgzMDgwNSwx
+NDY3NDU4NDU1XX0=
 -->
