@@ -2,13 +2,13 @@
 ---
 title: "Distance and dissimilarities"
 output:
-  pdf_document:
-    toc: yes
-  html_notebook:
-    toc: yes
   html_document:
     toc: yes
     df_print: paged
+  html_notebook:
+    toc: yes
+  pdf_document:
+    toc: yes
 ---
 
 
@@ -16,6 +16,8 @@ output:
 
 ```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
+install.packages("dplyr")
+install.packages("stargazer")
 ```
 
 
@@ -358,9 +360,7 @@ scale(y)
 
 
 
-* We are using a data set from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
-
-![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
+![Table from Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons](KAUFMANBinarydata.jpg)
 
 * The data shows $8$ people (individuals) and $10$ binary variables:
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
@@ -382,23 +382,24 @@ names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Roun
 ```
 
 * We are comparing the records for Ilan with Talia.
-```{r}
+```{r,echo=T,results='asis'}
+
+library(dplyr)
+
 x=data["Ilan",]
 y=data["Talia",]
+knitr::kable(table(x, y)[2:1,2:1],"pipe")
+
+
 ```
 
 
 
-
-
-* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
-* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
-
-
-
-* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
-
-
+* Therefore: $a = 1,\:b = 3,\: c = 1,\: d = 5$.
+* Note that interchanging Ilan and Talia would permute $b$ and $c$ while leaving $a$ and $d$ unchanged.
+* A good similarity or dissimilarity coefficient must treat $b$ and $c$ symmetrically. 
+* A list of some of the similarity measures that have been suggested for binary data is shown below.
+* a more extensive list can be found in Gower and Legendre (1986). 
 
 
 |Measure|Formula|

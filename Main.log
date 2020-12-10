@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.10.23)  10 DEC 2020 06:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.10.23)  10 DEC 2020 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1019,63 +1019,63 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 124.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 133.
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 132
+.
+(/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 150.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 133.
+(Font)              <10> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 133.
+(Font)              <7> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 133.
+(Font)              <5> on input line 150.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<Main_files/figure-latex/unnamed-chunk-3-1.pdf, id=76, 463.7325pt x 315.1775pt>
+<Main_files/figure-latex/unnamed-chunk-3-1.pdf, id=77, 463.7325pt x 315.1775pt>
 File: Main_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-3-1.pdf used on 
-input line 347.
+input line 364.
 (pdftex.def)             Requested size: 463.73842pt x 315.18153pt.
-[4 <./Main_files/figure-latex/unnamed-chunk-3-1.pdf>] [5] [6]
+[4 <./Main_files/figure-latex/unnamed-chunk-3-1.pdf>] [5] [6] [7]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 629.
+(amsmath)                 on input line 646.
 
-[7] [8] [9] <KAUFMANBinarydata.jpg, id=121, 1247.66125pt x 1022.82124pt>
+[8] [9] <KAUFMANBinarydata.jpg, id=122, 1247.66125pt x 1022.82124pt>
 File: KAUFMANBinarydata.jpg Graphic file (type jpg)
 <use KAUFMANBinarydata.jpg>
-Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 833.
+Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 842.
 (pdftex.def)             Requested size: 469.73752pt x 385.0865pt.
-[10]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 949
-.
-(/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 975.
-[11] [12 <./KAUFMANBinarydata.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 975.
+[10] [11 <./KAUFMANBinarydata.jpg>] [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1022.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1022.
 (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 975.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 975.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 975.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1022.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1022.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1022.
  ) 
 Here is how much of TeX's memory you used:
- 14018 strings out of 494944
- 200712 string characters out of 6180676
- 311706 words of memory out of 5000000
- 16985 multiletter control sequences out of 15000+600000
- 69479 words of font info for 87 fonts, out of 8000000 for 9000
+ 14021 strings out of 494944
+ 200734 string characters out of 6180676
+ 309757 words of memory out of 5000000
+ 16986 multiletter control sequences out of 15000+600000
+ 69526 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  35i,6n,35p,935b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/te
-xmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
-thsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/f
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/f
 onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmbx7.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></
@@ -1087,10 +1087,10 @@ fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (12 pages, 574396 bytes).
+Output written on Main.pdf (13 pages, 575313 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 233 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  12435 words of extra memory for PDF output out of 14400 (max. 10000000)
 
