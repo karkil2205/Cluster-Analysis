@@ -433,25 +433,13 @@ df <- USArrests[ss, ] # Subset the 15 rows
 df.scaled <- scale(df) # Standardize the variables
 ```
 
-<div dir="rtl">
-<div dir="rtl">
-
-سلام دنیا
-
-مرحبا العالم
-
-שלום בעולם
-
-ہیلو دنیا
-</div>
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NDY3OTM5NiwtMjEzMzg1ODk3MCwxOD
-IyOTcxNzI0LC0xNzM2Mzk2OTYsMTg3NDM0MjYwMCwtOTQ0MzQ1
-MTc5LC0xNjI1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC
-0xMjYzODcyOTY4LC0xMzU0MTkwNTAyLC0yMzk2NTkyMTMsLTE3
-NTY0NzExMzEsLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNT
-QzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMjUsLTE5NTA5MjIy
-MjgsNzEyNjY3NjhdfQ==
+eyJoaXN0b3J5IjpbOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMj
+k3MTcyNCwtMTczNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3
+OSwtMTYyNTU0NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMT
+I2Mzg3Mjk2OCwtMTM1NDE5MDUwMiwtMjM5NjU5MjEzLC0xNzU2
+NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2MDM4NTgsNTUxMTU0Mz
+k4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMDI1LC0xOTUwOTIyMjI4
+LDcxMjY2NzY4XX0=
 -->
