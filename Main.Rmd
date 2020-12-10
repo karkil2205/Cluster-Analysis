@@ -432,13 +432,27 @@ ss <- sample(1:50, 15) # Take 15 random rows
 df <- USArrests[ss, ] # Subset the 15 rows
 df.scaled <- scale(df) # Standardize the variables
 ```
+```
+<div dir="rtl">
 
+## عنوان
+
+### قائمة
+
+<ul>
+  <li>١. البند 1</li>
+  <li>٢.البند 2</li>
+  <li>٣.البند 3</li>
+</ul>
+
+</div>
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzM4NTg5NzAsMTgyMjk3MTcyNCwtMT
-czNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNTU0
-NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2OC
-wtMTM1NDE5MDUwMiwtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC0x
-OTc0NTg5MzY4LDExNjc2MDM4NTgsNTUxMTU0Mzk4LC0xODA1Mj
-k3NDcxLC0xNDQ1NjMzMDI1LC0xOTUwOTIyMjI4LDcxMjY2NzY4
-LDg2OTc1ODYyOF19
+eyJoaXN0b3J5IjpbLTE1MTc1MjA3MDcsLTIxMzM4NTg5NzAsMT
+gyMjk3MTcyNCwtMTczNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0
+NTE3OSwtMTYyNTU0NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOC
+wtMTI2Mzg3Mjk2OCwtMTM1NDE5MDUwMiwtMjM5NjU5MjEzLC0x
+NzU2NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2MDM4NTgsNTUxMT
+U0Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMDI1LC0xOTUwOTIy
+MjI4LDcxMjY2NzY4XX0=
 -->
