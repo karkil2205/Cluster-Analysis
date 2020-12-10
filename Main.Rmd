@@ -399,7 +399,7 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 * Note that interchanging Ilan and Talia would permute $b$ and $c$ while leaving $a$ and $d$ unchanged.
 * A good similarity or dissimilarity coefficient must treat $b$ and $c$ symmetrically. 
 * A list of some of the similarity measures that have been suggested for binary data is shown below.
-* a more extensive list can be found in Gower and Legendre (1986). 
+* a more extensive list can be found in: GOWER, John C. et LEGENDRE, Pierre. Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, 1986, vol. 3, no 1, p. 5-48. 
 
 
 |Measure|Formula|
@@ -434,7 +434,7 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwOTYzNTE3MywxODIyOTcxNzI0LC0xNz
+eyJoaXN0b3J5IjpbLTUyOTk3NTc5NywxODIyOTcxNzI0LC0xNz
 M2Mzk2OTYsMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0xNjI1NTQ3
 NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC0xMjYzODcyOTY4LC
 0xMzU0MTkwNTAyLC0yMzk2NTkyMTMsLTE3NTY0NzExMzEsLTE5
