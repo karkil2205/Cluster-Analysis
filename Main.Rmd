@@ -434,11 +434,20 @@ df.scaled <- scale(df) # Standardize the variables
 ```
 
 <div dir="rtl">
+<div dir="rtl">
 
- 
+سلام دنیا
+
+مرحبا العالم
+
+שלום בעולם
+
+ہیلو دنیا
+</div>
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MjQ3NTM0OSwtMjEzMzg1ODk3MCwxOD
+eyJoaXN0b3J5IjpbMTk2NDY3OTM5NiwtMjEzMzg1ODk3MCwxOD
 IyOTcxNzI0LC0xNzM2Mzk2OTYsMTg3NDM0MjYwMCwtOTQ0MzQ1
 MTc5LC0xNjI1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC
 0xMjYzODcyOTY4LC0xMzU0MTkwNTAyLC0yMzk2NTkyMTMsLTE3
