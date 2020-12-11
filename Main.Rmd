@@ -2,12 +2,12 @@
 ---
 title: "Distance and dissimilarities"
 output:
+  pdf_document:
+    toc: yes
   html_document:
     toc: yes
     df_print: paged
   html_notebook:
-    toc: yes
-  pdf_document:
     toc: yes
 ---
 
@@ -413,6 +413,7 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 * All the distances  in this package are of type  $d(\mathbf{x}.\mathbf{y})= \sqrt{1 - s(\mathbf{x}.\mathbf{y})}$.
 
 ```{r,echo=T,results='asis'}
+library(ade4)
 a=1
 b=3
 c=1

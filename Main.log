@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.10.23)  10 DEC 2020 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.10.23)  11 DEC 2020 11:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,7 +1038,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<Main_files/figure-latex/unnamed-chunk-3-1.pdf, id=77, 463.7325pt x 315.1775pt>
+<Main_files/figure-latex/unnamed-chunk-3-1.pdf, id=81, 463.7325pt x 315.1775pt>
 File: Main_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-3-1.pdf used on 
@@ -1050,28 +1050,28 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 646.
 
-[8] [9] <KAUFMANBinarydata.jpg, id=122, 1247.66125pt x 1022.82124pt>
+[8] [9] <KAUFMANBinarydata.jpg, id=126, 1247.66125pt x 1022.82124pt>
 File: KAUFMANBinarydata.jpg Graphic file (type jpg)
 <use KAUFMANBinarydata.jpg>
-Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 842.
+Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 841.
 (pdftex.def)             Requested size: 469.73752pt x 385.0865pt.
-[10] [11 <./KAUFMANBinarydata.jpg>] [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1022.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1022.
+[10] [11 <./KAUFMANBinarydata.jpg>] [12] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1178.
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1178.
 (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1022.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1022.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1022.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1178.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1178.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1178.
  ) 
 Here is how much of TeX's memory you used:
- 14021 strings out of 494944
- 200734 string characters out of 6180676
- 309757 words of memory out of 5000000
- 16986 multiletter control sequences out of 15000+600000
- 69526 words of font info for 87 fonts, out of 8000000 for 9000
+ 14032 strings out of 494944
+ 200901 string characters out of 6180676
+ 310871 words of memory out of 5000000
+ 16990 multiletter control sequences out of 15000+600000
+ 69609 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,6n,35p,935b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,7n,35p,935b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -1087,10 +1087,10 @@ fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (13 pages, 575313 bytes).
+Output written on Main.pdf (14 pages, 581121 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 12435 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 12451 words of extra memory for PDF output out of 14400 (max. 10000000)
 
