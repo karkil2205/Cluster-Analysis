@@ -412,7 +412,7 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 * All the distances  in this package are of type  $d(\mathbf{x}.\mathbf{y})= \sqrt{1 - s(\mathbf{x}.\mathbf{y})}$.
 * The methods are:
 
- 1. Jaccard index (1901) $ a / (a+b+c)$;
+ 1. Jaccard index (1901) $ a/(a+b+c)$;
  2. Simple matching coefficient  $(a+d) / (a+b+c+d)$;
  3. $a / (a + 2(b + c))$;
  4. Rogers & Tanimoto (1960)  $(a + d) / (a + 2(b + c) +d)$
@@ -457,7 +457,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzMwNzYwOSwtNjgzMjczNzIxLC0xMj
+eyJoaXN0b3J5IjpbLTE2NDc0MDE4MywtNjgzMjczNzIxLC0xMj
 YzMDMzMDc2LC02ODMyNzM3MjEsMTAxMzk2OTkyMiwtMTIwNDE1
 OTg1NSwtMTkxNTQ5NDc5MSwxNDU1NzkzNTkwLDMwNzI5OTc4NC
 w0Mjc2MTM1MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3
