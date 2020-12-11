@@ -413,8 +413,8 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
  
 # Similarity measures for binary data (cont.)
 
-* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of mismatches (d in Table 3.2).
-* In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
+* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero-zero matches $d$.
+* In some cases, of course, zero_zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
 * But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
 
@@ -437,11 +437,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyNjg2ODksLTEyMDQxNTk4NTUsLTE5MT
-U0OTQ3OTEsMTQ1NTc5MzU5MCwzMDcyOTk3ODQsNDI3NjEzNTMz
-LDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5NzE3MjQsLTE3Mz
-YzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNzksLTE2MjU1NDc1
-MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEyNjM4NzI5NjgsLT
-EzNTQxOTA1MDIsLTIzOTY1OTIxMywtMTc1NjQ3MTEzMSwtMTk3
-NDU4OTM2OF19
+eyJoaXN0b3J5IjpbMTAxMzk2OTkyMiwtMTIwNDE1OTg1NSwtMT
+kxNTQ5NDc5MSwxNDU1NzkzNTkwLDMwNzI5OTc4NCw0Mjc2MTM1
+MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3MTcyNCwtMT
+czNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNTU0
+NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2OC
+wtMTM1NDE5MDUwMiwtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC0x
+OTc0NTg5MzY4XX0=
 -->
