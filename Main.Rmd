@@ -429,21 +429,16 @@ dist.binary(data[c("Ilan","Talia"),],method=4)^2
 dist.binary(data[c("Ilan","Talia"),],method=5)^2
 1-2*a/(2*a+b+c)
 ```
-
+* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero-zero matches $d$.
+* In some cases, of course, zero_zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
+* An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
+* But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
 
 # Exercice 3
 * Prove that the distances based on the  SimplemMatching coefficient and the Jaccard coefficient satisfy A3.
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
- 
-# Similarity measures for binary data (cont.)
-
-* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero-zero matches $d$.
-* In some cases, of course, zero_zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
-* An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
-* But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
-
 
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
@@ -463,11 +458,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDQyMzE5NSwxNTA1MjM5Mjk4LC0xMz
-MxOTY0NTU0LC0zNzA1MDE5MTQsLTE5MzM0MjQwMTEsLTE2NDc0
-MDE4MywtNjgzMjczNzIxLC0xMjYzMDMzMDc2LC02ODMyNzM3Mj
-EsMTAxMzk2OTkyMiwtMTIwNDE1OTg1NSwtMTkxNTQ5NDc5MSwx
-NDU1NzkzNTkwLDMwNzI5OTc4NCw0Mjc2MTM1MzMsOTQ1MTU3Mz
-IsLTIxMzM4NTg5NzAsMTgyMjk3MTcyNCwtMTczNjM5Njk2LDE4
-NzQzNDI2MDBdfQ==
+eyJoaXN0b3J5IjpbMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MD
+UyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQy
+NDAxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNz
+YsLTY4MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5ODU1LC0x
+OTE1NDk0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LDQyNzYxMz
+UzMyw5NDUxNTczMiwtMjEzMzg1ODk3MCwxODIyOTcxNzI0LC0x
+NzM2Mzk2OTZdfQ==
 -->
