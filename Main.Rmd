@@ -48,8 +48,8 @@ where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{
 $$d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.$$
 * A1-A2 ae obvious.
 * The proof of A3 is provided below.
-# Exercice 1
-* Is the squared euclidian distance a metric?
+# Exercice 2
+* Is the squared Euclidian distance a metric?
 
 # Manhattan distance
 
@@ -94,7 +94,7 @@ dist(rbind(x, y), method = "canberra")
 ```
 
 
-# Exercice 2
+# Exercice 3
 
 * Prove that the Canberra distance is a true distance.
 
@@ -436,8 +436,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * In some cases, of course, zero_zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
 * But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
-
-# Exercice 3
+# Exercice 4
 * Prove that the distances based on the  SimplemMatching coefficient and the Jaccard coefficient satisfy A3.
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
@@ -461,11 +460,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM1MjQxMDQsMjA5NTkyNTMzNCwxNDUxNj
-MxODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwtMTMzMTk2NDU1
-NCwtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3NDAxODMsLT
-Y4MzI3MzcyMSwtMTI2MzAzMzA3NiwtNjgzMjczNzIxLDEwMTM5
-Njk5MjIsLTEyMDQxNTk4NTUsLTE5MTU0OTQ3OTEsMTQ1NTc5Mz
-U5MCwzMDcyOTk3ODQsNDI3NjEzNTMzLDk0NTE1NzMyLC0yMTMz
-ODU4OTcwXX0=
+eyJoaXN0b3J5IjpbOTA4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MT
+YzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1
+NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC
+02ODMyNzM3MjEsLTEyNjMwMzMwNzYsLTY4MzI3MzcyMSwxMDEz
+OTY5OTIyLC0xMjA0MTU5ODU1LC0xOTE1NDk0NzkxLDE0NTU3OT
+M1OTAsMzA3Mjk5Nzg0LDQyNzYxMzUzMyw5NDUxNTczMiwtMjEz
+Mzg1ODk3MF19
 -->
