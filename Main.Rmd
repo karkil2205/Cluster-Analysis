@@ -49,7 +49,7 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.$$
 * A1-A2 ae obvious.
 * The proof of A3 is provided below.
 # Exercice 2
-* Is the squared Euclidian distance a metric?
+* Is the squared Euclidian distance a true distance?
 
 # Manhattan distance
 
@@ -90,8 +90,6 @@ y = c(6,6)
 dist(rbind(x, y), method = "canberra")
 6/6+6/6
 ```
-
-
 # Exercice 3
 
 * Prove that the Canberra distance is a true distance.
@@ -458,11 +456,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTE3MjQ1NTEsOTA4MjU4MjMzLDIwOT
-U5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzky
-OTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMS
-wtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNzYsLTY4
-MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5ODU1LC0xOTE1ND
-k0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LDQyNzYxMzUzMyw5
-NDUxNTczMl19
+eyJoaXN0b3J5IjpbMTAwODkzOTY2LDkwODI1ODIzMywyMDk1OT
+I1MzM0LDE0NTE2MzE4NDEsMTc5MDQyMzE5NSwxNTA1MjM5Mjk4
+LC0xMzMxOTY0NTU0LC0zNzA1MDE5MTQsLTE5MzM0MjQwMTEsLT
+E2NDc0MDE4MywtNjgzMjczNzIxLC0xMjYzMDMzMDc2LC02ODMy
+NzM3MjEsMTAxMzk2OTkyMiwtMTIwNDE1OTg1NSwtMTkxNTQ5ND
+c5MSwxNDU1NzkzNTkwLDMwNzI5OTc4NCw0Mjc2MTM1MzMsOTQ1
+MTU3MzJdfQ==
 -->
