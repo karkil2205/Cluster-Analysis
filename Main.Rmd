@@ -442,13 +442,12 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * For instance, in Table 9 we had the binary variable blue eyes/brown eyes, 
 which was appropriate for that collection of people. However, in larger 
 populations one will need at least four states: blue eyesfirown eyes/green 
-eyes/grey eyes. In general, we denote the number of states by M and code 
+eyes/grey eyes. 
+* We denote the number of states by M and code 
 the outcomes as 1,2, ..., M in the data matrix (sometimes the codes 
-0, 1, . . . , M - 1 are also used). For instance, we could choose 1 = blue eyes, 
-2 = brown eyes, 3 = green eyes, and 4 = grey eyes. Note that these states 
-are not ordered in any way: It is not because grey eyes are given a higher 
-code number than brown eyes that they would in some sense be better. The 
-code numbers are only used to facilitate data handling, but one could just 
+0, 1, . . . , M - 1 are also used).
+* For instance, we could choose 1 = blue eyes,  2 = brown eyes, 3 = green eyes, and 4 = grey eyes.
+* Note that these states are not ordered in any way: It is not bece numbers are only used to facilitate data handling, but one could just 
 as well code the different outcomes by letters or other symbols. Some 
 examples of nominal variables are the nationality of people (for which A4 
 may be very large) or their marital status (bachelor/married/divorced/ 
@@ -571,11 +570,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3NjYwNjIyLC0yMTM2MjE5NTYxLC0xNj
-Y1Mjk5MDQwLDkwODI1ODIzMywyMDk1OTI1MzM0LDE0NTE2MzE4
-NDEsMTc5MDQyMzE5NSwxNTA1MjM5Mjk4LC0xMzMxOTY0NTU0LC
-0zNzA1MDE5MTQsLTE5MzM0MjQwMTEsLTE2NDc0MDE4MywtNjgz
-MjczNzIxLC0xMjYzMDMzMDc2LC02ODMyNzM3MjEsMTAxMzk2OT
-kyMiwtMTIwNDE1OTg1NSwtMTkxNTQ5NDc5MSwxNDU1NzkzNTkw
-LDMwNzI5OTc4NF19
+eyJoaXN0b3J5IjpbMTc5NzcyMzg0MSwtMjEzNjIxOTU2MSwtMT
+Y2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNCwxNDUxNjMx
+ODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwtMTMzMTk2NDU1NC
+wtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3NDAxODMsLTY4
+MzI3MzcyMSwtMTI2MzAzMzA3NiwtNjgzMjczNzIxLDEwMTM5Nj
+k5MjIsLTEyMDQxNTk4NTUsLTE5MTU0OTQ3OTEsMTQ1NTc5MzU5
+MCwzMDcyOTk3ODRdfQ==
 -->
