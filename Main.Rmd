@@ -404,7 +404,9 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 |Gower and Legendre (1986)|$2a/[2a+(b+c)]$|
 
 
-* The distance is then defined as 
+* The distance is then defined as:
+$$d(\mathbf{x},\mathbf{y})$=1-s(\mathbf{x},\mathbf{y}).$$
+* 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
@@ -429,7 +431,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIzOTgyMTU1LDMwNzI5OTc4NCw0Mjc2MT
+eyJoaXN0b3J5IjpbLTgwNjc1Nzc1LDMwNzI5OTc4NCw0Mjc2MT
 M1MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3MTcyNCwt
 MTczNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNT
 U0NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2
