@@ -447,16 +447,18 @@ eyes/grey eyes.
 the outcomes as 1,2, ..., M in the data matrix (sometimes the codes 
 0, 1, . . . , M - 1 are also used).
 * For instance, we could choose 1 = blue eyes,  2 = brown eyes, 3 = green eyes, and 4 = grey eyes.
-* Note that these states are not ordered in any way: It is not bece numbers are only used to facilitate data handling, but one could just 
-as well code the different outcomes by letters or other symbols. Some 
+* Note that these states are not ordered in any way: 
+* e numbers are only used to facilitate data handling, but one could just 
+as well code the different outcomes by letters or other symbols.
+Some 
 examples of nominal variables are the nationality of people (for which A4 
 may be very large) or their marital status (bachelor/married/divorced/ 
 widowed). 
-Sometimes nominal variables are converted to binary ones. By collapsing 
-some states until only two remain, a binary variable results. For instance, 
-one can group green eyes with brown eyes and grey with blue. However, 
-this clearly amounts to a loss of information. Another strategy would be to 
-recode the data to a larger number of (asymmetric) binary variables, for 
+* Sometimes nominal variables are converted to binary ones.
+* By collapsing some states until only two remain, a binary variable results.
+* For instance, one can group green eyes with brown eyes and grey with blue.
+* However, this clearly amounts to a loss of information.
+* Another strategy would be to recode the data to a larger number of (asymmetric) binary variables, for 
 instance by creating a new binary variable for each of the M nominal 
 states, and then to put it equal to 1 if the corresponding state occurs and to 
 0 otherwise. After that, one could resort to one of the dissimilarity coeffi-
@@ -570,7 +572,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzcyMzg0MSwtMjEzNjIxOTU2MSwtMT
+eyJoaXN0b3J5IjpbMTg1Njg2MjgxNSwtMjEzNjIxOTU2MSwtMT
 Y2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNCwxNDUxNjMx
 ODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwtMTMzMTk2NDU1NC
 wtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3NDAxODMsLTY4
