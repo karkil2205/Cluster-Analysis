@@ -437,10 +437,9 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
 # Nominal variables 
-* In the previous section we studied binary variables, which can only take on 
-two states, typically coded as 1 and 0.
-This generalizes naturally to the  oncept of a nominal variable, which may take on more than two states. 
-For instance, in Table 9 we had the binary variable blue eyes/brown eyes, 
+* We studied binary variables, which can only take on two states coded as 1 and 0.
+* This generalizes to nominal variable which may take on more than two states.
+* For instance, in Table 9 we had the binary variable blue eyes/brown eyes, 
 which was appropriate for that collection of people. However, in larger 
 populations one will need at least four states: blue eyesfirown eyes/green 
 eyes/grey eyes. In general, we denote the number of states by M and code 
@@ -572,11 +571,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc0MzAwMzksLTIxMzYyMTk1NjEsLTE2Nj
-UyOTkwNDAsOTA4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0
-MSwxNzkwNDIzMTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLT
-M3MDUwMTkxNCwtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC02ODMy
-NzM3MjEsLTEyNjMwMzMwNzYsLTY4MzI3MzcyMSwxMDEzOTY5OT
-IyLC0xMjA0MTU5ODU1LC0xOTE1NDk0NzkxLDE0NTU3OTM1OTAs
-MzA3Mjk5Nzg0XX0=
+eyJoaXN0b3J5IjpbOTQ3NjYwNjIyLC0yMTM2MjE5NTYxLC0xNj
+Y1Mjk5MDQwLDkwODI1ODIzMywyMDk1OTI1MzM0LDE0NTE2MzE4
+NDEsMTc5MDQyMzE5NSwxNTA1MjM5Mjk4LC0xMzMxOTY0NTU0LC
+0zNzA1MDE5MTQsLTE5MzM0MjQwMTEsLTE2NDc0MDE4MywtNjgz
+MjczNzIxLC0xMjYzMDMzMDc2LC02ODMyNzM3MjEsMTAxMzk2OT
+kyMiwtMTIwNDE1OTg1NSwtMTkxNTQ5NDc5MSwxNDU1NzkzNTkw
+LDMwNzI5OTc4NF19
 -->
