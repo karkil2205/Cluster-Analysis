@@ -400,17 +400,17 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 * A more extensive list can be found in: Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.
 
 
-|Coefficient|$s(\mathbf{x},\mathbf{y})$|$d(\mathbf{x},\mathbf{y})$|
+|Coefficient|$s(\mathbf{x},\mathbf{y})$|$d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y})$|
 |:---|:---:|:---:|
 |Simple matching|$\frac{a+d}{a+b+c+d}$ |$\frac{b+c}{a+b+c+d}$|
 |Jaccard|$\frac{a}{a+b+c}$|$\frac{b+c}{a+b+c}$|
 |Rogers and Tanimoto (1960)| $\frac{a+d}{a+2(b+c)+d}$|$\frac{2(b+c)}{a+2(b+c)+d}$|
 |Gower and Legendre (1986)|$\frac{2(a+d)}{2(a+d)+b+c}$|$\frac{b+c}{2(a+d)+b+c}]$|
 |Gower and Legendre (1986)|$\frac{2a}{2a+b+c}$|$\frac{b+c}{2a+b+c}$|
+
 * To calculate these coefficients, we use the function dist.binary().
+* All the distances  in this package are are of type  _d = sqrt(1 - s)_  with  _s_  a similarity coefficient.
 
-
-All these distances are of type  _d = sqrt(1 - s)_  with  _s_  a similarity coefficient.
 
 1 = Jaccard index (1901)
 
@@ -486,7 +486,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNzgwMzk0LC02ODMyNzM3MjEsLTEyNj
+eyJoaXN0b3J5IjpbLTMwNTA0Mjc5LC02ODMyNzM3MjEsLTEyNj
 MwMzMwNzYsLTY4MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5
 ODU1LC0xOTE1NDk0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LD
 QyNzYxMzUzMyw5NDUxNTczMiwtMjEzMzg1ODk3MCwxODIyOTcx
