@@ -495,6 +495,66 @@ values. Also, the codes entered may be arbitrary real numbers, so the
 variables do not have to be coded in a discrete way. The main purpose of 
 DAISY is to deliver a dissimilarity matrix which can be used by some of 
 the clustering algorithms described in the following chapters.
+
+
+
+7859         88        7960 
+
+**30. Election data set of Table 15.5 (1 = Dem, 0 = Rep)**
+
+ State  e1  e2  e3  e4  e5  e6  e7  e8 
+  Alab 0 0 0 0 0 0 0 0  
+  Alas 0 0 0 0 0 0 0 0  
+  Ariz 0 0 0 0 1 0 0 0  
+  Arka 0 0 0 1 1 0 0 0  
+  Cali 0 0 0 1 1 1 1 1  
+  Colo 0 0 0 1 0 0 0 1  
+  Conn 0 0 0 1 1 1 1 1  
+  Dela 0 0 0 1 1 1 1 1  
+  DisC 1 1 1 1 1 1 1 1  
+  Flor 0 0 0 0 1 0 0 1  
+  Geor 1 0 0 1 0 0 0 0  
+  Hawa 1 0 1 1 1 1 1 1  
+  Idah 0 0 0 0 0 0 0 0  
+  Illi 0 0 0 1 1 1 1 1  
+  Indi 0 0 0 0 0 0 0 1  
+  Iowa 0 0 1 1 1 1 0 1  
+  Kans 0 0 0 0 0 0 0 0  
+  Kent 0 0 0 1 1 0 0 0  
+  Loui 0 0 0 1 1 0 0 0  
+  Main 0 0 0 1 1 1 1 1  
+  Mary 1 0 0 1 1 1 1 1  
+  Mass 0 0 1 1 1 1 1 1  
+  Mich 0 0 0 1 1 1 1 1  
+  Minn 1 1 1 1 1 1 1 1  
+  Miss 0 0 0 0 0 0 0 0  
+  Miso 0 0 0 1 1 0 0 0  
+  Mont 0 0 0 1 0 0 0 0  
+  Nebr 0 0 0 0 0 0 0 0  
+  Neva 0 0 0 1 1 0 0 1  
+  NewH 0 0 0 1 1 0 1 1  
+  NewJ 0 0 0 1 1 1 1 1  
+  NewM 0 0 0 1 1 1 0 1  
+  NewY 0 0 1 1 1 1 1 1  
+  NorC 0 0 0 0 0 0 0 1  
+  NorD 0 0 0 0 0 0 0 0  
+  Ohio 0 0 0 1 1 0 0 1  
+  Okla 0 0 0 0 0 0 0 0  
+  Oreg 0 0 1 1 1 1 1 1  
+  Penn 0 0 0 1 1 1 1 1  
+  Rhod 1 0 1 1 1 1 1 1  
+  SouC 0 0 0 0 0 0 0 0  
+  SouD 0 0 0 0 0 0 0 0  
+  Tenn 0 0 0 1 1 0 0 1  
+  Texa 0 0 0 0 0 0 0 0  
+  Utah 0 0 0 0 0 0 0 0  
+  Verm 0 0 0 1 1 1 1 1  
+  Virg 0 0 0 0 0 0 0 1  
+  Wash 0 0 1 1 1 1 1 1  
+  WesV 1 0 1 1 1 0 0 0  
+  Wisc 0 0 1 1 1 1 1 1  
+  Wyom 0 0 0 0 0 0 0 0
+
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
 *  We’ll use only a by taking 15 random rows among the 50 rows in the data set. 
@@ -513,11 +573,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOT
-A4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIz
-MTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNC
-wtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEy
-NjMwMzMwNzYsLTY4MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MT
-U5ODU1LC0xOTE1NDk0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0
-LDQyNzYxMzUzM119
+eyJoaXN0b3J5IjpbMTQwNDk1ODMzMCwtMjEzNjIxOTU2MSwtMT
+Y2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNCwxNDUxNjMx
+ODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwtMTMzMTk2NDU1NC
+wtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3NDAxODMsLTY4
+MzI3MzcyMSwtMTI2MzAzMzA3NiwtNjgzMjczNzIxLDEwMTM5Nj
+k5MjIsLTEyMDQxNTk4NTUsLTE5MTU0OTQ3OTEsMTQ1NTc5MzU5
+MCwzMDcyOTk3ODRdfQ==
 -->
