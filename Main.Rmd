@@ -390,10 +390,9 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 
 * Therefore: $a = 1,\:b = 3,\: c = 1,\: d = 5$.
 * Note that interchanging Ilan and Talia would permute $b$ and $c$ while leaving $a$ and $d$ unchanged.
-* A good similarity or dissimilarity coefficient must treat $b$ and $c$ symmetrically in order to preserve $$
+* A good similarity or dissimilarity coefficient must treat $b$ and $c$ symmetrically.
 * A similarity measure is denoted by: $s(\mathbf{x},\mathbf{y})$.
 * The corresponding distance is then defined as: $d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y})$.
- 
 * A list of some of the similarity measures $s(\mathbf{x},\mathbf{y})$ that have been suggested for binary data is shown below.
 * A more extensive list can be found in: Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.
 
@@ -431,11 +430,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODY3NjA1MTAsMzA3Mjk5Nzg0LDQyNz
-YxMzUzMyw5NDUxNTczMiwtMjEzMzg1ODk3MCwxODIyOTcxNzI0
-LC0xNzM2Mzk2OTYsMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0xNj
-I1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC0xMjYzODcy
-OTY4LC0xMzU0MTkwNTAyLC0yMzk2NTkyMTMsLTE3NTY0NzExMz
-EsLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4
-MDUyOTc0NzFdfQ==
+eyJoaXN0b3J5IjpbMTQ1NTc5MzU5MCwzMDcyOTk3ODQsNDI3Nj
+EzNTMzLDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5NzE3MjQs
+LTE3MzYzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNzksLTE2Mj
+U1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEyNjM4NzI5
+NjgsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMywtMTc1NjQ3MTEzMS
+wtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1MTE1NDM5OCwtMTgw
+NTI5NzQ3MV19
 -->
