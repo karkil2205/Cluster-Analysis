@@ -399,12 +399,12 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 
 
 |Measure|$s(\mathbf{x},\mathbf{y})$|$d(\mathbf{x},\mathbf{y})$|
-|---|:---:|---|
-|Matching coefficient|$\frac{a+d}{a+b+c+d}$ |$(b+c)/(a+b+c+d)$|
-|Jaccard coefficient|$a/(a+b+c)$|$(b+c)/(a+b+c)$|
-|Rogers and Tanimoto (1960)| $(a+d)/[(a+d)+2(b+c)]$|$2(b+c)/[(a+d)+2(b+c)]$|
-|Gower and Legendre (1986)|$2(a+d)/[2(a+d)+(b+c)]$|$(b+c)/[2(a+d)+(b+c)]$|
-|Gower and Legendre (1986)|$2a/[2a+(b+c)]$|$(b+c)/[2a+(b+c)]$|
+|:---|:---:|:---:|
+|Matching coefficient|$\frac{a+d}{a+b+c+d}$ |$\frac{b+c}{a+b+c+d}$|
+|Jaccard coefficient|$\frac{a}{}$|$(b+c)/(a+b+c)$|
+|Rogers and Tanimoto (1960)| $\frac{}{}(a+d)/[(a+d)+2(b+c)]$|$2(b+c)/[(a+d)+2(b+c)]$|
+|Gower and Legendre (1986)|$\frac{}{}2(a+d)/[2(a+d)+(b+c)]$|$(b+c)/[2(a+d)+(b+c)]$|
+|Gower and Legendre (1986)|$\frac{}{}2a/[2a+(b+c)]$|$(b+c)/[2a+(b+c)]$|
 
 * 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
@@ -431,7 +431,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwODUwOTQxNiwzMDcyOTk3ODQsNDI3Nj
+eyJoaXN0b3J5IjpbMTU0MTM4OTU1MSwzMDcyOTk3ODQsNDI3Nj
 EzNTMzLDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5NzE3MjQs
 LTE3MzYzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNzksLTE2Mj
 U1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEyNjM4NzI5
