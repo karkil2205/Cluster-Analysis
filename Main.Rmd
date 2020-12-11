@@ -498,9 +498,8 @@ the clustering algorithms described in the following chapters.
 
 
 
-7859         88        7960 
 
-**30. Election data set of Table 15.5 (1 = Dem, 0 = Rep)**
+Election data set of Table 15.5 (1 = Dem, 0 = Rep)**
 
  State  e1  e2  e3  e4  e5  e6  e7  e8 
   Alab 0 0 0 0 0 0 0 0  
@@ -573,7 +572,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNDk1ODMzMCwtMjEzNjIxOTU2MSwtMT
+eyJoaXN0b3J5IjpbLTM0MzM1NTgzNiwtMjEzNjIxOTU2MSwtMT
 Y2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNCwxNDUxNjMx
 ODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwtMTMzMTk2NDU1NC
 wtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3NDAxODMsLTY4
