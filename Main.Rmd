@@ -390,7 +390,11 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 
 * Therefore: $a = 1,\:b = 3,\: c = 1,\: d = 5$.
 * Note that interchanging Ilan and Talia would permute $b$ and $c$ while leaving $a$ and $d$ unchanged.
-* A good similarity or dissimilarity coefficient must treat $b$ and $c$ symmetrically. 
+* A good similarity or dissimilarity coefficient must treat $b$ and $c$ symmetrically.
+* A similarity measure is dnote  $s(\mathbf{x},\mathbf{y})$
+* The distance is then defined as being:
+$$d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y}).$$
+ 
 * A list of some of the similarity measures $s(\mathbf{x},\mathbf{y})$ that have been suggested for binary data is shown below.
 * A more extensive list can be found in: Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.
 
@@ -403,9 +407,6 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 |Gower and Legendre (1986)|$2(a+d)/[2(a+d)+(b+c)]$|
 |Gower and Legendre (1986)|$2a/[2a+(b+c)]$|
 
-
-* The distance is then defined as:
-$$d(\mathbf{x},\mathbf{y})$=1-s(\mathbf{x},\mathbf{y}).$$
 * 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
@@ -431,11 +432,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNjc1Nzc1LDMwNzI5OTc4NCw0Mjc2MT
-M1MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3MTcyNCwt
-MTczNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNT
-U0NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2
-OCwtMTM1NDE5MDUwMiwtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC
-0xOTc0NTg5MzY4LDExNjc2MDM4NTgsNTUxMTU0Mzk4LC0xODA1
-Mjk3NDcxXX0=
+eyJoaXN0b3J5IjpbLTE2MzIxNjM5MjcsMzA3Mjk5Nzg0LDQyNz
+YxMzUzMyw5NDUxNTczMiwtMjEzMzg1ODk3MCwxODIyOTcxNzI0
+LC0xNzM2Mzk2OTYsMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0xNj
+I1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC0xMjYzODcy
+OTY4LC0xMzU0MTkwNTAyLC0yMzk2NTkyMTMsLTE3NTY0NzExMz
+EsLTE5NzQ1ODkzNjgsMTE2NzYwMzg1OCw1NTExNTQzOTgsLTE4
+MDUyOTc0NzFdfQ==
 -->
