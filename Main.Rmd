@@ -408,15 +408,15 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 # Exercice 3
 * Prove that the distances based on the  Matching coefficient and the Jaccard coefficient satisfy A3.
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
-* Proofs and counterexamples are given in the paper: 
+* Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
  
 # Similarity measures for binary data (cont.)
 
-* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
+* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of mismatches (d in Table 3.2).
 * In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
-* But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
+* But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
 
 
 # Distance matrix computation
@@ -437,11 +437,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTEwNjM4MTIsLTEyMDQxNTk4NTUsLT
-E5MTU0OTQ3OTEsMTQ1NTc5MzU5MCwzMDcyOTk3ODQsNDI3NjEz
-NTMzLDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5NzE3MjQsLT
-E3MzYzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNzksLTE2MjU1
-NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEyNjM4NzI5Nj
-gsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMywtMTc1NjQ3MTEzMSwt
-MTk3NDU4OTM2OF19
+eyJoaXN0b3J5IjpbMzgyNjg2ODksLTEyMDQxNTk4NTUsLTE5MT
+U0OTQ3OTEsMTQ1NTc5MzU5MCwzMDcyOTk3ODQsNDI3NjEzNTMz
+LDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5NzE3MjQsLTE3Mz
+YzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNzksLTE2MjU1NDc1
+MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEyNjM4NzI5NjgsLT
+EzNTQxOTA1MDIsLTIzOTY1OTIxMywtMTc1NjQ3MTEzMSwtMTk3
+NDU4OTM2OF19
 -->
