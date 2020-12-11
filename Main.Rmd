@@ -410,15 +410,15 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 
 * To calculate these coefficients, we use the function dist.binary().
 * All the distances  in this package are of type  $d(\mathbf{x}.\mathbf{y})= \sqrt{1 - s(\mathbf{x}.\mathbf{y})}$.
+* The methods are:
 
+ 1. Jaccard index (1901) $ a / (a+b+c)$;
+ 2. Simple matching coefficient of Sokal & Michener (1958)
 
-1 = Jaccard index (1901)
+S4 coefficient of Gower & Legendre  _s2 = (a+d) / (a+b+c+d)_ 
 
-S3 coefficient of Gower & Legendre  _s1 = a / (a+b+c)_
+2 = 
 
-2 = Simple matching coefficient of Sokal & Michener (1958)
-
-S4 coefficient of Gower & Legendre  _s2 = (a+d) / (a+b+c+d)_
 
 3 = Sokal & Sneath(1963)
 
@@ -486,7 +486,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MDU5OTAxMiwtNjgzMjczNzIxLC0xMj
+eyJoaXN0b3J5IjpbMTIzNzA5NzI1OCwtNjgzMjczNzIxLC0xMj
 YzMDMzMDc2LC02ODMyNzM3MjEsMTAxMzk2OTkyMiwtMTIwNDE1
 OTg1NSwtMTkxNTQ5NDc5MSwxNDU1NzkzNTkwLDMwNzI5OTc4NC
 w0Mjc2MTM1MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3
