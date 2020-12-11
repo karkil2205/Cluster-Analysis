@@ -430,6 +430,8 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 1-2*a/(2*a+b+c)
 ```
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero-zero matches $d$.
+* The measues embedding $d$ are sometimes called symmetrical.
+* The other measues are called assymmetrical.
 * In some cases, of course, zero_zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
 * But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
@@ -458,11 +460,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MD
-UyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQy
-NDAxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNz
-YsLTY4MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5ODU1LC0x
-OTE1NDk0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LDQyNzYxMz
-UzMyw5NDUxNTczMiwtMjEzMzg1ODk3MCwxODIyOTcxNzI0LC0x
-NzM2Mzk2OTZdfQ==
+eyJoaXN0b3J5IjpbMjA5NTkyNTMzNCwxNDUxNjMxODQxLDE3OT
+A0MjMxOTUsMTUwNTIzOTI5OCwtMTMzMTk2NDU1NCwtMzcwNTAx
+OTE0LC0xOTMzNDI0MDExLC0xNjQ3NDAxODMsLTY4MzI3MzcyMS
+wtMTI2MzAzMzA3NiwtNjgzMjczNzIxLDEwMTM5Njk5MjIsLTEy
+MDQxNTk4NTUsLTE5MTU0OTQ3OTEsMTQ1NTc5MzU5MCwzMDcyOT
+k3ODQsNDI3NjEzNTMzLDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4
+MjI5NzE3MjRdfQ==
 -->
