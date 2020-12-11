@@ -392,7 +392,9 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 * Note that interchanging Ilan and Talia would permute $b$ and $c$ while leaving $a$ and $d$ unchanged.
 * A good similarity or dissimilarity coefficient must treat $b$ and $c$ symmetrically.
 * A similarity measure is denoted by: $s(\mathbf{x},\mathbf{y})$.
-* The corresponding distance is then defined as: $d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y})$.
+* The corresponding distance is then defined as: 
+ $$d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y}).$$
+* Alternatively, we 
 * A list of some of the similarity measures $s(\mathbf{x},\mathbf{y})$ that have been suggested for binary data is shown below.
 * A more extensive list can be found in: Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.
 
@@ -405,6 +407,50 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 |Gower and Legendre (1986)|$\frac{2(a+d)}{2(a+d)+b+c}$|$\frac{b+c}{2(a+d)+b+c}]$|
 |Gower and Legendre (1986)|$\frac{2a}{2a+b+c}$|$\frac{b+c}{2a+b+c}$|
 * To calculate these coefficients, we use the function dist.binary().
+
+
+All these distances are of type  _d = sqrt(1 - s)_  with  _s_  a similarity coefficient.
+
+1 = Jaccard index (1901)
+
+S3 coefficient of Gower & Legendre  _s1 = a / (a+b+c)_
+
+2 = Simple matching coefficient of Sokal & Michener (1958)
+
+S4 coefficient of Gower & Legendre  _s2 = (a+d) / (a+b+c+d)_
+
+3 = Sokal & Sneath(1963)
+
+S5 coefficient of Gower & Legendre  _s3 = a / (a + 2(b + c))_
+
+4 = Rogers & Tanimoto (1960)
+
+S6 coefficient of Gower & Legendre  _s4 = (a + d) / (a + 2(b + c) +d)_
+
+5 = Dice (1945) or Sorensen (1948)
+
+S7 coefficient of Gower & Legendre  _s5 = 2a / (2a + b + c)_
+
+6 = Hamann coefficient
+
+S9 index of Gower & Legendre (1986)  _s6 = (a - (b + c) + d) / (a + b + c + d)_
+
+7 = Ochiai (1957)
+
+S12 coefficient of Gower & Legendre  _s7 = a / sqrt((a + b)(a + c))_
+
+8 = Sokal & Sneath (1963)
+
+S13 coefficient of Gower & Legendre  _s8 = ad / sqrt((a + b)(a + c)(d + b)(d + c))_
+
+9 = Phi of Pearson
+
+S14 coefficient of Gower & Legendre  _s9 = (ad - bc) / sqrt((a + b)(a + c)(d + b)(d + c))_
+
+10 = S2 coefficient of Gower & Legendre
+
+_s10 = a / (a + b + c + d)_
+
 
 
 # Exercice 3
@@ -439,11 +485,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQxNjM1OTgsLTY4MzI3MzcyMSwtMTI2Mz
-AzMzA3NiwtNjgzMjczNzIxLDEwMTM5Njk5MjIsLTEyMDQxNTk4
-NTUsLTE5MTU0OTQ3OTEsMTQ1NTc5MzU5MCwzMDcyOTk3ODQsND
-I3NjEzNTMzLDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5NzE3
-MjQsLTE3MzYzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNzksLT
-E2MjU1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEyNjM4
-NzI5NjhdfQ==
+eyJoaXN0b3J5IjpbMTYxOTIzODE1MCwtNjgzMjczNzIxLC0xMj
+YzMDMzMDc2LC02ODMyNzM3MjEsMTAxMzk2OTkyMiwtMTIwNDE1
+OTg1NSwtMTkxNTQ5NDc5MSwxNDU1NzkzNTkwLDMwNzI5OTc4NC
+w0Mjc2MTM1MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3
+MTcyNCwtMTczNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3OS
+wtMTYyNTU0NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMTI2
+Mzg3Mjk2OF19
 -->
