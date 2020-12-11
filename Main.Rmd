@@ -408,7 +408,8 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 |Gower and Legendre (1986)|$\frac{2(a+d)}{2(a+d)+b+c}$|$\frac{b+c}{2(a+d)+b+c}]$|
 |Gower and Legendre (1986)|$\frac{2a}{2a+b+c}$|$\frac{b+c}{2a+b+c}$|
 
-* To calculate these coefficients, we use the function dist.binary().
+* To calculate these coefficients, we use the function: [dist.binary().](https://www.rdocumentation.org/packages/ade4/versions/1.7-16/topics/dist.binary)
+
 * All the distances  in this package are of type  $d(\mathbf{x}.\mathbf{y})= \sqrt{1 - s(\mathbf{x}.\mathbf{y})}$.
 * The methods are:
 
@@ -457,11 +458,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDc0MDE4MywtNjgzMjczNzIxLC0xMj
-YzMDMzMDc2LC02ODMyNzM3MjEsMTAxMzk2OTkyMiwtMTIwNDE1
-OTg1NSwtMTkxNTQ5NDc5MSwxNDU1NzkzNTkwLDMwNzI5OTc4NC
-w0Mjc2MTM1MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3
-MTcyNCwtMTczNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3OS
-wtMTYyNTU0NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMTI2
-Mzg3Mjk2OF19
+eyJoaXN0b3J5IjpbLTE5MzM0MjQwMTEsLTE2NDc0MDE4MywtNj
+gzMjczNzIxLC0xMjYzMDMzMDc2LC02ODMyNzM3MjEsMTAxMzk2
+OTkyMiwtMTIwNDE1OTg1NSwtMTkxNTQ5NDc5MSwxNDU1NzkzNT
+kwLDMwNzI5OTc4NCw0Mjc2MTM1MzMsOTQ1MTU3MzIsLTIxMzM4
+NTg5NzAsMTgyMjk3MTcyNCwtMTczNjM5Njk2LDE4NzQzNDI2MD
+AsLTk0NDM0NTE3OSwtMTYyNTU0NzUyOSwxMzM4NjE0MTc5LDQy
+MjA0OTcyOF19
 -->
