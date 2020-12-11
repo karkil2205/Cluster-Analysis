@@ -54,11 +54,9 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.$$
 # Manhattan distance
 
 * The Manhattan distance also called  taxi-cab metric or city-block metric is defined by:
-
 $$d(\mathbf{x},\mathbf{y})
 =\sum_{i=1}^n |x_i-y_i|.
 $$
-
 * A1-A2 hold.
 * A3 also holds using the fact that $|a+b|\leq |a|+|b|$ for any reals $a,b$.
 * There exists also a weighted version  of the Manhattan distance called the Canberra distance.
@@ -460,11 +458,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MT
-YzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1
-NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC
-02ODMyNzM3MjEsLTEyNjMwMzMwNzYsLTY4MzI3MzcyMSwxMDEz
-OTY5OTIyLC0xMjA0MTU5ODU1LC0xOTE1NDk0NzkxLDE0NTU3OT
-M1OTAsMzA3Mjk5Nzg0LDQyNzYxMzUzMyw5NDUxNTczMiwtMjEz
-Mzg1ODk3MF19
+eyJoaXN0b3J5IjpbLTE2NTE3MjQ1NTEsOTA4MjU4MjMzLDIwOT
+U5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzky
+OTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMS
+wtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNzYsLTY4
+MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5ODU1LC0xOTE1ND
+k0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LDQyNzYxMzUzMyw5
+NDUxNTczMl19
 -->
