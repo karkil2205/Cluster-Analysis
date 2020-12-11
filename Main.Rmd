@@ -400,9 +400,9 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 
 |Measure|$s(\mathbf{x},\mathbf{y})$|$d(\mathbf{x},\mathbf{y})$|
 |:---|:---:|:---:|
-|Matching coefficient|$\frac{a+d}{a+b+c+d}$ |$\frac{b+c}{a+b+c+d}$|
-|Jaccard coefficient|$\frac{a}{a+b+c}$|$(b+c)/(a+b+c)$|
-|Rogers and Tanimoto (1960)| $\frac{a+d}{(a+d)+2(b+c)}$|$2(b+c)/[(a+d)+2(b+c)]$|
+|Matching coefficient|$\frac{a+d}{a+d+b+c}$ |$\frac{b+c}{a+d+b+c}$|
+|Jaccard coefficient|$\frac{a}{a+b+c}$|$\frac{b+c}{a+b+c}$|
+|Rogers and Tanimoto (1960)| $\frac{a+d}{(a+d)+2(b+c)}$|$\frac{2(b+c)}{(a+d)+2(b+c)}$|
 |Gower and Legendre (1986)|$\frac{2(a+d)}{2(a+d)+(b+c)}$|$(b+c)/[2(a+d)+(b+c)]$|
 |Gower and Legendre (1986)|$\frac{2a}{2a+(b+c)}$|$(b+c)/[2a+(b+c)]$|
 
@@ -431,7 +431,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODMyOTg4NjUsMzA3Mjk5Nzg0LDQyNz
+eyJoaXN0b3J5IjpbLTE3NDY3MzQzNzUsMzA3Mjk5Nzg0LDQyNz
 YxMzUzMyw5NDUxNTczMiwtMjEzMzg1ODk3MCwxODIyOTcxNzI0
 LC0xNzM2Mzk2OTYsMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0xNj
 I1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC0xMjYzODcy
