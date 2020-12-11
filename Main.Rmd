@@ -415,21 +415,11 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
  1. Jaccard index (1901) $ a / (a+b+c)$;
  2. Simple matching coefficient  $(a+d) / (a+b+c+d)$;
  3. $a / (a + 2(b + c))$;
- 4. Rogers & Tanimoto (1960)
-
-S6 coeffi (a + d) / (a + 2(b + c) +d)_
-
-5 = Dice (1945) or Sorensen (1948)
-
-S7 coefficient of Gower & Legendre  _s5 = 2a / (2a + b + c)_
-
-6 = Hamann coefficient
-
-S9 index of Gower & Legendre (1986)  _s6 = (a - (b + c) + d) / (a + b + c + d)_
-
-7 = Ochiai (1957)
-
-S12 coefficient of Gower & Legendre  _s7 = a / sqrt((a + b)(a + c))_
+ 4. Rogers & Tanimoto (1960)  $(a + d) / (a + 2(b + c) +d)$
+ 5. Gower & Legendre  $2a / (2a + b + c)$.
+ 6. Hamann coefficient $ (a - (b + c) + d) / (a + b + c + d).
+ 7. Ochiai (1957) coefficient  $a / sqrt((a + b)(a + c))$
+ 8. 
 
 8 = Sokal & Sneath (1963)
 
@@ -477,11 +467,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTk4NzQ1MDEsLTY4MzI3MzcyMSwtMT
-I2MzAzMzA3NiwtNjgzMjczNzIxLDEwMTM5Njk5MjIsLTEyMDQx
-NTk4NTUsLTE5MTU0OTQ3OTEsMTQ1NTc5MzU5MCwzMDcyOTk3OD
-QsNDI3NjEzNTMzLDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5
-NzE3MjQsLTE3MzYzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNz
-ksLTE2MjU1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEy
-NjM4NzI5NjhdfQ==
+eyJoaXN0b3J5IjpbLTE5MTU4Mzk1LC02ODMyNzM3MjEsLTEyNj
+MwMzMwNzYsLTY4MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5
+ODU1LC0xOTE1NDk0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LD
+QyNzYxMzUzMyw5NDUxNTczMiwtMjEzMzg1ODk3MCwxODIyOTcx
+NzI0LC0xNzM2Mzk2OTYsMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC
+0xNjI1NTQ3NTI5LDEzMzg2MTQxNzksNDIyMDQ5NzI4LC0xMjYz
+ODcyOTY4XX0=
 -->
