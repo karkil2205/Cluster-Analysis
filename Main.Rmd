@@ -386,8 +386,6 @@ names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Roun
 x=data["Ilan",]
 y=data["Talia",]
 knitr::kable(table(x, y)[2:1,2:1],"pipe")
-
-
 ```
 
 
@@ -432,11 +430,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwOTc4OTY5NSw5NDUxNTczMiwtMjEzMz
-g1ODk3MCwxODIyOTcxNzI0LC0xNzM2Mzk2OTYsMTg3NDM0MjYw
-MCwtOTQ0MzQ1MTc5LC0xNjI1NTQ3NTI5LDEzMzg2MTQxNzksND
-IyMDQ5NzI4LC0xMjYzODcyOTY4LC0xMzU0MTkwNTAyLC0yMzk2
-NTkyMTMsLTE3NTY0NzExMzEsLTE5NzQ1ODkzNjgsMTE2NzYwMz
-g1OCw1NTExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMjUs
-LTE5NTA5MjIyMjhdfQ==
+eyJoaXN0b3J5IjpbNDI3NjEzNTMzLDk0NTE1NzMyLC0yMTMzOD
+U4OTcwLDE4MjI5NzE3MjQsLTE3MzYzOTY5NiwxODc0MzQyNjAw
+LC05NDQzNDUxNzksLTE2MjU1NDc1MjksMTMzODYxNDE3OSw0Mj
+IwNDk3MjgsLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLTIzOTY1
+OTIxMywtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzOD
+U4LDU1MTE1NDM5OCwtMTgwNTI5NzQ3MSwtMTQ0NTYzMzAyNSwt
+MTk1MDkyMjIyOF19
 -->
