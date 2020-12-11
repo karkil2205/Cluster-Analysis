@@ -411,19 +411,11 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 * To calculate these coefficients, we use the function: [dist.binary().](https://www.rdocumentation.org/packages/ade4/versions/1.7-16/topics/dist.binary)
 
 * All the distances  in this package are of type  $d(\mathbf{x}.\mathbf{y})= \sqrt{1 - s(\mathbf{x}.\mathbf{y})}$.
-* The methods are:
 
- 1. Jaccard index (1901) $ a/(a+b+c)$;
- 2. Simple matching coefficient  $(a+d) / (a+b+c+d)$;
- 3. $a / (a + 2(b + c))$;
- 4. Rogers & Tanimoto (1960)  $(a + d) / (a + 2(b + c) +d)$
- 5. Gower & Legendre  $2a / (2a + b + c)$.
- 6. Hamann coefficient $ (a - (b + c) + d) / (a + b + c + d).
- 7. Ochiai (1957) coefficient  $a / sqrt((a + b)(a + c))$
- 8. Sokal & Sneath (1963 $ad / sqrt((a + b)(a + c)(d + b)(d + c))$;
- 9.  Phi of Pearson $(ad - bc) / sqrt((a + b)(a + c)(d + b)(d + c))$;
- 10.  $a/ (a + b + c + d)$.
+```{r,echo=T,results='asis'}
+dist.binary(data[c("Ilan","Talia"),],method=2)^2
 
+```
 
 
 # Exercice 3
@@ -458,11 +450,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzM0MjQwMTEsLTE2NDc0MDE4MywtNj
-gzMjczNzIxLC0xMjYzMDMzMDc2LC02ODMyNzM3MjEsMTAxMzk2
-OTkyMiwtMTIwNDE1OTg1NSwtMTkxNTQ5NDc5MSwxNDU1NzkzNT
-kwLDMwNzI5OTc4NCw0Mjc2MTM1MzMsOTQ1MTU3MzIsLTIxMzM4
-NTg5NzAsMTgyMjk3MTcyNCwtMTczNjM5Njk2LDE4NzQzNDI2MD
-AsLTk0NDM0NTE3OSwtMTYyNTU0NzUyOSwxMzM4NjE0MTc5LDQy
-MjA0OTcyOF19
+eyJoaXN0b3J5IjpbLTM3MDUwMTkxNCwtMTkzMzQyNDAxMSwtMT
+Y0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNzYsLTY4MzI3
+MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5ODU1LC0xOTE1NDk0Nz
+kxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LDQyNzYxMzUzMyw5NDUx
+NTczMiwtMjEzMzg1ODk3MCwxODIyOTcxNzI0LC0xNzM2Mzk2OT
+YsMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0xNjI1NTQ3NTI5LDEz
+Mzg2MTQxNzldfQ==
 -->
