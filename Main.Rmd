@@ -383,9 +383,6 @@ names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Roun
 
 * We are comparing the records for Ilan with Talia.
 ```{r,echo=T,results='asis'}
-
-library(dplyr)
-
 x=data["Ilan",]
 y=data["Talia",]
 knitr::kable(table(x, y)[2:1,2:1],"pipe")
@@ -435,11 +432,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMj
-k3MTcyNCwtMTczNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3
-OSwtMTYyNTU0NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMT
-I2Mzg3Mjk2OCwtMTM1NDE5MDUwMiwtMjM5NjU5MjEzLC0xNzU2
-NDcxMTMxLC0xOTc0NTg5MzY4LDExNjc2MDM4NTgsNTUxMTU0Mz
-k4LC0xODA1Mjk3NDcxLC0xNDQ1NjMzMDI1LC0xOTUwOTIyMjI4
-LDcxMjY2NzY4XX0=
+eyJoaXN0b3J5IjpbLTkwOTc4OTY5NSw5NDUxNTczMiwtMjEzMz
+g1ODk3MCwxODIyOTcxNzI0LC0xNzM2Mzk2OTYsMTg3NDM0MjYw
+MCwtOTQ0MzQ1MTc5LC0xNjI1NTQ3NTI5LDEzMzg2MTQxNzksND
+IyMDQ5NzI4LC0xMjYzODcyOTY4LC0xMzU0MTkwNTAyLC0yMzk2
+NTkyMTMsLTE3NTY0NzExMzEsLTE5NzQ1ODkzNjgsMTE2NzYwMz
+g1OCw1NTExNTQzOTgsLTE4MDUyOTc0NzEsLTE0NDU2MzMwMjUs
+LTE5NTA5MjIyMjhdfQ==
 -->
