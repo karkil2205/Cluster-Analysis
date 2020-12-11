@@ -49,7 +49,7 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.$$
 * A1-A2 ae obvious.
 * The proof of A3 is provided below.
 # Exercice 1
-* Is the squared euclidian distance is a metric
+* Is the squared euclidian distance a metric?
 
 # Manhattan distance
 
@@ -461,11 +461,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMDc2ODUxLDIwOTU5MjUzMzQsMTQ1MT
-YzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1
-NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC
-02ODMyNzM3MjEsLTEyNjMwMzMwNzYsLTY4MzI3MzcyMSwxMDEz
-OTY5OTIyLC0xMjA0MTU5ODU1LC0xOTE1NDk0NzkxLDE0NTU3OT
-M1OTAsMzA3Mjk5Nzg0LDQyNzYxMzUzMyw5NDUxNTczMiwtMjEz
-Mzg1ODk3MF19
+eyJoaXN0b3J5IjpbODM1MjQxMDQsMjA5NTkyNTMzNCwxNDUxNj
+MxODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwtMTMzMTk2NDU1
+NCwtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3NDAxODMsLT
+Y4MzI3MzcyMSwtMTI2MzAzMzA3NiwtNjgzMjczNzIxLDEwMTM5
+Njk5MjIsLTEyMDQxNTk4NTUsLTE5MTU0OTQ3OTEsMTQ1NTc5Mz
+U5MCwzMDcyOTk3ODQsNDI3NjEzNTMzLDk0NTE1NzMyLC0yMTMz
+ODU4OTcwXX0=
 -->
