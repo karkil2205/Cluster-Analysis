@@ -413,8 +413,19 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 * All the distances  in this package are of type  $d(\mathbf{x}.\mathbf{y})= \sqrt{1 - s(\mathbf{x}.\mathbf{y})}$.
 
 ```{r,echo=T,results='asis'}
+a=1
+b=3
+c=1
+d=5
 dist.binary(data[c("Ilan","Talia"),],method=2)^2
-
+1-(a+d )/(a+b+c+d)
+dist.binary(data[c("Ilan","Talia"),],method=1)^2
+1-a/(a+b+c)
+dist.binary(data[c("Ilan","Talia"),],method=4)^2
+1-(a+d )/(a+2*(b+c)+d)
+# One Gower coefficient is missing
+dist.binary(data[c("Ilan","Talia"),],method=5)^2
+1-2*a/(2*a+b+c)
 ```
 
 
@@ -450,11 +461,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDUwMTkxNCwtMTkzMzQyNDAxMSwtMT
-Y0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNzYsLTY4MzI3
-MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5ODU1LC0xOTE1NDk0Nz
-kxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LDQyNzYxMzUzMyw5NDUx
-NTczMiwtMjEzMzg1ODk3MCwxODIyOTcxNzI0LC0xNzM2Mzk2OT
-YsMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0xNjI1NTQ3NTI5LDEz
-Mzg2MTQxNzldfQ==
+eyJoaXN0b3J5IjpbLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMT
+kzMzQyNDAxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMw
+MzMwNzYsLTY4MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5OD
+U1LC0xOTE1NDk0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LDQy
+NzYxMzUzMyw5NDUxNTczMiwtMjEzMzg1ODk3MCwxODIyOTcxNz
+I0LC0xNzM2Mzk2OTYsMTg3NDM0MjYwMCwtOTQ0MzQ1MTc5LC0x
+NjI1NTQ3NTI5XX0=
 -->
