@@ -402,7 +402,7 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 |:---|:---:|:---:|
 |Matching coefficient|$\frac{a+d}{a+b+c+d}$ |$\frac{b+c}{a+b+c+d}$|
 |Jaccard coefficient|$\frac{a}{a+b+c}$|$\frac{b+c}{a+b+c}$|
-|Rogers and Tanimoto (1960)| $\frac{a+d}{a+2(b+c)+d}$|$\frac{2(b+c)}{a+d}$|
+|Rogers and Tanimoto (1960)| $\frac{a+d}{a+2(b+c)+d}$|$\frac{2(b+c)}{a+2(b+c)+d}$|
 |Gower and Legendre (1986)|$\frac{2(a+d)}{2(a+d)+b+c}$|$\frac{b+c}{2(a+d)+b+c}]$|
 |Gower and Legendre (1986)|$\frac{2a}{2a+b+c}$|$\frac{b+c}{2a+b+c}$|
 
@@ -431,11 +431,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjQ3MzUyNiwzMDcyOTk3ODQsNDI3Nj
-EzNTMzLDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5NzE3MjQs
-LTE3MzYzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNzksLTE2Mj
-U1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEyNjM4NzI5
-NjgsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMywtMTc1NjQ3MTEzMS
-wtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1MTE1NDM5OCwtMTgw
-NTI5NzQ3MV19
+eyJoaXN0b3J5IjpbMTc3ODM5NjQ4LDMwNzI5OTc4NCw0Mjc2MT
+M1MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3MTcyNCwt
+MTczNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNT
+U0NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2
+OCwtMTM1NDE5MDUwMiwtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC
+0xOTc0NTg5MzY4LDExNjc2MDM4NTgsNTUxMTU0Mzk4LC0xODA1
+Mjk3NDcxXX0=
 -->
