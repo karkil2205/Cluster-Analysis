@@ -436,7 +436,65 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
-
+# Nominal variables 
+In the previous section we studied binary variables, which can only take on 
+two states, typically coded as 1 and 0. This generalizes naturally to the 
+concept of a nominal variable, which may take on more than two states. 
+For instance, in Table 9 we had the binary variable blue eyes/brown eyes, 
+which was appropriate for that collection of people. However, in larger 
+populations one will need at least four states: blue eyesfirown eyes/green 
+eyes/grey eyes. In general, we denote the number of states by M and code 
+the outcomes as 1,2, ..., M in the data matrix (sometimes the codes 
+0, 1, . . . , M - 1 are also used). For instance, we could choose 1 = blue eyes, 
+2 = brown eyes, 3 = green eyes, and 4 = grey eyes. Note that these states 
+are not ordered in any way: It is not because grey eyes are given a higher 
+code number than brown eyes that they would in some sense be better. The 
+code numbers are only used to facilitate data handling, but one could just 
+as well code the different outcomes by letters or other symbols. Some 
+examples of nominal variables are the nationality of people (for which A4 
+may be very large) or their marital status (bachelor/married/divorced/ 
+widowed). 
+Sometimes nominal variables are converted to binary ones. By collapsing 
+some states until only two remain, a binary variable results. For instance, 
+one can group green eyes with brown eyes and grey with blue. However, 
+this clearly amounts to a loss of information. Another strategy would be to 
+recode the data to a larger number of (asymmetric) binary variables, for 
+instance by creating a new binary variable for each of the M nominal 
+states, and then to put it equal to 1 if the corresponding state occurs and to 
+0 otherwise. After that, one could resort to one of the dissimilarity coeffi-
+cients of the previous subsection. 
+By far the most common way of measuring the similarity or dissimilarity 
+between some objects i and j that are characterized through nominal 
+variables is to use the simple matching approach: 
+U P-U s(i, j) = - and d(i, j) = - 
+P P 
+(Sokal and Michener, 1958). Here, u is the number of matches, that is, the 
+number of variables for which objects i and j happen to be in the same
+state. As before, p is the total number of variables (or, in a situation with 
+missing values, the number of variables that are available for both i and j). 
+Therefore, simple matching has exactly the same meaning as in the preced-
+ing section. For instance, it is invariant with respect to different codings of 
+the variables because this does not affect the number of matches. 
+Again it is possible to give a higher weight to u, the number of 
+agreements, or to p - u, the number of disagreements. Such variants were 
+considered by Rogers and Tanimoto (1960) and Sokal and Sneath (1963), 
+corresponding to the formulas in Table 10. It must also be noted that 
+different variables may have different values of M. Therefore, Hyvarinen 
+(1962) assigns more weight to matches in variables with a large number of 
+states. Lingoes (1967) extends this by counting, for all variables, the 
+frequency with which each state actually occurs and by giving a higher 
+weight to matches corresponding to rare states. (This is reminiscent of the 
+treatment of asymmetric binary variables.) Some other variants can be 
+found in Bock (1974, Section 5). 
+We personally prefer the simple matching approach (19) because of its 
+intuitive appeal and widespread acceptance. Simple matching dissimilarities 
+can be computed by means of the program DAISY. It is not necessary to 
+know the number of states for each variable because the program will itself 
+produce an inventory with the number of states and the number of missing 
+values. Also, the codes entered may be arbitrary real numbers, so the 
+variables do not have to be coded in a discrete way. The main purpose of 
+DAISY is to deliver a dissimilarity matrix which can be used by some of 
+the clustering algorithms described in the following chapters.
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
 *  We’ll use only a by taking 15 random rows among the 50 rows in the data set. 
@@ -455,11 +513,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIwOT
-U5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzky
-OTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMS
-wtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNzYsLTY4
-MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MTU5ODU1LC0xOTE1ND
-k0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0LDQyNzYxMzUzMyw5
-NDUxNTczMl19
+eyJoaXN0b3J5IjpbLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOT
+A4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIz
+MTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNC
+wtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEy
+NjMwMzMwNzYsLTY4MzI3MzcyMSwxMDEzOTY5OTIyLC0xMjA0MT
+U5ODU1LC0xOTE1NDk0NzkxLDE0NTU3OTM1OTAsMzA3Mjk5Nzg0
+LDQyNzYxMzUzM119
 -->
