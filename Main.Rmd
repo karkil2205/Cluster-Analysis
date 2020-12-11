@@ -408,8 +408,8 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 # Exercice 3
 * Prove that the distances based on the  Matching coefficient and the Jaccard coefficient satisfy A3.
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
-* Proofs and counterexamples  
-* [Example](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
+* Proofs and counterexamples are given in the paper: 
+* [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
  
 # Similarity measures for binary data (cont.)
 
@@ -437,11 +437,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTM5MDg1NCwtMTIwNDE1OTg1NSwtMT
-kxNTQ5NDc5MSwxNDU1NzkzNTkwLDMwNzI5OTc4NCw0Mjc2MTM1
-MzMsOTQ1MTU3MzIsLTIxMzM4NTg5NzAsMTgyMjk3MTcyNCwtMT
-czNjM5Njk2LDE4NzQzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNTU0
-NzUyOSwxMzM4NjE0MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2OC
-wtMTM1NDE5MDUwMiwtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC0x
-OTc0NTg5MzY4XX0=
+eyJoaXN0b3J5IjpbLTE1OTEwNjM4MTIsLTEyMDQxNTk4NTUsLT
+E5MTU0OTQ3OTEsMTQ1NTc5MzU5MCwzMDcyOTk3ODQsNDI3NjEz
+NTMzLDk0NTE1NzMyLC0yMTMzODU4OTcwLDE4MjI5NzE3MjQsLT
+E3MzYzOTY5NiwxODc0MzQyNjAwLC05NDQzNDUxNzksLTE2MjU1
+NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3MjgsLTEyNjM4NzI5Nj
+gsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMywtMTc1NjQ3MTEzMSwt
+MTk3NDU4OTM2OF19
 -->
