@@ -1702,6 +1702,8 @@ summary {
 <li><a href="#kendall-tau-distance">Kendall tau distance</a></li>
 <li><a href="#variables-standardization">Variables standardization</a></li>
 <li><a href="#similarity-measures-for-binary-data">Similarity measures for binary data</a></li>
+<li><a href="#exercice-3">Exercice 3</a></li>
+<li><a href="#similarity-measures-for-binary-data-cont.">Similarity measures for binary data (cont.)</a></li>
 <li><a href="#distance-matrix-computation">Distance matrix computation</a></li>
 </ul>
 </div>
@@ -1711,6 +1713,9 @@ install.packages(&quot;dplyr&quot;)</code></pre>
 <pre><code>## Installing package into &#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&#39;
 ## (as &#39;lib&#39; is unspecified)</code></pre>
 <pre class="r"><code>install.packages(&quot;stargazer&quot;)</code></pre>
+<pre><code>## Installing package into &#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&#39;
+## (as &#39;lib&#39; is unspecified)</code></pre>
+<pre class="r"><code>install.packages(&quot;ade4&quot;)</code></pre>
 <pre><code>## Installing package into &#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&#39;
 ## (as &#39;lib&#39; is unspecified)</code></pre>
 <div id="definition-of-a-distance" class="section level1">
@@ -2022,19 +2027,19 @@ y=c(30,2 , 9, 20, 48)
 <h1>Similarity measures for binary data</h1>
 <ul>
 <li><p>A common simple situation occurs when all information is of the presence/absence of 2-level qualitative characters.</p></li>
-<li><p>We assume there are <span class="math inline">\(n\)</span> measured characters.</p></li>
-<li><p>*The presence of the character or type is coded <span class="math inline">\(1\)</span> and the absence by 0.</p></li>
+<li><p>We assume there are <span class="math inline">\(n\)</span> characters.</p></li>
+<li><p>*The presence of the character is coded by <span class="math inline">\(1\)</span> and the absence by 0.</p></li>
 <li><p>We have have at our disposal two vectors.</p></li>
-<li><p><span class="math inline">\(\mathbf{x}\)</span> is observed for first indiviual (or object).</p></li>
+<li><p><span class="math inline">\(\mathbf{x}\)</span> is observed for a first individual (or object).</p></li>
 <li><p><span class="math inline">\(\mathbf{y}\)</span> is observed for a second individual.</p></li>
-<li><p>We can then calculate the following statistics:</p>
+<li><p>We can then calculate the following four statistics:</p>
 <p><span class="math inline">\(a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.\)</span></p>
 <p><span class="math inline">\(b=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_i(1-y_i).\)</span></p>
 <p><span class="math inline">\(c=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i.\)</span></p>
 <p><span class="math inline">\(d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).\)</span></p></li>
 <li><p>The counts of matches are <span class="math inline">\(a\)</span> for <span class="math inline">\((1,1)\)</span> and <span class="math inline">\(d\)</span> for <span class="math inline">\((0,0)\)</span>;</p></li>
-<li><p>The counts of mismatches are <span class="math inline">\(b\)</span> for <span class="math inline">\((1,0)\)</span> and <span class="math inline">\(c\)</span> for <span class="math inline">\((0,1)\)</span>).</p></li>
-<li><p>Obviously, <span class="math inline">\(a+b+c+d= n\)</span>.</p></li>
+<li><p>The counts of mismatches are <span class="math inline">\(b\)</span> for <span class="math inline">\((1,0)\)</span> and <span class="math inline">\(c\)</span> for <span class="math inline">\((0,1)\)</span>.</p></li>
+<li><p>Note that obviously: <span class="math inline">\(a+b+c+d= n\)</span>.</p></li>
 <li><p>This gives a very useful <span class="math inline">\(2 \times 2\)</span> association table.</p></li>
 </ul>
 <table>
@@ -2102,15 +2107,6 @@ names(data)=c(&quot;Sex&quot;, &quot;Married&quot;, &quot;Fair Hair&quot;, &quot
 <ul>
 <li>We are comparing the records for Ilan with Talia.</li>
 </ul>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
 <pre class="r"><code>x=data[&quot;Ilan&quot;,]
 y=data[&quot;Talia&quot;,]
 knitr::kable(table(x, y)[2:1,2:1],&quot;pipe&quot;)</code></pre>
@@ -2139,44 +2135,100 @@ knitr::kable(table(x, y)[2:1,2:1],&quot;pipe&quot;)</code></pre>
 <li>Therefore: <span class="math inline">\(a = 1,\:b = 3,\: c = 1,\: d = 5\)</span>.</li>
 <li>Note that interchanging Ilan and Talia would permute <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> while leaving <span class="math inline">\(a\)</span> and <span class="math inline">\(d\)</span> unchanged.</li>
 <li>A good similarity or dissimilarity coefficient must treat <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> symmetrically.</li>
-<li>A list of some of the similarity measures that have been suggested for binary data is shown below.</li>
-<li>a more extensive list can be found in Gower and Legendre (1986).</li>
+<li>A similarity measure is denoted by: <span class="math inline">\(s(\mathbf{x},\mathbf{y})\)</span>.</li>
+<li>The corresponding distance is then defined as: <span class="math display">\[d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y}).\]</span></li>
+<li>Alternatively, we have: <span class="math display">\[d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.\]</span></li>
+<li>A list of some of the similarity measures <span class="math inline">\(s(\mathbf{x},\mathbf{y})\)</span> that have been suggested for binary data is shown below.</li>
+<li>A more extensive list can be found in: Gower, J. C., &amp; Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. <em>Journal of classification</em>, <em>3</em>(1), 5-48.</li>
 </ul>
 <table>
+<colgroup>
+<col width="28%"></col>
+<col width="35%"></col>
+<col width="35%"></col>
+</colgroup>
 <thead>
 <tr class="header">
-<th>Measure</th>
-<th>Formula</th>
+<th align="left">Coefficient</th>
+<th align="center"><span class="math inline">\(s(\mathbf{x},\mathbf{y})\)</span></th>
+<th align="center"><span class="math inline">\(d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y})\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Matching coefficient</td>
-<td><span class="math inline">\((a+d)/(a+b+c+d)\)</span></td>
+<td align="left">Simple matching</td>
+<td align="center"><span class="math inline">\(\frac{a+d}{a+b+c+d}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{b+c}{a+b+c+d}\)</span></td>
 </tr>
 <tr class="even">
-<td>Jaccard coefficient</td>
-<td><span class="math inline">\(a/(a+b+c)\)</span></td>
+<td align="left">Jaccard</td>
+<td align="center"><span class="math inline">\(\frac{a}{a+b+c}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{b+c}{a+b+c}\)</span></td>
 </tr>
 <tr class="odd">
-<td>Rogers and Tanimoto (1960)</td>
-<td><span class="math inline">\((a+d)/[a+2(b+c)+d]\)</span></td>
+<td align="left">Rogers and Tanimoto (1960)</td>
+<td align="center"><span class="math inline">\(\frac{a+d}{a+2(b+c)+d}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{2(b+c)}{a+2(b+c)+d}\)</span></td>
 </tr>
 <tr class="even">
-<td>Gower and Legendre (1986)</td>
-<td><span class="math inline">\((a+d)/[a+\frac{1}{2}(b+c)+d]\)</span></td>
+<td align="left">Gower and Legendre (1986)</td>
+<td align="center"><span class="math inline">\(\frac{2(a+d)}{2(a+d)+b+c}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{b+c}{2(a+d)+b+c}]\)</span></td>
 </tr>
 <tr class="odd">
-<td>Gower and Legendre (1986)</td>
-<td><span class="math inline">\(a/[a+\frac{1}{2}(b+c)]\)</span></td>
+<td align="left">Gower and Legendre (1986)</td>
+<td align="center"><span class="math inline">\(\frac{2a}{2a+b+c}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{b+c}{2a+b+c}\)</span></td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).</li>
-<li>In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.</li>
+<li><p>To calculate these coefficients, we use the function: <a href="https://www.rdocumentation.org/packages/ade4/versions/1.7-16/topics/dist.binary">dist.binary().</a></p></li>
+<li><p>All the distances in this package are of type <span class="math inline">\(d(\mathbf{x}.\mathbf{y})= \sqrt{1 - s(\mathbf{x}.\mathbf{y})}\)</span>.</p></li>
+</ul>
+<pre class="r"><code>library(ade4)
+a=1
+b=3
+c=1
+d=5
+dist.binary(data[c(&quot;Ilan&quot;,&quot;Talia&quot;),],method=2)^2</code></pre>
+<pre><code>  Ilan</code></pre>
+<p>Talia 0.4</p>
+<pre class="r"><code>1-(a+d )/(a+b+c+d)</code></pre>
+<p>[1] 0.4</p>
+<pre class="r"><code>dist.binary(data[c(&quot;Ilan&quot;,&quot;Talia&quot;),],method=1)^2</code></pre>
+<pre><code>  Ilan</code></pre>
+<p>Talia 0.8</p>
+<pre class="r"><code>1-a/(a+b+c)</code></pre>
+<p>[1] 0.8</p>
+<pre class="r"><code>dist.binary(data[c(&quot;Ilan&quot;,&quot;Talia&quot;),],method=4)^2</code></pre>
+<pre><code>       Ilan</code></pre>
+<p>Talia 0.5714286</p>
+<pre class="r"><code>1-(a+d )/(a+2*(b+c)+d)</code></pre>
+<p>[1] 0.5714286</p>
+<pre class="r"><code># One Gower coefficient is missing
+dist.binary(data[c(&quot;Ilan&quot;,&quot;Talia&quot;),],method=5)^2</code></pre>
+<pre><code>       Ilan</code></pre>
+<p>Talia 0.6666667</p>
+<pre class="r"><code>1-2*a/(2*a+b+c)</code></pre>
+<p>[1] 0.6666667</p>
+</div>
+<div id="exercice-3" class="section level1">
+<h1>Exercice 3</h1>
+<ul>
+<li>Prove that the distances based on the SimplemMatching coefficient and the Jaccard coefficient satisfy A3.</li>
+<li>Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.</li>
+<li>Hint: Proofs and counterexamples have to be adapted from in the paper:</li>
+<li><a href="https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk">Gower, J. C., &amp; Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. <em>Journal of classification</em>, <em>3</em>(1), 5-48.</a></li>
+</ul>
+</div>
+<div id="similarity-measures-for-binary-data-cont." class="section level1">
+<h1>Similarity measures for binary data (cont.)</h1>
+<ul>
+<li>The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero-zero matches <span class="math inline">\(d\)</span>.</li>
+<li>In some cases, of course, zero_zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.</li>
 <li>An example is gender, where there is no preference as to which of the two categories should be coded zero or one.</li>
-<li>But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects.</li>
+<li>But in other cases the inclusion or otherwise of <span class="math inline">\(d\)</span> is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects.</li>
 </ul>
 </div>
 <div id="distance-matrix-computation" class="section level1">
@@ -2189,8 +2241,13 @@ knitr::kable(table(x, y)[2:1,2:1],&quot;pipe&quot;)</code></pre>
 <pre class="r"><code>install.packages(&quot;FactoMineR&quot;)</code></pre>
 <pre><code>## Installing package into &#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&#39;
 ## (as &#39;lib&#39; is unspecified)</code></pre>
-<pre class="r"><code>library(&quot;FactoMineR&quot;)
-data(&quot;USArrests&quot;) # Loading
+<pre class="r"><code>library(&quot;FactoMineR&quot;)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;FactoMineR&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:ade4&#39;:
+## 
+##     reconst</code></pre>
+<pre class="r"><code>data(&quot;USArrests&quot;) # Loading
 head(USArrests, 3) # Print the first 3 rows</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -2202,13 +2259,13 @@ ss &lt;- sample(1:50, 15) # Take 15 random rows
 df &lt;- USArrests[ss, ] # Subset the 15 rows
 df.scaled &lt;- scale(df) # Standardize the variables</code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMjk3MTcyNCwtMTczNjM5Njk2LDE4Nz
-QzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNTU0NzUyOSwxMzM4NjE0
-MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2OCwtMTM1NDE5MDUwMi
-wtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDEx
-Njc2MDM4NTgsNTUxMTU0Mzk4LC0xODA1Mjk3NDcxLC0xNDQ1Nj
-MzMDI1LC0xOTUwOTIyMjI4LDcxMjY2NzY4LDg2OTc1ODYyOCwt
-NjE2ODMwODA1XX0=
+eyJoaXN0b3J5IjpbMTUwNTIzOTI5OCwtMTMzMTk2NDU1NCwtMz
+cwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3NDAxODMsLTY4MzI3
+MzcyMSwtMTI2MzAzMzA3NiwtNjgzMjczNzIxLDEwMTM5Njk5Mj
+IsLTEyMDQxNTk4NTUsLTE5MTU0OTQ3OTEsMTQ1NTc5MzU5MCwz
+MDcyOTk3ODQsNDI3NjEzNTMzLDk0NTE1NzMyLC0yMTMzODU4OT
+cwLDE4MjI5NzE3MjQsLTE3MzYzOTY5NiwxODc0MzQyNjAwLC05
+NDQzNDUxNzldfQ==
 -->
 </div>
 
