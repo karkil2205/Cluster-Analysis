@@ -408,6 +408,8 @@ knitr::kable(table(x, y)[2:1,2:1],"pipe")
 # Exercice 3
 * Prove that the distances based on the  Matching coefficient and the Jaccard coefficient satisfy A3.
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
+* https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk
+* 
 # Similarity measures for binary data (cont.)
 
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
@@ -434,11 +436,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTU0OTQ3OTEsMTQ1NTc5MzU5MCwzMD
-cyOTk3ODQsNDI3NjEzNTMzLDk0NTE1NzMyLC0yMTMzODU4OTcw
-LDE4MjI5NzE3MjQsLTE3MzYzOTY5NiwxODc0MzQyNjAwLC05ND
-QzNDUxNzksLTE2MjU1NDc1MjksMTMzODYxNDE3OSw0MjIwNDk3
-MjgsLTEyNjM4NzI5NjgsLTEzNTQxOTA1MDIsLTIzOTY1OTIxMy
-wtMTc1NjQ3MTEzMSwtMTk3NDU4OTM2OCwxMTY3NjAzODU4LDU1
-MTE1NDM5OF19
+eyJoaXN0b3J5IjpbMjEwMjYxNzM4NiwtMTkxNTQ5NDc5MSwxND
+U1NzkzNTkwLDMwNzI5OTc4NCw0Mjc2MTM1MzMsOTQ1MTU3MzIs
+LTIxMzM4NTg5NzAsMTgyMjk3MTcyNCwtMTczNjM5Njk2LDE4Nz
+QzNDI2MDAsLTk0NDM0NTE3OSwtMTYyNTU0NzUyOSwxMzM4NjE0
+MTc5LDQyMjA0OTcyOCwtMTI2Mzg3Mjk2OCwtMTM1NDE5MDUwMi
+wtMjM5NjU5MjEzLC0xNzU2NDcxMTMxLC0xOTc0NTg5MzY4LDEx
+Njc2MDM4NThdfQ==
 -->
