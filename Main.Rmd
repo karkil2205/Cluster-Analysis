@@ -1,4 +1,4 @@
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="300">
 ---
 title: "Distance and dissimilarities"
 output:
@@ -10,7 +10,7 @@ output:
   pdf_document:
     toc: yes
 ---
-
+ 
 
 
 
@@ -552,11 +552,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMj
-EzNjIxOTU2MSwtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTky
-NTMzNCwxNDUxNjMxODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OC
-wtMTMzMTk2NDU1NCwtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0x
-NjQ3NDAxODMsLTY4MzI3MzcyMSwtMTI2MzAzMzA3NiwtNjgzMj
-czNzIxLDEwMTM5Njk5MjIsLTEyMDQxNTk4NTUsLTE5MTU0OTQ3
-OTEsMTQ1NTc5MzU5MF19
+eyJoaXN0b3J5IjpbMTc4NTU4NTA0NCwtOTk2MTk1ODU5LC0xND
+UxMTczNDM4LC0yMTM2MjE5NTYxLC0xNjY1Mjk5MDQwLDkwODI1
+ODIzMywyMDk1OTI1MzM0LDE0NTE2MzE4NDEsMTc5MDQyMzE5NS
+wxNTA1MjM5Mjk4LC0xMzMxOTY0NTU0LC0zNzA1MDE5MTQsLTE5
+MzM0MjQwMTEsLTE2NDc0MDE4MywtNjgzMjczNzIxLC0xMjYzMD
+MzMDc2LC02ODMyNzM3MjEsMTAxMzk2OTkyMiwtMTIwNDE1OTg1
+NSwtMTkxNTQ5NDc5MV19
 -->
