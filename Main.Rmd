@@ -2,11 +2,11 @@
 ---
 title: "Distance and dissimilarities"
 output:
+  html_notebook:
+    toc: yes
   html_document:
     toc: yes
     df_print: paged
-  html_notebook:
-    toc: yes
   pdf_document:
     toc: yes
 ---
@@ -23,13 +23,11 @@ install.packages("ade4")
 
 
 # Definition of a distance
-
 * A distance function or a metric on $\mathbb{R}^n,\:n\geq 1$, is a function $d:\mathbb{R}^n\times\mathbb{R}^n\rightarrow \mathbb{R}$.
 * A distance function must satisfy some required properties or axioms. 
 * There are three main axioms.
 * A1. $d(\mathbf{x},\mathbf{y})= 0\iff \mathbf{x}=\mathbf{y}$ (identity of indiscernibles);
 * A2. $d(\mathbf{x},\mathbf{y})= d(\mathbf{y},\mathbf{x})$ (symmetry);
-
 * A3. $d(\mathbf{x},\mathbf{z})\leq d(\mathbf{x},\mathbf{y})+d(\mathbf{y},\mathbf{z})$  (triangle inequality),
 where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{z}=(z_1,\cdots,z_n)$ are all vectors of $\mathbb{R}^n$.
 * We should use the term _dissimilarity_ rather than _distance_ when not all the three axioms A1-A3 are valid.
@@ -75,8 +73,7 @@ dist(rbind(x, y), method = "manhattan")
 
 * It is defined by:
 
-$$d(\mathbf{x},\mathbf{y})
-=\sum_{i=1}^n \frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
+$$d(\mathbf{x},\mathbf{y})=\sum_{i=1}^n \frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
 
 * Note that the term $|x_i-y_i|/(|x_i|+|y_i|)$ is not properly defined when $x_i=y_i=0$.
 * By convention we set the ratio to be zero in that case.
@@ -90,7 +87,6 @@ dist(rbind(x, y), method = "canberra")
 6/6+6/6
 ```
 # Exercice 3
-
 * Prove that the Canberra distance is a true distance.
 
 # Minkowski distance
