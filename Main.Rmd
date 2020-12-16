@@ -437,16 +437,8 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * We generalize this approach to nominal variable which may take on more than two states.
 * Eye's color may have for example four states: blue/brown/green/grey . 
 * Le $M$ be the number of states and code the outcomes as $1, \cdots, M$. 
-* We could choose $1 =\text{blue},$ $2 =\text{brown},$ $2 =\text{brown},$  
-*  
-*  2 = brown eyes, 3 = green eyes, and 4 = grey eyes.
-* Note that these states are not ordered in any way: 
-* e numbers are only used to facilitate data handling, but one could just 
-as well code the different outcomes by letters or other symbols.
-Some 
-examples of nominal variables are the nationality of people (for which A4 
-may be very large) or their marital status (bachelor/married/divorced/ 
-widowed). 
+* We could choose $1 =\text{blue},$ $2 =\text{brown},$ $3 =\text{green},$ and $4 =\text{grey}$.
+* Note that these states are not ordered in any way
 * Sometimes nominal variables are converted to binary ones.
 * By collapsing some states until only two remain, a binary variable results.
 * For instance, one can group green eyes with brown eyes and grey with blue.
@@ -565,7 +557,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODYwNjAxMzIsLTE0NTExNzM0MzgsLT
+eyJoaXN0b3J5IjpbLTEzMDUwNzUxNzIsLTE0NTExNzM0MzgsLT
 IxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIwOTU5
 MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzkyOT
 gsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMSwt
