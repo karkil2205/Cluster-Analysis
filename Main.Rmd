@@ -434,10 +434,12 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
+
 # Nominal variables 
+
 * We studied above binary variables which can only take on two states coded as $0,1$.
-* We generalize this approach to nominal variable which may take on more than two states.
-* Eye's color may have for example four states: blue/brown/green/grey . 
+* We generalize this approach to nominal variables which may take on more than two states.
+* Eye's color may have for example four states: blue, brown, green, grey . 
 * Le $M$ be the number of states and code the outcomes as $1, \cdots, M$. 
 * We could choose $1 =\text{blue},$ $2 =\text{brown},$ $3 =\text{green},$ and $4 =\text{grey}$.
 * Note that these states are not ordered in any way
@@ -554,11 +556,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC05OT
-YxOTU4NTksLTE0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2NjUy
-OTkwNDAsOTA4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0MS
-wxNzkwNDIzMTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3
-MDUwMTkxNCwtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC02ODMyNz
-M3MjEsLTEyNjMwMzMwNzYsLTY4MzI3MzcyMSwxMDEzOTY5OTIy
-LC0xMjA0MTU5ODU1XX0=
+eyJoaXN0b3J5IjpbMTM0ODE4ODk1MSwtNTMyODU4Njc3LDE3OD
+U1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEzNjIx
+OTU2MSwtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNC
+wxNDUxNjMxODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwtMTMz
+MTk2NDU1NCwtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3ND
+AxODMsLTY4MzI3MzcyMSwtMTI2MzAzMzA3NiwtNjgzMjczNzIx
+LDEwMTM5Njk5MjJdfQ==
 -->
