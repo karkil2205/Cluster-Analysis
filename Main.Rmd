@@ -440,10 +440,10 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * We could choose $1 =\text{blue},$ $2 =\text{brown},$ $3 =\text{green},$ and $4 =\text{grey}$.
 * Note that these states are not ordered in any way
 * One strategy would be creating a new binary variable for each of the $M$ nominal states.
-* Then to put it equal to $1$ if the corresponding state occurs and to 0 otherwise. 
+* Then to put it equal to $1$ if the corresponding state occurs and to $0$ otherwise. 
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
-he most common way of measuring the similarity or dissimilarity 
+* The most common way of measuring the similarity or dissimilarity 
 between some objects i and j that are characterized through nominal 
 variables is to use the simple matching approach: 
 U P-U s(i, j) = - and d(i, j) = - 
@@ -552,7 +552,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5ODc2ODU0MywtMTQ1MTE3MzQzOCwtMj
+eyJoaXN0b3J5IjpbLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMj
 EzNjIxOTU2MSwtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTky
 NTMzNCwxNDUxNjMxODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OC
 wtMTMzMTk2NDU1NCwtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0x
