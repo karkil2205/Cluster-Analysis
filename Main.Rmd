@@ -1,17 +1,16 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="300">
 ---
 title: "Distance and dissimilarities"
 output:
-  html_notebook:
+  pdf_document:
     toc: yes
   html_document:
     toc: yes
     df_print: paged
-  pdf_document:
+  html_notebook:
     toc: yes
 ---
- 
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="200">
 
 
 ```{r setup, include=TRUE}
@@ -44,9 +43,12 @@ where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{
 * It is defined by:
 
 $$d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.$$
-* A1-A2 ae obvious.
+
+* A1-A2 are obvious.
 * The proof of A3 is provided below.
+
 # Exercice 2
+
 * Is the squared Euclidian distance a true distance?
 
 # Manhattan distance
@@ -72,10 +74,10 @@ dist(rbind(x, y), method = "manhattan")
 # Canberra distance
 
 * It is defined by:
+$$d(\mathbf{x},\mathbf{y})=\sum_{i=1}^n
+\frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
 
-$$d(\mathbf{x},\mathbf{y})=\sum_{i=1}^n \frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
-
-* Note that the term $|x_i-y_i|/(|x_i|+|y_i|)$ is not properly defined when $x_i=y_i=0$.
+* Note that the term $|x_i-y_i|/(|x_i|+|y_i|)$ is not properly defined as: $x_i=y_i=0$.
 * By convention we set the ratio to be zero in that case.
 * The Canberra distance is specially sensitive to small changes near zero.
 
