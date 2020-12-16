@@ -433,10 +433,10 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
 # Nominal variables 
-* We studied above binary variables which can only take on two states coded as $0,1$ .
-* This generalizes to nominal variable which may take on more than two states.
-*  four states: blue eyes/brown eyes/green eyes/grey eyes. 
-* We denote the number of states by M and code 
+* We studied above binary variables which can only take on two states coded as $0,1$.
+* We generalize this approach to nominal variable which may take on more than two states.
+* Eye's color may have for example four states: blue/brown/green/grey . 
+* Le $M and code 
 the outcomes as 1,2, ..., M in the data matrix (sometimes the codes 
 0, 1, . . . , M - 1 are also used).
 * For instance, we could choose 1 = blue eyes,  2 = brown eyes, 3 = green eyes, and 4 = grey eyes.
@@ -565,11 +565,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3MDQyODI0LC0xNDUxMTczNDM4LC0yMT
-M2MjE5NTYxLC0xNjY1Mjk5MDQwLDkwODI1ODIzMywyMDk1OTI1
-MzM0LDE0NTE2MzE4NDEsMTc5MDQyMzE5NSwxNTA1MjM5Mjk4LC
-0xMzMxOTY0NTU0LC0zNzA1MDE5MTQsLTE5MzM0MjQwMTEsLTE2
-NDc0MDE4MywtNjgzMjczNzIxLC0xMjYzMDMzMDc2LC02ODMyNz
-M3MjEsMTAxMzk2OTkyMiwtMTIwNDE1OTg1NSwtMTkxNTQ5NDc5
-MSwxNDU1NzkzNTkwXX0=
+eyJoaXN0b3J5IjpbLTM2OTg5NjIzMSwtMTQ1MTE3MzQzOCwtMj
+EzNjIxOTU2MSwtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTky
+NTMzNCwxNDUxNjMxODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OC
+wtMTMzMTk2NDU1NCwtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0x
+NjQ3NDAxODMsLTY4MzI3MzcyMSwtMTI2MzAzMzA3NiwtNjgzMj
+czNzIxLDEwMTM5Njk5MjIsLTEyMDQxNTk4NTUsLTE5MTU0OTQ3
+OTEsMTQ1NTc5MzU5MF19
 -->
