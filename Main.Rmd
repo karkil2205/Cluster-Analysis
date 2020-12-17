@@ -457,16 +457,13 @@ $$\delta(x,y)\equiv \begin{cases}1,
 \text{ if } x=y;\\0,\text{ if } x\neq y,\end{cases}$$
 where $x,y$ are any  categorial values.
 
-* Here, u is the number of matches, that is, the number of variables for which objects i and j happen to be in the same state. 
-As before, p is the total number of variables (or, in a situation with 
-missing values, the number of variables that are available for both i and j). 
-Therefore, simple matching has exactly the same meaning as in the preced-
-ing section. For instance, it is invariant with respect to different codings of 
-the variables because this does not affect the number of matches. 
-Again it is possible to give a higher weight to u, the number of 
-agreements, or to p - u, the number of disagreements. Such variants were 
-considered by Rogers and Tanimoto (1960) and Sokal and Sneath (1963), 
-corresponding to the formulas in Table 10. It must also be noted that 
+* Here, u is the number of matches, that is, the number of variables for which objects i and j happen to be in the same state.
+*  As before, p is the total number of variables (or, in a situation with  missing values, the number of variables that are available for both i and j).
+*  Therefore, simple matching has exactly the same meaning as in the preceding section.
+* For instance, it is invariant with respect to different codings of the variables because this does not affect the number of matches.
+* Again it is possible to give a higher weight to u, the number of agreements, or to p - u, the number of disagreements. Such ariants 
+* were considered by Rogers and Tanimoto (1960) and Sokal and Sneath (1963),  corresponding to the formulas in Table 10.
+* It must also be noted that 
 different variables may have different values of M. Therefore, Hyvarinen 
 (1962) assigns more weight to matches in variables with a large number of 
 states. Lingoes (1967) extends this by counting, for all variables, the 
@@ -560,11 +557,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUzMjMzMjczLC03MDg5NjY3MDQsODM3Mj
-Q4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUx
-LC01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOTk2MTk1ODU5LC0xND
-UxMTczNDM4LC0yMTM2MjE5NTYxLC0xNjY1Mjk5MDQwLDkwODI1
-ODIzMywyMDk1OTI1MzM0LDE0NTE2MzE4NDEsMTc5MDQyMzE5NS
-wxNTA1MjM5Mjk4LC0xMzMxOTY0NTU0LC0zNzA1MDE5MTQsLTE5
-MzM0MjQwMTFdfQ==
+eyJoaXN0b3J5IjpbLTEzNTAwNDY3MzQsLTcwODk2NjcwNCw4Mz
+cyNDg0NTgsLTE5MzE1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5
+NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLT
+E0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4
+MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMT
+k1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwt
+MTkzMzQyNDAxMV19
 -->
