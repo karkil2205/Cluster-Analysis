@@ -448,9 +448,9 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
 * The most common way of measuring the similarity or dissimilarity between two objects through categorial variables is the simple matching approach. 
-* If $\bm{x}$ and $\bm{y}$ and are both $n$ nominal records for two individuals, the similarity and the distance for the simple matching is: 
+* If $\bm{x}$ and $\bm{y}$ and are both $n$ nominal records for two individuals, the distance corresponding to the simple matching is: 
 $$
-s(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n},\:d(\bm{x},\bm{y})=1-s(\bm{x},\bm{y}),
+d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n},\:d(\bm{x},\bm{y})=1-s(\bm{x},\bm{y}),
 $$
 where we are using the kronecker function: 
 $$\delta(x,y)\equiv \begin{cases}1,
@@ -557,11 +557,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTAwNDY3MzQsLTcwODk2NjcwNCw4Mz
-cyNDg0NTgsLTE5MzE1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5
-NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLT
-E0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4
-MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMT
-k1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwt
-MTkzMzQyNDAxMV19
+eyJoaXN0b3J5IjpbNDE0ODY5NDQxLC0xMzUwMDQ2NzM0LC03MD
+g5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4
+OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOT
+k2MTk1ODU5LC0xNDUxMTczNDM4LC0yMTM2MjE5NTYxLC0xNjY1
+Mjk5MDQwLDkwODI1ODIzMywyMDk1OTI1MzM0LDE0NTE2MzE4ND
+EsMTc5MDQyMzE5NSwxNTA1MjM5Mjk4LC0xMzMxOTY0NTU0LC0z
+NzA1MDE5MTRdfQ==
 -->
