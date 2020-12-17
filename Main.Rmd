@@ -456,6 +456,21 @@ where:
 $$\delta(x_i,y_i)\equiv \begin{cases}0,
 \text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}$$
 
+* Let  $N_{a+d}$ be the number of attributes on which the two records match, Nd be the number of attributes on which the two records match in a “not applicable” category, and Nb+c be the number of attributes on which the two records do not match. Then
+Na+d =
+d j=1
+d j=1
+[1 − δ(xj,yj )],
+where δ(·, ·) is defined in (6.22). Similarly, we have Nd =
+d j=1
+d j=1
+(nxj nxj
++ nyj nyj
+) δ(xj,yj ), (6.24) are the numbers of objects in the data set that have categories xj and yj (6.23) Taking into account the frequencies of categories in the data set, we can define the
+[δ(xj , ?) + δ(?,yj ) − δ(xj , ?)δ(?,yj )], Nb+c =
+δ(xj,yj ),
+where “?” is a symbol for missing values, i.e., if xj =?, then x has a missing value in the jth attribute.
+
 * Here, u is the number of matches, that is, the number of variables for which objects i and j happen to be in the same state.
 *  As before, p is the total number of variables (or, in a situation with  missing values, the number of variables that are available for both i and j).
 *  Therefore, simple matching has exactly the same meaning as in the preceding section.
@@ -556,11 +571,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDIzMjI0MjYsLTEzNTAwNDY3MzQsLT
-cwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1NzQwODEsNDg3OTEz
-MDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC
-05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2
-NjUyOTkwNDAsOTA4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMT
-g0MSwxNzkwNDIzMTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQs
-LTM3MDUwMTkxNF19
+eyJoaXN0b3J5IjpbLTkwOTI1MzE3OCwtMTU0MjMyMjQyNiwtMT
+M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
+NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LD
+E3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEz
+NjIxOTU2MSwtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNT
+MzNCwxNDUxNjMxODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwt
+MTMzMTk2NDU1NF19
 -->
