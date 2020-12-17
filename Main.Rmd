@@ -447,15 +447,17 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Then to put it equal to $1$ if the corresponding state occurs and to $0$ otherwise. 
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
-* Let us recall the kronecker function: 
-$$\delta(x,y)=\begin{cases}1,
-\text{ if } x=y;\\0,\text{ if } x\neq y.\end{cases}$$
-
 * The most common way of measuring the similarity or dissimilarity between two objects through nominal variables is the simple matching approach. 
-* If $\bm{x}$ and $\bm{y}$ and are both $n$ nominal records for two individuals 
+* If $\bm{x}$ and $\bm{y}$ and are both $n$ nominal records for two individuals, the similarity is taken to be 
 $$
 s(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
 $$
+where we are using the kronecker function: 
+$$\delta(x,y)\equiv \begin{cases}1,
+\text{ if } x=y;\\0,\text{ if } x\neq y.\end{cases}$$
+
+
+
 U P-Ue Kr s(i, j) = - and d(i, j) = - 
 P P 
 (Sokal and Michener, 1958).
@@ -563,7 +565,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzc5OTQ0NjgsLTcwODk2NjcwNCw4Mz
+eyJoaXN0b3J5IjpbLTE5MDcxOTExMTUsLTcwODk2NjcwNCw4Mz
 cyNDg0NTgsLTE5MzE1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5
 NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLT
 E0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4
