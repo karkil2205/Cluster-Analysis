@@ -437,7 +437,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 
 # Nominal variables 
 
-* We studied above binary variables which can only take on two states coded as $0,1$.
+* We previuosly studied above binary variables which can only take on two states coded as $0,1$.
 * We generalize this approach to nominal variables which may take on more than two states.
 * Eye's color may have for example four states: blue, brown, green, grey . 
 * Le $M$ be the number of states and code the outcomes as $1, \cdots, M$. 
@@ -556,11 +556,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODE4ODk1MSwtNTMyODU4Njc3LDE3OD
-U1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEzNjIx
-OTU2MSwtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNC
-wxNDUxNjMxODQxLDE3OTA0MjMxOTUsMTUwNTIzOTI5OCwtMTMz
-MTk2NDU1NCwtMzcwNTAxOTE0LC0xOTMzNDI0MDExLC0xNjQ3ND
-AxODMsLTY4MzI3MzcyMSwtMTI2MzAzMzA3NiwtNjgzMjczNzIx
-LDEwMTM5Njk5MjJdfQ==
+eyJoaXN0b3J5IjpbNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMj
+g1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0
+MzgsLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLD
+IwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUy
+MzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQyND
+AxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNzYs
+LTY4MzI3MzcyMV19
 -->
