@@ -460,10 +460,8 @@ $$\delta(x_i,y_i)\equiv \begin{cases}0,
 * Let $N_d$ be the number of attributes on which the two records match in a “not applicable” category,
 * Let and $N_{b+c}$ be the number of attributes on which the two records do not match.
 * Then,
-$$Na+d =
-d j=1
-d j=1
-[1 − δ(xj,yj )],
+$$N_{a+d}=$$
+
 where δ(·, ·) is defined in (6.22). Similarly, we have Nd =
 d j=1
 d j=1
@@ -574,7 +572,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5ODY4NjI1NCwtMTU0MjMyMjQyNiwtMT
+eyJoaXN0b3J5IjpbMTAxNDc3MjY3MCwtMTU0MjMyMjQyNiwtMT
 M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
 NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LD
 E3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEz
