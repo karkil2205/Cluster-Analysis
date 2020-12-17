@@ -454,7 +454,7 @@ $$\delta(x,y)=\begin{cases}1,
 * The most common way of measuring the similarity or dissimilarity between two objects through nominal variables is the simple matching approach. 
 * If $\bm{x}$ and $\bm{y}$ and are both $n$ nominal records for two individuals 
 $$
-s(\bm{x},\bm{y})=,
+s(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
 $$
 U P-Ue Kr s(i, j) = - and d(i, j) = - 
 P P 
@@ -563,11 +563,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg2NzAzNjk3LC03MDg5NjY3MDQsODM3Mj
-Q4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUx
-LC01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOTk2MTk1ODU5LC0xND
-UxMTczNDM4LC0yMTM2MjE5NTYxLC0xNjY1Mjk5MDQwLDkwODI1
-ODIzMywyMDk1OTI1MzM0LDE0NTE2MzE4NDEsMTc5MDQyMzE5NS
-wxNTA1MjM5Mjk4LC0xMzMxOTY0NTU0LC0zNzA1MDE5MTQsLTE5
-MzM0MjQwMTFdfQ==
+eyJoaXN0b3J5IjpbLTE3Mzc5OTQ0NjgsLTcwODk2NjcwNCw4Mz
+cyNDg0NTgsLTE5MzE1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5
+NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLT
+E0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4
+MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMT
+k1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwt
+MTkzMzQyNDAxMV19
 -->
