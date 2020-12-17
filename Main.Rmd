@@ -442,7 +442,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Eye's color may have for example four states: blue, brown, green, grey . 
 * Le $M$ be the number of states and code the outcomes as $1, \cdots, M$. 
 * We could choose $1 =\text{blue},$ $2 =\text{brown},$ $3 =\text{green},$ and $4 =\text{grey}$.
-* Note that these states are not ordered in any way
+* These states are not ordered in any way
 * One strategy would be creating a new binary variable for each of the $M$ nominal states.
 * Then to put it equal to $1$ if the corresponding state occurs and to $0$ otherwise. 
 * After that, one could resort to one of the dissimilarity coeffi-
@@ -556,11 +556,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzE1NzQwODEsNDg3OTEzMDg5LDEzND
-gxODg5NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4
-NTksLTE0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2NjUyOTkwND
-AsOTA4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkw
-NDIzMTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMT
-kxNCwtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEs
-LTEyNjMwMzMwNzZdfQ==
+eyJoaXN0b3J5IjpbODM3MjQ4NDU4LC0xOTMxNTc0MDgxLDQ4Nz
+kxMzA4OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMTc4NTU4NTA0
+NCwtOTk2MTk1ODU5LC0xNDUxMTczNDM4LC0yMTM2MjE5NTYxLC
+0xNjY1Mjk5MDQwLDkwODI1ODIzMywyMDk1OTI1MzM0LDE0NTE2
+MzE4NDEsMTc5MDQyMzE5NSwxNTA1MjM5Mjk4LC0xMzMxOTY0NT
+U0LC0zNzA1MDE5MTQsLTE5MzM0MjQwMTEsLTE2NDc0MDE4Mywt
+NjgzMjczNzIxXX0=
 -->
