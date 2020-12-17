@@ -448,7 +448,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
 $\delta(x,y)=\begin{cases}1,
-\text{ if } x=y;\\0,\:x\neq y\end{cases}$
+\text{ if } x=y;\\0,\text{ if } x\neq y.\end{cases}$
 
 
 
@@ -561,7 +561,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMjIwNjYyNCw4MzcyNDg0NTgsLTE5Mz
+eyJoaXN0b3J5IjpbLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5Mz
 E1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3
 NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLT
 IxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIwOTU5
