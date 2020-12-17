@@ -448,9 +448,9 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
 * The most common way of measuring the similarity or dissimilarity between two objects through nominal variables is the simple matching approach. 
-* If $\bm{x}$ and $\bm{y}$ and are both $n$ nominal records for two individuals, the similarity and the distance for the simplie matching is: 
+* If $\bm{x}$ and $\bm{y}$ and are both $n$ nominal records for two individuals, the similarity and the distance for the simple matching is: 
 $$
-s(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n},\:d(\bm{x},\bm{y})=1-\frac{n-\sum_{i=1}^n\delta(x_i,y_i)}{n},
+s(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n},\:d(\bm{x},\bm{y})=1-s(\bm{x},\bm{y}),
 $$
 where we are using the kronecker function: 
 $$\delta(x,y)\equiv \begin{cases}1,
@@ -565,11 +565,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5MzU1NzU4LC03MDg5NjY3MDQsODM3Mj
-Q4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUx
-LC01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOTk2MTk1ODU5LC0xND
-UxMTczNDM4LC0yMTM2MjE5NTYxLC0xNjY1Mjk5MDQwLDkwODI1
-ODIzMywyMDk1OTI1MzM0LDE0NTE2MzE4NDEsMTc5MDQyMzE5NS
-wxNTA1MjM5Mjk4LC0xMzMxOTY0NTU0LC0zNzA1MDE5MTQsLTE5
-MzM0MjQwMTFdfQ==
+eyJoaXN0b3J5IjpbLTM4NjcyNzAzMiwtNzA4OTY2NzA0LDgzNz
+I0ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1
+MSwtNTMyODU4Njc3LDE3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMT
+Q1MTE3MzQzOCwtMjEzNjIxOTU2MSwtMTY2NTI5OTA0MCw5MDgy
+NTgyMzMsMjA5NTkyNTMzNCwxNDUxNjMxODQxLDE3OTA0MjMxOT
+UsMTUwNTIzOTI5OCwtMTMzMTk2NDU1NCwtMzcwNTAxOTE0LC0x
+OTMzNDI0MDExXX0=
 -->
