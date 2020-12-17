@@ -450,11 +450,11 @@ cients of the previous subsection.
 * The most common way of measuring the similarity or dissimilarity between two objects through categorial variables is the simple matching approach. 
 * If $\bm{x},\bm{y},$ are $n$ nominal records for two individuals, the distance corresponding to the simple matching approach is: 
 $$
-d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n},\:d(\bm{x},\bm{y})=1-s(\bm{x},\bm{y}),
+d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n},
 $$
-where we are using the kronecker function: 
-$$\delta(x,y)\equiv \begin{cases}1,
-\text{ if } x=y;\\0,\text{ if } x\neq y,\end{cases}$$
+where: 
+$$\delta(x,y)\equiv \begin{cases}0,
+\text{ if } x=y;\\1,\text{ if } x\neq y,\end{cases}$$
 where $x,y$ are any  categorial values.
 
 * Here, u is the number of matches, that is, the number of variables for which objects i and j happen to be in the same state.
@@ -557,7 +557,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDA2OTkwNiwtMTM1MDA0NjczNCwtNz
+eyJoaXN0b3J5IjpbMTc3NDIzODM1MSwtMTM1MDA0NjczNCwtNz
 A4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMw
 ODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LDE3ODU1ODUwNDQsLT
 k5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEzNjIxOTU2MSwtMTY2
