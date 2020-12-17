@@ -455,9 +455,8 @@ $$\delta(x_i,y_i)\equiv \begin{cases}0,
 
 * Let  $N_{a+d}$ be the number of attributes on which the two records match:
 $$N_{a+d}=\sum_{i=1}^n\delta(x_i,y_i).$$
-* Let $N_d$ be the number of attributes on which the two records match in a “not applicable” category.
+$$N_{c+b}=\sum_{i=1}^n[1-\delta(x_i,y_i)].$$
 * Let $N_{b+c}$ be the number of attributes on which the two records do not match:
-$$N_{c+b}=\sum_{i=1}^n[1-\del ta(x_i,y_i)].$$
 
 * the distance corresponding to the simple matching approach is: 
 $$
@@ -576,11 +575,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTk1MjAxLC0xNTQyMzIyNDI2LC0xMz
-UwMDQ2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0
-MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMT
-c4NTU4NTA0NCwtOTk2MTk1ODU5LC0xNDUxMTczNDM4LC0yMTM2
-MjE5NTYxLC0xNjY1Mjk5MDQwLDkwODI1ODIzMywyMDk1OTI1Mz
-M0LDE0NTE2MzE4NDEsMTc5MDQyMzE5NSwxNTA1MjM5Mjk4LC0x
-MzMxOTY0NTU0XX0=
+eyJoaXN0b3J5IjpbLTE4MTcxMzI4NjEsLTE1NDIzMjI0MjYsLT
+EzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1
+NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3Ny
+wxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIx
+MzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIwOTU5Mj
+UzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzkyOTgs
+LTEzMzE5NjQ1NTRdfQ==
 -->
