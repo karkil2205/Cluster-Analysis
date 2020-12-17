@@ -447,6 +447,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Then to put it equal to $1$ if the corresponding state occurs and to $0$ otherwise. 
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
+* Let define the Kroeneker function: 
 $\delta(x,y)=\begin{cases}1,
 \text{ if } x=y;\\0,\text{ if } x\neq y.\end{cases}$
 
@@ -454,7 +455,7 @@ $\delta(x,y)=\begin{cases}1,
 
 * The most common way of measuring the similarity or dissimilarity between two objects through nominal 
 variables is to use the simple matching approach: 
-U P-U s(i, j) = - and d(i, j) = - 
+U P-Ue Kr s(i, j) = - and d(i, j) = - 
 P P 
 (Sokal and Michener, 1958).
  Here, u is the number of matches, that is, the 
@@ -561,11 +562,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5Mz
-E1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3
-NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLT
-IxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIwOTU5
-MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzkyOT
-gsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMSwt
-MTY0NzQwMTgzXX0=
+eyJoaXN0b3J5IjpbMTM2NzUyMzM4MSwtNzA4OTY2NzA0LDgzNz
+I0ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1
+MSwtNTMyODU4Njc3LDE3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMT
+Q1MTE3MzQzOCwtMjEzNjIxOTU2MSwtMTY2NTI5OTA0MCw5MDgy
+NTgyMzMsMjA5NTkyNTMzNCwxNDUxNjMxODQxLDE3OTA0MjMxOT
+UsMTUwNTIzOTI5OCwtMTMzMTk2NDU1NCwtMzcwNTAxOTE0LC0x
+OTMzNDI0MDExXX0=
 -->
