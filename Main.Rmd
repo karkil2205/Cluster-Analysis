@@ -447,6 +447,9 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Then to put it equal to $1$ if the corresponding state occurs and to $0$ otherwise. 
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
+
+$\delta(x,y)=\begin{cases}ff,\end{cases}$
+
 * The most common way of measuring the similarity or dissimilarity between two objects through nominal 
 variables is to use the simple matching approach: 
 U P-U s(i, j) = - and d(i, j) = - 
@@ -556,11 +559,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM3MjQ4NDU4LC0xOTMxNTc0MDgxLDQ4Nz
-kxMzA4OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMTc4NTU4NTA0
-NCwtOTk2MTk1ODU5LC0xNDUxMTczNDM4LC0yMTM2MjE5NTYxLC
-0xNjY1Mjk5MDQwLDkwODI1ODIzMywyMDk1OTI1MzM0LDE0NTE2
-MzE4NDEsMTc5MDQyMzE5NSwxNTA1MjM5Mjk4LC0xMzMxOTY0NT
-U0LC0zNzA1MDE5MTQsLTE5MzM0MjQwMTEsLTE2NDc0MDE4Mywt
-NjgzMjczNzIxXX0=
+eyJoaXN0b3J5IjpbMTYzMTc1NTA0NSw4MzcyNDg0NTgsLTE5Mz
+E1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3
+NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLT
+IxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIwOTU5
+MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUyMzkyOT
+gsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQyNDAxMSwt
+MTY0NzQwMTgzXX0=
 -->
