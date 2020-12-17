@@ -448,7 +448,11 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
 
-$\delta(x,y)=\begin{cases}ff,\end{cases}$
+$\delta(x,y)=\begin{cases}1,
+if\:x=y;0,\:x\neq y\\hh,\end{cases}$
+$\delta(x,y)=\begin{equation}1,\end{equation}$
+
+
 
 * The most common way of measuring the similarity or dissimilarity between two objects through nominal 
 variables is to use the simple matching approach: 
@@ -559,7 +563,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTc1NTA0NSw4MzcyNDg0NTgsLTE5Mz
+eyJoaXN0b3J5IjpbMTI1NTQxNjUzOSw4MzcyNDg0NTgsLTE5Mz
 E1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3
 NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLT
 IxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIwOTU5
