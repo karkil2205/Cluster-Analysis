@@ -447,12 +447,12 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Then to put it equal to $1$ if the corresponding state occurs and to $0$ otherwise. 
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
-* The most common way of measuring the similarity or dissimilarity 
-between some objects i and j that are characterized through nominal 
+* The most common way of measuring the similarity or dissimilarity between two objects through nominal 
 variables is to use the simple matching approach: 
 U P-U s(i, j) = - and d(i, j) = - 
 P P 
-(Sokal and Michener, 1958). Here, u is the number of matches, that is, the 
+(Sokal and Michener, 1958).
+ Here, u is the number of matches, that is, the 
 number of variables for which objects i and j happen to be in the same
 state. As before, p is the total number of variables (or, in a situation with 
 missing values, the number of variables that are available for both i and j). 
@@ -556,11 +556,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMj
-g1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0
-MzgsLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLD
-IwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkwNDIzMTk1LDE1MDUy
-MzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMTkxNCwtMTkzMzQyND
-AxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEsLTEyNjMwMzMwNzYs
-LTY4MzI3MzcyMV19
+eyJoaXN0b3J5IjpbLTE5MzE1NzQwODEsNDg3OTEzMDg5LDEzND
+gxODg5NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4
+NTksLTE0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2NjUyOTkwND
+AsOTA4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1MTYzMTg0MSwxNzkw
+NDIzMTk1LDE1MDUyMzkyOTgsLTEzMzE5NjQ1NTQsLTM3MDUwMT
+kxNCwtMTkzMzQyNDAxMSwtMTY0NzQwMTgzLC02ODMyNzM3MjEs
+LTEyNjMwMzMwNzZdfQ==
 -->
