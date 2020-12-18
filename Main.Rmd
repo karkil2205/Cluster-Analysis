@@ -459,7 +459,7 @@ $$N_{a+d}=\sum_{i=1}^n\delta(x_i,y_i).$$
 $$N_{b+c}= n - N_{a+d}.$$
 * Let $N_d$ be the number of attributes on which the two records match in a “not applicable” category.
 * We have:
-* 
+  $$N_{d}=\sum_{i=1}^n\delta(x_i,y_i).
 
 * the distance corresponding to the simple matching approach is: 
 $$
@@ -578,7 +578,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTU3OTI1MCwyMjY2OTExNjksLTE1ND
+eyJoaXN0b3J5IjpbLTYyNDk0OTc3MywyMjY2OTExNjksLTE1ND
 IzMjI0MjYsLTEzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0
 NTgsLTE5MzE1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLT
 UzMjg1ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTEx
