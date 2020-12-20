@@ -465,7 +465,7 @@ $$
 d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
 $$
 * Therefore:
-$$N_{a+d}=\frac{}{}$$
+$$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_b{b+d}}$$
 
 where δ(·, ·) is defined in (6.22). Similarly, we have Nd =
 d j=1
@@ -577,11 +577,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3MTk4MDgsMTc2NjMwNTkxMSwtNjI0OT
-Q5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMTM1MDA0Njcz
-NCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3NDA4MSw0OD
-c5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LDE3ODU1ODUw
-NDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEzNjIxOTU2MS
-wtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNCwxNDUx
-NjMxODQxXX0=
+eyJoaXN0b3J5IjpbNDY0NTUzMDE4LDE3NjYzMDU5MTEsLTYyND
+k0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLTEzNTAwNDY3
+MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1NzQwODEsND
+g3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3NywxNzg1NTg1
+MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIxMzYyMTk1Nj
+EsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIwOTU5MjUzMzQsMTQ1
+MTYzMTg0MV19
 -->
