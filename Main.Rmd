@@ -462,10 +462,10 @@ $$N_{b+c}= n - N_{a+d}.$$
 
 * The distance corresponding to the simple matching approach is: 
 $$
-d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n},
+d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
 $$
-* Then,
-$$N_{a+d}=$$
+* Therefore:
+$$N_{a+d}=\frac{}{}$$
 
 where δ(·, ·) is defined in (6.22). Similarly, we have Nd =
 d j=1
@@ -577,11 +577,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQzNjU2MTMsMTc2NjMwNTkxMSwtNj
-I0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMTM1MDA0
-NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3NDA4MS
-w0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LDE3ODU1
-ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEzNjIxOT
-U2MSwtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNCwx
-NDUxNjMxODQxXX0=
+eyJoaXN0b3J5IjpbNjA3MTk4MDgsMTc2NjMwNTkxMSwtNjI0OT
+Q5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMTM1MDA0Njcz
+NCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3NDA4MSw0OD
+c5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LDE3ODU1ODUw
+NDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEzNjIxOTU2MS
+wtMTY2NTI5OTA0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNCwxNDUx
+NjMxODQxXX0=
 -->
