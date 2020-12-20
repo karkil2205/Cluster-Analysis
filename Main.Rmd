@@ -453,7 +453,7 @@ cients of the previous subsection.
 $$\delta(x_i,y_i)\equiv \begin{cases}0,
 \text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i,\:i=1\cdots n.\end{cases}$$
 
-* Let  $N_{a+d}$ be the number of attributes on which the two records match:
+* Let  $N_{a+d}$ be the number of attributes of the two individuals on which the two records match:
 $$N_{a+d}=\sum_{i=1}^n\delta(x_i,y_i).$$
 * Let $N_{b+c}$ be the number of attributes on which the two records do not match:
 $$N_{b+c}= n - N_{a+d}.$$
@@ -578,11 +578,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNDY1NTgxLC02MjQ5NDk3NzMsMjI2Nj
-kxMTY5LC0xNTQyMzIyNDI2LC0xMzUwMDQ2NzM0LC03MDg5NjY3
-MDQsODM3MjQ4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwxMz
-Q4MTg4OTUxLC01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOTk2MTk1
-ODU5LC0xNDUxMTczNDM4LC0yMTM2MjE5NTYxLC0xNjY1Mjk5MD
-QwLDkwODI1ODIzMywyMDk1OTI1MzM0LDE0NTE2MzE4NDEsMTc5
-MDQyMzE5NV19
+eyJoaXN0b3J5IjpbMTc2NjMwNTkxMSwtNjI0OTQ5NzczLDIyNj
+Y5MTE2OSwtMTU0MjMyMjQyNiwtMTM1MDA0NjczNCwtNzA4OTY2
+NzA0LDgzNzI0ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMwODksMT
+M0ODE4ODk1MSwtNTMyODU4Njc3LDE3ODU1ODUwNDQsLTk5NjE5
+NTg1OSwtMTQ1MTE3MzQzOCwtMjEzNjIxOTU2MSwtMTY2NTI5OT
+A0MCw5MDgyNTgyMzMsMjA5NTkyNTMzNCwxNDUxNjMxODQxLDE3
+OTA0MjMxOTVdfQ==
 -->
