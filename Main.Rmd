@@ -468,23 +468,12 @@ $$
 $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 
 *  Note that simple matching has exactly the same meaning as in the preceding section.
-* For instance, it is invariant with respect to different codings of the variables because this does not affect the number of matches.
-* Again it is possible to give a higher weight to u, the number of agreements, or to p - u, the number of disagreements. Such ariants 
-* were considered by Rogers and Tanimoto (1960) and Sokal and Sneath (1963),  corresponding to the formulas in Table 10.
-* It must also be noted that 
-different variables may have different values of M. Therefore, Hyvarinen 
-(1962) assigns more weight to matches in variables with a large number of 
-states. Lingoes (1967) extends this by counting, for all variables, the 
-frequency with which each state actually occurs and by giving a higher 
-weight to matches corresponding to rare states. (This is reminiscent of the 
-treatment of asymmetric binary variables.) Some other variants can be 
-found in Bock (1974, Section 5). 
-We personally prefer the simple matching approach (19) because of its 
-intuitive appeal and widespread acceptance. Simple matching dissimilarities 
-can be computed by means of the program DAISY. It is not necessary to 
+* It is invariant with respect to different codings of the variables because this does not affect the number of matches.
+* Simple matching dissimilarities can be computed by means of the program DAISY. It is not necessary to 
 know the number of states for each variable because the program will itself 
 produce an inventory with the number of states and the number of missing 
-values. Also, the codes entered may be arbitrary real numbers, so the 
+values.
+Also, the codes entered may be arbitrary real numbers, so the 
 variables do not have to be coded in a discrete way. The main purpose of 
 DAISY is to deliver a dissimilarity matrix which can be used by some of 
 the clustering algorithms described in the following chapters.
@@ -565,7 +554,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NTMxNDk1MCwxNzY2MzA1OTExLC02Mj
+eyJoaXN0b3J5IjpbLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02Mj
 Q5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMzUwMDQ2
 NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0MDgxLD
 Q4NzkxMzA4OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMTc4NTU4
