@@ -474,7 +474,7 @@ designed with the intention of handling mixed attribute types.
 The coefficient is calculated as the weighted average of individual attribute contributions, with weights usually used only to
 indicate which attribute values could actually be compared meaningfully:
 $$
-d(\mathbf{x})=\sum_i^n w_i d^i(x_i,y_i)
+d(\mathbf{x})=\sum_{i=1}^n w_i d_i(x_i,y_i)
 $$
 
 𝛿gow(x1, x2) = 𝛾i
@@ -579,11 +579,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MDMxMjQzNiwtODEyNTAzNzUsMTc0Nz
-IxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5MTEsLTYyNDk0OTc3
-MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLTEzNTAwNDY3MzQsLT
-cwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1NzQwODEsNDg3OTEz
-MDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC
-05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2
-NjUyOTkwNDBdfQ==
+eyJoaXN0b3J5IjpbLTUwMDMzMDg3NywxMDYwMzEyNDM2LC04MT
+I1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkx
+MSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMT
+M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
+NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LD
+E3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEz
+NjIxOTU2MV19
 -->
