@@ -473,10 +473,10 @@ $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 designed with the intention of handling mixed attribute types.
 * The coefficient is calculated as the weighted average of individual attribute contributions, with weights usually used only to indicate which attribute values could actually be compared meaningfully:
 $$
-d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n \delta(x_i,y_i) g(x_i,y_i)}{\sum_{i=1}^n \delta(x_i,y_i)}
+d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i d_i(x_i,y_i)}{\sum_{i=1}^n w_i}
 $$
-* The indicator \delta(x_i,y_i) is put equal to $1$ when both measurements $x_i$ and $y_i$ are nonmissing, 
-* The number KKK is the contribution of the $i$th variable to the dissimilarity measure.
+* The wheight $w_i$  is put equal to $1$ when both measurements $x_i$ and $y_i$ are nonmissing, 
+* The number $$KKK is the contribution of the $i$th variable to the dissimilarity measure.
 * It the it is  is defined as nominal, we have  
 $$
 g(x_i,y_i)= 
@@ -566,11 +566,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczNzc1MTA4LDEwNjAzMTI0MzYsLTgxMj
-UwMzc1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTEx
-LC02MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMz
-UwMDQ2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0
-MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMT
-c4NTU4NTA0NCwtOTk2MTk1ODU5LC0xNDUxMTczNDM4LC0yMTM2
-MjE5NTYxXX0=
+eyJoaXN0b3J5IjpbMTA0MDg3NDY0NSwxMDYwMzEyNDM2LC04MT
+I1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkx
+MSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMT
+M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
+NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LD
+E3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEz
+NjIxOTU2MV19
 -->
