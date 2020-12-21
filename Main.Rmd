@@ -477,11 +477,12 @@ d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n \delta(x_i,y_i) g(x_i,y_i)}{\sum_{i=
 $$
 * The indicator \delta(x_i,y_i) is put equal to $1$ when both measurements $x_i$ and $y_i$ are nonmissing, 
 * The number KKK is the contribution of the $i$th variable to the dissimilarity measure.
-* It the i is defined as 
-* 
-d$) = 1 if xi/ # xi/ 
-= 0 if xi/ = xi/ 
-If all variables are nominal, expression (24) becomes the number of matches 
+* It the it is  is defined as nominal, we have  
+$$
+g(x_i,y_i)= 
+$$
+
+If all variables are , expression (24) becomes the number of matches 
 over the total number of available pairs, so it coincides with the simple 
 matching coefficient (19). The same holds for symmetric binary variables, 
 for which the simple matching coefficient of Table 10 is recovered. When 
@@ -565,7 +566,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY2NTQ3MjQ4LDEwNjAzMTI0MzYsLTgxMj
+eyJoaXN0b3J5IjpbNTczNzc1MTA4LDEwNjAzMTI0MzYsLTgxMj
 UwMzc1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTEx
 LC02MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMz
 UwMDQ2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0
