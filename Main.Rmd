@@ -476,7 +476,19 @@ $$
 d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n \delta(x_i,y_i) g(x_i,y_i)}{\sum_{i=1}^n \delta(x_i,y_i)}
 $$
 * The indicator \delta(x_i,y_i) is put equal to $1$ when both measurements $x_i$ and $y_i$ are nonmissing, 
+* The number KKK is the contribution of the $i$th variable to the dissimilarity measure.
+* It the i is defined as 
 * 
+d$) = 1 if xi/ # xi/ 
+= 0 if xi/ = xi/ 
+If all variables are nominal, expression (24) becomes the number of matches 
+over the total number of available pairs, so it coincides with the simple 
+matching coefficient (19). The same holds for symmetric binary variables, 
+for which the simple matching coefficient of Table 10 is recovered. When 
+the data consist of asymmetric binary variables, we obtain the Jaccard 
+coefficient of Table 11 because the 0-0 matches are not counted (because 
+their a//) equals zero). 
+If variable f is interual-scaled, then d:!) is given
 
 
 
@@ -553,11 +565,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQ3MjM0MzUsMTA2MDMxMjQzNiwtOD
-EyNTAzNzUsMTc0NzIxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5
-MTEsLTYyNDk0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLT
-EzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1
-NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3Ny
-wxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIx
-MzYyMTk1NjFdfQ==
+eyJoaXN0b3J5IjpbMzY2NTQ3MjQ4LDEwNjAzMTI0MzYsLTgxMj
+UwMzc1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTEx
+LC02MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMz
+UwMDQ2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0
+MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMT
+c4NTU4NTA0NCwtOTk2MTk1ODU5LC0xNDUxMTczNDM4LC0yMTM2
+MjE5NTYxXX0=
 -->
