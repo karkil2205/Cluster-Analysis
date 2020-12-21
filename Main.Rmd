@@ -468,7 +468,11 @@ $$
 $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 *  Note that simple matching has exactly the same meaning as in the preceding section.
  
-Mixed Variable
+# Mixed Variable
+
+KKKK
+
+
 
 Election data set of Table 15.5 (1 = Dem, 0 = Rep)**
 
@@ -543,11 +547,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NzkyNjU5MCwxNzQ3MjE4MTQzLC0yMj
-Y1MTM4MDQsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLDIyNjY5MTE2
-OSwtMTU0MjMyMjQyNiwtMTM1MDA0NjczNCwtNzA4OTY2NzA0LD
-gzNzI0ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMwODksMTM0ODE4
-ODk1MSwtNTMyODU4Njc3LDE3ODU1ODUwNDQsLTk5NjE5NTg1OS
-wtMTQ1MTE3MzQzOCwtMjEzNjIxOTU2MSwtMTY2NTI5OTA0MCw5
-MDgyNTgyMzNdfQ==
+eyJoaXN0b3J5IjpbLTgxMjUwMzc1LDE3NDcyMTgxNDMsLTIyNj
+UxMzgwNCwxNzY2MzA1OTExLC02MjQ5NDk3NzMsMjI2NjkxMTY5
+LC0xNTQyMzIyNDI2LC0xMzUwMDQ2NzM0LC03MDg5NjY3MDQsOD
+M3MjQ4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4
+OTUxLC01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOTk2MTk1ODU5LC
+0xNDUxMTczNDM4LC0yMTM2MjE5NTYxLC0xNjY1Mjk5MDQwLDkw
+ODI1ODIzM119
 -->
