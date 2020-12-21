@@ -451,7 +451,7 @@ cients of the previous subsection.
 * If $\bm{x},\bm{y},$ are $n$ nominal records for two individuals,
 * Let define the function: 
 $$\delta(x_i,y_i)\equiv \begin{cases}0,
-\text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i,\:i=1\cdots n.\end{cases}$$
+\text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}$$
 
 * Let  $N_{a+d}$ be the number of attributes of the two individuals on which the two records match:
 $$N_{a+d}=\sum_{i=1}^n\delta(x_i,y_i).$$
@@ -477,12 +477,13 @@ d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i \delta(x_i,y_i)}{\sum_{i=1}^n w_
 $$
 * The wheight $w_i$  is put equal to $1$ when both measurements $x_i$ and $y_i$ are nonmissing, 
 * The number $\delta(x_i,y_i)$ is the contribution of the $i$th measure or variable to the dissimilarity measure.
-* It the it is  is defined as nominal, we take  
+* It the $i$th meas it is  is defined as nominal, we take  
 $$
 \delta(x_i,y_i)\equiv \begin{cases}0,
-\text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i,\:i=1\cdots n.\end{cases}$$
-
+\text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}
 $$
+* 
+
 
 If all variables are , expression (24) becomes the number of matches 
 over the total number of available pairs, so it coincides with the simple 
@@ -568,11 +569,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk4MzE3MDQ3LDEwNjAzMTI0MzYsLTgxMj
-UwMzc1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTEx
-LC02MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMz
-UwMDQ2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0
-MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMT
-c4NTU4NTA0NCwtOTk2MTk1ODU5LC0xNDUxMTczNDM4LC0yMTM2
-MjE5NTYxXX0=
+eyJoaXN0b3J5IjpbMTc1MTI3MjExNCwxMDYwMzEyNDM2LC04MT
+I1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkx
+MSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMT
+M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
+NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LD
+E3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEz
+NjIxOTU2MV19
 -->
