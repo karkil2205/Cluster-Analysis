@@ -471,6 +471,7 @@ $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 # Gower’s dissimilarity
 * Gower’s coefficient is a dissimilarity measure specifically
 designed for handling mixed attribute types or variables.
+* See GOWER, John C. A general coefficient of similarity and some of its properties. _Biometrics_, 1971, p. 857-871.
 * The coefficient is calculated as the weighted average of attribute contributions.
 * Weights usually used only to indicate which attribute values could actually be compared meaningfully.
 * The formula is:
@@ -509,11 +510,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjI4MjE3MiwxMDYwMzEyNDM2LC04MT
-I1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkx
-MSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMT
-M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
-NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LD
-E3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEz
-NjIxOTU2MV19
+eyJoaXN0b3J5IjpbLTE2NjA1ODQzNzAsMTA2MDMxMjQzNiwtOD
+EyNTAzNzUsMTc0NzIxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5
+MTEsLTYyNDk0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLT
+EzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1
+NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3Ny
+wxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIx
+MzYyMTk1NjFdfQ==
 -->
