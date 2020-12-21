@@ -468,9 +468,41 @@ $$
 $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 *  Note that simple matching has exactly the same meaning as in the preceding section.
  
-# Mixed Variable
+# Gower’s coefficient
+* Gower’s coefficient is a dissimilarity measure specifically
+designed with the intention of handling mixed attribute types.
+The coefficient is calculated as the weighted average of individual attribute contributions, with weights usually used only to
+indicate which attribute values could actually be compared meaningfully:
+$$
 
-KKKK
+$$
+
+𝛿gow(x1, x2) = 𝛾i
+𝛿gow,i
+(ai
+(x1), ai
+(x2))
+∑n
+i=1 𝛾i
+(11.8)
+where 𝛾i is the weight assigned to attribute ai and 𝛿gow,i is the attribute value similarity measure
+for attribute i, defined as
+𝛿gow,i
+(𝑣1, 𝑣2) =
+⎧
+⎪
+⎨
+⎪
+⎩
+|𝑣1−𝑣2|
+maxx∈X ai(x)−minx∈X ai(x) if ai is continuous
+0 if ai is discrete and 𝑣1 = 𝑣2
+1 if ai is discrete and 𝑣1 ≠ 𝑣2
+The most commonly used 
+difference-based dissimilarity measures presented so far favor
+either continuous (as for the whole Minkowski distance-based family) or discrete (as for
+K
+KKK
 
 
 
@@ -547,11 +579,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjUwMzc1LDE3NDcyMTgxNDMsLTIyNj
-UxMzgwNCwxNzY2MzA1OTExLC02MjQ5NDk3NzMsMjI2NjkxMTY5
-LC0xNTQyMzIyNDI2LC0xMzUwMDQ2NzM0LC03MDg5NjY3MDQsOD
-M3MjQ4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4
-OTUxLC01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOTk2MTk1ODU5LC
-0xNDUxMTczNDM4LC0yMTM2MjE5NTYxLC0xNjY1Mjk5MDQwLDkw
-ODI1ODIzM119
+eyJoaXN0b3J5IjpbMTkzMTEzNTA3OSwtODEyNTAzNzUsMTc0Nz
+IxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5MTEsLTYyNDk0OTc3
+MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLTEzNTAwNDY3MzQsLT
+cwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1NzQwODEsNDg3OTEz
+MDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC
+05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIxMzYyMTk1NjEsLTE2
+NjUyOTkwNDBdfQ==
 -->
