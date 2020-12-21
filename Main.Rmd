@@ -491,12 +491,7 @@ $$
 $$
 where $R_i$ is the range of variable $i$ over the available data.
 * Consider the following data set:
-## Equation
-$$
-\begin{equation}
-    E = m c^2
-\end{equation}$$
-
+##
 ![Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.](Table35.jpg)
 
 
@@ -518,7 +513,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDYxMTc1MiwtNTU2OTk4Mjg5LC0xND
+eyJoaXN0b3J5IjpbLTExMTUyODk4OCwtNTU2OTk4Mjg5LC0xND
 k5MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMzc1LDE3NDcyMTgx
 NDMsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02MjQ5NDk3NzMsMj
 I2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMzUwMDQ2NzM0LC03MDg5
