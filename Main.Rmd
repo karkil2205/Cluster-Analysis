@@ -484,79 +484,10 @@ $$
 $$
 *  It the $i$th measure is  interval-scaled, we take   
 $$
-\delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i}
+\delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i},
 $$
-where $R_i$ os the range of the variables $i$.
+where $R_i$ os the range of the variables $i$ over the available data.
 
-
-
-
-
-If all variables are , expression (24) becomes the number of matches 
-over the total number of available pairs, so it coincides with the simple 
-matching coefficient (19). The same holds for symmetric binary variables, 
-for which the simple matching coefficient of Table 10 is recovered. When 
-the data consist of asymmetric binary variables, we obtain the Jaccard 
-coefficient of Table 11 because the 0-0 matches are not counted (because 
-their a//) equals zero). 
-If variable f is interual-scaled, then d:!) is given
-
-
-
-Election data set of Table 15.5 (1 = Dem, 0 = Rep)**
-
- State  e1  e2  e3  e4  e5  e6  e7  e8 
-  Alab 0 0 0 0 0 0 0 0  
-  Alas 0 0 0 0 0 0 0 0  
-  Ariz 0 0 0 0 1 0 0 0  
-  Arka 0 0 0 1 1 0 0 0  
-  Cali 0 0 0 1 1 1 1 1  
-  Colo 0 0 0 1 0 0 0 1  
-  Conn 0 0 0 1 1 1 1 1  
-  Dela 0 0 0 1 1 1 1 1  
-  DisC 1 1 1 1 1 1 1 1  
-  Flor 0 0 0 0 1 0 0 1  
-  Geor 1 0 0 1 0 0 0 0  
-  Hawa 1 0 1 1 1 1 1 1  
-  Idah 0 0 0 0 0 0 0 0  
-  Illi 0 0 0 1 1 1 1 1  
-  Indi 0 0 0 0 0 0 0 1  
-  Iowa 0 0 1 1 1 1 0 1  
-  Kans 0 0 0 0 0 0 0 0  
-  Kent 0 0 0 1 1 0 0 0  
-  Loui 0 0 0 1 1 0 0 0  
-  Main 0 0 0 1 1 1 1 1  
-  Mary 1 0 0 1 1 1 1 1  
-  Mass 0 0 1 1 1 1 1 1  
-  Mich 0 0 0 1 1 1 1 1  
-  Minn 1 1 1 1 1 1 1 1  
-  Miss 0 0 0 0 0 0 0 0  
-  Miso 0 0 0 1 1 0 0 0  
-  Mont 0 0 0 1 0 0 0 0  
-  Nebr 0 0 0 0 0 0 0 0  
-  Neva 0 0 0 1 1 0 0 1  
-  NewH 0 0 0 1 1 0 1 1  
-  NewJ 0 0 0 1 1 1 1 1  
-  NewM 0 0 0 1 1 1 0 1  
-  NewY 0 0 1 1 1 1 1 1  
-  NorC 0 0 0 0 0 0 0 1  
-  NorD 0 0 0 0 0 0 0 0  
-  Ohio 0 0 0 1 1 0 0 1  
-  Okla 0 0 0 0 0 0 0 0  
-  Oreg 0 0 1 1 1 1 1 1  
-  Penn 0 0 0 1 1 1 1 1  
-  Rhod 1 0 1 1 1 1 1 1  
-  SouC 0 0 0 0 0 0 0 0  
-  SouD 0 0 0 0 0 0 0 0  
-  Tenn 0 0 0 1 1 0 0 1  
-  Texa 0 0 0 0 0 0 0 0  
-  Utah 0 0 0 0 0 0 0 0  
-  Verm 0 0 0 1 1 1 1 1  
-  Virg 0 0 0 0 0 0 0 1  
-  Wash 0 0 1 1 1 1 1 1  
-  WesV 1 0 1 1 1 0 0 0  
-  Wisc 0 0 1 1 1 1 1 1  
-  Wyom 0 0 0 0 0 0 0 0
 
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
@@ -576,11 +507,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzYyNTM1NTEsMTA2MDMxMjQzNiwtOD
-EyNTAzNzUsMTc0NzIxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5
-MTEsLTYyNDk0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLT
-EzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1
-NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3Ny
-wxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIx
-MzYyMTk1NjFdfQ==
+eyJoaXN0b3J5IjpbLTkxNTU1NzMyNSwxMDYwMzEyNDM2LC04MT
+I1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkx
+MSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMT
+M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
+NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LD
+E3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEz
+NjIxOTU2MV19
 -->
