@@ -60,7 +60,7 @@ $$
 * A3 also holds using the fact that $|a+b|\leq |a|+|b|$ for any reals $a,b$.
 * There exists also a weighted version  of the Manhattan distance called the Canberra distance.
 
-[Manhattan distance vs Euclidean distance Graph](https://upload.wikimedia.org/wikipedia/commons/0/08/Manhattan_distance.svg)
+![Manhattan distance vs Euclidean distance Graph](https://raw.githubusercontent.com/karkil2205/rticles/master/566px-Manhattan_distance.svg.png)
 
 ```{r}
 x = c(0, 0)
@@ -513,11 +513,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzIwNzYyMjAsLTU1Njk5ODI4OSwtMT
-Q5OTEyMzYxOCwxMDYwMzEyNDM2LC04MTI1MDM3NSwxNzQ3MjE4
-MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLD
-IyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMTM1MDA0NjczNCwtNzA4
-OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMwOD
-ksMTM0ODE4ODk1MSwtNTMyODU4Njc3LDE3ODU1ODUwNDQsLTk5
-NjE5NTg1OV19
+eyJoaXN0b3J5IjpbMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNT
+U2OTk4Mjg5LC0xNDk5MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUw
+Mzc1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC
+02MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMzUw
+MDQ2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0MD
+gxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMTc4
+NTU4NTA0NF19
 -->
