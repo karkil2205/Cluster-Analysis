@@ -59,7 +59,7 @@ $$
 * A1-A2 hold.
 * A3 also holds using the fact that $|a+b|\leq |a|+|b|$ for any reals $a,b$.
 * There exists also a weighted version  of the Manhattan distance called the Canberra distance.
-<img 
+<img  
 src="https://raw.githubusercontent.com/karkil2205/rticles/master/566px-Manhattan_distance.svg.png"
 width="300"> 
 <em>Manhattan distance vs Euclidean distance Graph</em>
@@ -518,11 +518,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDI5NDA2NTAsLTE3Nzg4Njk0MzAsLT
-E4MjQ4NzQwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2
-OTk4Mjg5LC0xNDk5MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMz
-c1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02
-MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMzUwMD
-Q2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0MDgx
-LDQ4NzkxMzA4OV19
+eyJoaXN0b3J5IjpbLTg0Mjk5MjMyOCwtMTc3ODg2OTQzMCwtMT
+gyNDg3NDA1MCwxMjk4ODg1NTA2LC0xMzMyMDc2MjIwLC01NTY5
+OTgyODksLTE0OTkxMjM2MTgsMTA2MDMxMjQzNiwtODEyNTAzNz
+UsMTc0NzIxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5MTEsLTYy
+NDk0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLTEzNTAwND
+Y3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1NzQwODEs
+NDg3OTEzMDg5XX0=
 -->
