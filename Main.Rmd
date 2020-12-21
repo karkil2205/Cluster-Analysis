@@ -473,7 +473,7 @@ $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 designed for handling mixed attribute types or variables.
 * The coefficient is calculated as the weighted average of attribute contributions.
 * Weights usually used only to indicate which attribute values could actually be compared meaningfully.
-* The formula is
+* The formula is:
 $$
 d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i \delta(x_i,y_i)}{\sum_{i=1}^n w_i}
 $$
@@ -509,7 +509,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODgwODM5NCwxMDYwMzEyNDM2LC04MT
+eyJoaXN0b3J5IjpbMTIyNjI4MjE3MiwxMDYwMzEyNDM2LC04MT
 I1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkx
 MSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMT
 M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
