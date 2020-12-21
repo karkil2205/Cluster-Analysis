@@ -476,10 +476,10 @@ $$
 d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i d_i(x_i,y_i)}{\sum_{i=1}^n w_i}
 $$
 * The wheight $w_i$  is put equal to $1$ when both measurements $x_i$ and $y_i$ are nonmissing, 
-* The number $$KKK is the contribution of the $i$th variable to the dissimilarity measure.
+* The number $d_i(x_i,y_i)$ is the contribution of the $i$th measure or variable to the dissimilarity measure.
 * It the it is  is defined as nominal, we have  
 $$
-g(x_i,y_i)= 
+d_i(x_i,y_i)= 
 $$
 
 If all variables are , expression (24) becomes the number of matches 
@@ -566,7 +566,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDg3NDY0NSwxMDYwMzEyNDM2LC04MT
+eyJoaXN0b3J5IjpbLTkyMjI2Nzg4NCwxMDYwMzEyNDM2LC04MT
 I1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkx
 MSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMT
 M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
