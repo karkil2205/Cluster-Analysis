@@ -473,27 +473,11 @@ $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 designed with the intention of handling mixed attribute types.
 * The coefficient is calculated as the weighted average of individual attribute contributions, with weights usually used only to indicate which attribute values could actually be compared meaningfully:
 $$
-d(\mathbf{x})=\frac{\sum_{i=1}^n w_i d^{i}(x_i,y_i)}{\sum_{i=1}^n w_i}
+d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i d^{i}(x_i,y_i)}{\sum_{i=1}^n w_i}
 $$
-
-𝛿gow(x1, x2) = 𝛾i
-𝛿gow,i
-(ai
-(x1), ai
-(x2))
-∑n
-i=1 𝛾i
-(11.8)
-where 𝛾i is the weight assigned to attribute ai and 𝛿gow,i is the attribute value similarity measure
-for attribute i, defined as
-𝛿gow,i
-(𝑣1, 𝑣2) =
-⎧
-⎪
-⎨
-⎪
-⎩
-|𝑣1−𝑣2|
+* 
+The indicator 6;:) is put equal to $1$ when both measurements x,/ and xJf for the fth variable are nonmissing, 
+* 
 maxx∈X ai(x)−minx∈X ai(x) if ai is continuous
 0 if ai is discrete and 𝑣1 = 𝑣2
 1 if ai is discrete and 𝑣1 ≠ 𝑣2
@@ -578,7 +562,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjUzNjQzMDYsMTA2MDMxMjQzNiwtOD
+eyJoaXN0b3J5IjpbLTIwNzI1ODQ5NDAsMTA2MDMxMjQzNiwtOD
 EyNTAzNzUsMTc0NzIxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5
 MTEsLTYyNDk0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLT
 EzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1
