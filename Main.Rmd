@@ -1,12 +1,12 @@
 ---
 title: "Distance and dissimilarities"
 output:
-  pdf_document:
+  html_notebook:
     toc: yes
   html_document:
     toc: yes
     df_print: paged
-  html_notebook:
+  pdf_document:
     toc: yes
 ---
 
@@ -493,6 +493,7 @@ where $R_i$ is the range of variable $i$ over the available data.
 * Consider the following data set:
 
 
+![Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.](Table35.jpg)
 
 
 # Distance matrix computation
