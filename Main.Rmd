@@ -61,9 +61,9 @@ $$
 * There exists also a weighted version  of the Manhattan distance called the Canberra distance.
 <img 
 src="https://raw.githubusercontent.com/karkil2205/rticles/master/566px-Manhattan_distance.svg.png"
-width="300">
+width="300"> 
+<em>Manhattan distance vs Euclidean distance Graph</em>
 
-Manhattan distance vs Euclidean distance Graph
 
 
 
@@ -518,7 +518,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDA2NDc5OTksLTE3Nzg4Njk0MzAsLT
+eyJoaXN0b3J5IjpbLTEwNDI5NDA2NTAsLTE3Nzg4Njk0MzAsLT
 E4MjQ4NzQwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2
 OTk4Mjg5LC0xNDk5MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMz
 c1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02
