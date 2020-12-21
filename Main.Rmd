@@ -492,6 +492,7 @@ $$
 where $R_i$ is the range of variable $i$ over the available data.
 * Consider the following data set:
 
+$$ ccc$$ {#eq:pi}
 
 ![Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.](Table35.jpg)
 
@@ -514,11 +515,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNjY0MDkxMCwtNTU2OTk4Mjg5LC0xND
-k5MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMzc1LDE3NDcyMTgx
-NDMsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02MjQ5NDk3NzMsMj
-I2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMzUwMDQ2NzM0LC03MDg5
-NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OS
-wxMzQ4MTg4OTUxLC01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOTk2
-MTk1ODU5XX0=
+eyJoaXN0b3J5IjpbLTE2MjAwNjA0NzksLTU1Njk5ODI4OSwtMT
+Q5OTEyMzYxOCwxMDYwMzEyNDM2LC04MTI1MDM3NSwxNzQ3MjE4
+MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLD
+IyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMTM1MDA0NjczNCwtNzA4
+OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMwOD
+ksMTM0ODE4ODk1MSwtNTMyODU4Njc3LDE3ODU1ODUwNDQsLTk5
+NjE5NTg1OV19
 -->
