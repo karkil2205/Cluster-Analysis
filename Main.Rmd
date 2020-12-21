@@ -356,7 +356,7 @@ scale(y)
 
 
 
-![Table from Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons](KAUFMANBinarydata.jpg)
+![Table from Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/KAUFMANBinarydata.jpg)
 
 * The data shows $8$ people (individuals) and $10$ binary variables:
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
@@ -514,11 +514,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzg4Njk0MzAsLTE4MjQ4NzQwNTAsMT
-I5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2OTk4Mjg5LC0xNDk5
-MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMzc1LDE3NDcyMTgxND
-MsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02MjQ5NDk3NzMsMjI2
-NjkxMTY5LC0xNTQyMzIyNDI2LC0xMzUwMDQ2NzM0LC03MDg5Nj
-Y3MDQsODM3MjQ4NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwx
-MzQ4MTg4OTUxXX0=
+eyJoaXN0b3J5IjpbLTE3MDM5NzI4MjEsLTE3Nzg4Njk0MzAsLT
+E4MjQ4NzQwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2
+OTk4Mjg5LC0xNDk5MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMz
+c1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02
+MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0xMzUwMD
+Q2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC0xOTMxNTc0MDgx
+LDQ4NzkxMzA4OV19
 -->
