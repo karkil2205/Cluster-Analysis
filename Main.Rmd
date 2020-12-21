@@ -490,7 +490,8 @@ $$
 \delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i},
 $$
 where $R_i$ is the range of variable $i$ over the available data.
-* Consider the following data ex
+* Consider the following data set:
+
 
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
@@ -510,11 +511,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNDI1ODAwLC0xNDk5MTIzNjE4LDEwNj
-AzMTI0MzYsLTgxMjUwMzc1LDE3NDcyMTgxNDMsLTIyNjUxMzgw
-NCwxNzY2MzA1OTExLC02MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNT
-QyMzIyNDI2LC0xMzUwMDQ2NzM0LC03MDg5NjY3MDQsODM3MjQ4
-NDU4LC0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUxLC
-01MzI4NTg2NzcsMTc4NTU4NTA0NCwtOTk2MTk1ODU5LC0xNDUx
-MTczNDM4XX0=
+eyJoaXN0b3J5IjpbLTU1Njk5ODI4OSwtMTQ5OTEyMzYxOCwxMD
+YwMzEyNDM2LC04MTI1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4
+MDQsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMT
+U0MjMyMjQyNiwtMTM1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0
+ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MS
+wtNTMyODU4Njc3LDE3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1
+MTE3MzQzOF19
 -->
