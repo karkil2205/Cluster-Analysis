@@ -471,7 +471,7 @@ $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 # Gower’s dissimilarity
 * Gower’s coefficient is a dissimilarity measure specifically
 designed for handling mixed attribute types or variables.
-* See GOWER, John C. A general coefficient of similarity and some of its properties. _Biometrics_, 1971, p. 857-871.
+* See: GOWER, John C. A general coefficient of similarity and some of its properties. _Biometrics_, 1971, p. 857-871.
 * The coefficient is calculated as the weighted average of attribute contributions.
 * Weights usually used only to indicate which attribute values could actually be compared meaningfully.
 * The formula is:
@@ -489,7 +489,7 @@ $$
 $$
 \delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i},
 $$
-where $R_i$ os the range of the variables $i$ over the available data.
+where $R_i$ is the range of variable $i$ over the available data.
 
 
 # Distance matrix computation
@@ -510,7 +510,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjA1ODQzNzAsMTA2MDMxMjQzNiwtOD
+eyJoaXN0b3J5IjpbLTE0OTkxMjM2MTgsMTA2MDMxMjQzNiwtOD
 EyNTAzNzUsMTc0NzIxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5
 MTEsLTYyNDk0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLT
 EzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1
