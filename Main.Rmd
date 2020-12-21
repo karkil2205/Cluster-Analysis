@@ -488,7 +488,7 @@ $$
 \delta(x_i,y_i)\equiv \begin{cases}0,
 \text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}
 $$
-*  It the $i$th measure is  interval-scaled, we take   
+*  If the $i$th measure is  interval-scaled, we take instead: 
 $$
 \delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i},
 $$
@@ -517,7 +517,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NzQ4MTgwNiwtODQyOTkyMzI4LC0xNz
+eyJoaXN0b3J5IjpbMjExODQwNjgzOCwtODQyOTkyMzI4LC0xNz
 c4ODY5NDMwLC0xODI0ODc0MDUwLDEyOTg4ODU1MDYsLTEzMzIw
 NzYyMjAsLTU1Njk5ODI4OSwtMTQ5OTEyMzYxOCwxMDYwMzEyND
 M2LC04MTI1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2
