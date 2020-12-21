@@ -495,7 +495,8 @@ $$
 where $R_i$ is the range of variable $i$ over the available data.
 * Consider the following data set:
 
-![Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
+![](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
+*Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.*
 
 
 # Distance matrix computation
@@ -516,11 +517,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTgyMzk5NjgsLTg0Mjk5MjMyOCwtMT
-c3ODg2OTQzMCwtMTgyNDg3NDA1MCwxMjk4ODg1NTA2LC0xMzMy
-MDc2MjIwLC01NTY5OTgyODksLTE0OTkxMjM2MTgsMTA2MDMxMj
-QzNiwtODEyNTAzNzUsMTc0NzIxODE0MywtMjI2NTEzODA0LDE3
-NjYzMDU5MTEsLTYyNDk0OTc3MywyMjY2OTExNjksLTE1NDIzMj
-I0MjYsLTEzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgs
-LTE5MzE1NzQwODFdfQ==
+eyJoaXN0b3J5IjpbMTE3NzQ4MTgwNiwtODQyOTkyMzI4LC0xNz
+c4ODY5NDMwLC0xODI0ODc0MDUwLDEyOTg4ODU1MDYsLTEzMzIw
+NzYyMjAsLTU1Njk5ODI4OSwtMTQ5OTEyMzYxOCwxMDYwMzEyND
+M2LC04MTI1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2
+NjMwNTkxMSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMj
+QyNiwtMTM1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwt
+MTkzMTU3NDA4MV19
 -->
