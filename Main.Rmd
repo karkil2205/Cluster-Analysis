@@ -483,6 +483,10 @@ $$
 \text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}
 $$
 *  It the $i$th measure is  interval-scaled, we take   
+$$
+\delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i}
+$$
+where $R_i$ os the range of the variables $i$.
 
 
 
@@ -572,11 +576,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzU1NDMzOCwxMDYwMzEyNDM2LC04MT
-I1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MDQsMTc2NjMwNTkx
-MSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0MjMyMjQyNiwtMT
-M1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0ODQ1OCwtMTkzMTU3
-NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MSwtNTMyODU4Njc3LD
-E3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1MTE3MzQzOCwtMjEz
-NjIxOTU2MV19
+eyJoaXN0b3J5IjpbLTE5NzYyNTM1NTEsMTA2MDMxMjQzNiwtOD
+EyNTAzNzUsMTc0NzIxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5
+MTEsLTYyNDk0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLT
+EzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLTE5MzE1
+NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1ODY3Ny
+wxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0MzgsLTIx
+MzYyMTk1NjFdfQ==
 -->
