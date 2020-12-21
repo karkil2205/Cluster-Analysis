@@ -493,6 +493,8 @@ where $R_i$ is the range of variable $i$ over the available data.
 * Consider the following data set:
 
 
+
+
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
 *  We’ll use only a by taking 15 random rows among the 50 rows in the data set. 
@@ -511,11 +513,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1Njk5ODI4OSwtMTQ5OTEyMzYxOCwxMD
-YwMzEyNDM2LC04MTI1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4
-MDQsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMT
-U0MjMyMjQyNiwtMTM1MDA0NjczNCwtNzA4OTY2NzA0LDgzNzI0
-ODQ1OCwtMTkzMTU3NDA4MSw0ODc5MTMwODksMTM0ODE4ODk1MS
-wtNTMyODU4Njc3LDE3ODU1ODUwNDQsLTk5NjE5NTg1OSwtMTQ1
-MTE3MzQzOF19
+eyJoaXN0b3J5IjpbOTg0NzEzMjM1LC01NTY5OTgyODksLTE0OT
+kxMjM2MTgsMTA2MDMxMjQzNiwtODEyNTAzNzUsMTc0NzIxODE0
+MywtMjI2NTEzODA0LDE3NjYzMDU5MTEsLTYyNDk0OTc3MywyMj
+Y2OTExNjksLTE1NDIzMjI0MjYsLTEzNTAwNDY3MzQsLTcwODk2
+NjcwNCw4MzcyNDg0NTgsLTE5MzE1NzQwODEsNDg3OTEzMDg5LD
+EzNDgxODg5NTEsLTUzMjg1ODY3NywxNzg1NTg1MDQ0LC05OTYx
+OTU4NTldfQ==
 -->
