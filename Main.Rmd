@@ -466,9 +466,8 @@ d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
 $$
 * Therefore:
 $$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
-
 *  Note that simple matching has exactly the same meaning as in the preceding section.
-* 
+ 
 
 
 Election data set of Table 15.5 (1 = Dem, 0 = Rep)**
@@ -544,11 +543,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzE0OTQ0MzUsLTIyNjUxMzgwNCwxNz
-Y2MzA1OTExLC02MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIy
-NDI2LC0xMzUwMDQ2NzM0LC03MDg5NjY3MDQsODM3MjQ4NDU4LC
-0xOTMxNTc0MDgxLDQ4NzkxMzA4OSwxMzQ4MTg4OTUxLC01MzI4
-NTg2NzcsMTc4NTU4NTA0NCwtOTk2MTk1ODU5LC0xNDUxMTczND
-M4LC0yMTM2MjE5NTYxLC0xNjY1Mjk5MDQwLDkwODI1ODIzMywy
-MDk1OTI1MzM0XX0=
+eyJoaXN0b3J5IjpbMTc0NzIxODE0MywtMjI2NTEzODA0LDE3Nj
+YzMDU5MTEsLTYyNDk0OTc3MywyMjY2OTExNjksLTE1NDIzMjI0
+MjYsLTEzNTAwNDY3MzQsLTcwODk2NjcwNCw4MzcyNDg0NTgsLT
+E5MzE1NzQwODEsNDg3OTEzMDg5LDEzNDgxODg5NTEsLTUzMjg1
+ODY3NywxNzg1NTg1MDQ0LC05OTYxOTU4NTksLTE0NTExNzM0Mz
+gsLTIxMzYyMTk1NjEsLTE2NjUyOTkwNDAsOTA4MjU4MjMzLDIw
+OTU5MjUzMzRdfQ==
 -->
