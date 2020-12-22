@@ -1,11 +1,11 @@
 ---
 title: "Distance and dissimilarities"
 output:
-  html_notebook:
-    toc: yes
   html_document:
     toc: yes
     df_print: paged
+  html_notebook:
+    toc: yes
   pdf_document:
     toc: yes
 ---
@@ -497,6 +497,13 @@ where $R_i$ is the range of variable $i$ over the available data.
 
 ![](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
 *Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.*
+
+```{r}
+data=read.csv("https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/videogames.csv")
+data[1,]
+data[11,]
+```
+
 
 
 # Distance matrix computation
