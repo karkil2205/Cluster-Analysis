@@ -465,10 +465,10 @@ $$N_{b+c}= n - N_{a+d}.$$
 
 * The distance corresponding to the simple matching approach is: 
 $$
-d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
+d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
 $$
 * Therefore:
-$$d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
+$$d(\mathbf{x},\mathbf{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 *  Note that simple matching has exactly the same meaning as in the preceding section.
  
 # Gower’s dissimilarity
@@ -526,11 +526,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg1NTI2MTQxLDU5NTM5ODA3NCwxMTUxMz
-Y5MTEwLC0yMDkyMDc4OTg4LC04NDI5OTIzMjgsLTE3Nzg4Njk0
-MzAsLTE4MjQ4NzQwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMC
-wtNTU2OTk4Mjg5LC0xNDk5MTIzNjE4LDEwNjAzMTI0MzYsLTgx
-MjUwMzc1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OT
-ExLC02MjQ5NDk3NzMsMjI2NjkxMTY5LC0xNTQyMzIyNDI2LC0x
-MzUwMDQ2NzM0XX0=
+eyJoaXN0b3J5IjpbLTQ2MTM4NzU5LDQ4NTUyNjE0MSw1OTUzOT
+gwNzQsMTE1MTM2OTExMCwtMjA5MjA3ODk4OCwtODQyOTkyMzI4
+LC0xNzc4ODY5NDMwLC0xODI0ODc0MDUwLDEyOTg4ODU1MDYsLT
+EzMzIwNzYyMjAsLTU1Njk5ODI4OSwtMTQ5OTEyMzYxOCwxMDYw
+MzEyNDM2LC04MTI1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MD
+QsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0
+MjMyMjQyNl19
 -->
