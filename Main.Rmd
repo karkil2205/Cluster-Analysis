@@ -501,6 +501,7 @@ where $R_i$ is the range of variable $i$ over the available data.
 * The records of 11 students including one that had not yet experienced video games (subject 82) are shown in Table 3.5. 
 * The similarity between subjects 1 and 2 was calculated as
 
+s1;2 ¼ 1 1þ1 ð Þþ 1j j 20 =30 1  ð Þþ 1j j 22 =3 1  1þ1 ð Þþ 1j j 23 =3 1  1þ1 0
 
 
 ```{r}
@@ -529,11 +530,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzU3ODU0MCwtNDYxMzg3NTksNDg1NT
-I2MTQxLDU5NTM5ODA3NCwxMTUxMzY5MTEwLC0yMDkyMDc4OTg4
-LC04NDI5OTIzMjgsLTE3Nzg4Njk0MzAsLTE4MjQ4NzQwNTAsMT
-I5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2OTk4Mjg5LC0xNDk5
-MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMzc1LDE3NDcyMTgxND
-MsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02MjQ5NDk3NzMsMjI2
-NjkxMTY5XX0=
+eyJoaXN0b3J5IjpbLTEzNDk4OTc3NDcsMTAwMzU3ODU0MCwtND
+YxMzg3NTksNDg1NTI2MTQxLDU5NTM5ODA3NCwxMTUxMzY5MTEw
+LC0yMDkyMDc4OTg4LC04NDI5OTIzMjgsLTE3Nzg4Njk0MzAsLT
+E4MjQ4NzQwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2
+OTk4Mjg5LC0xNDk5MTIzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMz
+c1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwxNzY2MzA1OTExLC02
+MjQ5NDk3NzNdfQ==
 -->
