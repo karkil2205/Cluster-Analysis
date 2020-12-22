@@ -498,6 +498,8 @@ where $R_i$ is the range of variable $i$ over the available data.
 ![](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
 *Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.*
 
+
+
 ```{r}
 data=read.csv("https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/videogames.csv")
 data[1,]
@@ -524,11 +526,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTM2OTExMCwtMjA5MjA3ODk4OCwtOD
-QyOTkyMzI4LC0xNzc4ODY5NDMwLC0xODI0ODc0MDUwLDEyOTg4
-ODU1MDYsLTEzMzIwNzYyMjAsLTU1Njk5ODI4OSwtMTQ5OTEyMz
-YxOCwxMDYwMzEyNDM2LC04MTI1MDM3NSwxNzQ3MjE4MTQzLC0y
-MjY1MTM4MDQsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLDIyNjY5MT
-E2OSwtMTU0MjMyMjQyNiwtMTM1MDA0NjczNCwtNzA4OTY2NzA0
-LDgzNzI0ODQ1OF19
+eyJoaXN0b3J5IjpbNTk1Mzk4MDc0LDExNTEzNjkxMTAsLTIwOT
+IwNzg5ODgsLTg0Mjk5MjMyOCwtMTc3ODg2OTQzMCwtMTgyNDg3
+NDA1MCwxMjk4ODg1NTA2LC0xMzMyMDc2MjIwLC01NTY5OTgyOD
+ksLTE0OTkxMjM2MTgsMTA2MDMxMjQzNiwtODEyNTAzNzUsMTc0
+NzIxODE0MywtMjI2NTEzODA0LDE3NjYzMDU5MTEsLTYyNDk0OT
+c3MywyMjY2OTExNjksLTE1NDIzMjI0MjYsLTEzNTAwNDY3MzQs
+LTcwODk2NjcwNF19
 -->
