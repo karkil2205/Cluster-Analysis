@@ -498,6 +498,7 @@ where $R_i$ is the range of variable $i$ over the available data.
 ![](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
 *Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.*
 
+* The records of 11 students including one that had not yet experienced video games (subject 82) are shown in Table 3.5. 
 
 
 ```{r}
@@ -526,11 +527,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MTM4NzU5LDQ4NTUyNjE0MSw1OTUzOT
-gwNzQsMTE1MTM2OTExMCwtMjA5MjA3ODk4OCwtODQyOTkyMzI4
-LC0xNzc4ODY5NDMwLC0xODI0ODc0MDUwLDEyOTg4ODU1MDYsLT
-EzMzIwNzYyMjAsLTU1Njk5ODI4OSwtMTQ5OTEyMzYxOCwxMDYw
-MzEyNDM2LC04MTI1MDM3NSwxNzQ3MjE4MTQzLC0yMjY1MTM4MD
-QsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLDIyNjY5MTE2OSwtMTU0
-MjMyMjQyNl19
+eyJoaXN0b3J5IjpbLTE5OTUzMDk0OTIsLTQ2MTM4NzU5LDQ4NT
+UyNjE0MSw1OTUzOTgwNzQsMTE1MTM2OTExMCwtMjA5MjA3ODk4
+OCwtODQyOTkyMzI4LC0xNzc4ODY5NDMwLC0xODI0ODc0MDUwLD
+EyOTg4ODU1MDYsLTEzMzIwNzYyMjAsLTU1Njk5ODI4OSwtMTQ5
+OTEyMzYxOCwxMDYwMzEyNDM2LC04MTI1MDM3NSwxNzQ3MjE4MT
+QzLC0yMjY1MTM4MDQsMTc2NjMwNTkxMSwtNjI0OTQ5NzczLDIy
+NjY5MTE2OV19
 -->
