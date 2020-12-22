@@ -451,7 +451,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * After that, one could resort to one of the dissimilarity coeffi-
 cients of the previous subsection. 
 * The most common way of measuring the similarity or dissimilarity between two objects through categorial variables is the simple matching approach. 
-* If $\bm{x},\bm{y},$ are $n$ nominal records for two individuals,
+* If $\mathbf{x},\mathbf{y},$ are both $n$ nominal records for two individuals,
 * Let define the function: 
 $$\delta(x_i,y_i)\equiv \begin{cases}0,
 \text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}$$
