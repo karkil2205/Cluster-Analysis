@@ -503,6 +503,11 @@ where $R_i$ is the range of variable $i$ over the available data.
 
 $$\frac{0+|2-0|/30+|2-2|/3+0+|2-3|/3+1+0}{7}=0.2.$$
 
+* The variables *like* and *freq* have been treated as ordinal variables, as if their ranks were on an interval scale.
+*  This is not ideal but seemed preferable to treating them as nominal
+variables and only declaring two values as similar when they have exactly the same
+rank)
+
 ```{r}
 data=read.csv("https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/videogames.csv")
 data[1,]
@@ -529,11 +534,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjM4MjQ1MjMsLTEzNDk4OTc3NDcsMT
-AwMzU3ODU0MCwtNDYxMzg3NTksNDg1NTI2MTQxLDU5NTM5ODA3
-NCwxMTUxMzY5MTEwLC0yMDkyMDc4OTg4LC04NDI5OTIzMjgsLT
-E3Nzg4Njk0MzAsLTE4MjQ4NzQwNTAsMTI5ODg4NTUwNiwtMTMz
-MjA3NjIyMCwtNTU2OTk4Mjg5LC0xNDk5MTIzNjE4LDEwNjAzMT
-I0MzYsLTgxMjUwMzc1LDE3NDcyMTgxNDMsLTIyNjUxMzgwNCwx
-NzY2MzA1OTExXX0=
+eyJoaXN0b3J5IjpbLTE1NDI5NTMyMzUsLTE3NjM4MjQ1MjMsLT
+EzNDk4OTc3NDcsMTAwMzU3ODU0MCwtNDYxMzg3NTksNDg1NTI2
+MTQxLDU5NTM5ODA3NCwxMTUxMzY5MTEwLC0yMDkyMDc4OTg4LC
+04NDI5OTIzMjgsLTE3Nzg4Njk0MzAsLTE4MjQ4NzQwNTAsMTI5
+ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2OTk4Mjg5LC0xNDk5MT
+IzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMzc1LDE3NDcyMTgxNDMs
+LTIyNjUxMzgwNF19
 -->
