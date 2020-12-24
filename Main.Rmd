@@ -1,3 +1,4 @@
+
 ---
 title: "Distance and dissimilarities"
 output:
@@ -17,16 +18,23 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 install.packages("dplyr")
 install.packages("stargazer")
-install.packages("ade4")
+install.packages("ade4"
+
+
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
 # Definition of a distance
+
 * A distance function or a metric on $\mathbb{R}^n,\:n\geq 1$, is a function $d:\mathbb{R}^n\times\mathbb{R}^n\rightarrow \mathbb{R}$.
 * A distance function must satisfy some required properties or axioms. 
 * There are three main axioms.
 * A1. $d(\mathbf{x},\mathbf{y})= 0\iff \mathbf{x}=\mathbf{y}$ (identity of indiscernibles);
 * A2. $d(\mathbf{x},\mathbf{y})= d(\mathbf{y},\mathbf{x})$ (symmetry);
+
 * A3. $d(\mathbf{x},\mathbf{z})\leq d(\mathbf{x},\mathbf{y})+d(\mathbf{y},\mathbf{z})$  (triangle inequality),
 where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{z}=(z_1,\cdots,z_n)$ are all vectors of $\mathbb{R}^n$.
 * We should use the term _dissimilarity_ rather than _distance_ when not all the three axioms A1-A3 are valid.
@@ -44,7 +52,7 @@ where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{
 
 $$d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.$$
 
-* A1-A2 are obvious.
+* A1-A2 are onbvious.
 * The proof of A3 is provided below.
 
 # Exercice 2
@@ -52,18 +60,21 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.$$
 * Is the squared Euclidian distance a true distance?
 
 # Manhattan distance
+
 * The Manhattan distance also called  taxi-cab metric or city-block metric is defined by:
+
 $$d(\mathbf{x},\mathbf{y})
 =\sum_{i=1}^n |x_i-y_i|.
 $$
+
 * A1-A2 hold.
 * A3 also holds using the fact that $|a+b|\leq |a|+|b|$ for any reals $a,b$.
 * There exists also a weighted version  of the Manhattan distance called the Canberra distance.
 
-![](https://raw.githubusercontent.com/karkil2205/rticles/master/566px-Manhattan_distance.svg.png)*Manhattan distance vs Euclidean distance Graph*
+![](https://raw.githubusercontent.com/karkil2205/rticles/master/566px-Manhattan_distance.svg.png)*[Manhattan distance vs Euclidean distance Graph](https://upload.wikimedia.org/wikipedia/commons/0/08/Manhattan _distance vs Euclidean distance Graph*
 
 
-
+.svg)
 
 ```{r}
 x = c(0, 0)
@@ -77,10 +88,12 @@ dist(rbind(x, y), method = "manhattan")
 # Canberra distance
 
 * It is defined by:
-$$d(\mathbf{x},\mathbf{y})=\sum_{i=1}^n
-\frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
 
-* Note that the term $|x_i-y_i|/(|x_i|+|y_i|)$ is not properly defined as: $x_i=y_i=0$.
+$$d(\mathbf{x},\mathbf{y})
+=\sum_{i=1}^n
+ \frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
+
+* Note that the term $|x_i- − y_i|/(|x_i|+|y_i|)$ is not properly defined as:when $x_i=y_i=0$.
 * By convention we set the ratio to be zero in that case.
 * The Canberra distance is specially sensitive to small changes near zero.
 
@@ -91,7 +104,10 @@ y = c(6,6)
 dist(rbind(x, y), method = "canberra")
 6/6+6/6
 ```
-# Exercice 3
+
+
+# Exercice 32
+
 * Prove that the Canberra distance is a true distance.
 
 # Minkowski distance
@@ -511,7 +527,79 @@ data=read.csv("https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/maste
 data[1,]
 data[2,]
 ```
+measured characters.
+* *The presence of the character or type is coded $1$ and the absence by 0. 
+* We have have at our disposal two vectors.
+* $\mathbf{x}$ is observed for first indiviual (or object).
+* $\mathbf{y}$ is observed for a second individual. 
+* We can then calculate the following statistics:
+ 
+   $a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$
+   
+   $b=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i.$
+   
+   $c=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_i(1-y_i).$
 
+   $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).$
+
+* This gives a familiar $2 \times 2$ association table . 
+* The entries are the counts of matches , $a$ for $(1,1)$,  and $d$ for $(0,0)$.
+* The counts of mismatches are for $b$ for $(1,0)$ and $c$ for $(0,1)$).
+* Obviously, $a+b+c+d=n$.
+
+|    |    |Second individual|||
+|:---|---|:---:|:---:|:---:|
+|  |    |1  |0|*Totals*
+|**First individual**|1|$a$|$b$|$a+b$|
+|             |0|$c$|$d$|$c+d$|
+|*Totals*||$a+c$|$b+d$|$n$|
+
+
+
+
+* We will use data taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
+
+![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
+
+* For $8$ people, $10$ binary variables were considered:
+* male/female, blue eyes/brown eyes, round face/oval face, and so on.
+* The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0.
+* When comparing Ilan with Talia.
+* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
+* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
+
+
+
+* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
+
+data=c(
+"Ilan",1,0,1,1,0,0,1,0,0,0,
+"Jacqueline",0,1,0,0,1,0,0,0,0,0,
+"Kim",0,0,1,0,0,0,1,0,0,1,
+"Lieve",0,1,0,0,0,0,0,1,1,0,
+"Leon",1,1,0,0,1,1,0,1,1,0,
+"Peter",1,1,0,0,1,0,1,1,0,0,
+"Talia",0,0,0,1,0,1,0,0,0,0,
+"Tina",0,0,0,1,0,1,0,0,0,0
+)
+data.frame(matrix(data, nrow=8,byrow=T))
+
+
+
+
+|Measure|Formula|
+|---|---|
+|Matching coefficient|$(a+d)/(a+b+c+d)$|
+|Jaccard coefficient|$a/(a+b+c)$|
+|Rogers and Tanimoto (1960)| $(a+d)/[a+2(b+c)+d]$|
+|Gower and Legendre (1986)|$(a+d)/[a+\frac{1}{2}(b+c)+d]$|
+|Gower and Legendre (1986)|$a/[a+\frac{1}{2}(b+c)]$|
+
+
+* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
+* In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
+* An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
+* But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
 
 
 # Distance matrix computation
@@ -532,11 +620,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDg1NjE1MTYsLTE3NjM4MjQ1MjMsLT
-EzNDk4OTc3NDcsMTAwMzU3ODU0MCwtNDYxMzg3NTksNDg1NTI2
-MTQxLDU5NTM5ODA3NCwxMTUxMzY5MTEwLC0yMDkyMDc4OTg4LC
-04NDI5OTIzMjgsLTE3Nzg4Njk0MzAsLTE4MjQ4NzQwNTAsMTI5
-ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2OTk4Mjg5LC0xNDk5MT
-IzNjE4LDEwNjAzMTI0MzYsLTgxMjUwMzc1LDE3NDcyMTgxNDMs
-LTIyNjUxMzgwNF19
+eyJoaXN0b3J5IjpbMTc2ODI1MzU1MywtMTgwODU2MTUxNiwtMT
+c2MzgyNDUyMywtMTM0OTg5Nzc0NywxMDAzNTc4NTQwLC00NjEz
+ODc1OSw0ODU1MjYxNDEsNTk1Mzk4MDc0LDExNTEzNjkxMTAsLT
+IwOTIwNzg5ODgsLTg0Mjk5MjMyOCwtMTc3ODg2OTQzMCwtMTgy
+NDg3NDA1MCwxMjk4ODg1NTA2LC0xMzMyMDc2MjIwLC01NTY5OT
+gyODksLTE0OTkxMjM2MTgsMTA2MDMxMjQzNiwtODEyNTAzNzUs
+MTc0NzIxODE0M119
 -->
