@@ -527,80 +527,6 @@ data=read.csv("https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/maste
 data[1,]
 data[2,]
 ```
-measured characters.
-* *The presence of the character or type is coded $1$ and the absence by 0. 
-* We have have at our disposal two vectors.
-* $\mathbf{x}$ is observed for first indiviual (or object).
-* $\mathbf{y}$ is observed for a second individual. 
-* We can then calculate the following statistics:
- 
-   $a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$
-   
-   $b=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i.$
-   
-   $c=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_i(1-y_i).$
-
-   $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).$
-
-* This gives a familiar $2 \times 2$ association table . 
-* The entries are the counts of matches , $a$ for $(1,1)$,  and $d$ for $(0,0)$.
-* The counts of mismatches are for $b$ for $(1,0)$ and $c$ for $(0,1)$).
-* Obviously, $a+b+c+d=n$.
-
-|    |    |Second individual|||
-|:---|---|:---:|:---:|:---:|
-|  |    |1  |0|*Totals*
-|**First individual**|1|$a$|$b$|$a+b$|
-|             |0|$c$|$d$|$c+d$|
-|*Totals*||$a+c$|$b+d$|$n$|
-
-
-
-
-* We will use data taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
-
-![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
-
-* For $8$ people, $10$ binary variables were considered:
-* male/female, blue eyes/brown eyes, round face/oval face, and so on.
-* The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0.
-* When comparing Ilan with Talia.
-* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
-* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
-
-
-
-* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
-
-data=c(
-"Ilan",1,0,1,1,0,0,1,0,0,0,
-"Jacqueline",0,1,0,0,1,0,0,0,0,0,
-"Kim",0,0,1,0,0,0,1,0,0,1,
-"Lieve",0,1,0,0,0,0,0,1,1,0,
-"Leon",1,1,0,0,1,1,0,1,1,0,
-"Peter",1,1,0,0,1,0,1,1,0,0,
-"Talia",0,0,0,1,0,1,0,0,0,0,
-"Tina",0,0,0,1,0,1,0,0,0,0
-)
-data.frame(matrix(data, nrow=8,byrow=T))
-
-
-
-
-|Measure|Formula|
-|---|---|
-|Matching coefficient|$(a+d)/(a+b+c+d)$|
-|Jaccard coefficient|$a/(a+b+c)$|
-|Rogers and Tanimoto (1960)| $(a+d)/[a+2(b+c)+d]$|
-|Gower and Legendre (1986)|$(a+d)/[a+\frac{1}{2}(b+c)+d]$|
-|Gower and Legendre (1986)|$a/[a+\frac{1}{2}(b+c)]$|
-
-
-* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (d in Table 3.2).
-* In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
-* An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
-* But in other cases the inclusion or otherwise of d is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
-
 
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
@@ -620,11 +546,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTM4MTI4NywtMTgwODU2MTUxNiwtMT
-c2MzgyNDUyMywtMTM0OTg5Nzc0NywxMDAzNTc4NTQwLC00NjEz
-ODc1OSw0ODU1MjYxNDEsNTk1Mzk4MDc0LDExNTEzNjkxMTAsLT
-IwOTIwNzg5ODgsLTg0Mjk5MjMyOCwtMTc3ODg2OTQzMCwtMTgy
-NDg3NDA1MCwxMjk4ODg1NTA2LC0xMzMyMDc2MjIwLC01NTY5OT
-gyODksLTE0OTkxMjM2MTgsMTA2MDMxMjQzNiwtODEyNTAzNzUs
-MTc0NzIxODE0M119
+eyJoaXN0b3J5IjpbLTE1NTY2ODYzOTMsLTI2MTM4MTI4NywtMT
+gwODU2MTUxNiwtMTc2MzgyNDUyMywtMTM0OTg5Nzc0NywxMDAz
+NTc4NTQwLC00NjEzODc1OSw0ODU1MjYxNDEsNTk1Mzk4MDc0LD
+ExNTEzNjkxMTAsLTIwOTIwNzg5ODgsLTg0Mjk5MjMyOCwtMTc3
+ODg2OTQzMCwtMTgyNDg3NDA1MCwxMjk4ODg1NTA2LC0xMzMyMD
+c2MjIwLC01NTY5OTgyODksLTE0OTkxMjM2MTgsMTA2MDMxMjQz
+NiwtODEyNTAzNzVdfQ==
 -->
