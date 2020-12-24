@@ -1,4 +1,4 @@
-
+	
 ---
 title: "Distance and dissimilarities"
 output:
@@ -620,7 +620,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2ODI1MzU1MywtMTgwODU2MTUxNiwtMT
+eyJoaXN0b3J5IjpbLTI2MTM4MTI4NywtMTgwODU2MTUxNiwtMT
 c2MzgyNDUyMywtMTM0OTg5Nzc0NywxMDAzNTc4NTQwLC00NjEz
 ODc1OSw0ODU1MjYxNDEsNTk1Mzk4MDc0LDExNTEzNjkxMTAsLT
 IwOTIwNzg5ODgsLTg0Mjk5MjMyOCwtMTc3ODg2OTQzMCwtMTgy
