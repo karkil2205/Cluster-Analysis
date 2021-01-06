@@ -511,11 +511,10 @@ $$
 where $R_i$ is the range of variable $i$ over the available data.
 * Consider the following data set:
 
-![]()
+![](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/flowers.jpg)
 
-
-
-*Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.*
+* Data from: Struyf, A., Hubert, M., & Rousseeuw, P. (1997). Clustering in an object-oriented environment. _Journal of Statistical Software_, _1_(4), 1-30.
+*
 
 * The records of 11 students including one that had not yet experienced video games (subject 82) are shown in Table 3.5. 
 * The dissimilarity between subjects 1 and 2 can be calculated as follows
@@ -577,7 +576,6 @@ blue).
 plants.
 
 
-Struyf, A., Hubert, M., & Rousseeuw, P. (1997). Clustering in an object-oriented environment. _Journal of Statistical Software_, _1_(4), 1-30.
 
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
@@ -597,11 +595,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTExNDk4NzM0LDEyMTk3MzUwMTIsNDE5Nz
-MyNjE2LC0xNTU2Njg2MzkzLC0yNjEzODEyODcsLTE4MDg1NjE1
-MTYsLTE3NjM4MjQ1MjMsLTEzNDk4OTc3NDcsMTAwMzU3ODU0MC
-wtNDYxMzg3NTksNDg1NTI2MTQxLDU5NTM5ODA3NCwxMTUxMzY5
-MTEwLC0yMDkyMDc4OTg4LC04NDI5OTIzMjgsLTE3Nzg4Njk0Mz
-AsLTE4MjQ4NzQwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwt
-NTU2OTk4Mjg5XX0=
+eyJoaXN0b3J5IjpbLTM2NTE3NzMzNiwxMjE5NzM1MDEyLDQxOT
+czMjYxNiwtMTU1NjY4NjM5MywtMjYxMzgxMjg3LC0xODA4NTYx
+NTE2LC0xNzYzODI0NTIzLC0xMzQ5ODk3NzQ3LDEwMDM1Nzg1ND
+AsLTQ2MTM4NzU5LDQ4NTUyNjE0MSw1OTUzOTgwNzQsMTE1MTM2
+OTExMCwtMjA5MjA3ODk4OCwtODQyOTkyMzI4LC0xNzc4ODY5ND
+MwLC0xODI0ODc0MDUwLDEyOTg4ODU1MDYsLTEzMzIwNzYyMjAs
+LTU1Njk5ODI4OV19
 -->
