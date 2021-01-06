@@ -525,8 +525,7 @@ blue).
 7. Height: interval scaled, the plant’s height in centimeters.
 8. Distance: interval scaled, the distance in centimeters that should be left between the plants.
  * The dissimilarity between Begonia  and Broom (Genêt) can be calculated as follows:
-![](
-https://www.google.com/search?q=begonia&oq=begonia&aqs=chrome..69i57j46i20i263i433j35i39l2j69i60.3617j0j4&client=tablet-android-samsung-nf-rev1&sourceid=chrome-mobile&ie=UTF-8#imgrc=MDQmjwCR4kX1bM)
+![](https://images.app.goo.gl/C7apKgxT4AEm7soA7)
 
 
 $$\frac{0+|2-0|/30+|2-2|/3+0+|2-3|/3+1+0}{7}=0.2.$$
@@ -600,11 +599,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE3ODAxNTksODM0NjY3NTczLC04MD
-g4NzY5ODYsMTIxOTczNTAxMiw0MTk3MzI2MTYsLTE1NTY2ODYz
-OTMsLTI2MTM4MTI4NywtMTgwODU2MTUxNiwtMTc2MzgyNDUyMy
-wtMTM0OTg5Nzc0NywxMDAzNTc4NTQwLC00NjEzODc1OSw0ODU1
-MjYxNDEsNTk1Mzk4MDc0LDExNTEzNjkxMTAsLTIwOTIwNzg5OD
-gsLTg0Mjk5MjMyOCwtMTc3ODg2OTQzMCwtMTgyNDg3NDA1MCwx
-Mjk4ODg1NTA2XX0=
+eyJoaXN0b3J5IjpbMjE0MjM1MzgwLC0xNDkxNzgwMTU5LDgzND
+Y2NzU3MywtODA4ODc2OTg2LDEyMTk3MzUwMTIsNDE5NzMyNjE2
+LC0xNTU2Njg2MzkzLC0yNjEzODEyODcsLTE4MDg1NjE1MTYsLT
+E3NjM4MjQ1MjMsLTEzNDk4OTc3NDcsMTAwMzU3ODU0MCwtNDYx
+Mzg3NTksNDg1NTI2MTQxLDU5NTM5ODA3NCwxMTUxMzY5MTEwLC
+0yMDkyMDc4OTg4LC04NDI5OTIzMjgsLTE3Nzg4Njk0MzAsLTE4
+MjQ4NzQwNTBdfQ==
 -->
