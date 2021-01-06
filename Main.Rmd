@@ -524,17 +524,12 @@ blue).
 6. Preference: ordinal, someone’s preference ranking, going from 1 to 18.
 7. Height: interval scaled, the plant’s height in centimeters.
 8. Distance: interval scaled, the distance in centimeters that should be left between the plants.
- * The dissimilarity between flowers 1 and 2 can be calculated as follows:
+ * The dissimilarity between Begonia  and Broom can be calculated as follows:
 
 $$\frac{0+|2-0|/30+|2-2|/3+0+|2-3|/3+1+0}{7}=0.2.$$
 
-* The variables *like* and *freq* have been treated as ordinal variables, as if their ranks were on an interval scale.
-*  This is not ideal but seemed preferable to treating them as nominal variables.
 
 ```{r}
-data=read.csv("https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/videogames.csv")
-data[1,]
-data[2,]
 ```
 
 
@@ -602,11 +597,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMDY5MzUxMSwtODA4ODc2OTg2LDEyMT
-k3MzUwMTIsNDE5NzMyNjE2LC0xNTU2Njg2MzkzLC0yNjEzODEy
-ODcsLTE4MDg1NjE1MTYsLTE3NjM4MjQ1MjMsLTEzNDk4OTc3ND
-csMTAwMzU3ODU0MCwtNDYxMzg3NTksNDg1NTI2MTQxLDU5NTM5
-ODA3NCwxMTUxMzY5MTEwLC0yMDkyMDc4OTg4LC04NDI5OTIzMj
-gsLTE3Nzg4Njk0MzAsLTE4MjQ4NzQwNTAsMTI5ODg4NTUwNiwt
-MTMzMjA3NjIyMF19
+eyJoaXN0b3J5IjpbODM0NjY3NTczLC04MDg4NzY5ODYsMTIxOT
+czNTAxMiw0MTk3MzI2MTYsLTE1NTY2ODYzOTMsLTI2MTM4MTI4
+NywtMTgwODU2MTUxNiwtMTc2MzgyNDUyMywtMTM0OTg5Nzc0Ny
+wxMDAzNTc4NTQwLC00NjEzODc1OSw0ODU1MjYxNDEsNTk1Mzk4
+MDc0LDExNTEzNjkxMTAsLTIwOTIwNzg5ODgsLTg0Mjk5MjMyOC
+wtMTc3ODg2OTQzMCwtMTgyNDg3NDA1MCwxMjk4ODg1NTA2LC0x
+MzMyMDc2MjIwXX0=
 -->
