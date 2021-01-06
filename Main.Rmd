@@ -524,7 +524,9 @@ blue).
 6. Preference: ordinal, someone’s preference ranking, going from 1 to 18.
 7. Height: interval scaled, the plant’s height in centimeters.
 8. Distance: interval scaled, the distance in centimeters that should be left between the plants.
- * The dissimilarity between Begonia  and Broom can be calculated as follows:
+ * The dissimilarity between Begonia  and Broom (Genêt) can be calculated as follows:
+
+
 
 $$\frac{0+|2-0|/30+|2-2|/3+0+|2-3|/3+1+0}{7}=0.2.$$
 
@@ -597,11 +599,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM0NjY3NTczLC04MDg4NzY5ODYsMTIxOT
-czNTAxMiw0MTk3MzI2MTYsLTE1NTY2ODYzOTMsLTI2MTM4MTI4
-NywtMTgwODU2MTUxNiwtMTc2MzgyNDUyMywtMTM0OTg5Nzc0Ny
-wxMDAzNTc4NTQwLC00NjEzODc1OSw0ODU1MjYxNDEsNTk1Mzk4
-MDc0LDExNTEzNjkxMTAsLTIwOTIwNzg5ODgsLTg0Mjk5MjMyOC
-wtMTc3ODg2OTQzMCwtMTgyNDg3NDA1MCwxMjk4ODg1NTA2LC0x
-MzMyMDc2MjIwXX0=
+eyJoaXN0b3J5IjpbLTMxMDIzOTk4NCw4MzQ2Njc1NzMsLTgwOD
+g3Njk4NiwxMjE5NzM1MDEyLDQxOTczMjYxNiwtMTU1NjY4NjM5
+MywtMjYxMzgxMjg3LC0xODA4NTYxNTE2LC0xNzYzODI0NTIzLC
+0xMzQ5ODk3NzQ3LDEwMDM1Nzg1NDAsLTQ2MTM4NzU5LDQ4NTUy
+NjE0MSw1OTUzOTgwNzQsMTE1MTM2OTExMCwtMjA5MjA3ODk4OC
+wtODQyOTkyMzI4LC0xNzc4ODY5NDMwLC0xODI0ODc0MDUwLDEy
+OTg4ODU1MDZdfQ==
 -->
