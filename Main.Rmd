@@ -528,6 +528,35 @@ data[1,]
 data[2,]
 ```
 
+
+flower Flower Characteristics
+Description
+8 characteristics for 18 popular flowers.
+Usage
+data(flower)
+Format
+A data frame with 18 observations on 8 variables:
+[ , "V1"] factor winters
+[ , "V2"] factor shadow
+[ , "V3"] factor tubers
+[ , "V4"] factor color
+[ , "V5"] ordered soil
+[ , "V6"] ordered preference
+[ , "V7"] numeric height
+[ , "V8"] numeric distance
+V1 winters, is binary and indicates whether the plant may be left in the garden when it freezes.
+
+V2 shadow, is binary and shows whether the plant needs to stand in the shadow.
+V3 tubers, is asymmetric binary and distinguishes between plants with tubers and plants that grow
+in any other way.
+V4 color, is nominal and specifies the flower’s color (1 = white, 2 = yellow, 3 = pink, 4 = red, 5 =
+blue).
+V5 soil, is ordinal and indicates whether the plant grows in dry (1), normal (2), or wet (3) soil.
+V6 preference, is ordinal and gives someone’s preference ranking going from 1 to 18.
+V7 height, is interval scaled, the plant’s height in centimeters.
+V8 distance, is interval scaled, the distance in centimeters that should be left between the plants.
+References
+Struyf, Hubert and Rousseeuw (1996), see agnes.
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
 *  We’ll use only a by taking 15 random rows among the 50 rows in the data set. 
@@ -546,11 +575,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTY2ODYzOTMsLTI2MTM4MTI4NywtMT
-gwODU2MTUxNiwtMTc2MzgyNDUyMywtMTM0OTg5Nzc0NywxMDAz
-NTc4NTQwLC00NjEzODc1OSw0ODU1MjYxNDEsNTk1Mzk4MDc0LD
-ExNTEzNjkxMTAsLTIwOTIwNzg5ODgsLTg0Mjk5MjMyOCwtMTc3
-ODg2OTQzMCwtMTgyNDg3NDA1MCwxMjk4ODg1NTA2LC0xMzMyMD
-c2MjIwLC01NTY5OTgyODksLTE0OTkxMjM2MTgsMTA2MDMxMjQz
-NiwtODEyNTAzNzVdfQ==
+eyJoaXN0b3J5IjpbNDE5NzMyNjE2LC0xNTU2Njg2MzkzLC0yNj
+EzODEyODcsLTE4MDg1NjE1MTYsLTE3NjM4MjQ1MjMsLTEzNDk4
+OTc3NDcsMTAwMzU3ODU0MCwtNDYxMzg3NTksNDg1NTI2MTQxLD
+U5NTM5ODA3NCwxMTUxMzY5MTEwLC0yMDkyMDc4OTg4LC04NDI5
+OTIzMjgsLTE3Nzg4Njk0MzAsLTE4MjQ4NzQwNTAsMTI5ODg4NT
+UwNiwtMTMzMjA3NjIyMCwtNTU2OTk4Mjg5LC0xNDk5MTIzNjE4
+LDEwNjAzMTI0MzZdfQ==
 -->
