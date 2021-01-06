@@ -517,22 +517,14 @@ where $R_i$ is the range of variable $i$ over the available data.
 * The dataset contains 18 flowers and 8 characteristics:
 1. Winters: binary, indicates whether the plant may be left in the garden when it freezes.
 2. Shadow: binary, shows whether the plant needs to stand in the shadow.
-3. Tubers: asymmetric binary, distinguishes between plants with tubers and plants that
-grow in any other way.
+3. Tubers: asymmetric binary, distinguishes between plants with tubers and plants that grow in any other way.
 4. Color: nominal, specifies the flower’s color (1=white, 2=yellow, 3= pink, 4=red, 5=
 blue).
 5. Soil: ordinal, indicates whether the plant grows in dry (1), normal (2), or wet (3) soil.
 6. Preference: ordinal, someone’s preference ranking, going from 1 to 18.
 7. Height: interval scaled, the plant’s height in centimeters.
-8. Distance: interval scaled, the distance in centimeters that should be left between the
-plants.
-
-
-
-
-
-* The records of 11 students including one that had not yet experienced video games (subject 82) are shown in Table 3.5. 
-* The dissimilarity between subjects 1 and 2 can be calculated as follows
+8. Distance: interval scaled, the distance in centimeters that should be left between the plants.
+ * The dissimilarity between flowers 1 and 2 can be calculated as follows:
 
 $$\frac{0+|2-0|/30+|2-2|/3+0+|2-3|/3+1+0}{7}=0.2.$$
 
@@ -610,7 +602,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTk0MzM2NSwtODA4ODc2OTg2LDEyMT
+eyJoaXN0b3J5IjpbLTQyMDY5MzUxMSwtODA4ODc2OTg2LDEyMT
 k3MzUwMTIsNDE5NzMyNjE2LC0xNTU2Njg2MzkzLC0yNjEzODEy
 ODcsLTE4MDg1NjE1MTYsLTE3NjM4MjQ1MjMsLTEzNDk4OTc3ND
 csMTAwMzU3ODU0MCwtNDYxMzg3NTksNDg1NTI2MTQxLDU5NTM5
