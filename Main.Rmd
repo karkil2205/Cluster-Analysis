@@ -557,6 +557,10 @@ V7 height, is interval scaled, the plant’s height in centimeters.
 V8 distance, is interval scaled, the distance in centimeters that should be left between the plants.
 References
 Struyf, Hubert and Rousseeuw (1996), see agnes.
+
+
+
+
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
 *  We’ll use only a by taking 15 random rows among the 50 rows in the data set. 
@@ -575,11 +579,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5NzMyNjE2LC0xNTU2Njg2MzkzLC0yNj
-EzODEyODcsLTE4MDg1NjE1MTYsLTE3NjM4MjQ1MjMsLTEzNDk4
-OTc3NDcsMTAwMzU3ODU0MCwtNDYxMzg3NTksNDg1NTI2MTQxLD
-U5NTM5ODA3NCwxMTUxMzY5MTEwLC0yMDkyMDc4OTg4LC04NDI5
-OTIzMjgsLTE3Nzg4Njk0MzAsLTE4MjQ4NzQwNTAsMTI5ODg4NT
-UwNiwtMTMzMjA3NjIyMCwtNTU2OTk4Mjg5LC0xNDk5MTIzNjE4
-LDEwNjAzMTI0MzZdfQ==
+eyJoaXN0b3J5IjpbLTExNDM2MTU3OTIsNDE5NzMyNjE2LC0xNT
+U2Njg2MzkzLC0yNjEzODEyODcsLTE4MDg1NjE1MTYsLTE3NjM4
+MjQ1MjMsLTEzNDk4OTc3NDcsMTAwMzU3ODU0MCwtNDYxMzg3NT
+ksNDg1NTI2MTQxLDU5NTM5ODA3NCwxMTUxMzY5MTEwLC0yMDky
+MDc4OTg4LC04NDI5OTIzMjgsLTE3Nzg4Njk0MzAsLTE4MjQ4Nz
+QwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2OTk4Mjg5
+LC0xNDk5MTIzNjE4XX0=
 -->
