@@ -511,7 +511,10 @@ $$
 where $R_i$ is the range of variable $i$ over the available data.
 * Consider the following data set:
 
-![](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
+![]()
+
+
+
 *Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.*
 
 * The records of 11 students including one that had not yet experienced video games (subject 82) are shown in Table 3.5. 
@@ -594,11 +597,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxOTczNTAxMiw0MTk3MzI2MTYsLTE1NT
-Y2ODYzOTMsLTI2MTM4MTI4NywtMTgwODU2MTUxNiwtMTc2Mzgy
-NDUyMywtMTM0OTg5Nzc0NywxMDAzNTc4NTQwLC00NjEzODc1OS
-w0ODU1MjYxNDEsNTk1Mzk4MDc0LDExNTEzNjkxMTAsLTIwOTIw
-Nzg5ODgsLTg0Mjk5MjMyOCwtMTc3ODg2OTQzMCwtMTgyNDg3ND
-A1MCwxMjk4ODg1NTA2LC0xMzMyMDc2MjIwLC01NTY5OTgyODks
-LTE0OTkxMjM2MThdfQ==
+eyJoaXN0b3J5IjpbOTExNDk4NzM0LDEyMTk3MzUwMTIsNDE5Nz
+MyNjE2LC0xNTU2Njg2MzkzLC0yNjEzODEyODcsLTE4MDg1NjE1
+MTYsLTE3NjM4MjQ1MjMsLTEzNDk4OTc3NDcsMTAwMzU3ODU0MC
+wtNDYxMzg3NTksNDg1NTI2MTQxLDU5NTM5ODA3NCwxMTUxMzY5
+MTEwLC0yMDkyMDc4OTg4LC04NDI5OTIzMjgsLTE3Nzg4Njk0Mz
+AsLTE4MjQ4NzQwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwt
+NTU2OTk4Mjg5XX0=
 -->
