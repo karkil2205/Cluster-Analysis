@@ -535,64 +535,19 @@ $$\frac{0+|2-0|/30+|2-2|/3+0+|2-3|/3+1+0}{7}=0.2.$$
 ```
 
 
-flower Flower Characteristics
-Description
-8 characteristics for 18 popular flowers.
-Usage
-data(flower)
-Format
-A data frame with 18 observations on 8 variables:
-[ , "V1"] factor winters
-[ , "V2"] factor shadow
-[ , "V3"] factor tubers
-[ , "V4"] factor color
-[ , "V5"] ordered soil
-[ , "V6"] ordered preference
-[ , "V7"] numeric height
-[ , "V8"] numeric distance
-V1 winters, is binary and indicates whether the plant may be left in the garden when it freezes.
 
 
 
-The dataset of Table 1 contains 8 characteristics for 18 flowers. The eight
-variables are:
-1. Winters: binary, indicates whether the plant may be left in the garden when it freezes.
-2. Shadow: binary, shows whether the plant needs to stand in the shadow.
-3. Tubers: asymmetric binary, distinguishes between plants with tubers and plants that
-grow in any other way.
-4. Color: nominal, specifies the flower’s color (1=white, 2=yellow, 3= pink, 4=red, 5=
-blue).
-5. Soil: ordinal, indicates whether the plant grows in dry (1), normal (2), or wet (3) soil.
-6. Preference: ordinal, someone’s preference ranking, going from 1 to 18.
-7. Height: interval scaled, the plant’s height in centimeters.
-8. Distance: interval scaled, the distance in centimeters that should be left between the
-plants.
 
 
-
-# Distance matrix computation
-* We’ll use a subset of the data USArrests
-*  We’ll use only a by taking 15 random rows among the 50 rows in the data set. 
-* Next, we standardize the data using the function scale():
-
-```{r}
-install.packages("FactoMineR")
-library("FactoMineR")
-data("USArrests") # Loading
-head(USArrests, 3) # Print the first 3 rows
-set.seed(123)
-ss <- sample(1:50, 15) # Take 15 random rows
-df <- USArrests[ss, ] # Subset the 15 rows
-df.scaled <- scale(df) # Standardize the variables
-```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDM5MjcxMDMsOTE4NzU2MzQsLTE0OT
-E3ODAxNTksODM0NjY3NTczLC04MDg4NzY5ODYsMTIxOTczNTAx
-Miw0MTk3MzI2MTYsLTE1NTY2ODYzOTMsLTI2MTM4MTI4NywtMT
-gwODU2MTUxNiwtMTc2MzgyNDUyMywtMTM0OTg5Nzc0NywxMDAz
-NTc4NTQwLC00NjEzODc1OSw0ODU1MjYxNDEsNTk1Mzk4MDc0LD
-ExNTEzNjkxMTAsLTIwOTIwNzg5ODgsLTg0Mjk5MjMyOCwtMTc3
-ODg2OTQzMF19
+eyJoaXN0b3J5IjpbMjI1OTgyNzgyLDkxODc1NjM0LC0xNDkxNz
+gwMTU5LDgzNDY2NzU3MywtODA4ODc2OTg2LDEyMTk3MzUwMTIs
+NDE5NzMyNjE2LC0xNTU2Njg2MzkzLC0yNjEzODEyODcsLTE4MD
+g1NjE1MTYsLTE3NjM4MjQ1MjMsLTEzNDk4OTc3NDcsMTAwMzU3
+ODU0MCwtNDYxMzg3NTksNDg1NTI2MTQxLDU5NTM5ODA3NCwxMT
+UxMzY5MTEwLC0yMDkyMDc4OTg4LC04NDI5OTIzMjgsLTE3Nzg4
+Njk0MzBdfQ==
 -->
