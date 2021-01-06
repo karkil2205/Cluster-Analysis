@@ -512,9 +512,7 @@ where $R_i$ is the range of variable $i$ over the available data.
 * Consider the following data set:
 
 ![](https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/flowers.jpg)
-
-* Data from: Struyf, A., Hubert, M., & Rousseeuw, P. (1997). Clustering in an object-oriented environment. _Journal of Statistical Software_, _1_(4), 1-30.
-*
+*Data from: Struyf, A., Hubert, M., & Rousseeuw, P. (1997). Clustering in an object-oriented environment. _Journal of Statistical Software_, _1_(4), 1-30.*
 
 * The records of 11 students including one that had not yet experienced video games (subject 82) are shown in Table 3.5. 
 * The dissimilarity between subjects 1 and 2 can be calculated as follows
@@ -595,7 +593,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTE3NzMzNiwxMjE5NzM1MDEyLDQxOT
+eyJoaXN0b3J5IjpbLTgwODg3Njk4NiwxMjE5NzM1MDEyLDQxOT
 czMjYxNiwtMTU1NjY4NjM5MywtMjYxMzgxMjg3LC0xODA4NTYx
 NTE2LC0xNzYzODI0NTIzLC0xMzQ5ODk3NzQ3LDEwMDM1Nzg1ND
 AsLTQ2MTM4NzU5LDQ4NTUyNjE0MSw1OTUzOTgwNzQsMTE1MTM2
