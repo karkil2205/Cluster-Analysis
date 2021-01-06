@@ -574,7 +574,7 @@ blue).
 plants.
 
 
-
+Struyf, A., Hubert, M., & Rousseeuw, P. (1997). Clustering in an object-oriented environment. _Journal of Statistical Software_, _1_(4), 1-30.
 
 # Distance matrix computation
 * We’ll use a subset of the data USArrests
@@ -594,7 +594,7 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDk2MTUxNCw0MTk3MzI2MTYsLTE1NT
+eyJoaXN0b3J5IjpbMTIxOTczNTAxMiw0MTk3MzI2MTYsLTE1NT
 Y2ODYzOTMsLTI2MTM4MTI4NywtMTgwODU2MTUxNiwtMTc2Mzgy
 NDUyMywtMTM0OTg5Nzc0NywxMDAzNTc4NTQwLC00NjEzODc1OS
 w0ODU1MjYxNDEsNTk1Mzk4MDc0LDExNTEzNjkxMTAsLTIwOTIw
