@@ -559,6 +559,21 @@ References
 Struyf, Hubert and Rousseeuw (1996), see agnes.
 
 
+The dataset of Table 1 contains 8 characteristics for 18 flowers. The eight
+variables are:
+1. Winters: binary, indicates whether the plant may be left in the garden when it freezes.
+2. Shadow: binary, shows whether the plant needs to stand in the shadow.
+3. Tubers: asymmetric binary, distinguishes between plants with tubers and plants that
+grow in any other way.
+4. Color: nominal, specifies the flower’s color (1=white, 2=yellow, 3= pink, 4=red, 5=
+blue).
+5. Soil: ordinal, indicates whether the plant grows in dry (1), normal (2), or wet (3) soil.
+6. Preference: ordinal, someone’s preference ranking, going from 1 to 18.
+7. Height: interval scaled, the plant’s height in centimeters.
+8. Distance: interval scaled, the distance in centimeters that should be left between the
+plants.
+
+
 
 
 # Distance matrix computation
@@ -579,11 +594,11 @@ df.scaled <- scale(df) # Standardize the variables
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDM2MTU3OTIsNDE5NzMyNjE2LC0xNT
-U2Njg2MzkzLC0yNjEzODEyODcsLTE4MDg1NjE1MTYsLTE3NjM4
-MjQ1MjMsLTEzNDk4OTc3NDcsMTAwMzU3ODU0MCwtNDYxMzg3NT
-ksNDg1NTI2MTQxLDU5NTM5ODA3NCwxMTUxMzY5MTEwLC0yMDky
-MDc4OTg4LC04NDI5OTIzMjgsLTE3Nzg4Njk0MzAsLTE4MjQ4Nz
-QwNTAsMTI5ODg4NTUwNiwtMTMzMjA3NjIyMCwtNTU2OTk4Mjg5
-LC0xNDk5MTIzNjE4XX0=
+eyJoaXN0b3J5IjpbLTIwMDk2MTUxNCw0MTk3MzI2MTYsLTE1NT
+Y2ODYzOTMsLTI2MTM4MTI4NywtMTgwODU2MTUxNiwtMTc2Mzgy
+NDUyMywtMTM0OTg5Nzc0NywxMDAzNTc4NTQwLC00NjEzODc1OS
+w0ODU1MjYxNDEsNTk1Mzk4MDc0LDExNTEzNjkxMTAsLTIwOTIw
+Nzg5ODgsLTg0Mjk5MjMyOCwtMTc3ODg2OTQzMCwtMTgyNDg3ND
+A1MCwxMjk4ODg1NTA2LC0xMzMyMDc2MjIwLC01NTY5OTgyODks
+LTE0OTkxMjM2MThdfQ==
 -->
