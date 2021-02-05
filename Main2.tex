@@ -122,179 +122,13 @@
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{knitr}\OperatorTok{::}\NormalTok{opts_chunk}\OperatorTok{$}\KeywordTok{set}\NormalTok{(}\DataTypeTok{echo =} \OtherTok{TRUE}\NormalTok{)}
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"dplyr"}\NormalTok{)}
+\CommentTok{#install.packages("dplyr")}
+\CommentTok{#install.packages("stargazer")}
+\CommentTok{#install.packages("ade4")}
+\CommentTok{#install.packages("magrittr")}
+\CommentTok{#install.packages("cluster")}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0'
-## (as 'lib' is unspecified)
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"stargazer"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0'
-## (as 'lib' is unspecified)
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"ade4"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0'
-## (as 'lib' is unspecified)
-\end{verbatim}
-
-\hypertarget{definition-of-a-distance}{%
-\section{Definition of a distance}\label{definition-of-a-distance}}
-
-\begin{itemize}
-\tightlist
-\item
-  A distance function or a metric on \(\mathbb{R}^n,\:n\geq 1\), is a
-  function \(d:\mathbb{R}^n\times\mathbb{R}^n\rightarrow \mathbb{R}\).
-\item
-  A distance function must satisfy some required properties or axioms.
-\item
-  There are three main axioms.
-\item
-  A1. \(d(\mathbf{x},\mathbf{y})= 0\iff \mathbf{x}=\mathbf{y}\)
-  (identity of indiscernibles);
-\item
-  A2. \(d(\mathbf{x},\mathbf{y})= d(\mathbf{y},\mathbf{x})\) (symmetry);
-\item
-  A3.
-  \(d(\mathbf{x},\mathbf{z})\leq d(\mathbf{x},\mathbf{y})+d(\mathbf{y},\mathbf{z})\)
-  (triangle inequality), where \(\mathbf{x}=(x_1,\cdots,x_n)\),
-  \(\mathbf{y}=(y_1,\cdots,y_n)\) and \(\mathbf{z}=(z_1,\cdots,z_n)\)
-  are all vectors of \(\mathbb{R}^n\).
-\item
-  We should use the term \emph{dissimilarity} rather than
-  \emph{distance} when not all the three axioms A1-A3 are valid.
-\item
-  Most of the time, we shall use, with some abuse of vocabulary, the
-  term distance.
-\end{itemize}
-
-\hypertarget{exercice-1}{%
-\section{Exercice 1}\label{exercice-1}}
-
-\begin{itemize}
-\tightlist
-\item
-  Prove that the three axioms A1-A3 imply the non-negativity condition:
-  \[d(\mathbf{x},\mathbf{y})\geq 0.\]
-\end{itemize}
-
-\hypertarget{euclidean-distance}{%
-\section{Euclidean distance}\label{euclidean-distance}}
-
-\begin{itemize}
-\tightlist
-\item
-  It is defined by:
-\end{itemize}
-
-\[d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.\]
-
-\begin{itemize}
-\tightlist
-\item
-  A1-A2 are obvious.
-\item
-  The proof of A3 is provided below.
-\end{itemize}
-
-\hypertarget{exercice-2}{%
-\section{Exercice 2}\label{exercice-2}}
-
-\begin{itemize}
-\tightlist
-\item
-  Is the squared Euclidian distance a true distance?
-\end{itemize}
-
-\hypertarget{manhattan-distance}{%
-\section{Manhattan distance}\label{manhattan-distance}}
-
-\begin{itemize}
-\tightlist
-\item
-  The Manhattan distance also called taxi-cab metric or city-block
-  metric is defined by: \[d(\mathbf{x},\mathbf{y})
-  =\sum_{i=1}^n |x_i-y_i|.
-  \]
-\item
-  A1-A2 hold.
-\item
-  A3 also holds using the fact that \(|a+b|\leq |a|+|b|\) for any reals
-  \(a,b\).
-\item
-  There exists also a weighted version of the Manhattan distance called
-  the Canberra distance.
-\end{itemize}
-
-\href{https://upload.wikimedia.org/wikipedia/commons/0/08/Manhattan_distance.svg}{Manhattan
-distance vs Euclidean distance Graph}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{x =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{)}
-\NormalTok{y =}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{6}\NormalTok{)}
-\KeywordTok{dist}\NormalTok{(}\KeywordTok{rbind}\NormalTok{(x, y), }\DataTypeTok{method =} \StringTok{"euclidian"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##          x
-## y 8.485281
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\DecValTok{6}\OperatorTok{*}\KeywordTok{sqrt}\NormalTok{(}\DecValTok{2}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 8.485281
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{dist}\NormalTok{(}\KeywordTok{rbind}\NormalTok{(x, y), }\DataTypeTok{method =} \StringTok{"manhattan"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##    x
-## y 12
-\end{verbatim}
-
-\hypertarget{canberra-distance}{%
-\section{Canberra distance}\label{canberra-distance}}
-
-\begin{itemize}
-\item
-  It is defined by: \[d(\mathbf{x},\mathbf{y})=\sum_{i=1}^n
-  \frac{|x_i-y_i|}{|x_i|+|y_i|}.\]
-\item
-  Note that the term \(|x_i-y_i|/(|x_i|+|y_i|)\) is not properly defined
-  as: \(x_i=y_i=0\).
-\item
-  By convention we set the ratio to be zero in that case.
-\item
-  The Canberra distance is specially sensitive to small changes near
-  zero.
-\end{itemize}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -319,8 +153,8 @@ distance vs Euclidean distance Graph}
 ## [1] 2
 \end{verbatim}
 
-\hypertarget{exercice-3}{%
-\section{Exercice 3}\label{exercice-3}}
+\hypertarget{exercice-32}{%
+\section{Exercice 32}\label{exercice-32}}
 
 \begin{itemize}
 \tightlist
@@ -349,14 +183,20 @@ distance vs Euclidean distance Graph}
   where \(\|\mathbf{\cdot}\|_p\) is known as the \(p\)-norm or Minkowski
   norm.
 \item
-  Note that the Minkowski distance and norm are related by: \[
-  d(\mathbf{x},\mathbf{y})=\|\mathbf{x}-\mathbf{y}\|_p.
-  \]
-\item
-  Conversely, we have: \[
-  \|\mathbf{x}\|_p=d(\mathbf{x},\mathbf{0}),
-  \] where \(\mathbf{0}\) is the null-vetor of \(\mathbb{R}^n\).
+  Note that the Minkowski distance and norm are related by:
 \end{itemize}
+
+\[d(\mathbf{x},\mathbf{y})=\|\mathbf{x}-\mathbf{y}\|_p.\]
+
+\begin{itemize}
+\tightlist
+\item
+  Conversely, we have:
+\end{itemize}
+
+\[\|\mathbf{x}\|_p=d(\mathbf{x},\mathbf{0}),\]
+
+where \(\mathbf{0}\) is the null-vetor of \(\mathbb{R}^n\).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -376,7 +216,7 @@ distance vs Euclidean distance Graph}
 ## Warning: Removed 1900 rows containing missing values (geom_point).
 \end{verbatim}
 
-\includegraphics{Main_files/figure-latex/unnamed-chunk-3-1.pdf}
+\includegraphics{Main2_files/figure-latex/unnamed-chunk-3-1.pdf}
 
 \hypertarget{chebyshev-distance}{%
 \section{Chebyshev distance}\label{chebyshev-distance}}
@@ -851,22 +691,12 @@ data}\label{similarity-measures-for-binary-data}}
 \bottomrule
 \end{longtable}
 
-\begin{figure}
-\centering
-\includegraphics{KAUFMANBinarydata.jpg}
-\caption{Table from Kaufman, L., \& Rousseeuw, P. J. (2009).
-\emph{Finding groups in data: an introduction to cluster analysis} (Vol.
-344). John Wiley \& Sons}
-\end{figure}
-
-\begin{itemize}
-\tightlist
-\item
-  The data shows \(8\) people (individuals) and \(10\) binary variables:
-\item
-  Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face,
-  Pessimist, Evening Type, Is an Only Child, Left-Handed.
-\end{itemize}
+\includegraphics{https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/KAUFMANBinarydata.jpg}
+\emph{Table from Kaufman, L., \& Rousseeuw, P. J. (2009). \emph{Finding
+groups in data: an introduction to cluster analysis} (Vol. 344). John
+Wiley \& Sons} * The data shows \(8\) people (individuals) and \(10\)
+binary variables: * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses,
+Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1135,7 +965,8 @@ dissimilarity coefficients. \emph{Journal of classification},
   between two objects through categorial variables is the simple
   matching approach.
 \item
-  If \(\bm{x},\bm{y},\) are \(n\) nominal records for two individuals,
+  If \(\mathbf{x},\mathbf{y},\) are both \(n\) nominal records for two
+  individuals,
 \item
   Let define the function: \[\delta(x_i,y_i)\equiv \begin{cases}0,
   \text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}\]
@@ -1151,10 +982,11 @@ dissimilarity coefficients. \emph{Journal of classification},
   \[N_{d}=\sum_{i=1}^n\delta(x_i,y_i).\]
 \item
   The distance corresponding to the simple matching approach is: \[
-  d(\bm{x},\bm{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
+  d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
   \]
 \item
-  Therefore: \[d(\bm{x},\bm{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.\]
+  Therefore:
+  \[d(\mathbf{x},\mathbf{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.\]
 \item
   Note that simple matching has exactly the same meaning as in the
   preceding section.
@@ -1179,7 +1011,7 @@ dissimilarity coefficients. \emph{Journal of classification},
   actually be compared meaningfully.
 \item
   The formula is: \[
-  d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i \delta(x_i,y_i)}{\sum_{i=1}^n w_i}
+  d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i \delta(x_i,y_i)}{\sum_{i=1}^n w_i}.
   \]
 \item
   The wheight \(w_i\) is put equal to \(1\) when both measurements
@@ -1194,8 +1026,7 @@ dissimilarity coefficients. \emph{Journal of classification},
   \text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}
   \]
 \item
-  It the \(i\)th measure is interval-scaled, we take\\
-  \[
+  If the \(i\)th measure is interval-scaled, we take instead: \[
   \delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i},
   \] where \(R_i\) is the range of variable \(i\) over the available
   data.
@@ -1203,70 +1034,227 @@ dissimilarity coefficients. \emph{Journal of classification},
   Consider the following data set:
 \end{itemize}
 
-\hypertarget{distance-matrix-computation}{%
-\section{Distance matrix
-computation}\label{distance-matrix-computation}}
+\includegraphics{https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/flowers.jpg}
+\emph{Data from: Struyf, A., Hubert, M., \& Rousseeuw, P. (1997).
+Clustering in an object-oriented environment. \emph{Journal of
+Statistical Software}, \emph{1}(4), 1-30.}
 
 \begin{itemize}
 \tightlist
 \item
-  We'll use a subset of the data USArrests
+  The dataset contains 18 flowers and 8 characteristics:
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
-  We'll use only a by taking 15 random rows among the 50 rows in the
-  data set.
+  Winters: binary, indicates whether the plant may be left in the garden
+  when it freezes.
 \item
-  Next, we standardize the data using the function scale():
+  Shadow: binary, shows whether the plant needs to stand in the shadow.
+\item
+  Tubers (Tubercule): asymmetric binary, distinguishes between plants
+  with tubers and plants that grow in any other way.
+\item
+  Color: nominal, specifies the flower's color (1=white, 2=yellow, 3=
+  pink, 4=red, 5= blue).
+\item
+  Soil: ordinal, indicates whether the plant grows in dry (1), normal
+  (2), or wet (3) soil.
+\item
+  Preference: ordinal, someone's preference ranking, going from 1 to 18.
+\item
+  Height: interval scaled, the plant's height in centimeters.
+\item
+  Distance: interval scaled, the distance in centimeters that should be
+  left between the plants.
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  The dissimilarity between Begonia and Broom (Genêt) can be calculated
+  as follows:
+  \includegraphics{https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Begonia.jpg}
+  \emph{Begonia}
+  \includegraphics{https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Genet.jpeg}
+  \emph{Genêt}
 \end{itemize}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"FactoMineR"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0'
-## (as 'lib' is unspecified)
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(}\StringTok{"FactoMineR"}\NormalTok{)}
+\KeywordTok{library}\NormalTok{(cluster)}
+\KeywordTok{library}\NormalTok{(dplyr)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
 ## 
-## Attaching package: 'FactoMineR'
+## Attaching package: 'dplyr'
 \end{verbatim}
 
 \begin{verbatim}
-## The following object is masked from 'package:ade4':
+## The following objects are masked from 'package:stats':
 ## 
-##     reconst
+##     filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{data}\NormalTok{(}\StringTok{"USArrests"}\NormalTok{) }\CommentTok{# Loading}
-\KeywordTok{head}\NormalTok{(USArrests, }\DecValTok{3}\NormalTok{) }\CommentTok{# Print the first 3 rows}
+\NormalTok{data <-flower }\OperatorTok{%>%}\StringTok{ }
+\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Winters=}\NormalTok{V1,}\DataTypeTok{Shadow=}\NormalTok{V2,}\DataTypeTok{Tubers=}\NormalTok{V3,}\DataTypeTok{Color=}\NormalTok{V4,}\DataTypeTok{Soil=}\NormalTok{V5,}\DataTypeTok{Preference=}\NormalTok{V6,}\DataTypeTok{Height=}\NormalTok{V7,}\DataTypeTok{Distance=}\NormalTok{V8) }\OperatorTok{%>%}
+\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{Winters=}\KeywordTok{recode}\NormalTok{(Winters,}\StringTok{"1"}\NormalTok{=}\StringTok{"Yes"}\NormalTok{,}\StringTok{"0"}\NormalTok{=}\StringTok{"No"}\NormalTok{),}
+      \DataTypeTok{Shadow=}\KeywordTok{recode}\NormalTok{(Shadow,}\StringTok{"1"}\NormalTok{=}\StringTok{"Yes"}\NormalTok{,}\StringTok{"0"}\NormalTok{=}\StringTok{"No"}\NormalTok{),}
+      \DataTypeTok{Tubers=}\KeywordTok{recode}\NormalTok{(Tubers,}\StringTok{"1"}\NormalTok{=}\StringTok{"Yes"}\NormalTok{,}\StringTok{"0"}\NormalTok{=}\StringTok{"No"}\NormalTok{),}
+      \DataTypeTok{Color=}\KeywordTok{recode}\NormalTok{(Color,}\StringTok{"1"}\NormalTok{=}\StringTok{"white"}\NormalTok{, }\StringTok{"2"}\NormalTok{=}\StringTok{"yellow"}\NormalTok{, }\StringTok{"3"}\NormalTok{=}\StringTok{ "pink"}\NormalTok{, }\StringTok{"4"}\NormalTok{=}\StringTok{"red"}\NormalTok{, }\StringTok{"5"}\NormalTok{=}\StringTok{"blue"}\NormalTok{),}
+      \DataTypeTok{Soil=}\KeywordTok{recode}\NormalTok{(Soil,}\StringTok{"1"}\NormalTok{=}\StringTok{"dry"}\NormalTok{, }\StringTok{"2"}\NormalTok{=}\StringTok{"normal"}\NormalTok{, }\StringTok{"3"}\NormalTok{=}\StringTok{ "wet"}\NormalTok{)}
+\NormalTok{      ) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{res=}\KeywordTok{lapply}\NormalTok{(data,class)  }
+\NormalTok{res=}\KeywordTok{as.data.frame}\NormalTok{(res)}
+\NormalTok{res[}\DecValTok{1}\NormalTok{,] }\OperatorTok{%>%}\StringTok{ }
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}llllllll@{}}
+\toprule
+Winters & Shadow & Tubers & Color & Soil & Preference & Height &
+Distance\tabularnewline
+\midrule
+\endhead
+factor & factor & factor & factor & ordered & ordered & numeric &
+numeric\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flower[}\DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{,]}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-##         Murder Assault UrbanPop Rape
-## Alabama   13.2     236       58 21.2
-## Alaska    10.0     263       48 44.5
-## Arizona    8.1     294       80 31.0
+##   V1 V2 V3 V4 V5 V6  V7 V8
+## 1  0  1  1  4  3 15  25 15
+## 2  1  0  0  2  1  3 150 50
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{set.seed}\NormalTok{(}\DecValTok{123}\NormalTok{)}
-\NormalTok{ss <-}\StringTok{ }\KeywordTok{sample}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{50}\NormalTok{, }\DecValTok{15}\NormalTok{) }\CommentTok{# Take 15 random rows}
-\NormalTok{df <-}\StringTok{ }\NormalTok{USArrests[ss, ] }\CommentTok{# Subset the 15 rows}
-\NormalTok{df.scaled <-}\StringTok{ }\KeywordTok{scale}\NormalTok{(df) }\CommentTok{# Standardize the variables}
+\KeywordTok{max}\NormalTok{(data}\OperatorTok{$}\NormalTok{Height)}\OperatorTok{-}\KeywordTok{min}\NormalTok{(data}\OperatorTok{$}\NormalTok{Height)}
 \end{Highlighting}
 \end{Shaded}
+
+\begin{verbatim}
+## [1] 180
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{max}\NormalTok{(data}\OperatorTok{$}\NormalTok{Distance)}\OperatorTok{-}\KeywordTok{min}\NormalTok{(data}\OperatorTok{$}\NormalTok{Distance)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 50
+\end{verbatim}
+
+\[\frac{|1-0|+|0-1|+|0-1|+1+|1-3|/2+|3-15|/17+|150-25|/180+|50-15|/50}{8}\approx 0.8875408\]
+\includegraphics{Daisy.jpg}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(cluster)}
+\NormalTok{(}\KeywordTok{abs}\NormalTok{(}\DecValTok{1-0}\NormalTok{)}\OperatorTok{+}\KeywordTok{abs}\NormalTok{(}\DecValTok{0-1}\NormalTok{)}\OperatorTok{+}\KeywordTok{abs}\NormalTok{(}\DecValTok{0-1}\NormalTok{)}\OperatorTok{+}\DecValTok{1}\OperatorTok{+}\KeywordTok{abs}\NormalTok{(}\DecValTok{1-3}\NormalTok{)}\OperatorTok{/}\DecValTok{2}\OperatorTok{+}\KeywordTok{abs}\NormalTok{(}\DecValTok{3-15}\NormalTok{)}\OperatorTok{/}\DecValTok{17}\OperatorTok{+}\KeywordTok{abs}\NormalTok{(}\DecValTok{150-25}\NormalTok{)}\OperatorTok{/}\DecValTok{180}\OperatorTok{+}\KeywordTok{abs}\NormalTok{(}\DecValTok{50-15}\NormalTok{)}\OperatorTok{/}\DecValTok{50}\NormalTok{)}\OperatorTok{/}\DecValTok{8}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.8875408
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{daisy}\NormalTok{(data[,}\DecValTok{1}\OperatorTok{:}\DecValTok{8}\NormalTok{],}\DataTypeTok{metric =} \StringTok{"Gower"}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in daisy(data[, 1:8], metric = "Gower"): with mixed variables, metric
+## "gower" is used automatically
+\end{verbatim}
+
+\begin{verbatim}
+## Dissimilarities :
+##            1         2         3         4         5         6         7
+## 2  0.8875408                                                            
+## 3  0.5272467 0.5147059                                                  
+## 4  0.3517974 0.5504493 0.5651552                                        
+## 5  0.4115605 0.6226307 0.3726307 0.6383578                              
+## 6  0.2269199 0.6606209 0.3003268 0.4189951 0.3443627                    
+## 7  0.2876225 0.5999183 0.4896242 0.3435866 0.4197712 0.1892974          
+## 8  0.4234069 0.4641340 0.6038399 0.2960376 0.4673203 0.5714869 0.4107843
+## 9  0.5808824 0.4316585 0.4463644 0.8076797 0.3306781 0.5136846 0.5890931
+## 10 0.6094363 0.4531046 0.4678105 0.5570670 0.3812908 0.4119281 0.5865196
+## 11 0.3278595 0.7096814 0.5993873 0.6518791 0.3864788 0.4828840 0.5652369
+## 12 0.4267565 0.5857843 0.6004902 0.5132761 0.5000817 0.5248366 0.6391340
+## 13 0.5196487 0.5248366 0.5395425 0.7464461 0.2919118 0.4524510 0.5278595
+## 14 0.2926062 0.5949346 0.6096405 0.3680147 0.5203431 0.3656863 0.5049837
+## 15 0.6221814 0.3903595 0.5300654 0.5531454 0.4602124 0.5091503 0.3345588
+## 16 0.6935866 0.3575163 0.6222222 0.3417892 0.7301471 0.5107843 0.4353758
+## 17 0.7765114 0.1904412 0.5801471 0.4247141 0.6880719 0.5937092 0.5183007
+## 18 0.4610294 0.4515114 0.7162173 0.4378268 0.4755310 0.6438317 0.4692402
+##            8         9        10        11        12        13        14
+## 2                                                                       
+## 3                                                                       
+## 4                                                                       
+## 5                                                                       
+## 6                                                                       
+## 7                                                                       
+## 8                                                                       
+## 9  0.6366422                                                            
+## 10 0.6639706 0.4256127                                                  
+## 11 0.4955474 0.4308007 0.3948121                                        
+## 12 0.4216503 0.4194036 0.3812092 0.2636029                              
+## 13 0.5754085 0.2181781 0.3643791 0.3445670 0.2331699                    
+## 14 0.4558007 0.4396650 0.3609477 0.2838644 0.1591503 0.3784314          
+## 15 0.4512255 0.2545343 0.4210784 0.4806781 0.4295752 0.3183007 0.4351307
+## 16 0.6378268 0.6494690 0.3488562 0.7436683 0.6050654 0.5882353 0.4598039
+## 17 0.4707516 0.6073938 0.3067810 0.7015931 0.5629902 0.5461601 0.5427288
+## 18 0.1417892 0.5198529 0.8057598 0.5359477 0.5495507 0.5733252 0.5698121
+##           15        16        17
+## 2                               
+## 3                               
+## 4                               
+## 5                               
+## 6                               
+## 7                               
+## 8                               
+## 9                               
+## 10                              
+## 11                              
+## 12                              
+## 13                              
+## 14                              
+## 15                              
+## 16 0.3949346                    
+## 17 0.3528595 0.1670752          
+## 18 0.5096814 0.7796160 0.6125408
+## 
+## Metric :  mixed ;  Types = N, N, N, N, O, O, I, I 
+## Number of objects : 18
+\end{verbatim}
 
 \end{document}
