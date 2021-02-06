@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.10.23)  11 JAN 2021 10:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2021.1.27)  5 FEB 2021 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -56,16 +56,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks14
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip43
 For additional information on amsmath, use the `?' option.
@@ -73,7 +64,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks14
 \ex@=\dimen103
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -101,21 +92,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \dotsspace@=\muskip10
 \c@parentequation=\count94
 \dspbrk@lvl=\count95
-\tag@help=\toks16
+\tag@help=\toks15
 \row@=\count96
 \column@=\count97
 \maxfields@=\count98
-\andhelp@=\toks17
+\andhelp@=\toks16
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
 \tagshift@=\dimen108
 \tagwidth@=\dimen109
 \totwidth@=\dimen110
 \lineht@=\dimen111
-\@envbody=\toks18
+\@envbody=\toks17
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 ) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
@@ -130,8 +121,8 @@ File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OML ...
@@ -586,16 +577,24 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
+\KV@toks@=\toks21
 )
-\MT@toks=\toks23
+\MT@toks=\toks22
 \MT@count=\count99
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen112
@@ -774,7 +773,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutheight=\dimen122
 \Gm@layouthoffset=\dimen123
 \Gm@layoutvoffset=\dimen124
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
@@ -809,7 +808,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count121
 \c@LT@tables=\count122
 \c@LT@chunks=\count123
-\LT@p@ftn=\toks25
+\LT@p@ftn=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen130
@@ -829,13 +828,25 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count126
 \@lastruleclass=\count127
 \@thisrulewidth=\dimen142
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count128
+\calc@Bcount=\count129
+\calc@Adimen=\dimen143
+\calc@Bdimen=\dimen144
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count130
+\calc@Cskip=\skip55
 ) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count128
+\etb@tempcnta=\count131
 ) (/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box33
-\fn@width=\dimen143
+\fn@width=\dimen145
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -847,45 +858,39 @@ File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 95.
 )
-\Gin@req@height=\dimen144
-\Gin@req@width=\dimen145
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
-Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
-Package grffile Info: Option `multidot' is set to `true'.
-Package grffile Info: Option `extendedchars' is set to `false'.
-Package grffile Info: Option `space' is set to `true'.
-Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+\Gin@req@height=\dimen146
+\Gin@req@width=\dimen147
 ) (./Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 120.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 115.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 120.
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 115.
+LaTeX Info: Redefining \microtypecontext on input line 120.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -900,30 +905,30 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 ) (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
-\scratchdimen=\dimen146
+\scratchcounter=\count132
+\scratchdimen=\dimen148
 \scratchbox=\box34
-\nofMPsegments=\count130
-\nofMParguments=\count131
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count132
-\MPscratchDim=\dimen147
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
-\everyMPtoPDFconversion=\toks27
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen149
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks26
 )
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 115.
+Package hyperref Info: Link coloring OFF on input line 120.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count135
+\c@section@level=\count138
 )
-LaTeX Info: Redefining \ref on input line 115.
-LaTeX Info: Redefining \pageref on input line 115.
-LaTeX Info: Redefining \nameref on input line 115.
+LaTeX Info: Redefining \ref on input line 120.
+LaTeX Info: Redefining \pageref on input line 120.
+LaTeX Info: Redefining \nameref on input line 120.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -971,39 +976,39 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 117.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 122.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 117.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 122.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 117
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 122
 .
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 117
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 122
 .
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 117.
+(Font)              <12> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 117.
+(Font)              <8> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 117.
-LaTeX Font Info:    Try loading font information for U+msa on input line 117.
+(Font)              <6> on input line 122.
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 117.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1012,117 +1017,128 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 123.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 128.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 124.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 138.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 143.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 138.
+(Font)              <10> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 138.
+(Font)              <7> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 138.
+(Font)              <5> on input line 143.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <Manhattan.jpg, id=56, 118
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <Manhattan.jpg, id=55, 118
 6.4325pt x 1194.4625pt>
 File: Manhattan.jpg Graphic file (type jpg)
 <use Manhattan.jpg>
-Package pdftex.def Info: Manhattan.jpg used on input line 228.
+Package pdftex.def Info: Manhattan.jpg used on input line 233.
 (pdftex.def)             Requested size: 469.74907pt x 472.92842pt.
-[2] [3 <./Manhattan.jpg>] [4]
-<Main_files/figure-latex/unnamed-chunk-4-1.pdf, id=86, 463.7325pt x 315.1775pt>
+[2] [3 <./Manhattan.jpg>]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 368.
+[4]
+<Main_files/figure-latex/unnamed-chunk-4-1.pdf, id=85, 463.7325pt x 315.1775pt>
 File: Main_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-4-1.pdf used on 
-input line 375.
+input line 380.
 (pdftex.def)             Requested size: 463.73842pt x 315.18153pt.
 [5 <./Main_files/figure-latex/unnamed-chunk-4-1.pdf>] [6] [7]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 657.
+(amsmath)                 on input line 662.
 
 [8] [9] [10] <KAUFMANBinarydata.jpg, id=131, 1247.66125pt x 1022.82124pt>
 File: KAUFMANBinarydata.jpg Graphic file (type jpg)
 <use KAUFMANBinarydata.jpg>
-Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 850.
+Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 855.
 (pdftex.def)             Requested size: 469.73752pt x 385.0865pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 850--856
+Underfull \hbox (badness 10000) in paragraph at lines 855--861
 [][]
  []
 
-[11 <./KAUFMANBinarydata.jpg>] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1180
+[11 <./KAUFMANBinarydata.jpg>]
+Overfull \hbox (16.57504pt too wide) in alignment at lines 931--943
+ [] [] [] 
+ []
+
+
+Overfull \hbox (16.57504pt too wide) in alignment at lines 943--990
+ [] [] [] 
+ []
+
+[12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1197
 
  []
 
 <flowers.jpg, id=158, 686.565pt x 1009.7725pt>
 File: flowers.jpg Graphic file (type jpg)
 <use flowers.jpg>
-Package pdftex.def Info: flowers.jpg used on input line 1193.
+Package pdftex.def Info: flowers.jpg used on input line 1210.
 (pdftex.def)             Requested size: 442.23914pt x 650.42773pt.
 [15] [16 <./flowers.jpg>] <Begonia.jpg, id=167, 730.22812pt x 376.40625pt>
 File: Begonia.jpg Graphic file (type jpg)
 <use Begonia.jpg>
-Package pdftex.def Info: Begonia.jpg used on input line 1233.
+Package pdftex.def Info: Begonia.jpg used on input line 1250.
 (pdftex.def)             Requested size: 444.75882pt x 229.25711pt.
 <Genet.jpeg, id=168, 762.85pt x 572.1375pt>
 File: Genet.jpeg Graphic file (type jpg)
 <use Genet.jpeg>
-Package pdftex.def Info: Genet.jpeg used on input line 1234.
+Package pdftex.def Info: Genet.jpeg used on input line 1251.
 (pdftex.def)             Requested size: 444.74641pt x 333.5598pt.
 
-Overfull \hbox (352.61478pt too wide) in paragraph at lines 1232--1235
+Overfull \hbox (352.61478pt too wide) in paragraph at lines 1249--1252
 []\T1/lmr/m/n/10 (-20) The dis-sim-i-lar-ity be-tween Be-go-nia and Broom (Genê
 t) can be cal-cu-lated as fol-lows: []
  []
 
 
-Overfull \hbox (35.98259pt too wide) in paragraph at lines 1232--1235
+Overfull \hbox (35.98259pt too wide) in paragraph at lines 1249--1252
 \T1/lmr/m/it/10 (-20) Be-go-nia []
  []
 
 [17 <./Begonia.jpg>]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 124
-7.
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 126
+4.
 (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [18 <./Genet.jpeg>] <Daisy.jpg, id=186, 1698.345pt x 843.15pt>
 File: Daisy.jpg Graphic file (type jpg)
 <use Daisy.jpg>
-Package pdftex.def Info: Daisy.jpg used on input line 1327.
+Package pdftex.def Info: Daisy.jpg used on input line 1344.
 (pdftex.def)             Requested size: 469.7544pt x 233.2114pt.
 [19 <./Daisy.jpg>] [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1412.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1429.
 [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1412.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1429.
 (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1412.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1412.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1412.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1429.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1429.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1429.
  ) 
 Here is how much of TeX's memory you used:
- 14080 strings out of 494944
- 201398 string characters out of 6180676
- 312967 words of memory out of 5000000
- 17009 multiletter control sequences out of 15000+600000
+ 14105 strings out of 494944
+ 201333 string characters out of 6180677
+ 311334 words of memory out of 5000000
+ 17025 multiletter control sequences out of 15000+600000
  70237 words of font info for 95 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,9n,35p,935b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,9n,35p,961b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
 vips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/f
+m-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/f
 onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmbx7.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></
@@ -1134,7 +1150,7 @@ fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (21 pages, 1493195 bytes).
+Output written on Main.pdf (21 pages, 1488507 bytes).
 PDF statistics:
  342 PDF objects out of 1000 (max. 8388607)
  290 compressed objects within 3 object streams
