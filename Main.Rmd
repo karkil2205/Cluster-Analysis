@@ -591,14 +591,17 @@ daisy(data[,1:8],metric = "Gower")
 * We’ll use only a subset of the data by taking 15 random rows among the 50 rows in the data set.
 This is done by using the function sample().
 . Next, we standardize the data using the function scale():
-# Subset of the data
+### Subsetting data
+
+```{r}
 set.seed(123)
 ss <- sample(1:50, 15) 
 df <- USArrests[ss, ] 
 df.scaled <- scale(df) 
+```
 
 ## R functions and packages
-. There are many R functions for computing distances between pairs of observations:
+. Many R functions allow to computing distances between pairs of observations:
 1. dist() R base function [stats package]: Accepts only numeric data as an input.
 2. get_dist() function [factoextra package]: Accepts only numeric data as an input.
 Compared to the standard dist() function, it supports correlation-based distance
@@ -712,5 +715,6 @@ situation where they are measured in di
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTgwMzc5MSw3OTc2NTkyMzRdfQ==
+eyJoaXN0b3J5IjpbLTU0MTAyMjQyNiwtODAxODAzNzkxLDc5Nz
+Y1OTIzNF19
 -->
