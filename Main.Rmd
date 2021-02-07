@@ -599,13 +599,13 @@ df <- USArrests[ss, ]
 df.scaled <- scale(df) 
 ```
 
-### R functions and packages
-* Many R functions allow to compute distances between pairs of observations.:
+### R functions
 1. dist() R base function [stats package]: Accepts only numeric data as an input.
 2. get_dist() function [factoextra package]: Accepts only numeric data as an input. Compared to the standard dist() function, it supports correlation-based distance measures including “pearson”, “kendall” and “spearman” methods.
 3. daisy() function [cluster package]: Able to handle other variable types (e.g. nominal, ordinal, (a)symmetric binary). In that case, the Gower’s coe
 
-* In this matrix, the value represent the distance between objects. The values on the diagonal of the matrix represent the distance between objects and themselves (which are zero).
+* In this matrix, the value represent the distance between objects.
+*The values on the diagonal of the matrix represent the distance between objects and themselves (which are zero).
 * In this data set, the columns are variables.
 * Hence, if we want to compute pairwise distances between variables, we must start by transposing the data to have variables
 in the rows of the data set before using the dist() function.
@@ -701,6 +701,6 @@ situation where they are measured in di
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NDkwMjU1OSwtNDI3Mjk0MTk2LC04MD
-E4MDM3OTEsNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbNDE4MzU5NDksLTQyNzI5NDE5NiwtODAxOD
+AzNzkxLDc5NzY1OTIzNF19
 -->
