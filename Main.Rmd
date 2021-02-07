@@ -583,14 +583,14 @@ daisy(data[,1:8],metric = "Gower")
 
 ## Distance matrix computation
 
-### Data preparation
-* We use the USArrests data as demo data sets.
+### USArrests data set
+
  ![](USAArrest.jpg)
 *USAarrest*
 
 * We’ll use a subset of the data by taking 15 random rows among the 50 rows in the data set.
-* This is done by using the function sample().
-. Next, we standardize the data using the function scale().
+* We are using sample().
+. We also standardize the data using the function scale().
 
 ```{r}
 set.seed(123)
@@ -701,6 +701,6 @@ situation where they are measured in di
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNzI5NDE5NiwtODAxODAzNzkxLDc5Nz
-Y1OTIzNF19
+eyJoaXN0b3J5IjpbMTI2NDkwMjU1OSwtNDI3Mjk0MTk2LC04MD
+E4MDM3OTEsNzk3NjU5MjM0XX0=
 -->
