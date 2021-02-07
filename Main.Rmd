@@ -1,15 +1,15 @@
 ---
 title: "Distance and dissimilarities"
 output:
-  html_document:
+  pdf_document:
     toc: yes
-    df_print: paged
   html_notebook:
     toc: yes
   word_document:
     toc: yes
-  pdf_document:
+  html_document:
     toc: yes
+    df_print: paged
 ---
 
 
@@ -569,7 +569,9 @@ max(data$Distance)-min(data$Distance)
 
 ```
 
-$$\frac{|1-0|+|0-1|+|0-1|+1+|1-3|/2+|3-15|/17+|150-25|/180+|50-15|/50}{8}\approx 0.8875408$$
+$$
+\frac{|1-0|+|0-1|+|0-1|+1+|1-3|/2+|3-15|/17+|150-25|/180+|50-15|/50}{8}\approx 0.8875408
+$$
 ![](Daisy.jpg)
 
 
@@ -578,5 +580,131 @@ library(cluster)
 (abs(1-0)+abs(0-1)+abs(0-1)+1+abs(1-3)/2+abs(3-15)/17+abs(150-25)/180+abs(50-15)/50)/8
 daisy(data[,1:8],metric = "Gower") 
 ```
+
+## Distance matrix computation
+
+### Data preparation
+* We use the USArrests data as demo data sets.
+* We’ll use only a subset of the data by taking 15 random rows among the 50 rows in the data set.
+This is done by using the function sample().
+. Next, we standardize the data using the function scale():
+# Subset of the data
+set.seed(123)
+ss <- sample(1:50, 15) 
+df <- USArrests[ss, ] 
+df.scaled <- scale(df) 
+
+## R functions and packages
+. There are many R functions for computing distances between pairs of observations:
+1. dist() R base function [stats package]: Accepts only numeric data as an input.
+2. get_dist() function [factoextra package]: Accepts only numeric data as an input.
+Compared to the standard dist() function, it supports correlation-based distance
+measures including “pearson”, “kendall” and “spearman” methods.
+3. daisy() function [cluster package]: Able to handle other variable types (e.g. nom-
+inal, ordinal, (a)symmetric binary). In that case, the Gower’s coe
+
+
+In this matrix, the value represent the distance between objects. The values on the
+diagonal of the matrix represent the distance between objects and themselves (which
+are zero).
+In this data set, the columns are variables. Hence, if we want to compute pairwise
+distances between variables, we must start by transposing the data to have variables
+in the rows of the data set before using the dist() function. The function t() is used
+for transposing the data.
+3.4.4 Computing correlation based distances
+Correlation-based distances are commonly used in gene expression data analysis.
+The function get_dist()[factoextra package] can be used to compute correlation-based
+distances. Correlation method can be either pearson, spearman or kendall.
+# Compute
+library("factoextra")
+dist.cor <- get_dist(df.scaled, method = "pearson")
+# Display a subset
+round(as.matrix(dist.cor)[1:3, 1:3], 1)
+## Iowa Rhode Island Maryland
+## Iowa 0.0 0.4 1.9
+## Rhode Island 0.4 0.0 1.5
+## Maryland 1.9 1.5 0.0
+3.4.5 Computing distances for mixed data
+The function daisy() [cluster package] provides a solution (Gower’s metric) for com-
+puting the distance matrix, in the situation where the data contain no-numeric
+columns.
+The R code below applies the daisy() function on flower data which contains factor,
+ordered and numeric variables: 
+
+library(cluster)
+# Load data
+data(flower)
+head(flower, 3)
+## V1 V2 V3 V4 V5 V6 V7 V8
+## 1 0 1 1 4 3 15 25 15
+## 2 1 0 0 2 1 3 150 50
+## 3 0 1 0 3 3 1 150 50
+# Data structure
+str(flower)
+## 
+
+
+# Distance matrix
+dd <- daisy(flower)
+round(as.matrix(dd)[1:3, 1:3], 2)
+## 1 2 3
+## 1 0.00 0.89 0.53
+## 2 0.89 0.00 0.51
+## 3 0.53 0.51 0.00
+3.5 Visualizing distance matrices
+A simple solution for visualizing the distance matrices is to use the function fviz_dist()
+[factoextra package]. Other specialized methods, such as agglomerative hierarchical
+clustering (Chapter 7) or heatmap (Chapter 10) will be comprehensively described in
+
+
+the dedicated chapters.
+To use fviz_dist() type this:
+library(factoextra)
+fviz_dist(dist.eucl)
+Maine-
+Iowa-
+Wisconsin-
+Rhode Island-
+Utah-
+Maryland-
+Arizona-
+Michigan-
+Texas-
+Tennessee-
+Louisiana-
+Mississippi-
+Montana-
+Virginia-
+Arkansas-
+Maine-
+Iowa-
+Wisconsin-
+Rhode Island-
+Utah-
+Maryland-
+Arizona-
+Michigan-
+Texas-
+Tennessee-
+Louisiana-
+Mississippi-
+Montana-
+Virginia-
+Arkansas-
+0
+1
+2
+3
+4
+value
+• Red: high similarity (ie: low dissimilarity) | Blue: low similarity
+The color level is proportional to the value of the dissimilarity between observations:
+pure red if dist(xi, xj )=0 and pure blue if dist(xi, xj )=1. Objects belonging to the
+same cluster are displayed in consecutive order.
+3.6 Summary
+We described how to compute distance matrices using either Euclidean or correlation-
+based measures. It’s generally recommended to standardize the variables before
+distance matrix computation. Standardization makes variable comparable, in the
+situation where they are measured in di
 
 
