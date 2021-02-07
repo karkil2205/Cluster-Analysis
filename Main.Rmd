@@ -585,6 +585,9 @@ daisy(data[,1:8],metric = "Gower")
 
 ### Data preparation
 * We use the USArrests data as demo data sets.
+* ![](Usa.jpeg)
+*USAarrest*
+
 * We’ll use only a subset of the data by taking 15 random rows among the 50 rows in the data set.
 This is done by using the function sample().
 . Next, we standardize the data using the function scale():
@@ -709,5 +712,5 @@ situation where they are measured in di
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbLTk3Mjk1NzQ1LDc5NzY1OTIzNF19
 -->
