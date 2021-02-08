@@ -589,8 +589,8 @@ daisy(data[,1:8],metric = "Gower")
 *USAarrest*
 
 * We’ll use a subset of the data by taking 15 random rows among the 50 rows in the data set.
-* We are using sample().
-. We also standardize the data using the function scale().
+* We are using the function sample().
+. We standardize the data using the function scale().
 
 ```{r}
 set.seed(123)
@@ -701,6 +701,6 @@ situation where they are measured in di
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE4MzU5NDksLTQyNzI5NDE5NiwtODAxOD
-AzNzkxLDc5NzY1OTIzNF19
+eyJoaXN0b3J5IjpbLTMyNDY5MzU0NSw0MTgzNTk0OSwtNDI3Mj
+k0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
 -->
