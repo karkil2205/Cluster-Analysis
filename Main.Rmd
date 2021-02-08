@@ -611,11 +611,17 @@ df.scaled <- scale(df)
 ### Correlation based distances
 * Correlation-based distances are commonly used in gene expression data analysis.
 * The function get_dist()[factoextra package] can be used to compute correlation-based distances. Correlation method can be either pearson, spearman or kendall.
-# Compute
+```{r}
 library("factoextra")
 dist.cor <- get_dist(df.scaled, method = "pearson")
+```
+
+
 # Display a subset
+```{r}
 round(as.matrix(dist.cor)[1:3, 1:3], 1)
+```
+
 # Computing distances for mixed data
 * The function daisy() [cluster package] provides a solution (Gower’s metric) for computing the distance matrix, in the situation where the data contain no-numeric columns.
 The R code below applies the daisy() function on flower data which contains factor,
@@ -632,6 +638,7 @@ head(flower, 3)
 # Data structure
 str(flower)
 ## 
+
 
 
 # Distance matrix
@@ -699,6 +706,6 @@ situation where they are measured in di
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTIxNjg1NDYsNDE4MzU5NDksLTQyNz
+eyJoaXN0b3J5IjpbLTE3NzY4NDY3MDgsNDE4MzU5NDksLTQyNz
 I5NDE5NiwtODAxODAzNzkxLDc5NzY1OTIzNF19
 -->
