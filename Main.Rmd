@@ -603,8 +603,8 @@ df.scaled <- scale(df)
 2. get_dist() function [factoextra package]: Accepts only numeric data. Compared to the dist() function, it supports correlation-based distance measures including “pearson”, “kendall” and “spearman” methods.
 3. daisy() function [cluster package]: Able to handle other variable types (e.g. nominal, ordinal, (a)symmetric binary). In that case, the Gower’s coe
 
-* In the matrix of distances, the value represent the distance between objects.
-*The values on the diagonal of the matrix represent the distance between objects and themselves (which are zero).
+* In the matrix of distances, each element represent the distance between two objects.
+*The values on the diagonal are zero.
 * In this data set, the columns are variables.
 * To compute pairwise distances between variables, we must start by transposing the data to have variables in the rows of the data set before using the dist() function.
 * The function t() is used for transposing the data.
@@ -699,6 +699,6 @@ situation where they are measured in di
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTcxNzM3MDksNDE4MzU5NDksLTQyNz
+eyJoaXN0b3J5IjpbLTEwNTIxNjg1NDYsNDE4MzU5NDksLTQyNz
 I5NDE5NiwtODAxODAzNzkxLDc5NzY1OTIzNF19
 -->
