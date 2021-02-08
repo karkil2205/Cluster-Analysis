@@ -598,10 +598,9 @@ ss <- sample(1:50, 15)
 df <- USArrests[ss, ] 
 df.scaled <- scale(df) 
 ```
-
-### R functions
-1. dist() R base function [stats package]: Accepts only numeric data as an input.
-2. get_dist() function [factoextra package]: Accepts only numeric data as an input. Compared to the standard dist() function, it supports correlation-based distance measures including “pearson”, “kendall” and “spearman” methods.
+* The R functions for computing distances.
+1. dist() R base function [stats package]: Accepts only numeric data.
+2. get_dist() function [factoextra package]: Accepts only numeric data. Compared to the standard dist() function, it supports correlation-based distance measures including “pearson”, “kendall” and “spearman” methods.
 3. daisy() function [cluster package]: Able to handle other variable types (e.g. nominal, ordinal, (a)symmetric binary). In that case, the Gower’s coe
 
 * In this matrix, the value represent the distance between objects.
@@ -701,6 +700,6 @@ situation where they are measured in di
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDY5MzU0NSw0MTgzNTk0OSwtNDI3Mj
+eyJoaXN0b3J5IjpbMTc1MTE3ODM0MCw0MTgzNTk0OSwtNDI3Mj
 k0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
 -->
