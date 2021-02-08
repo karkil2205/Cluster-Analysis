@@ -1,20 +1,23 @@
 ---
 title: "Distance and dissimilarities"
 output:
-  pdf_document:
+  html_document:
     toc: yes
+    df_print: paged
   html_notebook:
     toc: yes
   word_document:
     toc: yes
-  html_document:
+  pdf_document:
     toc: yes
-    df_print: paged
 ---
 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="200">
  
+\newpage
+
+* Required packages
 
 ```{r}
 knitr::opts_chunk$set(echo = TRUE)
@@ -23,9 +26,11 @@ knitr::opts_chunk$set(echo = TRUE)
 #install.packages("ade4")
 #install.packages("magrittr")
 #install.packages("cluster")
+#install.packages("factoextra")
+
 ```
 
-
+\newpage
 
 # Definition of a distance
 
@@ -40,13 +45,15 @@ where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{
 * We should use the term _dissimilarity_ rather than _distance_ when not all the three axioms A1-A3 are valid.
 * Most of the time, we shall use, with some abuse of vocabulary, the term distance.
 
+\newpage
+
 # Exercice 1
 
 * Prove that the three axioms A1-A3 imply the non-negativity condition: $$d(\mathbf{x},\mathbf{y})\geq 0.$$
 
+\newpage
 
 # Euclidean distance
-
 
 * It is defined by:
 
@@ -56,13 +63,16 @@ $$
 
 
 
-
 * A1-A2 are obvious.
 * The proof of A3 is provided below.
+
+\newpage
 
 # Exercice 2
 
 * Is the squared Euclidian distance a true distance?
+
+\newpage
 
 # Manhattan distance
 
@@ -75,9 +85,11 @@ $$d(\mathbf{x},\mathbf{y})
 * A3 also holds using the fact that $|a+b|\leq |a|+|b|$ for any reals $a,b$.
 * There exists also a weighted version  of the Manhattan distance called the Canberra distance.
 
+\newpage
+
 ![](Manhattan.jpg)
 
-
+\newpage
 
 
 ```{r}
@@ -89,6 +101,9 @@ dist(rbind(x, y), method = "manhattan")
 ```
 
 
+\newpage
+
+
 # Canberra distance
 
 * It is defined by:
@@ -97,8 +112,8 @@ $$d(\mathbf{x},\mathbf{y})
 =\sum_{i=1}^n
  \frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
 
-* Note that the term $|x_i-y_i|/(|x_i|+|y_i|)$ is not properly defined as:when $x_i=y_i=0$.
-* By convention we set the ratio to be zero in that case.
+* Note that the term $|x_i-y_i|/(|x_i|+|y_i|)$ is not properly defined as: $x_i=y_i=0$.
+* By convention we set that term to be zero in that case.
 * The Canberra distance is specially sensitive to small changes near zero.
 
 
@@ -109,10 +124,16 @@ dist(rbind(x, y), method = "canberra")
 6/6+6/6
 ```
 
+\newpage
+
 
 # Exercice 3
 
 * Prove that the Canberra distance is a true distance.
+
+
+\newpage
+
 
 # Minkowski distance
 * Both the Euclidian and the Manattan distances are special cases of  the Minkowski distance which is defined, for $p\geq 1$, by: 
@@ -136,6 +157,10 @@ $$\|\mathbf{x}\|_p=d(\mathbf{x},\mathbf{0}),$$
 where 
 $\mathbf{0}$ is the null-vetor of $\mathbb{R}^n$.
 
+\newpage
+
+
+
 ```{r}
 library("ggplot2")
 x = c(0, 0)
@@ -148,16 +173,24 @@ MinkowDist=c(MinkowDist,dist(rbind(x, y), method = "minkowski", p = p))
 ggplot(data =data.frame(x = seq(1,30,.01), y=MinkowDist ) , mapping = aes(x = x, y = y))+geom_point(size=.1,color="red")+xlim(1,11)+xlab("p")+ylab("Minkowski Distance")+ggtitle("Minkowski distance wrt p")
 ```
 
+\newpage
+
+
 # Chebyshev distance 
 * At the limit, we get the Chebyshev distance which is defined by:
 $$
 d(\mathbf{x},\mathbf{y})=\max_{i=1,\cdots,n}(|x_i-y_i|)=\lim_{p\rightarrow\infty}
 \left[\sum_{i=1} |x_i-y_i|^{p}\right]^{1/p}.
 $$
+
 * The corresponding norm is:
+
 $$
 \|\mathbf{x}|_\infty=\max_{i=1,\cdots,n}(|x_i|).
 $$
+
+\newpage
+
 
 # Minkowski inequality
 
@@ -181,6 +214,9 @@ $$
 $$
  \sum_{i=1}^n|x_i-z_i|^{p}\leq \left(\sum_{i=1}^n |x_i-y_i|^{p}\right)^{1/p}+\left(\sum_{i=1}^n |y_i-z_i|^{p}\right)^{1/p}.
 $$
+
+\newpage
+
 
 # Hölder inequality
 
@@ -224,6 +260,9 @@ $$
 |\mathbf{x\cdot y} | \leq \|\mathbf{x}\|_2 \| \mathbf{y}\|_2.
 $$
 
+\newpage
+
+
 # Pearson correlation distance 
 
 * The Pearson correlation coefficient is a similarity measure on $\mathbb{R}^n$ defined by:
@@ -236,11 +275,15 @@ $$\bar{\mathbf{x}}=\frac{1}{n}\sum_{i=1}^n x_i,$$
 * Note that the Pearson correlation coefficient satisfies P2 and  is invariant to any positive linear transformation, i.e.: $$\rho(\alpha\mathbf{x},\mathbf{y})=\rho(\mathbf{x},\mathbf{y}),$$ for any $\alpha>0$.
 * The Pearson distance (or correlation distance) is defined by:
 $$
-d(\mathbf{x},\mathbf{y})=1-\rho(\mathbf{x},\mathbf{y}).$$
+d(\mathbf{x},\mathbf{y})=1-\rho(\mathbf{x},\mathbf{y}).
+$$
 
 * Note that the Pearson distance does not satisfy A1 since $d(\mathbf{x},\mathbf{x})=0$ for any non-zero vector $\mathbf{x}$. It neither satisfies the triangle inequality. However, the symmetry property is fullfilled. 
 
+\newpage
+
 # Cosine correlation distance
+
 
 * The cosine of the angle $\theta$ between two vectors $\mathbf{x}$ and $\mathbf{y}$ is a measure of similarity given by:
 $$
@@ -252,6 +295,9 @@ $$
 d(\mathbf{x},\mathbf{y})=1-\cos(\theta).
 $$
 * It shares similar properties than the Pearson correlation distance. Likewise, Axioms A1 and A3 are not satisfied.
+
+\newpage
+
 
 # Spearman correlation distance 
 
@@ -282,6 +328,10 @@ $$
 d(\mathbf{x},\mathbf{y})=\frac{6\sum_{i=1}^n d_i^2}{n(n^2-1)}.
 $$
 
+
+\newpage
+
+
 ```{r}
 x=c(3, 1, 4, 15, 92)
 rank(x)
@@ -292,6 +342,9 @@ d
 cor(rank(x),rank(y))
 1-6*sum(d^2)/(5*(5^2-1))
 ```
+
+
+\newpage
 
 
 # Kendall tau distance 
@@ -308,6 +361,9 @@ $$\tau =\frac {1}{n(n-1)}\sum_{i=1}^{n}\sum_{j=1}^n\text{sign}(x_j-x_i)\text{sig
 * The Kendall tau distance is then: $$d(\mathbf{x},\mathbf{y})=1-\tau. $$
 * Remark: the triangular inequality may fail in cases where there are ties.
 
+\newpage
+
+
 ```{r}
 x=c(3, 1, 4, 15, 92)
 y=c(30,2 , 9, 20, 48)
@@ -320,6 +376,8 @@ tau=tau/(5*4)
 tau
 cor(x,y, method="kendall")
 ```
+
+\newpage
 
 # Variables standardization
 
@@ -337,6 +395,9 @@ $$
 * The result obtained with Pearson correlation measures and standardized Euclidean distances are comparable.
 * For other methods, see: Milligan, G. W., & Cooper, M. C. (1988). A study of standardization of variables in cluster analysis. _Journal of classification_, _5_(2), 181-204.
 
+\newpage
+
+
 ```{r}
 x=c(3, 1, 4, 15, 92)
 y=c(30,2 , 9, 20, 48)
@@ -345,6 +406,8 @@ scale(x)
 (y-mean(y))/sd(y)
 scale(y)
 ```
+
+\newpage
 
 # Similarity measures for binary data
 * A common simple situation occurs when all information is of the presence/absence of 2-level qualitative characters.
@@ -376,13 +439,21 @@ scale(y)
 |             |0|$c$|$d$|$c+d$|
 |*Totals*||$a+c$|$b+d$|$n$|
 
+\newpage
 
 
 
 ![](KAUFMANBinarydata.jpg)
 *Table from Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons*
+
+\newpage
+
+
 * The data shows $8$ people (individuals) and $10$ binary variables:
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
+
+\newpage
+
 
 ```{r}
 data=c(
@@ -419,6 +490,9 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 * A more extensive list can be found in: Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.
 
 
+\newpage
+
+
 |Coefficient|$s(\mathbf{x},\mathbf{y})$|$d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y})$|
 |:---|:---:|:---:|
 |Simple matching|$\frac{a+d}{a+b+c+d}$ |$\frac{b+c}{a+b+c+d}$|
@@ -447,6 +521,7 @@ dist.binary(data[c("Ilan","Talia"),],method=4)^2
 dist.binary(data[c("Ilan","Talia"),],method=5)^2
 1-2*a/(2*a+b+c)
 ```
+
 * The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero-zero matches $d$.
 * The measues embedding $d$ are sometimes called symmetrical.
 * The other measues are called assymmetrical.
@@ -459,13 +534,16 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
 
+\newpage
+
+
 # Nominal variables 
 
 * We previuosly studied above binary variables which can only take on two states coded as $0,1$.
 * We generalize this approach to nominal variables which may take on more than two states.
 * Eye's color may have for example four states: blue, brown, green, grey . 
 * Le $M$ be the number of states and code the outcomes as $1, \cdots, M$. 
-* We could choose $1 =\text{blue},$ $2 =\text{brown},$ $3 =\text{green},$ and $4 =\text{grey}$.
+* We may choose $1 =\text{blue},$ $2 =\text{brown},$ $3 =\text{green},$ and $4 =\text{grey}$.
 * These states are not ordered in any way
 * One strategy would be creating a new binary variable for each of the $M$ nominal states.
 * Then to put it equal to $1$ if the corresponding state occurs and to $0$ otherwise. 
@@ -514,10 +592,17 @@ $$
 \delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i},
 $$
 where $R_i$ is the range of variable $i$ over the available data.
+
+\newpage
+
+
 * Consider the following data set:
 
 ![](flowers.jpg)
 *Data from: Struyf, A., Hubert, M., & Rousseeuw, P. (1997). Clustering in an object-oriented environment. _Journal of Statistical Software_, _1_(4), 1-30.*
+
+\newpage
+
 
 * The dataset contains 18 flowers and 8 characteristics:
 1. Winters: binary, indicates whether the plant may be left in the garden when it freezes.
@@ -530,12 +615,14 @@ blue).
 7. Height: interval scaled, the plant’s height in centimeters.
 8. Distance: interval scaled, the distance in centimeters that should be left between the plants.
  * The dissimilarity between Begonia  and Broom (Genêt) can be calculated as follows:
+ 
 ![](Begonia.jpg)
 *Begonia*
+
 ![](Genet.jpeg)
 *Genêt*
 
-
+\newpage
 
 
 ```{r}
@@ -572,7 +659,12 @@ max(data$Distance)-min(data$Distance)
 $$
 \frac{|1-0|+|0-1|+|0-1|+1+|1-3|/2+|3-15|/17+|150-25|/180+|50-15|/50}{8}\approx 0.8875408
 $$
+\newpage
+
 ![](Daisy.jpg)
+
+\newpage
+
 
 
 ```{r}
@@ -581,128 +673,97 @@ library(cluster)
 daisy(data[,1:8],metric = "Gower") 
 ```
 
-## Distance matrix computation
 
-### USArrests data set
+\newpage
 
- ![](USAArrest.jpg)
-*USAarrest*
 
-* We’ll use a subset of the data by taking 15 random rows among the 50 rows in the data set.
+# More on distance matrix computation
+
+![](USAArrest.jpg)
+
+\newpage
+
+
+* We use a subset of the data by taking 15 random rows among the 50 rows in the data set.
 * We are using the function sample().
-. We standardize the data using the function scale().
+* We standardize the data using the function scale().
+
+\newpage
+
+
+```{r}
+USArrests
+```
+
+\newpage
+
 
 ```{r}
 set.seed(123)
-ss <- sample(1:50, 15) 
+ss <- sample(1:50,15) 
 df <- USArrests[ss, ] 
 df.scaled <- scale(df) 
+df.scaled
 ```
-* The R functions for computing distances.
-1. dist() R base function [stats package]: Accepts only numeric data.
-2. get_dist() function [factoextra package]: Accepts only numeric data. Compared to the dist() function, it supports correlation-based distance measures including “pearson”, “kendall” and “spearman” methods.
-3. daisy() function [cluster package]: Able to handle other variable types (e.g. nominal, ordinal, (a)symmetric binary). In that case, the Gower’s coe
 
-* In the matrix of distances, each element represent the distance between two objects.
-*The values on the diagonal are zero.
-* In this data set, the columns are variables.
-* To compute pairwise distances between variables, we must start by transposing the data to have variables in the rows of the data set before using the dist() function.
-* The function t() is used for transposing the data.
-### Correlation based distances
-* Correlation-based distances are commonly used in gene expression data analysis.
-* The function get_dist()[factoextra package] can be used to compute correlation-based distances. Correlation method can be either pearson, spearman or kendall.
+\newpage
+
+
+* The R functions for computing distances.
+1. dist() function accepts only numeric data.
+2. get_dist() function [factoextra package] accepts only numeric data. it supports correlation-based distance measures.
+3. daisy() function [cluster package] is able to handle other variable types (nominal, ordinal, ...). 
+* Remark: All these functions compute distances between rows of the data.
+* Remark: If we want to compute pairwise distances between variables, we must transpe the data to have variables
+in the rows.
+
+\newpage
+
+* We first compute Euclidian distances
+
+```{r}
+dist.eucl <- dist(df.scaled, method = "euclidean")
+
+round(as.matrix(dist.eucl)[1:3, 1:3], 1)
+
+round(sqrt(sum((df.scaled["New Mexico",]-df.scaled["Iowa",])^2)),1)
+round(sqrt(sum((df.scaled["New Mexico",]-df.scaled["Indiana",])^2)),1)
+round(sqrt(sum((df.scaled["Iowa",]
+-df.scaled["Indiana",])^2)),1)
+
+
+```
+
+\newpage
+
+* We also compute correlation based distances.
+
 ```{r}
 library("factoextra")
 dist.cor <- get_dist(df.scaled, method = "pearson")
-```
-
-
-# Display a subset
-```{r}
 round(as.matrix(dist.cor)[1:3, 1:3], 1)
+round(1-cor(df.scaled["New Mexico",],df.scaled["Iowa",]),1)
+round(1-cor(df.scaled["New Mexico",],df.scaled["Indiana",]),1)
+round(1-cor(df.scaled["Iowa",],df.scaled["Indiana",]),1)
+
 ```
 
-# Computing distances for mixed data
-* The function daisy() [cluster package] provides a solution (Gower’s metric) for computing the distance matrix, in the situation where the data contain no-numeric columns.
-The R code below applies the daisy() function on flower data which contains factor,
-ordered and numeric variables: 
-
-library(cluster)
-# Load data
-data(flower)
-head(flower, 3)
-## V1 V2 V3 V4 V5 V6 V7 V8
-## 1 0 1 1 4 3 15 25 15
-## 2 1 0 0 2 1 3 150 50
-## 3 0 1 0 3 3 1 150 50
-# Data structure
-str(flower)
-## 
 
 
 
-# Distance matrix
-dd <- daisy(flower)
-round(as.matrix(dd)[1:3, 1:3], 2)
-## 1 2 3
-## 1 0.00 0.89 0.53
-## 2 0.89 0.00 0.51
-## 3 0.53 0.51 0.00
-3.5 Visualizing distance matrices
-A simple solution for visualizing the distance matrices is to use the function fviz_dist()
-[factoextra package]. Other specialized methods, such as agglomerative hierarchical
-clustering (Chapter 7) or heatmap (Chapter 10) will be comprehensively described in
+\newpage
 
 
-the dedicated chapters.
-To use fviz_dist() type this:
+
+# Visualizing distance matrices
+* A simple solution for visualizing the distance matrices is to use the function fviz_dist() [factoextra package].  
+* Other specialized methods will be  described later on.
+
+```{r}
 library(factoextra)
 fviz_dist(dist.eucl)
-Maine-
-Iowa-
-Wisconsin-
-Rhode Island-
-Utah-
-Maryland-
-Arizona-
-Michigan-
-Texas-
-Tennessee-
-Louisiana-
-Mississippi-
-Montana-
-Virginia-
-Arkansas-
-Maine-
-Iowa-
-Wisconsin-
-Rhode Island-
-Utah-
-Maryland-
-Arizona-
-Michigan-
-Texas-
-Tennessee-
-Louisiana-
-Mississippi-
-Montana-
-Virginia-
-Arkansas-
-0
-1
-2
-3
-4
-value
-• Red: high similarity (ie: low dissimilarity) | Blue: low similarity
-The color level is proportional to the value of the dissimilarity between observations:
-pure red if dist(xi, xj )=0 and pure blue if dist(xi, xj )=1. Objects belonging to the
-same cluster are displayed in consecutive order.
-3.6 Summary
-We described how to compute distance matrices using either Euclidean or correlation-
-based measures. It’s generally recommended to standardize the variables before
-distance matrix computation. Standardization makes variable comparable, in the
-situation where they are measured in di
+```
+
 
 
 <!--stackedit_data:
