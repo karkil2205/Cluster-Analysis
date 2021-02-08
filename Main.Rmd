@@ -764,10 +764,13 @@ library(factoextra)
 fviz_dist(dist.eucl)
 ```
 
+# Partitioning Clustering
+
+ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjA3Nzk5OTYsLTE3NzY4NDY3MDgsND
+eyJoaXN0b3J5IjpbLTExNTY3OTgyOTUsLTE3NzY4NDY3MDgsND
 E4MzU5NDksLTQyNzI5NDE5NiwtODAxODAzNzkxLDc5NzY1OTIz
 NF19
 -->
