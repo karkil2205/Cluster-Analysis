@@ -769,13 +769,13 @@ fviz_dist(dist.eucl)
 * Partitioning clustering are clustering methods used to classify observations within a data set, into multiple groups based on their similarity.
 * The algorithms require the analyst to specify the number of clusters to be generated.
 *  This chapter describes the commonly used partitioning clustering, including:
-* K-means clustering (MacQueen, 1967), in which, each cluster is represented by the center or means of the data points belonging to the cluster. The K-means method is sensitive to anomalous data points and outliers.
-• K-medoids clustering or PAM (Partitioning Around Medoids, Kaufman & Rousseeuw, 1990), in which, each cluster is represented by one of the objects in the cluster. PAM is less sensitive to outliers compared to k-means.
-• CLARA algorithm (Clustering Large Applications), which is an extension to PAM adapted for large data sets. 
+1. K-means clustering (MacQueen, 1967), in which, each cluster is represented by the center or means of the data points belonging to the cluster. The K-means method is sensitive to anomalous data points and outliers.
+2. K-medoids clustering or PAM (Partitioning Around Medoids, Kaufman & Rousseeuw, 1990), in which, each cluster is represented by one of the objects in the cluster. PAM is less sensitive to outliers compared to k-means.
+3. CLARA algorithm (Clustering Large Applications), which is an extension to PAM adapted for large data sets. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIxMDc0MTI1LC0xMTU2Nzk4Mjk1LC0xNz
-c2ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgwMzc5
-MSw3OTc2NTkyMzRdfQ==
+eyJoaXN0b3J5IjpbMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMT
+c3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3
+OTEsNzk3NjU5MjM0XX0=
 -->
