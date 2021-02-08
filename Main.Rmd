@@ -773,9 +773,11 @@ fviz_dist(dist.eucl)
 2. K-medoids clustering or PAM (Partitioning Around Medoids, Kaufman & Rousseeuw, 1990), in which, each cluster is represented by one of the objects in the cluster. PAM is less sensitive to outliers compared to k-means.
 3. CLARA algorithm (Clustering Large Applications), which is an extension to PAM adapted for large data sets. 
 
+# K-Means Clustering
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMT
-c3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3
-OTEsNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMT
+U2Nzk4Mjk1LC0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQx
+OTYsLTgwMTgwMzc5MSw3OTc2NTkyMzRdfQ==
 -->
