@@ -891,14 +891,33 @@ $$
 \\
 \sum_{i=1}^n m_{l(1)} (\bar{x}_i^{l(1)})^2
 -\sum_{i=1}^n  \frac{m^2_{l(1)} (\bar{x}_i^l)^2}{m_{l(1)}-1}
++2\sum_{i=1}^n \frac{m_{l(1)}\bar{x}_i^{l(1)} x_i^1}{m_{l(1)}-1} 
+-\sum_{i=1}^n  \frac{(x_i^1)^2}{m_{l(1)}-1}.
+\end{cases}
+$$
+Simplifying the above expression, we get
+$$
+\begin{cases}
+\Delta e=
+\sum_{i=1}^n m_l (\bar{x}_i^l)^2
+-\sum_{i=1}^n  \frac{m^2_l (\bar{x}_i^l)^2}{m_l+1}
 +2\sum_{i=1}^n \frac{m_l\bar{x}_i^l x_i^1}{m_l+1} 
--\sum_{i=1}^n  \frac{(x_i^1)^2}{m_l+1}.
+-\sum_{i=1}^n  \frac{(x_i^1)^2}{m_l+1}
+\\
+\sum_{i=1}^n m_{l(1)} (\bar{x}_i^{l(1)})^2
+-\sum_{i=1}^n  \frac{m^2_{l(1)} (\bar{x}_i^l)^2}{m_{l(1)}-1}
++2\sum_{i=1}^n \frac{m_{l(1)}\bar{x}_i^{l(1)} x_i^1}{m_{l(1)}-1} 
+-\sum_{i=1}^n  \frac{(x_i^1)^2}{m_{l(1)}-1}.
 \end{cases}
 $$
 
 
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI5NDg5MjUwLDIxMzk3NTczODAsLTIyND
+eyJoaXN0b3J5IjpbNTU0MjQ1NjU1LDIxMzk3NTczODAsLTIyND
 IyNTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4
 OTgwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LD
 I4OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkz
