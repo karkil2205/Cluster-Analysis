@@ -831,10 +831,10 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * The variables are assumed scaled.
 * The partition $\mathcal{P}$ has   $k$ disjoint clusters  clusters $C_1,\cdots,C_k$, which are the indices of the objects in the various cluster.
 * Let $m_l$ be the number of objects in cluster $C_l$.
-* Each of the $n$ objects lies in just one of the $k$ clusters.
-* Note that $\sum_{l=1}^k n_l=n$.
-* The mean over the objects in the cluster $C_l$ is denoted by $\bar{\bm{x}}_{l}$, with
-$$\bar{\bm{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bm{x}_{i},\:l=1\cdots k.$$
+* Each of the $m$ objects lies in just one of the $k$ clusters.
+* Note that $\sum_{l=1}^k m_l=m$.
+* The mean over the objects in the cluster $C_l$ is denoted by $\bar{\bm{x}}^{l}$, with
+$$\bar{\bm{x}}^{l}\equiv\frac{1}{n_l}\sum_{j\in C_l}\bm{x}^{j},\:l=1\cdots k.$$
 * The distance between the object $i$ and cluster $l$ is $d(\bm{x}_i,\bar{\bm{x}}_l)$, where $d(\cdot,\cdot)$ is Euclidian distance.
 *  The error of the partition is taken as to be  
 $$e=\sum_{l=1}^{k}\sum_{i\in C_l}d^2(\bm{x}_i,\bar{\bm{x}}_l)=\sum_{i=1}^{n}d^2(\bm{x}_i,\bar{\bm{x}}_{l(i)})$$
@@ -858,11 +858,11 @@ STEP 3. Repeat Step 2 for each object $i$ such that$2\leq i \leq n$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTExODYwMTgsLTcxNzk5MTk2NiwtMT
-cxMTEwMjc2LDI4OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYx
-NTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNT
-M3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcsLTE3MTAxOTk1
-MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLT
-EwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2
-NTA5N119
+eyJoaXN0b3J5IjpbLTkzNjIzMjE2MiwtNzE3OTkxOTY2LC0xNz
+ExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1
+NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1Mz
+cyMjYxODEsLTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUz
+MSwtODYyNTI4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDExMiwtMT
+A2NjM2NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3MiwxMTAwNzY1
+MDk3XX0=
 -->
