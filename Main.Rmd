@@ -845,7 +845,7 @@ $$d(\bm{x}^j,\bar{\bm{x}}^l)=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2}
 $$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)}),$$
 where $l(j)$ is the index of the cluster of object $j$.
 * For the Euclidian distance, we have
-$$e=\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l(j)})^2,
+$$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l(j)})^2,
 $$ 
 which can be rewritten as follows
 $$e=
@@ -869,11 +869,11 @@ STEP 3. Repeat Step 2 for each object $j$ such that $2\leq j \leq m$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDMzNjU5OSwtNzE3OTkxOTY2LC0xNz
-ExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1
-NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1Mz
-cyMjYxODEsLTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUz
-MSwtODYyNTI4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDExMiwtMT
-A2NjM2NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3MiwxMTAwNzY1
-MDk3XX0=
+eyJoaXN0b3J5IjpbLTIwMzIxNzgyMzAsLTcxNzk5MTk2NiwtMT
+cxMTEwMjc2LDI4OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYx
+NTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNT
+M3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcsLTE3MTAxOTk1
+MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLT
+EwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2
+NTA5N119
 -->
