@@ -839,6 +839,8 @@ $$\bar{\bm{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bm{x}_{i},\:l=1\cdots k.$$
 *  The error of the partition is taken as to be  
 $$e=\sum_{l=1}^{k}\sum_{i\in C_l}d^2(\bm{x}_i,\bar{\bm{x}}_l)=\sum_{i=1}^{n}d^2(\bm{x}_i,\bar{\bm{x}}_{l(i)})$$
 where $l(i)$ is the index of the cluster of object $i$.
+* For the Euclidian distance, we get
+$$e=\sum_{l=1}^{k}\sum_{i\in C_l}x_i^d^2(\bm{x}_i,\bar{\bm{x}}_l)$$ 
 * The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
 
@@ -856,11 +858,11 @@ STEP 3. Repeat Step 2 for each object $i$ such that$2\leq i \leq n$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nz
-k5NDkyODEsMjM0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwt
-MTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwtMzUzNTIyNSwtNjI2Mz
-k5Mjk3LC0xNzEwMTk5NTMxLC04NjI1Mjg1MTYsLTQyMjc0NzI0
-MCwxNTM2NDMwMTEyLC0xMDY2MzY1OTgzLDY5OTU2MDk1NCwxNz
-UyNDEzNzcyLDExMDA3NjUwOTcsLTExNTY3OTgyOTUsLTE3NzY4
-NDY3MDhdfQ==
+eyJoaXN0b3J5IjpbOTQ0ODAxNDcxLC0xNzExMTAyNzYsMjg5Mz
+I4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0MzQ1
+LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEsLTM1Mz
+UyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUzMSwtODYyNTI4NTE2
+LC00MjI3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4Myw2OT
+k1NjA5NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMTU2Nzk4
+Mjk1XX0=
 -->
