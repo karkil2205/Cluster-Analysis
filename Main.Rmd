@@ -850,14 +850,15 @@ $$\frac{n_ld^2(\bm{x}_1,\bar{\bm{x}}_l)}{n_l+1}-\frac{n_{l(1)}d^2(\bm{x}_1,\bar{
 * It corresponds to the error variation in transferring the first case from cluster to which it belongs $l(1)$ to cluster $l$.
 * If the minimum of this quantity over all $l\neq l(1)$ is negative, transfer the first case from cluster $l(1)$ to this minimal $l$.
 * Adjust the cluster means of $l(1)$ and the minimal $l$ and add the error variation (which is negative) to $e$.
-STEP 3. Repeat Step 2 for each object $i$ $2\leq s I S M$.
+STEP 3. Repeat Step 2 for each object $i$ such that$2\leq i \leq n$.
+STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NjA2NjcwMSwtMTc3OTk0OTI4MSwyMz
-Q0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2
-LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcsLTE3MT
-AxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAx
-MTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMT
-EwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgz
-NTk0OV19
+eyJoaXN0b3J5IjpbMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzND
+Q0NjE1NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYs
+LTE1MzcyMjYxODEsLTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMD
+E5OTUzMSwtODYyNTI4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDEx
+MiwtMTA2NjM2NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3MiwxMT
+AwNzY1MDk3LC0xMTU2Nzk4Mjk1LC0xNzc2ODQ2NzA4LDQxODM1
+OTQ5XX0=
 -->
