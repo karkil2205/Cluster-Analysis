@@ -529,7 +529,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
 * But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
 # Exercice 4
-* Prove that the distances based on the  SimplemMatching coefficient and the Jaccard coefficient satisfy A3.
+* Prove that the distances based on the  Simple Matching coefficient and the Jaccard coefficient satisfy A3.
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
@@ -569,6 +569,8 @@ $$
 * Therefore:
 $$d(\mathbf{x},\mathbf{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 *  Note that simple matching has exactly the same meaning as in the preceding section.
+ 
+ \newpage
  
 # Gower’s dissimilarity
 * Gower’s coefficient is a dissimilarity measure specifically
@@ -819,9 +821,9 @@ to the neighborhood. The present partition is then locally optimal in that it is
 best partition in its neighborhood.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTAxOTk1MzEsLTg2MjUyODUxNiwtND
-IyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYw
-OTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NS
-wtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4
-MDM3OTEsNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbMTYxMjg1NjY0NywtMTcxMDE5OTUzMSwtOD
+YyNTI4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2
+NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC
+0xMTU2Nzk4Mjk1LC0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00Mjcy
+OTQxOTYsLTgwMTgwMzc5MSw3OTc2NTkyMzRdfQ==
 -->
