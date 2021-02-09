@@ -886,7 +886,7 @@ $$
 \Delta e=
  m_l\sum_{i=1}^n (\bar{x}_i^l)^2
 -\frac{m^2_l }{m_l+1}\sum_{i=1}^n (\bar{x}_i^l)^2 
-+2\frac{m_l}{m_l+1}\sum_{i=1}^n \bar{x}_i^l x_i^1 
+-2\frac{m_l}{m_l+1}\sum_{i=1}^n \bar{x}_i^l x_i^1 
 -\frac{1}{m_l+1}\sum_{i=1}^n  (x_i^1)^2
 \\
 m_{l(1)} \sum_{i=1}^n  (\bar{x}_i^{l(1)})^2
@@ -916,11 +916,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMj
-I0MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5
-ODg5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNz
-YsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUw
-OTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxOD
-EsLTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUzMSwtODYy
-NTI4NTE2XX0=
+eyJoaXN0b3J5IjpbLTg4Njk5NzQwOCwtMTAyMjE5MzYzMCwyMT
+M5NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgz
+NjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5OTE5Nj
+YsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0
+NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3Ni
+wtMTUzNzIyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEw
+MTk5NTMxXX0=
 -->
