@@ -793,8 +793,9 @@ ignored entirely.
 
 # K-Means Algorithm
 
-* our purpose is to partition the foods so that foods within clusters are close and foods in different clusters are distant. The discordance between the data 
-and a given partition P(M, K) of M objects into K clusters is measured by an error 
+* There are $n$ objects and $k$ clusters.
+* our purpose is to partition the $n$ objects (here  foods) so that objects within clusters are close and objects in different clusters are distant.
+*  The discordance between the data and a given partition $P(n, K)$ of $n$ objects into $k$ clusters is measured by an error 
 e[P(M, K)]. The very large number of possible partitions makes it impractical to 
 search through all for the minimum of e. It is necessary instead to use the technique 
 of local optimization. In this technique, a neighborhood of partitions is defined for 
@@ -808,7 +809,7 @@ to the neighborhood. The present partition is then locally optimal in that it is
 best partition in its neighborhood.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNjAzODUyNiwtODYyNTI4NTE2LC00Mj
+eyJoaXN0b3J5IjpbLTExMTg5OTEwOCwtODYyNTI4NTE2LC00Mj
 I3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5
 NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMTU2Nzk4Mjk1LC
 0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgw
