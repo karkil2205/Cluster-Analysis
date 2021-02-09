@@ -848,8 +848,11 @@ $$
 $$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)}),$$
 where $l(j)$ is the index of the cluster of object $j$.
 * For the Euclidian distance, we have
-$$e=\sum_{l=1}^{k}\sum_{j\in C_l}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l})^2=\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l(j)})^2,
+$$e=\sum_{l=1}^{k}\sum_{j\in C_l}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l})^2.
 $$ 
+* Alternatively,
+$$e=\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l(j)})^2.$$
+
 which can be rewritten as follows
 $$e=\sum_{l=1}^{k}\sum_{j\in C_l}\sum_{i=1}^n(x_i^j)^2-\sum_{l=1}^{k}\sum_{j\in C_l}m^l (\bar{x}^l)^2=,
 $$ 
@@ -876,7 +879,7 @@ STEP 3. Repeat Step 2 for each object $j$ such that $2\leq j \leq m$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjE3NDk4MzYsMjA3MzAzMTU4MiwtNz
+eyJoaXN0b3J5IjpbLTE2NjE2MjQ2ODksMjA3MzAzMTU4MiwtNz
 E3OTkxOTY2LC0xNzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5
 MjgxLDIzNDQ0NjE1NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NT
 gwODg2NzYsLTE1MzcyMjYxODEsLTM1MzUyMjUsLTYyNjM5OTI5
