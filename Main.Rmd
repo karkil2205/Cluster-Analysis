@@ -791,16 +791,15 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * An argument could be made that iron is less important than calories or protein and so should be given less weight or ignored entirely.
 * There are $n$ objects and $k$ clusters, $k=1,\cdots, n$.
 * Our purpose is to partition the $n$ objects (here  foods) so that objects within clusters are close and objects in different clusters are distant.
+* Each cluster contains at least one object and each object belongs to only one cluster. 
 * There is a very large number of possible partitions.
 
 # Exercice
-What is the number of partitions (each cluster contains at least one object and each object belongs to only one cluster) ?
+What is the number of possible partitions ?
 
 # K-Means Algorithm
-
-
-
-*  The discordance between the data and a given partition $P(n, K)$ of $n$ objects into $k$ clusters is measured by an error $e[P(n, k)]$.
+*  The discordance between the data and a given partition denoted by $e$.
+* 
 
 
 
@@ -816,7 +815,7 @@ to the neighborhood. The present partition is then locally optimal in that it is
 best partition in its neighborhood.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODgyNzMyODQsLTE3MTAxOTk1MzEsLT
+eyJoaXN0b3J5IjpbLTE4NjgzOTQyMzMsLTE3MTAxOTk1MzEsLT
 g2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYz
 NjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5Ny
 wtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3
