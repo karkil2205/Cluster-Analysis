@@ -903,8 +903,7 @@ $$
 +2\frac{m_l}{m_l+1}\sum_{i=1}^n \bar{x}_i^l x_i^1 
 -\frac{1}{m_l+1}\sum_{i=1}^n  (x_i^1)^2
 \\
-\frac{m^2_{l(1)} }{m_{l(1)}-1} \sum_{i=1}^n  (\bar{x}_i^{l(1)})^2
--\sum_{i=1}^n (\bar{x}_i^l)^2  
+-\frac{m_{l(1)} }{m_{l(1)}-1} \sum_{i=1}^n  (\bar{x}_i^{l(1)})^2  
 +2\frac{m_{l(1)}}{m_{l(1)}-1}\sum_{i=1}^n  \bar{x}_i^{l(1)} x_i^1
  -\frac{1}{m_{l(1)}-1}\sum_{i=1}^n (x_i^1)^2.
 \end{cases}
@@ -917,7 +916,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDE0MzA3OTcsMjEzOTc1NzM4MCwtMj
+eyJoaXN0b3J5IjpbLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMj
 I0MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5
 ODg5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNz
 YsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUw
