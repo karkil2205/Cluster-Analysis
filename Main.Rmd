@@ -840,7 +840,7 @@ $$\bar{\bm{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bm{x}_{i},\:l=1\cdots k.$$
 $$e=\sum_{l=1}^{k}\sum_{i\in C_l}d^2(\bm{x}_i,\bar{\bm{x}}_l)=\sum_{i=1}^{n}d^2(\bm{x}_i,\bar{\bm{x}}_{l(i)})$$
 where $l(i)$ is the index of the cluster of object $i$.
 * For the Euclidian distance, we get
-$$e=\sum_{l=1}^{k}\sum_{i\in C_l}x_i^2-n_{l})\bar{\bm{x}}_l^2$$ 
+$$e=\sum_{i=1}^{n}x_i^2-\sum_{l=1}^{k}n_{l}\bar{\bm{x}}_l^2.$$ 
 * The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
 
@@ -858,7 +858,7 @@ STEP 3. Repeat Step 2 for each object $i$ such that$2\leq i \leq n$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MjE1MDU5NiwtMTcxMTEwMjc2LDI4OT
+eyJoaXN0b3J5IjpbLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OT
 MyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzNDM0
 NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0zNT
 M1MjI1LC02MjYzOTkyOTcsLTE3MTAxOTk1MzEsLTg2MjUyODUx
