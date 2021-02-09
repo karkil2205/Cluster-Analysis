@@ -839,10 +839,14 @@ $$\bar{\bm{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bm{x}_{i},\:l=1\cdots k.$$
 *  The error of the partition is taken as to be  
 $$e=\sum_{l=1}^{k}\sum_{i\in C_l}d^2(\bm{x}_i,\bar{\bm{x}}_l)=\sum_{i=1}^{n}d^2(\bm{x}_i,\bar{\bm{x}}_{l_i})$$
 where ${l_i}$ is the index of the cluster of object $i$.
-* The general procedure is to search for a partition with small e by moving cases from one cluster to another.
-* The search ends when no such movement reduces $eˆ$.
+* The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
+* The search ends when no such movement reduces $e$.
+
+\newpage
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NzcwMTUwNSwxMzUwOTM0MzQ1LDczOD
+eyJoaXN0b3J5IjpbMTkxMTE5NTMzMiwxMzUwOTM0MzQ1LDczOD
 gyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEsLTM1MzUyMjUs
 LTYyNjM5OTI5NywtMTcxMDE5OTUzMSwtODYyNTI4NTE2LC00Mj
 I3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5
