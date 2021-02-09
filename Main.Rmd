@@ -835,16 +835,14 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * Note that $\sum_{l=1}^k n_l=n$.
 * The mean over the objects in the cluster $C_l$ is denoted by $\bar{\bm{x}}_{l}$, with
 $$\bar{\bm{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bm{x}_{i},\:l=1\cdots k.$$
-* The distance between the object $iˆ$ and cluster $l$ is $d(\bm{x}_i,\bar{\bm{x}}_l)$, where $d$ is Euclidian distance. 
-
-
-The error of the partition is 
-e[P(M , K)] = I {1 I M} D[I, L(I)12, 
-where L(I) is the cluster containing the /th case. The general procedure is to search 
+* The distance between the object $i$ and cluster $l$ is $d(\bm{x}_i,\bar{\bm{x}}_l)$, where $d(\cdot,\cdot)$ is Euclidian distance.
+*  The error of the partition is taken to be  
+$$e[P(M , K)] = I {1 I M} D[I, L(I)12$$
+The general procedure is to search 
 for a partition with small e by moving cases from one cluster to another. The search 
 ends when no such movement reduces e.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0Mzg3NjkxNSw3Mzg4MjkwLC0xNDU4MD
+eyJoaXN0b3J5IjpbMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MD
 g4Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcs
 LTE3MTAxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1Mz
 Y0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3
