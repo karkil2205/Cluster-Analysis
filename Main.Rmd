@@ -813,12 +813,21 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * Totally, there are 25 such permutations.
 * A plausible neighborhood for a partition is the set of partitions obtained by transferring an object from one cluster to another.
 * For the partition (BB BR) (BS) (BC BH), the neighborhood consists of the following ten partitions:
-* 
+(BR) (BB BS) (BC BH), 
+(BR) (BS) (BB BC BH), 
+(BB) (BR BS) (BC BH), 
+(BB) (BS) (BR BC BH), 
+(BB BR BS) O (BC BH), 
+(BB BR) O (BS BC BH), 
+(BB BR BC) (BS) (BH), 
+(BB BR) (BS BC) (BH), 
+(BB BR BH) (BS) (BC), 
+(BB BR) (BS BH) (BC).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MzQ5OTQ1NSwtNjI2Mzk5Mjk3LC0xNz
-EwMTk5NTMxLC04NjI1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2NDMw
-MTEyLC0xMDY2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLD
-ExMDA3NjUwOTcsLTExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4
-MzU5NDksLTQyNzI5NDE5NiwtODAxODAzNzkxLDc5NzY1OTIzNF
-19
+eyJoaXN0b3J5IjpbLTk2NDcxMDA1LC02MjYzOTkyOTcsLTE3MT
+AxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAx
+MTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMT
+EwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgz
+NTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX
+0=
 -->
