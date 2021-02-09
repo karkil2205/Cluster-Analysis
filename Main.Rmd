@@ -848,13 +848,17 @@ STEP 1. Assume initial clusters. Compute the cluster means $\bar{\bm{x}}_l$ and 
 STEP 2. For the first Object, compute for every cluster $l$ 
 $$\frac{n_ld^2(\bm{x}_1,\bar{\bm{x}}_l)}{n_l+1}-\frac{n_{l(1)}d^2(\bm{x}_1,\bar{\bm{x}}_{l(1)})}{n_{l(1)}-1},\:l=1,\cdots, k. $$
 
-
+* It is the increase in error in transferring the first case from cluster to which it belongs $l(1)$ to cluster $l$.
+* If the minimum of this quantity over all L sé L(1) is negative, 
+transfer the first case from cluster L(1) to this minimal L, adjust the cluster means of 
+L(1) and the minima! L, and add the increase in error (which is negative) to 
+e[P(M, K)].
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MDgzNDQ3NywyMzQ0NDYxNTYsMTM1MD
-kzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgx
-LC0zNTM1MjI1LC02MjYzOTkyOTcsLTE3MTAxOTk1MzEsLTg2Mj
-UyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYzNjU5
-ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5NywtMT
-E1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0
-MTk2XX0=
+eyJoaXN0b3J5IjpbLTE5NTE3ODA4ODIsMjM0NDQ2MTU2LDEzNT
+A5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4
+MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEwMTk5NTMxLC04Nj
+I1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2NDMwMTEyLC0xMDY2MzY1
+OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLDExMDA3NjUwOTcsLT
+ExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4MzU5NDksLTQyNzI5
+NDE5Nl19
 -->
