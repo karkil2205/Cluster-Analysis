@@ -788,20 +788,15 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * $20/70=29\%\text{(Protein)}$.
 * ${0.009}/{0.8}=1\%\text{ (Calcium)}$.
 * ${2.6}/{10}= 26\%\text{ (Iron)}$.
-* An argument could be made that iron is less important than calories or protein and so should be given less weight or 
-ignored entirely.
-
-\newpage
-
-# K-Means Algorithm
-
-* There are $n$ objects and $k$ clusters.
-* our purpose is to partition the $n$ objects (here  foods) so that objects within clusters are close and objects in different clusters are distant.
+* An argument could be made that iron is less important than calories or protein and so should be given less weight or ignored entirely.
+* There are $n$ objects and $k$ clusters, $k=1,\cdots, n$.
+* Our purpose is to partition the $n$ objects (here  foods) so that objects within clusters are close and objects in different clusters are distant.
 * There is a very large number of possible partitions.
 
 # Exercice
 What is the number of partitions (each cluster contains at least one object and each object belongs to only one cluster) ?
 
+# K-Means Algorithm
 
 
 
@@ -821,9 +816,9 @@ to the neighborhood. The present partition is then locally optimal in that it is
 best partition in its neighborhood.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjg1NjY0NywtMTcxMDE5OTUzMSwtOD
-YyNTI4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2
-NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC
-0xMTU2Nzk4Mjk1LC0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00Mjcy
-OTQxOTYsLTgwMTgwMzc5MSw3OTc2NTkyMzRdfQ==
+eyJoaXN0b3J5IjpbLTEyODgyNzMyODQsLTE3MTAxOTk1MzEsLT
+g2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYz
+NjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5Ny
+wtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3
+Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
 -->
