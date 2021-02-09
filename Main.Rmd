@@ -874,16 +874,16 @@ Prove that the error variation is indeed given by: $$
 \frac{m_ld^2(\bm{x}^1,\bar{\bm{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\bm{x}^1,\bar{\bm{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
 
 
-$$\Delta=\sum_{i=1}^n m_l (\bar{x}_i^l)^2-\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2+.
+$$\Delta e=\sum_{i=1}^n m_l (\bar{x}_i^l)^2-\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2+.
 $$ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDU5Nzg4MDQsLTE4NzMzOTQ2MjksLT
-kwMTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5
-OTE5NjYsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyOD
-EsMjM0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4
-ODY3NiwtMTUzNzIyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC
-0xNzEwMTk5NTMxLC04NjI1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2
-NDMwMTEyXX0=
+eyJoaXN0b3J5IjpbLTk3NDk3MTM1LC0xODczMzk0NjI5LC05MD
+E4MzY2MzEsLTE3MzU5ODg5ODAsMjA3MzAzMTU4MiwtNzE3OTkx
+OTY2LC0xNzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLD
+IzNDQ0NjE1NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NTgwODg2
+NzYsLTE1MzcyMjYxODEsLTM1MzUyMjUsLTYyNjM5OTI5NywtMT
+cxMDE5OTUzMSwtODYyNTI4NTE2LC00MjI3NDcyNDAsMTUzNjQz
+MDExMl19
 -->
