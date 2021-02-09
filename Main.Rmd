@@ -797,7 +797,7 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 # Exercice
 What is the number of possible partitions ?
 
-# K-Means Algorithm
+# K-Means
 *  The discordance between the data and a given partition $\mathcal{P}$ denoted by $e$.
 * We use the technique of local optimization.
 * In this technique, a neighborhood of partitions is defined for each partition.
@@ -824,12 +824,15 @@ cheaper computationally to move to the first partition discovered in the neighbo
 (BB BR BH) (BS) (BC) 
 (BB BR) (BS BH) (BC)
 
+\newpage
+
+# K-Means Algorithm
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMD
-E5OTUzMSwtODYyNTI4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDEx
-MiwtMTA2NjM2NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3MiwxMT
-AwNzY1MDk3LC0xMTU2Nzk4Mjk1LC0xNzc2ODQ2NzA4LDQxODM1
-OTQ5LC00MjcyOTQxOTYsLTgwMTgwMzc5MSw3OTc2NTkyMzRdfQ
-==
+eyJoaXN0b3J5IjpbLTE1MzcyMjYxODEsLTM1MzUyMjUsLTYyNj
+M5OTI5NywtMTcxMDE5OTUzMSwtODYyNTI4NTE2LC00MjI3NDcy
+NDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5NTQsMT
+c1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMTU2Nzk4Mjk1LC0xNzc2
+ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgwMzc5MS
+w3OTc2NTkyMzRdfQ==
 -->
