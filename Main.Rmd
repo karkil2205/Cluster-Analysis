@@ -808,11 +808,15 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * A number of stopping rules are possible.
 * For example, the search stops when $e(\mathcal{P})$ is not reduced by movement to the neighborhood.
 * The present partition is then considered locally optimal in that it is the best partition in its neighborhood.
-
+\newpage
+* As an example, consider partitions into three clusters of the beef foods BB, BR, BS, BC, and BH.
+* A plausible neighborhood for a partition is the set of partitions obtained by transferring an object from one cluster to another.
+* Thus, for the partition (BB BR) (BS) (BC BH), the neighborhood consists of the following ten partitions:
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzQ5MzY1ODQsLTE3MTAxOTk1MzEsLT
-g2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYz
-NjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5Ny
-wtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3
-Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbLTUxMjkzMzE5LC0xNzEwMTk5NTMxLC04Nj
+I1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2NDMwMTEyLC0xMDY2MzY1
+OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLDExMDA3NjUwOTcsLT
+ExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4MzU5NDksLTQyNzI5
+NDE5NiwtODAxODAzNzkxLDc5NzY1OTIzNF19
 -->
