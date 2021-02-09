@@ -795,10 +795,15 @@ ignored entirely.
 
 * There are $n$ objects and $k$ clusters.
 * our purpose is to partition the $n$ objects (here  foods) so that objects within clusters are close and objects in different clusters are distant.
-*  The discordance between the data and a given partition $P(n, K)$ of $n$ objects into $k$ clusters is measured by an error $e[P(n, k)]$.
 * There is a very large number of possible partitions.
 
 # Exercice
+What is the number of partitions (each cluster contains at least one object and each object belongs to only one cluster) ?
+
+
+
+
+*  The discordance between the data and a given partition $P(n, K)$ of $n$ objects into $k$ clusters is measured by an error $e[P(n, k)]$.
 
 
 
@@ -814,9 +819,9 @@ to the neighborhood. The present partition is then locally optimal in that it is
 best partition in its neighborhood.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjczODQwOCwtODYyNTI4NTE2LC00Mj
-I3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5
-NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMTU2Nzk4Mjk1LC
-0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgw
-Mzc5MSw3OTc2NTkyMzRdfQ==
+eyJoaXN0b3J5IjpbLTE3MTAxOTk1MzEsLTg2MjUyODUxNiwtND
+IyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYw
+OTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NS
+wtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4
+MDM3OTEsNzk3NjU5MjM0XX0=
 -->
