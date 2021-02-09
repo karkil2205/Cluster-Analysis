@@ -827,10 +827,10 @@ cheaper computationally to move to the first partition discovered in the neighbo
 \newpage
 
 # K-Means Algorithm
-* Let $\bm{x}_^j\equiv ()$ the vector of  value for the object $i$, $i=1,\cdots ,n.$
+* Let $\bm{x}^j\equiv (x_1^j,\cdots,x_n^j)$ the vector of  values for the object $j$, $j=1,\cdots ,m.$
 * The variables are assumed scaled.
 * The partition $\mathcal{P}$ has   $k$ disjoint clusters  clusters $C_1,\cdots,C_k$, which are the indices of the objects in the various cluster.
-* Let $n_l$ be the number of objects in cluster $C_l$.
+* Let $m_l$ be the number of objects in cluster $C_l$.
 * Each of the $n$ objects lies in just one of the $k$ clusters.
 * Note that $\sum_{l=1}^k n_l=n$.
 * The mean over the objects in the cluster $C_l$ is denoted by $\bar{\bm{x}}_{l}$, with
@@ -858,11 +858,11 @@ STEP 3. Repeat Step 2 for each object $i$ such that$2\leq i \leq n$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzU5ODE2LC03MTc5OTE5NjYsLTE3MT
-ExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2
-LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNz
-IyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEwMTk5NTMx
-LC04NjI1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2NDMwMTEyLC0xMD
-Y2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLDExMDA3NjUw
-OTddfQ==
+eyJoaXN0b3J5IjpbLTE4OTExODYwMTgsLTcxNzk5MTk2NiwtMT
+cxMTEwMjc2LDI4OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYx
+NTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNT
+M3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcsLTE3MTAxOTk1
+MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLT
+EwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2
+NTA5N119
 -->
