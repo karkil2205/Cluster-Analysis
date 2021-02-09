@@ -891,8 +891,8 @@ $$
 \\
 m_{l(1)} \sum_{i=1}^n  (\bar{x}_i^{l(1)})^2
 -\frac{m^2_{l(1)} }{m_{l(1)}-1}\sum_{i=1}^n (\bar{x}_i^l)^2  
-+2\sum_{i=1}^n \frac{m_{l(1)}\bar{x}_i^{l(1)} x_i^1}{m_{l(1)}-1} 
--\sum_{i=1}^n  \frac{(x_i^1)^2}{m_{l(1)}-1}.
++2\frac{m_{l(1)}}{m_{l(1)}-1}\sum_{i=1}^n  \bar{x}_i^{l(1)} x_i^1
+ -\frac{1}{m_{l(1)}-1}\sum_{i=1}^n (x_i^1)^2.
 \end{cases}
 $$
 Simplifying the above expression, we get
@@ -916,7 +916,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTgwNjc4MCwyMTM5NzU3MzgwLC0yMj
+eyJoaXN0b3J5IjpbLTk4ODk4NzY3NSwyMTM5NzU3MzgwLC0yMj
 QyMjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4
 ODk4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3Ni
 wyODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5
