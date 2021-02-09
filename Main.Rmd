@@ -775,9 +775,11 @@ fviz_dist(dist.eucl)
 
 # K-Means Clustering
 
+* The description of the algorithm is based on:
+* HARTIGAN, John A. _Clustering algorithms_. John Wiley & Sons, Inc., 1975.
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxOTU5MjU0LDE3NTI0MTM3NzIsMTEwMD
+eyJoaXN0b3J5IjpbNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMD
 c2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0
 OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
 -->
