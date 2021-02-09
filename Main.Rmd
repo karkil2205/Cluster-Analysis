@@ -869,9 +869,17 @@ STEP 3. Repeat Step 2 for each object $j$ such that $2\leq j \leq m$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 # Exercice 6
-Prove that 
+Prove that the error variation is indeed given by: $$
+\Delta e=
+\frac{m_ld^2(\bm{x}^1,\bar{\bm{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\bm{x}^1,\bar{\bm{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
+
+
+$$e=\sum_{l=1}^{k}\sum_{j\in C_l}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l})^2=\sum_{j=1}^m \sum_{i=1}^n(x_i^j)^2-\sum_{l=1}^{k}\sum_{i=1}^n m_l (\bar{x}_i^l)^2.
+$$ 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NDE3MzQ1NCwtMTg3MzM5NDYyOSwtOT
+eyJoaXN0b3J5IjpbLTEyNDAyMTc1MSwtMTg3MzM5NDYyOSwtOT
 AxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMzE1ODIsLTcxNzk5
 MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3OTk0OTI4MS
 wyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4
