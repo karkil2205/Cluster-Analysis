@@ -847,16 +847,17 @@ where $l(i)$ is the index of the cluster of object $i$.
 STEP 1. Assume initial clusters. Compute the cluster means $\bar{\bm{x}}_l$ and the initial error $e$.
 STEP 2. For the first Object, compute for every cluster $l$ 
 $$\frac{n_ld^2(\bm{x}_1,\bar{\bm{x}}_l)}{n_l+1}-\frac{n_{l(1)}d^2(\bm{x}_1,\bar{\bm{x}}_{l(1)})}{n_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
-* It corresponds to the increase in error in transferring the first case from cluster to which it belongs $l(1)$ to cluster $l$.
+* It corresponds to the error variation in transferring the first case from cluster to which it belongs $l(1)$ to cluster $l$.
 * If the minimum of this quantity over all $l\neq l(1)$ is negative, transfer the first case from cluster $l(1)$ to this minimal $l$.
-* Adjust the cluster means of $l(1)$ and the minimal $L$, and add the increase in error (which is negative) to $e$.
+* Adjust the cluster means of $l(1)$ and the minimal $l$ and add the error variation (which is negative) to $e$.
+STEP 3. Repeat Step 2 for each object $i$ $2\leq s I S M$.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg5NjI4MTksLTE3Nzk5NDkyODEsMj
-M0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3
-NiwtMTUzNzIyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNz
-EwMTk5NTMxLC04NjI1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2NDMw
-MTEyLC0xMDY2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLD
-ExMDA3NjUwOTcsLTExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4
-MzU5NDldfQ==
+eyJoaXN0b3J5IjpbMjA0NjA2NjcwMSwtMTc3OTk0OTI4MSwyMz
+Q0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2
+LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcsLTE3MT
+AxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAx
+MTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMT
+EwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgz
+NTk0OV19
 -->
