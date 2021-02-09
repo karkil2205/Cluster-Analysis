@@ -788,7 +788,7 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 *  28 9 2.6
 $$100\times\frac{340}{3200}=11$$
 $$100\times\frac{ 20}{70}=29$$
-$$100\times\frac{}{0.8}$$
+$$100\times\frac{0.009}{0.8}\text{ Cacium}$$
 $$100\times\frac{}{10}=$$
 
  
@@ -796,8 +796,9 @@ $$100\times\frac{}{10}=$$
 ignored entirely.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMjc0NzI0MCwxNTM2NDMwMTEyLC0xMD
-Y2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLDExMDA3NjUw
-OTcsLTExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4MzU5NDksLT
-QyNzI5NDE5NiwtODAxODAzNzkxLDc5NzY1OTIzNF19
+eyJoaXN0b3J5IjpbLTIwMzg1MjQyODIsLTQyMjc0NzI0MCwxNT
+M2NDMwMTEyLC0xMDY2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEz
+NzcyLDExMDA3NjUwOTcsLTExNTY3OTgyOTUsLTE3NzY4NDY3MD
+gsNDE4MzU5NDksLTQyNzI5NDE5NiwtODAxODAzNzkxLDc5NzY1
+OTIzNF19
 -->
