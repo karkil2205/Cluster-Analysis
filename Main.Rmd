@@ -845,10 +845,13 @@ where ${l_i}$ is the index of the cluster of object $i$.
 \newpage
 
 STEP 1. Assume initial clusters. Compute the cluster means $\bar{\bm{x}}_l$ and the initial error $e$.
+STEP 2. For the first Object, compute for every cluster $l$ 
+$$\frac{}{}N(L)D(1, L)2 N[L(1)1D[1, L(1)]2 
+N(L) + 1 N[L(1)] — 1 $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUzMjk2NzQ0LDEzNTA5MzQzNDUsNzM4OD
+eyJoaXN0b3J5IjpbMjM0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4OD
 I5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwtMzUzNTIyNSwt
 NjI2Mzk5Mjk3LC0xNzEwMTk5NTMxLC04NjI1Mjg1MTYsLTQyMj
 c0NzI0MCwxNTM2NDMwMTEyLC0xMDY2MzY1OTgzLDY5OTU2MDk1
