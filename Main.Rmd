@@ -885,9 +885,9 @@ $$
 \begin{cases}
 \Delta e=
  m_l\sum_{i=1}^n (\bar{x}_i^l)^2
--\sum_{i=1}^n  \frac{m^2_l (\bar{x}_i^l)^2}{m_l+1}
-+2\sum_{i=1}^n \frac{m_l\bar{x}_i^l x_i^1}{m_l+1} 
--\sum_{i=1}^n  \frac{(x_i^1)^2}{m_l+1}
+-\frac{m^2_l }{m_l+1}\sum_{i=1}^n (\bar{x}_i^l)^2 
++2\frac{m_l}{m_l+1}\sum_{i=1}^n \bar{x}_i^l x_i^1 
+- \frac{}{m_l+1}\sum_{i=1}^n 
 \\
 \sum_{i=1}^n m_{l(1)} (\bar{x}_i^{l(1)})^2
 -\sum_{i=1}^n  \frac{m^2_{l(1)} (\bar{x}_i^l)^2}{m_{l(1)}-1}
@@ -916,7 +916,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODQxNTg1OTEsMjEzOTc1NzM4MCwtMj
+eyJoaXN0b3J5IjpbLTIwOTU5NTg3NzcsMjEzOTc1NzM4MCwtMj
 I0MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5
 ODg5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNz
 YsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUw
