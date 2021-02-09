@@ -861,15 +861,15 @@ STEP 1. Assume initial clusters. Compute the cluster means $\bar{\bm{x}}^l$ and 
 STEP 2. For the first Object, compute for every cluster $l$ 
 $$
 \Delta e=
-\frac{m^ld^2(\bm{x}^1,\bar{\bm{x}}_l)}{n_l+1}-\frac{n_{l(1)}d^2(\bm{x}_1,\bar{\bm{x}}_{l(1)})}{n_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
-* It corresponds to the error variation in transferring the first case from cluster to which it belongs $l(1)$ to cluster $l$.
+\frac{m^ld^2(\bm{x}^1,\bar{\bm{x}}^l)}{m^l+1}-\frac{m^{l(1)}d^2(\bm{x}^1,\bar{\bm{x}}^{l(1)})}{m^{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
+* It corresponds to the error variation in transferring the first object from cluster to which it belongs $l(1)$ to cluster $l$.
 * If the minimum of this quantity over all $l\neq l(1)$ is negative, transfer the first case from cluster $l(1)$ to this minimal $l$.
 * Adjust the cluster means of $l(1)$ and the minimal $l$ and add the error variation (which is negative) to $e$.
 STEP 3. Repeat Step 2 for each object $i$ such that$2\leq i \leq n$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDk2NzUzNiwtNzE3OTkxOTY2LC0xNz
+eyJoaXN0b3J5IjpbLTc1ODA5NDA4MiwtNzE3OTkxOTY2LC0xNz
 ExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1
 NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1Mz
 cyMjYxODEsLTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUz
