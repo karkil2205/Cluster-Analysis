@@ -831,9 +831,9 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * The variables are assumed scaled.
 * The partition $\mathcal{P}$ has   $k$ disjoint clusters  clusters $C_1,\cdots,C_k$, which are the indices of the objects in the various cluster.
 * Each of the $n$ objects lies in just one of the $k$ clusters.
-* The mean over the objects in the cluster $l$ is denoted by $\bar{x}_{C_l}$.
-$$\bar{x}_{C_l}\equiv\frac{1}{n_l}\sum_{i\}\bar{x}_{i}$$
-* The number of cases in cluster $l$ is $n_l$.
+* The mean over the objects in the cluster $l$ is denoted by $\bar{x}_{l}$, i.e.
+$$\bar{x}_{C_l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bar{x}_{i},\:l=1\cdots k.$$
+* where $n_l$ is the number of objects in cluster $C_l$.
 * The distance between the Rh case and Lth cluster is 
 D(I, L) = a o J N} [A(I, J) — B(L, j)191/2. 
 The error of the partition is 
@@ -842,11 +842,11 @@ where L(I) is the cluster containing the /th case. The general procedure is to s
 for a partition with small e by moving cases from one cluster to another. The search 
 ends when no such movement reduces e.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4OTE4Mzc1Nyw3Mzg4MjkwLC0xNDU4MD
-g4Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcs
-LTE3MTAxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1Mz
-Y0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3
-NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOC
-w0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5
-MjM0XX0=
+eyJoaXN0b3J5IjpbOTg0MzU0MjgwLDczODgyOTAsLTE0NTgwOD
+g2NzYsLTE1MzcyMjYxODEsLTM1MzUyMjUsLTYyNjM5OTI5Nywt
+MTcxMDE5OTUzMSwtODYyNTI4NTE2LC00MjI3NDcyNDAsMTUzNj
+QzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3
+MiwxMTAwNzY1MDk3LC0xMTU2Nzk4Mjk1LC0xNzc2ODQ2NzA4LD
+QxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgwMzc5MSw3OTc2NTky
+MzRdfQ==
 -->
