@@ -802,29 +802,31 @@ What is the number of possible partitions ?
 * We use the technique of local optimization.
 * In this technique, a neighborhood of partitions is defined for each partition.
 * Starting from an initial partition $\mathcal{P}$, search through a set of partitions at each step.
-* Move from the partition to a partition in its neighborhood for which $e(\mathcal{P})$ is a minimum.
+* Move from the partition to a partition in its neighborhood for which $e$ is a minimum.
 * If the neighborhoods are very large, it is sometimes 
-cheaper computationally to move to the first partition discovered in the neighborhood where $e(\mathcal{P})$ is reduced from its present value.
+cheaper computationally to move to the first partition discovered in the neighborhood where $e$ is reduced from its present value.
 * A number of stopping rules are possible.
-* For example, the search stops when $e(\mathcal{P})$ is not reduced by movement to the neighborhood.
+* For example, the search stops when $e$ is not reduced by movement to the neighborhood.
 * The present partition is then considered locally optimal in that it is the best partition in its neighborhood.
 \newpage
 * Consider partitions of the beef foods BB, BR, BS, BC, and BH ($n=5$) into three clusters ($k=3$).
 * Totally, there are 25 such permutations.
 * A plausible neighborhood for a partition is the set of partitions obtained by transferring an object from one cluster to another.
 * For the partition (BB BR) (BS) (BC BH), the neighborhood consists of the following ten partitions:
-(BR) (BB BS) (BC BH), 
-(BR) (BS) (BB BC BH), 
-(BB) (BR BS) (BC BH), 
-(BB) (BS) (BR BC BH), 
-(BB BR BS) O (BC BH), 
-(BB BR) O (BS BC BH), 
-(BB BR BC) (BS) (BH), 
-(BB BR) (BS BC) (BH), 
-(BB BR BH) (BS) (BC), 
-(BB BR) (BS BH) (BC).
+(BR) (BB BS) (BC BH)
+(BR) (BS) (BB BC BH) 
+(BB) (BR BS) (BC BH) 
+(BB) (BS) (BR BC BH) 
+(BB BR BS) O (BC BH) 
+(BB BR) O (BS BC BH) 
+(BB BR BC) (BS) (BH)
+(BB BR) (BS BC) (BH) 
+(BB BR BH) (BS) (BC) 
+(BB BR) (BS BH) (BC)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDcxMDA1LC02MjYzOTkyOTcsLTE3MT
+eyJoaXN0b3J5IjpbNTgyNjgwMDM4LC02MjYzOTkyOTcsLTE3MT
 AxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAx
 MTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMT
 EwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgz
