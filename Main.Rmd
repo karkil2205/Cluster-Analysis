@@ -747,13 +747,7 @@ round(1-cor(df.scaled["New Mexico",],df.scaled["Indiana",]),1)
 round(1-cor(df.scaled["Iowa",],df.scaled["Indiana",]),1)
 
 ```
-
-
-
-
 \newpage
-
-
 
 # Visualizing distance matrices
 * A simple solution for visualizing the distance matrices is to use the function fviz_dist() [factoextra package].  
@@ -763,7 +757,7 @@ round(1-cor(df.scaled["Iowa",],df.scaled["Indiana",]),1)
 library(factoextra)
 fviz_dist(dist.eucl)
 ```
-
+\newpage
 # Partitioning Clustering
 
 * Partitioning clustering are clustering methods used to classify observations within a data set, into multiple groups based on their similarity.
@@ -772,6 +766,8 @@ fviz_dist(dist.eucl)
 1. K-means clustering (MacQueen, 1967), in which, each cluster is represented by the center or means of the data points belonging to the cluster. The K-means method is sensitive to anomalous data points and outliers.
 2. K-medoids clustering or PAM (Partitioning Around Medoids, Kaufman & Rousseeuw, 1990), in which, each cluster is represented by one of the objects in the cluster. PAM is less sensitive to outliers compared to k-means.
 3. CLARA algorithm (Clustering Large Applications), which is an extension to PAM adapted for large data sets. 
+
+\newpage
 
 # K-Means Clustering
 
@@ -793,10 +789,14 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * An argument could be made that iron is less important than calories or protein and so should be given less weight or 
 ignored entirely.
 
+\newpage
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1Mz
-Y0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3
-NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOC
-w0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5
-MjM0XX0=
+eyJoaXN0b3J5IjpbLTE0MTQ3MDc5MzEsLTg2MjUyODUxNiwtND
+IyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYw
+OTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NS
+wtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4
+MDM3OTEsNzk3NjU5MjM0XX0=
 -->
