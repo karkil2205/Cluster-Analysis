@@ -791,12 +791,26 @@ ignored entirely.
 
 \newpage
 
+# K-Means Algorithm
 
+* our purpose is to partition the foods so that foods within clusters are close and foods in different clusters are distant. The discordance between the data 
+and a given partition P(M, K) of M objects into K clusters is measured by an error 
+e[P(M, K)]. The very large number of possible partitions makes it impractical to 
+search through all for the minimum of e. It is necessary instead to use the technique 
+of local optimization. In this technique, a neighborhood of partitions is defined for 
+each partition. Beginning with an initial partition, search through the set of partitions 
+at each step, moving from a partition to that partition in its neighborhood for which 
+e[P(M, K)] is a minimum. (If the neighborhoods are very large, it is sometimes 
+cheaper computationally to move to the first partition discovered in the neighborhood 
+where e[P(M, K)] is reduced from its present value.) A number of stopping rules are 
+possible. For example, the search stops when e[P(M, K)] is not reduced by movement 
+to the neighborhood. The present partition is then locally optimal in that it is the 
+best partition in its neighborhood.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQ3MDc5MzEsLTg2MjUyODUxNiwtND
-IyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYw
-OTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NS
-wtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4
-MDM3OTEsNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbMTkxNjAzODUyNiwtODYyNTI4NTE2LC00Mj
+I3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5
+NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMTU2Nzk4Mjk1LC
+0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgw
+Mzc5MSw3OTc2NTkyMzRdfQ==
 -->
