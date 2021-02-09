@@ -827,7 +827,7 @@ cheaper computationally to move to the first partition discovered in the neighbo
 \newpage
 
 # K-Means Algorithm
-* Let $x_i^j$ the value for the object $i$, $i=1,\cdots ,n,$  and the variable $j$, $j=1,\cdots ,m,$.
+* Let $\bm{x}x_i^j$ the value for the object $i$, $i=1,\cdots ,n,$  and the variable $j$, $j=1,\cdots ,m,$.
 * The variables are scaled.
 * The partition $\mathcal{P}$ is composed of the clusters $1, 2, . . . , k$.
 * Let $C_1,\cdots,C_k$ be the indices of the $k$ disjoint clusters of the partition.
@@ -842,10 +842,11 @@ where L(I) is the cluster containing the /th case. The general procedure is to s
 for a partition with small e by moving cases from one cluster to another. The search 
 ends when no such movement reduces e.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNz
-IyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEwMTk5NTMx
-LC04NjI1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2NDMwMTEyLC0xMD
-Y2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLDExMDA3NjUw
-OTcsLTExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4MzU5NDksLT
-QyNzI5NDE5NiwtODAxODAzNzkxLDc5NzY1OTIzNF19
+eyJoaXN0b3J5IjpbMTA5MjQ5MDkxNSw3Mzg4MjkwLC0xNDU4MD
+g4Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcs
+LTE3MTAxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1Mz
+Y0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3
+NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOC
+w0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5
+MjM0XX0=
 -->
