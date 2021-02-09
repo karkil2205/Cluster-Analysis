@@ -786,17 +786,17 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * Table 4.2, provide the percentage of food delivery.
 * For e.g., the BB ligne corresponds to 
 *  28 9 2.6
-$$100\times\frac{340}{3200}=11\text{ (Food Energy)};$$
-$$100\times\frac{ 20}{70}=29\text{ (Protein)}$$
-$$100\times\frac{0.009}{0.8}\text{ (Calcium);}$$
-$$100\times\frac{}{10}=$$
+$$\frac{340}{3200}=11\%\text{ (Food Energy)};$$
+$$\frac{ 20}{70}=29\%\text{ (Protein)}$$
+$$\frac{0.009}{0.8}=\%\text{ (Calcium);}$$
+$$\frac{kk}{10}= \%$$
 
  
 * An argument could be made that iron is less important than calories or protein and so should be given less weight or 
 ignored entirely.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM5NjQxNTU2LC00MjI3NDcyNDAsMTUzNj
+eyJoaXN0b3J5IjpbNzM0NjM3MTU1LC00MjI3NDcyNDAsMTUzNj
 QzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3
 MiwxMTAwNzY1MDk3LC0xMTU2Nzk4Mjk1LC0xNzc2ODQ2NzA4LD
 QxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgwMzc5MSw3OTc2NTky
