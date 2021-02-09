@@ -846,11 +846,11 @@ where ${l_i}$ is the index of the cluster of object $i$.
 
 STEP 1. Assume initial clusters. Compute the cluster means $\bar{\bm{x}}_l$ and the initial error $e$.
 STEP 2. For the first Object, compute for every cluster $l$ 
-$$\frac{n_ld^2(\bm{x}_1,\bar{\bm{x}}_l)}{n_l+1} $$
+$$\frac{n_ld^2(\bm{x}_1,\bar{\bm{x}}_l)}{n_l+1}-\frac{n_{l(1)}d^2(\bm{x}_1,\bar{\bm{x}}_{l(1)})}{n_{l(1)}-1} $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQzMjU2NDc5LDIzNDQ0NjE1NiwxMzUwOT
+eyJoaXN0b3J5IjpbMzE2NTA0MjY1LDIzNDQ0NjE1NiwxMzUwOT
 M0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEs
 LTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUzMSwtODYyNT
 I4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4
