@@ -777,9 +777,12 @@ fviz_dist(dist.eucl)
 
 * The description of the algorithm is based on:
 * HARTIGAN, John A. _Clustering algorithms_. John Wiley & Sons, Inc., 1975.
+* The data used by the author are provided below.
+ ![](HartignTable4dot1.jpg)
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMD
-c2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0
-OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NT
+I0MTM3NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0
+NjcwOCw0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNz
+k3NjU5MjM0XX0=
 -->
