@@ -794,7 +794,7 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * Each cluster contains at least one object and each object belongs to only one cluster. 
 * There is a very large number of possible partitions.
 
-# Exercice
+# Exercice 5
 What is the number of possible partitions ?
 
 # K-Means
@@ -868,12 +868,14 @@ $$
 STEP 3. Repeat Step 2 for each object $j$ such that $2\leq j \leq m$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
+# Exercice 6
+Prove that 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMT
-czNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTEx
-MDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LD
-EzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIy
-NjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEwMTk5NTMxLC
-04NjI1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2NDMwMTEyLC0xMDY2
-MzY1OTgzXX0=
+eyJoaXN0b3J5IjpbMjA3NDE3MzQ1NCwtMTg3MzM5NDYyOSwtOT
+AxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMzE1ODIsLTcxNzk5
+MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3OTk0OTI4MS
+wyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4
+Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcsLT
+E3MTAxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0
+MzAxMTJdfQ==
 -->
