@@ -798,15 +798,10 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 What is the number of possible partitions ?
 
 # K-Means Algorithm
-*  The discordance between the data and a given partition denoted by $e$.
-* 
-
-
-
-makes it impractical to search through all for the minimum of e. It is necessary instead to use the technique 
-of local optimization. In this technique, a neighborhood of partitions is defined for 
-each partition. Beginning with an initial partition, search through the set of partitions 
-at each step, moving from a partition to that partition in its neighborhood for which 
+*  The discordance between the data and a given partition $\mathcal{P}$ denoted by $e$.
+* We use the technique of local optimization.
+* In this technique, a neighborhood of partitions is defined for each partition.
+* Beginning with an initial partition, search through the set of partitions at each step, moving from a partition to that partition in its neighborhood for which 
 e[P(M, K)] is a minimum. (If the neighborhoods are very large, it is sometimes 
 cheaper computationally to move to the first partition discovered in the neighborhood 
 where e[P(M, K)] is reduced from its present value.) A number of stopping rules are 
@@ -815,7 +810,7 @@ to the neighborhood. The present partition is then locally optimal in that it is
 best partition in its neighborhood.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjgzOTQyMzMsLTE3MTAxOTk1MzEsLT
+eyJoaXN0b3J5IjpbLTE4OTUxMjE0OTAsLTE3MTAxOTk1MzEsLT
 g2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYz
 NjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5Ny
 wtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3
