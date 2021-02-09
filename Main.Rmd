@@ -877,7 +877,7 @@ We have:
 $$
 \begin{cases}
 \Delta e=\sum_{i=1}^n m_l (\bar{x}_i^l)^2-\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2\\
-+\sum_{i=1}^n m_{l(1)} (\bar{x}_i^{l(1)})^2-\sum_{i=1}^n (m_{l(1)}-1) (\frac{m_l\bar{x}_i^{l(1)}-x_i^1}{m_{l(1)}-1})^2.
++\sum_{i=1}^n m_{l(1)} (\bar{x}_i^{l(1)})^2-\sum_{i=1}^n (m_{l(1)}-1) (\frac{m_{l(1)}\bar{x}_i^{l(1)}-x_i^1}{m_{l(1)}-1})^2.
 \end{cases}
 $$ 
 This can be rewritten as follows
@@ -894,11 +894,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC0xOD
-czMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3MzAz
-MTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5MzI4MDMyLC
-0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0MzQ1LDczODgy
-OTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEsLTM1MzUyMjUsLT
-YyNjM5OTI5NywtMTcxMDE5OTUzMSwtODYyNTI4NTE2LC00MjI3
-NDcyNDBdfQ==
+eyJoaXN0b3J5IjpbMjA4MjU5OTc0LDIxMzk3NTczODAsLTIyND
+IyNTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4
+OTgwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LD
+I4OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkz
+NDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC
+0zNTM1MjI1LC02MjYzOTkyOTcsLTE3MTAxOTk1MzEsLTg2MjUy
+ODUxNl19
 -->
