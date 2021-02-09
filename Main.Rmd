@@ -846,16 +846,15 @@ where ${l_i}$ is the index of the cluster of object $i$.
 
 STEP 1. Assume initial clusters. Compute the cluster means $\bar{\bm{x}}_l$ and the initial error $e$.
 STEP 2. For the first Object, compute for every cluster $l$ 
-$$\frac{}{}N(L)D(1, L)2 N[L(1)1D[1, L(1)]2 
-N(L) + 1 N[L(1)] — 1 $$
+$$\frac{n_ld^2(\bm{x}_1,\bar{\bm{x}}_l)}{n_l+1} $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4OD
-I5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwtMzUzNTIyNSwt
-NjI2Mzk5Mjk3LC0xNzEwMTk5NTMxLC04NjI1Mjg1MTYsLTQyMj
-c0NzI0MCwxNTM2NDMwMTEyLC0xMDY2MzY1OTgzLDY5OTU2MDk1
-NCwxNzUyNDEzNzcyLDExMDA3NjUwOTcsLTExNTY3OTgyOTUsLT
-E3NzY4NDY3MDgsNDE4MzU5NDksLTQyNzI5NDE5NiwtODAxODAz
-NzkxXX0=
+eyJoaXN0b3J5IjpbNjQzMjU2NDc5LDIzNDQ0NjE1NiwxMzUwOT
+M0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEs
+LTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUzMSwtODYyNT
+I4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4
+Myw2OTk1NjA5NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMT
+U2Nzk4Mjk1LC0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQx
+OTZdfQ==
 -->
