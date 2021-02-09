@@ -781,20 +781,17 @@ fviz_dist(dist.eucl)
  ![](HartignTable4dot1.jpg)
 * The principal nutrients in meat, fish, and fowl are listed.
 * Recall that 1oz= 28.34952g. 
-* There is a ready-made weighting scheme for the nutrients in the estimated daily dietary allowances: food energy (3200 
+* Estimated daily dietary allowances are: food energy (3200 
 cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
-
-
-
-In Table 4.2, note that these foods deliver about 7 % of the daily allowances in calories but about 25% of iron, so 
-that the iron component is rather heavily weighted.
+* Table 4.2, provide the percentage of food delivery.
+* For the BB ligne, we calculate 
 * 
 * An argument could be made that iron is less important than calories or protein and so should be given less weight or 
 ignored entirely.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTI5MzczLDE1MzY0MzAxMTIsLTEwNj
-YzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5
-NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtND
-I3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbLTQ3NzMxMzk0MCwxNTM2NDMwMTEyLC0xMD
+Y2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLDExMDA3NjUw
+OTcsLTExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4MzU5NDksLT
+QyNzI5NDE5NiwtODAxODAzNzkxLDc5NzY1OTIzNF19
 -->
