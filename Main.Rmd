@@ -884,7 +884,7 @@ This can be rewritten as follows
 $$
 \begin{cases}
 \Delta e=\sum_{i=1}^n m_l (\bar{x}_i^l)^2
--\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l}{m_l+1})^2
+-\sum_{i=1}^n  (\frac{m_l}{m_l+1})^2
 -\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2\\
 +\sum_{i=1}^n m_{l(1)} (\bar{x}_i^{l(1)})^2-\sum_{i=1}^n (m_{l(1)}-1) (\frac{m_l\bar{x}_i^{l(1)}-x_i^1}{m_{l(1)}-1})^2.
 \end{cases}
@@ -892,7 +892,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODcyNjAwMjQsLTE4NzMzOTQ2MjksLT
+eyJoaXN0b3J5IjpbLTE3NDQ2MDQwMzIsLTE4NzMzOTQ2MjksLT
 kwMTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5
 OTE5NjYsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyOD
 EsMjM0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4
