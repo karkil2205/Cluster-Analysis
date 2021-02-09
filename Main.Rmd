@@ -883,18 +883,20 @@ $$
 This can be rewritten as follows
 $$
 \begin{cases}
-\Delta e=\sum_{i=1}^n m_l (\bar{x}_i^l)^2-\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2\\
+\Delta e=\sum_{i=1}^n m_l (\bar{x}_i^l)^2
+-\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l}{m_l+1})^2
+-\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2\\
 +\sum_{i=1}^n m_{l(1)} (\bar{x}_i^{l(1)})^2-\sum_{i=1}^n (m_{l(1)}-1) (\frac{m_l\bar{x}_i^{l(1)}-x_i^1}{m_{l(1)}-1})^2.
 \end{cases}
 $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODg2NDE1NSwtMTg3MzM5NDYyOSwtOT
-AxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMzE1ODIsLTcxNzk5
-MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3OTk0OTI4MS
-wyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4
-Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcsLT
-E3MTAxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0
-MzAxMTJdfQ==
+eyJoaXN0b3J5IjpbLTE2ODcyNjAwMjQsLTE4NzMzOTQ2MjksLT
+kwMTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5
+OTE5NjYsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyOD
+EsMjM0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4
+ODY3NiwtMTUzNzIyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC
+0xNzEwMTk5NTMxLC04NjI1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2
+NDMwMTEyXX0=
 -->
