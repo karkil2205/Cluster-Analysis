@@ -830,23 +830,23 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * Let $\bm{x}_i$ the vector of  value for the object $i$, $i=1,\cdots ,n.$
 * The variables are assumed scaled.
 * The partition $\mathcal{P}$ has   $k$ disjoint clusters  clusters $C_1,\cdots,C_k$, which are the indices of the objects in the various cluster.
+* Let $n_l$ be the number of objects in cluster $C_l$.
 * Each of the $n$ objects lies in just one of the $k$ clusters.
 * The mean over the objects in the cluster $C_l$ is denoted by $\bar{\bm{x}}_{l}$, with
-$$\bar{\bm{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bm{x}_{i},\:l=1\cdots k,$$
-* where $n_l$ is the number of objects in cluster $C_l$.
+$$\bar{\bm{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bm{x}_{i},\:l=1\cdots k.$$
 * The distance between the object i and cluster $l$ is 
-$D(\bar{x}_{i}, L) = a o J N} [A(I, J) — B(L, j)$$ 
+$$D(\bar{x}_{i}, L) = a o J N} [A(I, J) — B(L, j)$$ 
 The error of the partition is 
 e[P(M , K)] = I {1 I M} D[I, L(I)12, 
 where L(I) is the cluster containing the /th case. The general procedure is to search 
 for a partition with small e by moving cases from one cluster to another. The search 
 ends when no such movement reduces e.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODQwNTQwMzQsNzM4ODI5MCwtMTQ1OD
-A4ODY3NiwtMTUzNzIyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3
-LC0xNzEwMTk5NTMxLC04NjI1Mjg1MTYsLTQyMjc0NzI0MCwxNT
-M2NDMwMTEyLC0xMDY2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEz
-NzcyLDExMDA3NjUwOTcsLTExNTY3OTgyOTUsLTE3NzY4NDY3MD
-gsNDE4MzU5NDksLTQyNzI5NDE5NiwtODAxODAzNzkxLDc5NzY1
-OTIzNF19
+eyJoaXN0b3J5IjpbLTgxMjg4ODc3Myw3Mzg4MjkwLC0xNDU4MD
+g4Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYzOTkyOTcs
+LTE3MTAxOTk1MzEsLTg2MjUyODUxNiwtNDIyNzQ3MjQwLDE1Mz
+Y0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3
+NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOC
+w0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5
+MjM0XX0=
 -->
