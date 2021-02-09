@@ -789,14 +789,14 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 $$\frac{340}{3200}=11\%\text{ (Food Energy)};$$
 $$\frac{ 20}{70}=29\%\text{ (Protein)};$$
 $$\frac{0.009}{0.8}=1\%\text{ (Calcium)};$$
-$$\frac{kk}{10}= \%\text{ (Iron)};$$
+$$\frac{2.6}{10}= 26\%\text{ (Iron)};$$
 
  
 * An argument could be made that iron is less important than calories or protein and so should be given less weight or 
 ignored entirely.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzQyNTY5MiwtNDIyNzQ3MjQwLDE1Mz
+eyJoaXN0b3J5IjpbLTkyNjg2NjU2NCwtNDIyNzQ3MjQwLDE1Mz
 Y0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3
 NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOC
 w0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5
