@@ -784,8 +784,7 @@ fviz_dist(dist.eucl)
 * Estimated daily dietary allowances are: food energy (3200 
 cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * Table 4.2, provide the percentage of food delivery.
-* For e.g., the BB ligne corresponds to 
-*  28 9 2.6
+* For e.g., the BB ligne corresponds to.
 $$\frac{340}{3200}=11\%\text{ (Food Energy)};$$
 $$\frac{ 20}{70}=29\%\text{ (Protein)};$$
 $$\frac{0.009}{0.8}=1\%\text{ (Calcium)};$$
@@ -796,9 +795,9 @@ $$\frac{2.6}{10}= 26\%\text{ (Iron)};$$
 ignored entirely.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjg2NjU2NCwtNDIyNzQ3MjQwLDE1Mz
-Y0MzAxMTIsLTEwNjYzNjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3
-NzIsMTEwMDc2NTA5NywtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOC
-w0MTgzNTk0OSwtNDI3Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5
-MjM0XX0=
+eyJoaXN0b3J5IjpbOTg0ODU1NDMxLC00MjI3NDcyNDAsMTUzNj
+QzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3
+MiwxMTAwNzY1MDk3LC0xMTU2Nzk4Mjk1LC0xNzc2ODQ2NzA4LD
+QxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgwMzc5MSw3OTc2NTky
+MzRdfQ==
 -->
