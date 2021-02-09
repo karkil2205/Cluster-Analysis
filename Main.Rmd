@@ -846,7 +846,7 @@ $$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=
 \sum_{j=1}^{m}\sum_{i=1}^n(x_i^j)^2-\sum_{j=1}^{m}m_{l(j)}\sum_{i=1}^n (\bar{x}_i^{l(j)})^2.
 $$
 * Alternatively, we have
-$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j)^2,$$
+$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n\big[x_i^j-\bar{x}_i^{l(j)}\big]^2,$$
 
 where $l(j)$ is the index of the cluster of object $j$.
 * For the Euclidian distance, we have
@@ -918,11 +918,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTg1NDIzMSwxNjkwMDY0NjQxLC0xMD
-IyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIyNTkyMSwtMTg3MzM5
-NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMzE1OD
-IsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3
-OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC
-0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYz
-OTkyOTddfQ==
+eyJoaXN0b3J5IjpbNzgxNjI0MTk3LDE2OTAwNjQ2NDEsLTEwMj
+IxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC0xODczMzk0
+NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3MzAzMTU4Mi
+wtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5
+OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0MzQ1LDczODgyOTAsLT
+E0NTgwODg2NzYsLTE1MzcyMjYxODEsLTM1MzUyMjUsLTYyNjM5
+OTI5N119
 -->
