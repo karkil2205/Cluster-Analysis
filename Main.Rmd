@@ -837,8 +837,8 @@ cheaper computationally to move to the first partition discovered in the neighbo
 $$\bar{\bm{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\bm{x}_{i},\:l=1\cdots k.$$
 * The distance between the object $i$ and cluster $l$ is $d(\bm{x}_i,\bar{\bm{x}}_l)$, where $d(\cdot,\cdot)$ is Euclidian distance.
 *  The error of the partition is taken as to be  
-$$e=\sum_{l=1}^{k}\sum_{i\in C_l}d^2(\bm{x}_i,\bar{\bm{x}}_l)=\sum_{i=1}^{n}d^2(\bm{x}_i,\bar{\bm{x}}_{l(i})$$
-where ${l_i}$ is the index of the cluster of object $i$.
+$$e=\sum_{l=1}^{k}\sum_{i\in C_l}d^2(\bm{x}_i,\bar{\bm{x}}_l)=\sum_{i=1}^{n}d^2(\bm{x}_i,\bar{\bm{x}}_{l(i)})$$
+where $l(i)$ is the index of the cluster of object $i$.
 * The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
 
@@ -854,11 +854,11 @@ transfer the first case from cluster L(1) to this minimal L, adjust the cluster 
 L(1) and the minima! L, and add the increase in error (which is negative) to 
 e[P(M, K)].
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3ODg5MjQzOCwyMzQ0NDYxNTYsMTM1MD
-kzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgx
-LC0zNTM1MjI1LC02MjYzOTkyOTcsLTE3MTAxOTk1MzEsLTg2Mj
-UyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYzNjU5
-ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5NywtMT
-E1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0
-MTk2XX0=
+eyJoaXN0b3J5IjpbLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNT
+A5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4
+MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEwMTk5NTMxLC04Nj
+I1Mjg1MTYsLTQyMjc0NzI0MCwxNTM2NDMwMTEyLC0xMDY2MzY1
+OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLDExMDA3NjUwOTcsLT
+ExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4MzU5NDksLTQyNzI5
+NDE5Nl19
 -->
