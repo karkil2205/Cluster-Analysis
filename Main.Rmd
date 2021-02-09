@@ -842,10 +842,12 @@ $$
 * The distance between the object $j$ and the cluster $l$ is $d(\bm{x}^j,\bar{\bm{x}}^l)$, where $d$ is taken to be the Euclidian distance.
 $$d(\bm{x}^j,\bar{\bm{x}}^l)=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
 *  The error of the partition is taken to be  
-$$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j)^2-\sum_{j=1}^{m}m_{l(j)}\sum_{i=1}^n (\bar{x}_i^{l(j)})^2.
+$$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=
+\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j)^2-\sum_{j=1}^{m}m_{l(j)}\sum_{i=1}^n (\bar{x}_i^{l(j)})^2.
 $$
 * Alternatively, we have
-$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)}),$$
+$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j)^2,$$
+
 where $l(j)$ is the index of the cluster of object $j$.
 * For the Euclidian distance, we have
 $$e=\sum_{l=1}^{k}\sum_{j\in C_l}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l})^2=\sum_{j=1}^m \sum_{i=1}^n(x_i^j)^2-\sum_{l=1}^{k}m_l\sum_{i=1}^n  (\bar{x}_i^l)^2.
@@ -916,11 +918,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MDA2NDY0MSwtMTAyMjE5MzYzMCwyMT
-M5NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgz
-NjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5OTE5Nj
-YsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0
-NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3Ni
-wtMTUzNzIyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEw
-MTk5NTMxXX0=
+eyJoaXN0b3J5IjpbMjEwNTg1NDIzMSwxNjkwMDY0NjQxLC0xMD
+IyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIyNTkyMSwtMTg3MzM5
+NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMzE1OD
+IsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3
+OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC
+0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYz
+OTkyOTddfQ==
 -->
