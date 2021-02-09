@@ -845,8 +845,7 @@ $$d(\bm{x}^j,\bar{\bm{x}}^l)=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2}
 $$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)}),$$
 where $l(j)$ is the index of the cluster of object $j$.
 * For the Euclidian distance, we get
-$$e=\sum_{i=1}^{n}x_i^2-\sum_{l=1}^{k}n_{l}\bar{\bm{x}}_l^2.
-\sum_{i=1}^n(x_i^j-\bar{x}_i^{l(j)})^2$$ 
+$$e=\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l(j)})^2$$ 
 * The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
 
@@ -864,7 +863,7 @@ STEP 3. Repeat Step 2 for each object $i$ such that$2\leq i \leq n$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTY2OTUzMiwtNzE3OTkxOTY2LC0xNz
+eyJoaXN0b3J5IjpbMTg2MzM5MTY3NCwtNzE3OTkxOTY2LC0xNz
 ExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1
 NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1Mz
 cyMjYxODEsLTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUz
