@@ -785,13 +785,17 @@ fviz_dist(dist.eucl)
 cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * Table 4.2, provide the percentage of food delivery.
 * For e.g., the BB ligne corresponds to 
-$$100\times\frac{}{3200}=/=;100\times\frac{}{70} /=;100\times\frac{}{0.8}; 100\times\frac{}{}/10=$$
-* 
+$$100\times\frac{}{3200}$$
+$$100\times\frac{}{70}$$
+$$100\times\frac{}{0.8}$$
+$$100\times\frac{}{10}=$$
+
+ 
 * An argument could be made that iron is less important than calories or protein and so should be given less weight or 
 ignored entirely.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NTQxOTgwNiwxNTM2NDMwMTEyLC0xMD
+eyJoaXN0b3J5IjpbMTI4NDAxNjY5MSwxNTM2NDMwMTEyLC0xMD
 Y2MzY1OTgzLDY5OTU2MDk1NCwxNzUyNDEzNzcyLDExMDA3NjUw
 OTcsLTExNTY3OTgyOTUsLTE3NzY4NDY3MDgsNDE4MzU5NDksLT
 QyNzI5NDE5NiwtODAxODAzNzkxLDc5NzY1OTIzNF19
