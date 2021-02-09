@@ -851,7 +851,7 @@ $$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n\b
 where $l(j)$ is the index of the cluster of object $j$.
 
 * We also have
-$$e=\sum_{j=1}^{m}\sum_{i=1}^n\big(x_i^j\big)^2-2\sum_{j=1}^{m}\sum_{i=1}^n x_i^j\bar{x}_i^{l(j)}+\sum_{j=1}^{m}\sum_{i=1}^n\bigg[x_i^j-\bar{x}_i^{l(j)}\bigg]^2$$
+$$e=\sum_{j=1}^{m}\sum_{i=1}^n\big(x_i^j\big)^2-2\sum_{j=1}^{m}\sum_{i=1}^n x_i^j\bar{x}_i^{l(j)}+\sum_{j=1}^{m}\sum_{i=1}^n\big[\bar{x}_i^{l(j)}\big]^2$$
 
 * The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
@@ -917,11 +917,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5ODYwNjQ0MCwxNjkwMDY0NjQxLC0xMD
-IyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIyNTkyMSwtMTg3MzM5
-NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMzE1OD
-IsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3
-OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC
-0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0zNTM1MjI1LC02MjYz
-OTkyOTddfQ==
+eyJoaXN0b3J5IjpbLTEyMTMzODIxNzMsMTY5MDA2NDY0MSwtMT
+AyMjE5MzYzMCwyMTM5NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMz
+OTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNT
+gyLC03MTc5OTE5NjYsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3
+Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MC
+wtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwtMzUzNTIyNSwtNjI2
+Mzk5Mjk3XX0=
 -->
