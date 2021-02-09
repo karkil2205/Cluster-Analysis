@@ -798,21 +798,22 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 What is the number of possible partitions ?
 
 # K-Means Algorithm
-*  The discordance between the data and a given partition $\mathcal{P}$ denoted by $e$.
+*  The discordance between the data and a given partition $\mathcal{P}$ denoted by $e(\mathcal{P})$.
 * We use the technique of local optimization.
 * In this technique, a neighborhood of partitions is defined for each partition.
-* Beginning with an initial partition, search through the set of partitions at each step, moving from a partition to that partition in its neighborhood for which 
-e[P(M, K)] is a minimum. (If the neighborhoods are very large, it is sometimes 
+* Beginning with an initial partition, search through the set of partitions at each step, moving from a partition to that partition in its neighborhood for which $e(\mathcal{P})$ is a minimum.
+* If the neighborhoods are very large, it is sometimes 
 cheaper computationally to move to the first partition discovered in the neighborhood 
-where e[P(M, K)] is reduced from its present value.) A number of stopping rules are 
-possible. For example, the search stops when e[P(M, K)] is not reduced by movement 
-to the neighborhood. The present partition is then locally optimal in that it is the 
+where e[P(M, K)] is reduced from its present value.)
+* A number of stopping rules are possible.
+* For example, the search stops when e[P(M, K)] is not reduced by movement to the neighborhood.
+* The present partition is then locally optimal in that it is the 
 best partition in its neighborhood.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTUxMjE0OTAsLTE3MTAxOTk1MzEsLT
-g2MjUyODUxNiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYz
-NjU5ODMsNjk5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5Ny
-wtMTE1Njc5ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3
-Mjk0MTk2LC04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
+eyJoaXN0b3J5IjpbMTI4MDAxNjgyOSwtMTcxMDE5OTUzMSwtOD
+YyNTI4NTE2LC00MjI3NDcyNDAsMTUzNjQzMDExMiwtMTA2NjM2
+NTk4Myw2OTk1NjA5NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC
+0xMTU2Nzk4Mjk1LC0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00Mjcy
+OTQxOTYsLTgwMTgwMzc5MSw3OTc2NTkyMzRdfQ==
 -->
