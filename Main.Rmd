@@ -827,12 +827,23 @@ cheaper computationally to move to the first partition discovered in the neighbo
 \newpage
 
 # K-Means Algorithm
-
+* Let $x(i, j)$ the vThe i-th case of the j-th variable has value .
+* The variables are scaled so that euclidean distance between cases is 
+appropriate. The partition P(M, K) is composed of the clusters 1, 2, . . . , K. Each of 
+the M cases lies in just one of the K clusters. The mean of the Jth variable over the 
+cases in the Lth cluster is denoted by B(L, J). The number of cases in L is N(L). The 
+distance between the Rh case and Lth cluster is 
+D(I, L) = a o J N} [A(I, J) — B(L, j)191/2. 
+The error of the partition is 
+e[P(M , K)] = I {1 I M} D[I, L(I)12, 
+where L(I) is the cluster containing the /th case. The general procedure is to search 
+for a partition with small e by moving cases from one cluster to another. The search 
+ends when no such movement reduces e.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzcyMjYxODEsLTM1MzUyMjUsLTYyNj
-M5OTI5NywtMTcxMDE5OTUzMSwtODYyNTI4NTE2LC00MjI3NDcy
-NDAsMTUzNjQzMDExMiwtMTA2NjM2NTk4Myw2OTk1NjA5NTQsMT
-c1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMTU2Nzk4Mjk1LC0xNzc2
-ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQxOTYsLTgwMTgwMzc5MS
-w3OTc2NTkyMzRdfQ==
+eyJoaXN0b3J5IjpbMzg5NTQ0NDg4LC0xNTM3MjI2MTgxLC0zNT
+M1MjI1LC02MjYzOTkyOTcsLTE3MTAxOTk1MzEsLTg2MjUyODUx
+NiwtNDIyNzQ3MjQwLDE1MzY0MzAxMTIsLTEwNjYzNjU5ODMsNj
+k5NTYwOTU0LDE3NTI0MTM3NzIsMTEwMDc2NTA5NywtMTE1Njc5
+ODI5NSwtMTc3Njg0NjcwOCw0MTgzNTk0OSwtNDI3Mjk0MTk2LC
+04MDE4MDM3OTEsNzk3NjU5MjM0XX0=
 -->
