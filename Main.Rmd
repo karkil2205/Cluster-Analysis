@@ -780,7 +780,6 @@ fviz_dist(dist.eucl)
 * The data used by the author are provided below.
  ![](HartignTable4dot1.jpg)
 * The principal nutrients in meat, fish, and fowl are listed.
-* In the source book, Yearbook of Agriculture (1959), there are more details on the mode of preparation, as well as amounts of vitamins and basic amino acids, given for dairy products, meats, fowl,  fish, vegetables, fruits, grains, oils, and sugars.
 * There is a ready-made weighting scheme for the nutrients in the estimated daily dietary allowances: food energy (3200 
 cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 In Table 4.2, note that these foods deliver about 7 % of the daily allowances in calories but about 25% of iron, so 
@@ -788,7 +787,7 @@ that the iron component is rather heavily weighted. An argument could be made th
 iron is less important than calories or protein and so should be given less weight or 
 ignored entirely.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODY5MTgwOCwtMTA2NjM2NTk4Myw2OT
+eyJoaXN0b3J5IjpbMTUzNjQzMDExMiwtMTA2NjM2NTk4Myw2OT
 k1NjA5NTQsMTc1MjQxMzc3MiwxMTAwNzY1MDk3LC0xMTU2Nzk4
 Mjk1LC0xNzc2ODQ2NzA4LDQxODM1OTQ5LC00MjcyOTQxOTYsLT
 gwMTgwMzc5MSw3OTc2NTkyMzRdfQ==
