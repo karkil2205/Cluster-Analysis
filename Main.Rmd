@@ -834,8 +834,9 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * Each of the $m$ objects lies in just one of the $k$ clusters.
 * Note that $\sum_{l=1}^k m_l=m$.
 * The mean over the objects in the cluster $C_l$ is denoted by $\bar{\bm{x}}^{l}$, with
-$$\bar{\bm{x}}^{l}\equiv\frac{1}{n_l}\sum_{j\in C_l}\bm{x}^{j}=(\frac{1}{n_l}\sum_{j\in C_l}x_1^{j},\cdots,\frac{1}{n_l}\sum_{j\in C_l}x_1^{j},\:l=1\cdots k.$$
-* The distance between the object $i$ and cluster $l$ is $d(\bm{x}_i,\bar{\bm{x}}_l)$, where $d(\cdot,\cdot)$ is Euclidian distance.
+$$\bar{\bm{x}}^{l}\equiv\frac{1}{n_l}\sum_{j\in C_l}\bm{x}^{j}=\frac{1}{n_l}(\sum_{j\in C_l}x_1^{j},\cdots,\sum_{j\in C_l}x_n^{j}),\:l=1\cdots k.$$
+* The distance between the object $i$ and cluster $l$ is $d(\bm{x}^i,\bar{\bm{x}}^l)$, where $d(\cdot,\cdot)$ is Euclidian distance.
+$$d(\bm{x}^j,\bar{\bm{x}}^l)=$$ 
 *  The error of the partition is taken as to be  
 $$e=\sum_{l=1}^{k}\sum_{i\in C_l}d^2(\bm{x}_i,\bar{\bm{x}}_l)=\sum_{i=1}^{n}d^2(\bm{x}_i,\bar{\bm{x}}_{l(i)})$$
 where $l(i)$ is the index of the cluster of object $i$.
@@ -858,7 +859,7 @@ STEP 3. Repeat Step 2 for each object $i$ such that$2\leq i \leq n$.
 STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3MzgxODAyLC03MTc5OTE5NjYsLTE3MT
+eyJoaXN0b3J5IjpbMjkyODUwNTc1LC03MTc5OTE5NjYsLTE3MT
 ExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2
 LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNz
 IyNjE4MSwtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEwMTk5NTMx
