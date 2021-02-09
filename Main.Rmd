@@ -846,13 +846,12 @@ $$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=
 \sum_{j=1}^{m}\sum_{i=1}^n(x_i^j)^2-\sum_{j=1}^{m}m_{l(j)}\sum_{i=1}^n (\bar{x}_i^{l(j)})^2.
 $$
 * Alternatively, we have
-$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n\big[x_i^j-\bar{x}_i^{l(j)}\big]^2,$$
+$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n\bigg[x_i^j-\bar{x}_i^{l(j)}\bigg]^2,$$
 
 where $l(j)$ is the index of the cluster of object $j$.
-* For the Euclidian distance, we have
-$$e=\sum_{l=1}^{k}\sum_{j\in C_l}\sum_{i=1}^n(x_i^j-\bar{x}_i^{l})^2=\sum_{j=1}^m \sum_{i=1}^n(x_i^j)^2-\sum_{l=1}^{k}m_l\sum_{i=1}^n  (\bar{x}_i^l)^2.
-$$ 
 
+* We also have
+$$e=\sum_{j=1}^{m}\sum_{i=1}^n\bigg[x_i^j-\bar{x}_i^{l(j)}\bigg]^2-\sum_{j=1}^{m}\sum_{i=1}^n\bigg[x_i^j-\bar{x}_i^{l(j)}\bigg]^2+\sum_{j=1}^{m}\sum_{i=1}^n\bigg[x_i^j-\bar{x}_i^{l(j)}\bigg]^2$$
 
 * The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
@@ -918,7 +917,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgxNjI0MTk3LDE2OTAwNjQ2NDEsLTEwMj
+eyJoaXN0b3J5IjpbODQ4MjYyMjcxLDE2OTAwNjQ2NDEsLTEwMj
 IxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC0xODczMzk0
 NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3MzAzMTU4Mi
 wtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5
