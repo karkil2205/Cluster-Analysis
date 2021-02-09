@@ -876,15 +876,15 @@ Prove that the error variation is indeed given by: $$
 We have:
 $$
 \begin{cases}
-\Delta e=\sum_{i=1}^n m_l (\bar{x}_i^l)^2-\sum_{i=1}^n (m_l+1) (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2\\
-+\sum_{i=1}^n m_{l(1)} (\bar{x}_i^{l(1)})^2-\sum_{i=1}^n (m_{l(1)}-1) (\frac{m_{l(1)}\bar{x}_i^{l(1)}-x_i^1}{m_{l(1)}-1})^2.
+\Delta e=m_l\sum_{i=1}^n  (\bar{x}_i^l)^2-(m_l+1)\sum_{i=1}^n  (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2\\
++m_{l(1)}\sum_{i=1}^n  (\bar{x}_i^{l(1)})^2-(m_{l(1)}-1)\sum_{i=1}^n  (\frac{m_{l(1)}\bar{x}_i^{l(1)}-x_i^1}{m_{l(1)}-1})^2.
 \end{cases}
 $$ 
 This can be rewritten as follows
 $$
 \begin{cases}
 \Delta e=
-\sum_{i=1}^n m_l (\bar{x}_i^l)^2
+ m_l\sum_{i=1}^n (\bar{x}_i^l)^2
 -\sum_{i=1}^n  \frac{m^2_l (\bar{x}_i^l)^2}{m_l+1}
 +2\sum_{i=1}^n \frac{m_l\bar{x}_i^l x_i^1}{m_l+1} 
 -\sum_{i=1}^n  \frac{(x_i^1)^2}{m_l+1}
@@ -916,11 +916,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzkwNTI5MSwyMTM5NzU3MzgwLC0yMj
-QyMjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4
-ODk4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3Ni
-wyODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5
-MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MS
-wtMzUzNTIyNSwtNjI2Mzk5Mjk3LC0xNzEwMTk5NTMxLC04NjI1
-Mjg1MTZdfQ==
+eyJoaXN0b3J5IjpbLTE4ODQxNTg1OTEsMjEzOTc1NzM4MCwtMj
+I0MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5
+ODg5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNz
+YsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUw
+OTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxOD
+EsLTM1MzUyMjUsLTYyNjM5OTI5NywtMTcxMDE5OTUzMSwtODYy
+NTI4NTE2XX0=
 -->
