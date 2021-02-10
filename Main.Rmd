@@ -874,18 +874,20 @@ Prove that the error variation is indeed given by: $$
 \frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
 
 \newpage
-
+# K-MEANS APPLIED TO FOOD NUTRIENT DATA
+* Only the first eight foods will be considered for the nutrients' food energy, protein, and calcium as a percentage of recommended daily allowances.
+* The eight foods will be partitioned in three clusters. The calculafions appear in Table 4.3.
  
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDIyMzEyMyw4MDQzNjExODksLTEyNz
-A4MjAyODIsNjAzNzAzMzkyLDE3Nzg1NDAyMDYsLTE5NTM2NDc1
-ODAsLTEyMTMzODIxNzMsMTY5MDA2NDY0MSwtMTAyMjE5MzYzMC
-wyMTM5NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMzOTQ2MjksLTkw
-MTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5OT
-E5NjYsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyODEs
-MjM0NDQ2MTU2XX0=
+eyJoaXN0b3J5IjpbLTE2MDc1NzUyNzIsODA0MzYxMTg5LC0xMj
+cwODIwMjgyLDYwMzcwMzM5MiwxNzc4NTQwMjA2LC0xOTUzNjQ3
+NTgwLC0xMjEzMzgyMTczLDE2OTAwNjQ2NDEsLTEwMjIxOTM2Mz
+AsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC0xODczMzk0NjI5LC05
+MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3MzAzMTU4MiwtNzE3OT
+kxOTY2LC0xNzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5Mjgx
+LDIzNDQ0NjE1Nl19
 -->
