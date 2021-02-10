@@ -844,10 +844,11 @@ $$d(\bm{x}^j,\bar{\bm{x}}^l)=||\bm{x}^j-\bar{\bm{x}}^l||_2=\bigg[\sum_{i=1}^n(x_
 where $||\bm{\cdot}||_2$ is the Euclidian norm.
 *  The error of the partition is taken to be  
 $$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=
-\sum_{j=1}^{m}\sum_{i=1}^n(x_i^j)^2-\sum_{j=1}^{m}m_{l(j)}\sum_{i=1}^n (\bar{x}_i^{l(j)})^2.
+\sum_{l=1}^{k}\sum_{j\in C_l}
+||\bm{x}^j-\bar{\bm{x}}^l||_2.
 $$
 * Alternatively, we have
-$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n\bigg[x_i^j-\bar{x}_i^{l(j)}\bigg]^2,$$
+$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\bm{x}^j-\bar{\bm{x}}^{l||_2,$$
 
 where $l(j)$ is the index of the cluster of object $j$.
 
@@ -918,11 +919,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzY1NTY0OSwtMTIxMzM4MjE3MywxNj
-kwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIy
-NTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OT
-gwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4
-OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzND
-M0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0z
-NTM1MjI1XX0=
+eyJoaXN0b3J5IjpbLTE0MjE3MjA2MDUsLTEyMTMzODIxNzMsMT
+Y5MDA2NDY0MSwtMTAyMjE5MzYzMCwyMTM5NzU3MzgwLC0yMjQy
+MjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4OD
+k4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3Niwy
+ODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5Mz
+QzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwt
+MzUzNTIyNV19
 -->
