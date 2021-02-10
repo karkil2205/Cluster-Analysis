@@ -920,7 +920,7 @@ $$
 $$
 which gives 
 $$
--\frac{2}{m_{l(1)}-1}+\frac{1}{m_{l(1)}-1}-1
+\Delta e_{l(1)}=-\frac{m_{l(1)}}{m_{l(1)}-1}||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2=-\frac{m_{l(1)}}{m_{l(1)}-1}||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2
 $$
 
 
@@ -928,11 +928,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MTY4NTYwMCw2MDM3MDMzOTIsMTc3OD
-U0MDIwNiwtMTk1MzY0NzU4MCwtMTIxMzM4MjE3MywxNjkwMDY0
-NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIyNTkyMS
-wtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OTgwLDIw
-NzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OTMyOD
-AzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3
-Mzg4MjkwXX0=
+eyJoaXN0b3J5IjpbLTExNjI5MzIzNDMsNjAzNzAzMzkyLDE3Nz
+g1NDAyMDYsLTE5NTM2NDc1ODAsLTEyMTMzODIxNzMsMTY5MDA2
+NDY0MSwtMTAyMjE5MzYzMCwyMTM5NzU3MzgwLC0yMjQyMjU5Mj
+EsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4ODk4MCwy
+MDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3NiwyODkzMj
+gwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5MzQzNDUs
+NzM4ODI5MF19
 -->
