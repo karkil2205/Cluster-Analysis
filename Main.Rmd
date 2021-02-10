@@ -1,15 +1,15 @@
 ---
 title: "Cluster Analysis"
 output:
-  pdf_document:
+  html_document:
     toc: yes
+    df_print: paged
   html_notebook:
     toc: yes
   word_document:
     toc: yes
-  html_document:
+  pdf_document:
     toc: yes
-    df_print: paged
 ---
 
 
