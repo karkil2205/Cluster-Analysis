@@ -880,7 +880,12 @@ $$
 $$
 The above expression can be rewritten as follows
 $$
-\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})+\frac{\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
+\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
+\sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
+$$
+By expansion and using the scalar product, we get
+$$
+\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
 \sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
 $$
 
@@ -890,7 +895,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjc4OTY0NiwtMTIxMzM4MjE3MywxNj
+eyJoaXN0b3J5IjpbMjA2NDgxNTQwNiwtMTIxMzM4MjE3MywxNj
 kwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIy
 NTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OT
 gwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4
