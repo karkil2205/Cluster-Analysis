@@ -924,7 +924,7 @@ $$
 $$
 Along the same lines as above, one can prove that the variation in eoor due to the change on cluster $C_l$ is
 $$
-\Delta e_{l}=\frac{m_{l}}{m_{l}-1}||{\bar{\bm{x}}^{l}-\bm{x}^1}||^2=-\frac{m_{l(1)}}{m_{l(1)}-1}d^2({\bar{\bm{x}}^{l(1)},\bm{x}^1}).
+\Delta e_{l}=\frac{m_{l}}{m_{l}-1}||{\bar{\bm{x}}^{l}-\bm{x}^1}||^2=\frac{m_{l}}{m_{l}-1}d^2({\bar{\bm{x}}^{l},\bm{x}^1}).
 $$
 
  
@@ -933,11 +933,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwMzI1MTAwLDYwMzcwMzM5MiwxNzc4NT
-QwMjA2LC0xOTUzNjQ3NTgwLC0xMjEzMzgyMTczLDE2OTAwNjQ2
-NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC
-0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3
-MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5MzI4MD
-MyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0MzQ1LDcz
-ODgyOTBdfQ==
+eyJoaXN0b3J5IjpbLTE1MjE4MjYzNzUsNjAzNzAzMzkyLDE3Nz
+g1NDAyMDYsLTE5NTM2NDc1ODAsLTEyMTMzODIxNzMsMTY5MDA2
+NDY0MSwtMTAyMjE5MzYzMCwyMTM5NzU3MzgwLC0yMjQyMjU5Mj
+EsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4ODk4MCwy
+MDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3NiwyODkzMj
+gwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5MzQzNDUs
+NzM4ODI5MF19
 -->
