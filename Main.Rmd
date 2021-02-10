@@ -875,7 +875,8 @@ Prove that the error variation is indeed given by: $$
 
 Proof: Oncly clusers $l(1)$ and $l$ are modified. They contain respectively $m_{l(1)}-1$ and $m_l+1$ objects. The error variation du to the loss $\bm{x}^1$ in cluster $l(1)$ is
 $$
-\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\frac{m_{l(1)}\bar{\bm{x}}^{l(1)})}{m_{l(1)}-1}||^2
+\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\frac{m_{l(1)}\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
+\sum_{j\in C_{l(1)}} ||\bm{x}^j-\frac{m_{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2
 $$
 
 
@@ -884,11 +885,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NzA3ODI3MiwtMTIxMzM4MjE3MywxNj
-kwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIy
-NTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OT
-gwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4
-OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzND
-M0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0z
-NTM1MjI1XX0=
+eyJoaXN0b3J5IjpbLTIwNDA1NjA0NDYsLTEyMTMzODIxNzMsMT
+Y5MDA2NDY0MSwtMTAyMjE5MzYzMCwyMTM5NzU3MzgwLC0yMjQy
+MjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4OD
+k4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3Niwy
+ODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5Mz
+QzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwt
+MzUzNTIyNV19
 -->
