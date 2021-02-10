@@ -891,7 +891,16 @@ $$
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
 +\sum_{j\in C_{l(1)}-\{1\}}
 ||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
-\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
+\sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
+$$
+A simplification yields
+$$
+\Delta e_{l(1)}=
+\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}||^2
++2\sum_{j\in C_{l(1)}-\{1\}} 
+(\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
++\sum_{j\in C_{l(1)}-\{1\}}
+||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
 \sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
 $$
 
@@ -899,13 +908,12 @@ $$
 
 
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcyMjM1Njc4LC0xMjEzMzgyMTczLDE2OT
-AwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1
-OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5OD
-AsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5
-MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0Mz
-Q1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEsLTM1
-MzUyMjVdfQ==
+eyJoaXN0b3J5IjpbLTQ1NDEzNzY2MiwtMTIxMzM4MjE3MywxNj
+kwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIy
+NTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OT
+gwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4
+OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzND
+M0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0z
+NTM1MjI1XX0=
 -->
