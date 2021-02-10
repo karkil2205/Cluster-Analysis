@@ -886,7 +886,7 @@ $$
 By expansion and using the scalar product, we get
 $$
 \Delta e_{l(1)}=
-2\sum_{j\in C_{l(1)}-\{1\}} 
+-2\sum_{j\in C_{l(1)}-\{1\}} 
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
 +\sum_{j\in C_{l(1)}-\{1\}}
 ||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
@@ -895,7 +895,7 @@ $$
 A first simplification yields
 $$
 \Delta e_{l(1)}=
-2\sum_{j\in C_{l(1)}-\{1\}} 
+-2\sum_{j\in C_{l(1)}-\{1\}} 
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
 +\frac{1}{m_{l(1)}-1}
 ||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2-
@@ -904,7 +904,7 @@ $$
 By linearity of the scalar product, we get
 $$
 \Delta e_{l(1)}=
-2 
+-2 
 (m_{l(1)}\bar{\bm{x}}^{l(1)}-\bm{x}^1-(m_{l(1)}-1)\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
 +\frac{1}{m_{l(1)}-1}
 ||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2-
@@ -913,14 +913,14 @@ $$
 After another simplification, we get
 $$
 \Delta e_{l(1)}=
-\frac{2}{m_{l(1)}-1}||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2 
+-\frac{2}{m_{l(1)}-1}||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2 
 +\frac{1}{m_{l(1)}-1}
 ||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2-
  ||\bm{x}^1-\bar{\bm{x}}^{l(1)}||^2,
 $$
-which yields 
+which gives 
 $$
-\frac{2}{m_{l(1)}-1}+
+-\frac{2}{m_{l(1)}-1}+\frac{1}{m_{l(1)}-1}-1
 $$
 
 
@@ -928,11 +928,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY3MDM5NDU4LDYwMzcwMzM5MiwxNzc4NT
-QwMjA2LC0xOTUzNjQ3NTgwLC0xMjEzMzgyMTczLDE2OTAwNjQ2
-NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC
-0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3
-MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5MzI4MD
-MyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0MzQ1LDcz
-ODgyOTBdfQ==
+eyJoaXN0b3J5IjpbMTE2MTY4NTYwMCw2MDM3MDMzOTIsMTc3OD
+U0MDIwNiwtMTk1MzY0NzU4MCwtMTIxMzM4MjE3MywxNjkwMDY0
+NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIyNTkyMS
+wtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OTgwLDIw
+NzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OTMyOD
+AzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3
+Mzg4MjkwXX0=
 -->
