@@ -841,6 +841,7 @@ $$
 $$
 * The distance between the object $j$ and the cluster $l$ is $d(\bm{x}^j,\bar{\bm{x}}^l)$, where $d$ is taken to be the Euclidian distance
 $$d(\bm{x}^j,\bar{\bm{x}}^l)=||\bm{x}^j-\bar{\bm{x}}^l||_2=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
+where $||\bm{\cdot}||_2$ is the Euclidian norm.
 *  The error of the partition is taken to be  
 $$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=
 \sum_{j=1}^{m}\sum_{i=1}^n(x_i^j)^2-\sum_{j=1}^{m}m_{l(j)}\sum_{i=1}^n (\bar{x}_i^{l(j)})^2.
@@ -917,7 +918,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMzgxMzQ1NSwtMTIxMzM4MjE3MywxNj
+eyJoaXN0b3J5IjpbLTU3NzY1NTY0OSwtMTIxMzM4MjE3MywxNj
 kwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIy
 NTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OT
 gwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4
