@@ -875,12 +875,12 @@ Prove that the error variation is indeed given by: $$
 
 Proof: Oncly clusers $l(1)$ and $l$ are modified. They contain respectively $m_{l(1)}-1$ and $m_l+1$ objects. The error variation du to the loss $\bm{x}^1$ in cluster $l(1)$ is
 $$
-\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\frac{m_{l(1)}\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
+\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\frac{m_{l(1)}\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
 \sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
 $$
 The above expression can be rewritten as follows
 $$
-\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
+\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
 \sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
 $$
 By expansion and using the scalar product, we get
@@ -889,7 +889,8 @@ $$
 \sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}||^2
 +2\sum_{j\in C_{l(1)}-\{1\}} 
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
-||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
++\sum_{j\in C_{l(1)}-\{1\}}
+||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
 \sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)})-\bm{x}^1}{m_{l(1)}-1}||^2-
 \sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
 $$
@@ -900,11 +901,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQ5NjA5MTIsLTEyMTMzODIxNzMsMT
-Y5MDA2NDY0MSwtMTAyMjE5MzYzMCwyMTM5NzU3MzgwLC0yMjQy
-MjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4OD
-k4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3Niwy
-ODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5Mz
-QzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwt
-MzUzNTIyNV19
+eyJoaXN0b3J5IjpbOTcyMjM1Njc4LC0xMjEzMzgyMTczLDE2OT
+AwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1
+OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5OD
+AsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5
+MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0Mz
+Q1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEsLTM1
+MzUyMjVdfQ==
 -->
