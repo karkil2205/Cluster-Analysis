@@ -877,18 +877,18 @@ Prove that the error variation is indeed given by: $$
 # K-MEANS APPLIED TO FOOD NUTRIENT DATA
 * Only the first eight foods will be considered and the variables food energy, protein, and calcium as a percentage of recommended daily allowances are used.
 * The eight foods $(m=8)$ will be partitioned in three clusters (k=3).
-*  
- 
+  
+ ![](HartignTable4dot3.jpg)
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODA4NDYyMzAsODA0MzYxMTg5LC0xMj
-cwODIwMjgyLDYwMzcwMzM5MiwxNzc4NTQwMjA2LC0xOTUzNjQ3
-NTgwLC0xMjEzMzgyMTczLDE2OTAwNjQ2NDEsLTEwMjIxOTM2Mz
-AsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC0xODczMzk0NjI5LC05
-MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3MzAzMTU4MiwtNzE3OT
-kxOTY2LC0xNzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5Mjgx
-LDIzNDQ0NjE1Nl19
+eyJoaXN0b3J5IjpbMjA3NzU1OTg2LC0xMzgwODQ2MjMwLDgwND
+M2MTE4OSwtMTI3MDgyMDI4Miw2MDM3MDMzOTIsMTc3ODU0MDIw
+NiwtMTk1MzY0NzU4MCwtMTIxMzM4MjE3MywxNjkwMDY0NjQxLC
+0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIyNTkyMSwtMTg3
+MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMz
+E1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwt
+MTc3OTk0OTI4MV19
 -->
