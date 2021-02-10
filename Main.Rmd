@@ -900,16 +900,16 @@ $$
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
 +(m_{l(1)}-1)
 ||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
- ||\bm{x}^1-\bar{\bm{x}}^{l(1)})||^2.
+ ||\bm{x}^1-\bar{\bm{x}}^{l(1)}||^2.
 $$
 By linearity of the scalar product, we get
 $$
 \Delta e_{l(1)}=
 2 
 (m_{l(1)}\bar{\bm{x}}^{l(1)}-\bm{x}^1-(m_{l(1)}-1)\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
-+\sum_{j\in C_{l(1)}-\{1\}}
++(m_{l(1)}-1)
 ||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
- ||\bm{x}^1-\bar{\bm{x}}^{l(1)})||^2.
+ ||\bm{x}^1-\bar{\bm{x}}^{l(1)}||^2.
 $$
 
 
@@ -917,11 +917,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzNzU4MzU0LC0xOTUzNjQ3NTgwLC0xMj
-EzMzgyMTczLDE2OTAwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1
-NzM4MCwtMjI0MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2Mz
-EsLTE3MzU5ODg5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0x
-NzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0Nj
-E1NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1
-MzcyMjYxODFdfQ==
+eyJoaXN0b3J5IjpbMTc3ODU0MDIwNiwtMTk1MzY0NzU4MCwtMT
+IxMzM4MjE3MywxNjkwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3
+NTczODAsLTIyNDIyNTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2Nj
+MxLC0xNzM1OTg4OTgwLDIwNzMwMzE1ODIsLTcxNzk5MTk2Niwt
+MTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0ND
+YxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0x
+NTM3MjI2MTgxXX0=
 -->
