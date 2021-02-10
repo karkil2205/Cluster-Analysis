@@ -880,7 +880,7 @@ $$
 $$
 The above expression can be rewritten as follows
 $$
-\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
+\Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}-\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
 \sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}||^2.
 $$
 By expansion and using the scalar product, we get
@@ -928,11 +928,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzNzAzMzkyLDE3Nzg1NDAyMDYsLTE5NT
-M2NDc1ODAsLTEyMTMzODIxNzMsMTY5MDA2NDY0MSwtMTAyMjE5
-MzYzMCwyMTM5NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMzOTQ2Mj
-ksLTkwMTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03
-MTc5OTE5NjYsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5ND
-kyODEsMjM0NDQ2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1
-ODA4ODY3Nl19
+eyJoaXN0b3J5IjpbNTY3MDM5NDU4LDYwMzcwMzM5MiwxNzc4NT
+QwMjA2LC0xOTUzNjQ3NTgwLC0xMjEzMzgyMTczLDE2OTAwNjQ2
+NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC
+0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3
+MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5MzI4MD
+MyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0MzQ1LDcz
+ODgyOTBdfQ==
 -->
