@@ -833,22 +833,22 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * Let $m_l$ be the number of objects in cluster $C_l$.
 * Each of the $m$ objects lies in just one of the $k$ clusters.
 * Note that $\sum_{l=1}^k m_l=m$.
-* The vector of means over the objects in the cluster $C_l$ is denoted by $\bar{\bm{x}}^{l}$, with
-$$\bar{\bm{x}}^{l}\equiv\frac{1}{m_l}\sum_{j\in C_l}\bm{x}^{j}=(\bar{x}_1^l,\cdots,\bar{x}_n^l),\:l=1,\cdots, k,$$
+* The vector of means over the objects in the cluster $C_l$ is denoted by $\bar{\mathbf{x}}^{l}$, with
+$$\bar{\mathbf{x}}^{l}\equiv\frac{1}{m_l}\sum_{j\in C_l}\mathbf{x}^{j}=(\bar{x}_1^l,\cdots,\bar{x}_n^l),\:l=1,\cdots, k,$$
 where 
 $$
 \bar{x}_i^l\equiv \frac{\sum_{j\in C_l}x_i^{j}}{m_l},\:i=1,\cdots, n; \:l=1,\cdots,k.
 $$
-* The distance between the object $j$ and the cluster $l$ is $d(\bm{x}^j,\bar{\bm{x}}^l)$, where $d$ is taken to be the Euclidian distance
-$$d(\bm{x}^j,\bar{\bm{x}}^l)=||\bm{x}^j-\bar{\bm{x}}^l||=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
-where $||\bm{\cdot}||$ is the Euclidian norm.
+* The distance between the object $j$ and the cluster $l$ is $d(\mathbf{x}^j,\bar{\mathbf{x}}^l)$, where $d$ is taken to be the Euclidian distance
+$$d(\mathbf{x}^j,\bar{\mathbf{x}}^l)=||\mathbf{x}^j-\bar{\mathbf{x}}^l||=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
+where $||\mathbf{\cdot}||$ is the Euclidian norm.
 *  The error of the partition is taken to be  
-$$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=
+$$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^l)=
 \sum_{l=1}^{k}\sum_{j\in C_l}
-||\bm{x}^j-\bar{\bm{x}}^l||^2.
+||\mathbf{x}^j-\bar{\mathbf{x}}^l||^2.
 $$
 * Alternatively, we have
-$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\bm{x}^j-\bar{\bm{x}}^{l(j)}||^2,$$
+$$e=\sum_{j=1}^{m}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\mathbf{x}^j-\bar{\bm{x}}^{l(j)}||^2,$$
 
 where $l(j)$ is the index of the cluster of object $j$.
 
@@ -935,11 +935,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA0MzYxMTg5LC0xMjcwODIwMjgyLDYwMz
-cwMzM5MiwxNzc4NTQwMjA2LC0xOTUzNjQ3NTgwLC0xMjEzMzgy
-MTczLDE2OTAwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MC
-wtMjI0MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3
-MzU5ODg5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMT
-AyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1Niwx
-MzUwOTM0MzQ1XX0=
+eyJoaXN0b3J5IjpbLTE1MzQwNjU1MCw4MDQzNjExODksLTEyNz
+A4MjAyODIsNjAzNzAzMzkyLDE3Nzg1NDAyMDYsLTE5NTM2NDc1
+ODAsLTEyMTMzODIxNzMsMTY5MDA2NDY0MSwtMTAyMjE5MzYzMC
+wyMTM5NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMzOTQ2MjksLTkw
+MTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5OT
+E5NjYsLTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyODEs
+MjM0NDQ2MTU2XX0=
 -->
