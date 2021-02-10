@@ -881,17 +881,16 @@ $$
 The above expression can be rewritten as follows
 $$
 \Delta e_{l(1)}=\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}+\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
-\sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
+\sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}||^2.
 $$
 By expansion and using the scalar product, we get
 $$
 \Delta e_{l(1)}=
-\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}||^2
-+2\sum_{j\in C_{l(1)}-\{1\}} 
+2\sum_{j\in C_{l(1)}-\{1\}} 
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
 +\sum_{j\in C_{l(1)}-\{1\}}
 ||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
-\sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
+||\bm{x}^j-\bar{\bm{x}}^{l(1)}||^2.
 $$
 A first simplification yields
 $$
@@ -917,11 +916,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODU0MDIwNiwtMTk1MzY0NzU4MCwtMT
-IxMzM4MjE3MywxNjkwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3
-NTczODAsLTIyNDIyNTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2Nj
-MxLC0xNzM1OTg4OTgwLDIwNzMwMzE1ODIsLTcxNzk5MTk2Niwt
-MTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0ND
-YxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0x
-NTM3MjI2MTgxXX0=
+eyJoaXN0b3J5IjpbLTE3Mzg2ODA0NzEsMTc3ODU0MDIwNiwtMT
+k1MzY0NzU4MCwtMTIxMzM4MjE3MywxNjkwMDY0NjQxLC0xMDIy
+MTkzNjMwLDIxMzk3NTczODAsLTIyNDIyNTkyMSwtMTg3MzM5ND
+YyOSwtOTAxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMzE1ODIs
+LTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3OT
+k0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0x
+NDU4MDg4Njc2XX0=
 -->
