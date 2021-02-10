@@ -840,20 +840,17 @@ $$
 \bar{x}_i^l\equiv \frac{\sum_{j\in C_l}x_i^{j}}{m_l},\:i=1,\cdots, n; \:l=1,\cdots,k.
 $$
 * The distance between the object $j$ and the cluster $l$ is $d(\bm{x}^j,\bar{\bm{x}}^l)$, where $d$ is taken to be the Euclidian distance
-$$d(\bm{x}^j,\bar{\bm{x}}^l)=||\bm{x}^j-\bar{\bm{x}}^l||_2=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
-where $||\bm{\cdot}||_2$ is the Euclidian norm.
+$$d(\bm{x}^j,\bar{\bm{x}}^l)=||\bm{x}^j-\bar{\bm{x}}^l||=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
+where $||\bm{\cdot}||$ is the Euclidian norm.
 *  The error of the partition is taken to be  
 $$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\bm{x}^j,\bar{\bm{x}}^l)=
 \sum_{l=1}^{k}\sum_{j\in C_l}
-||\bm{x}^j-\bar{\bm{x}}^l||_2.
+||\bm{x}^j-\bar{\bm{x}}^l||^2.
 $$
 * Alternatively, we have
-$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\bm{x}^j-\bar{\bm{x}}^{l||_2,$$
+$$e=\sum_{j=1}^{m}d^2(\bm{x}^j,\bar{\bm{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\bm{x}^j-\bar{\bm{x}}^{l(j)}||^2,$$
 
 where $l(j)$ is the index of the cluster of object $j$.
-
-* We also have
-$$e=\sum_{j=1}^{m}\sum_{i=1}^n\big(x_i^j\big)^2-2\sum_{j=1}^{m}\sum_{i=1}^n x_i^j\bar{x}_i^{l(j)}+\sum_{j=1}^{m}\sum_{i=1}^n\big[\bar{x}_i^{l(j)}\big]^2$$
 
 * The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
@@ -919,11 +916,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjE3MjA2MDUsLTEyMTMzODIxNzMsMT
-Y5MDA2NDY0MSwtMTAyMjE5MzYzMCwyMTM5NzU3MzgwLC0yMjQy
-MjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4OD
-k4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3Niwy
-ODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5Mz
-QzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwt
-MzUzNTIyNV19
+eyJoaXN0b3J5IjpbMjMxNDY5MzU1LC0xMjEzMzgyMTczLDE2OT
+AwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1
+OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5OD
+AsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5
+MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0Mz
+Q1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEsLTM1
+MzUyMjVdfQ==
 -->
