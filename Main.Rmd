@@ -897,8 +897,8 @@ $$
 \Delta e_{l(1)}=
 2\sum_{j\in C_{l(1)}-\{1\}} 
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
-+(m_{l(1)}-1)
-||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
++\frac{1}{m_{l(1)}-1}
+||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2-
  ||\bm{x}^1-\bar{\bm{x}}^{l(1)}||^2.
 $$
 By linearity of the scalar product, we get
@@ -916,11 +916,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg2ODA0NzEsMTc3ODU0MDIwNiwtMT
-k1MzY0NzU4MCwtMTIxMzM4MjE3MywxNjkwMDY0NjQxLC0xMDIy
-MTkzNjMwLDIxMzk3NTczODAsLTIyNDIyNTkyMSwtMTg3MzM5ND
-YyOSwtOTAxODM2NjMxLC0xNzM1OTg4OTgwLDIwNzMwMzE1ODIs
-LTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4OTMyODAzMiwtMTc3OT
-k0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzNDM0NSw3Mzg4MjkwLC0x
-NDU4MDg4Njc2XX0=
+eyJoaXN0b3J5IjpbMTA3MDMzNjM4MywxNzc4NTQwMjA2LC0xOT
+UzNjQ3NTgwLC0xMjEzMzgyMTczLDE2OTAwNjQ2NDEsLTEwMjIx
+OTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC0xODczMzk0Nj
+I5LC05MDE4MzY2MzEsLTE3MzU5ODg5ODAsMjA3MzAzMTU4Miwt
+NzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OT
+Q5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0
+NTgwODg2NzZdfQ==
 -->
