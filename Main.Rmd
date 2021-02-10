@@ -896,12 +896,20 @@ $$
 A simplification yields
 $$
 \Delta e_{l(1)}=
-\sum_{j\in C_{l(1)}-\{1\}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)}||^2
-+2\sum_{j\in C_{l(1)}-\{1\}} 
+2\sum_{j\in C_{l(1)}-\{1\}} 
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
 +\sum_{j\in C_{l(1)}-\{1\}}
 ||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
-\sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
+ ||\bm{x}^1-\bar{\bm{x}}^{l(1)})||^2.
+$$
+By linearity of the scalar product, we get
+$$
+\Delta e_{l(1)}=
+2\sum_{j\in C_{l(1)}-\{1\}} 
+(\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
++\sum_{j\in C_{l(1)}-\{1\}}
+||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
+ ||\bm{x}^1-\bar{\bm{x}}^{l(1)})||^2.
 $$
 
 
@@ -909,11 +917,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NDEzNzY2MiwtMTIxMzM4MjE3MywxNj
-kwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIy
-NTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OT
-gwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4
-OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzND
-M0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0z
-NTM1MjI1XX0=
+eyJoaXN0b3J5IjpbLTE5NTM2NDc1ODAsLTEyMTMzODIxNzMsMT
+Y5MDA2NDY0MSwtMTAyMjE5MzYzMCwyMTM5NzU3MzgwLC0yMjQy
+MjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgzNjYzMSwtMTczNTk4OD
+k4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYsLTE3MTExMDI3Niwy
+ODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0NDQ2MTU2LDEzNTA5Mz
+QzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3NiwtMTUzNzIyNjE4MSwt
+MzUzNTIyNV19
 -->
