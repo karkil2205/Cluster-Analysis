@@ -875,15 +875,16 @@ Prove that the error variation is indeed given by: $$
 
 \newpage
 # K-MEANS APPLIED TO FOOD NUTRIENT DATA
-* Only the first eight foods will be considered for the nutrients' food energy, protein, and calcium as a percentage of recommended daily allowances.
-* The eight foods will be partitioned in three clusters. The calculafions appear in Table 4.3.
+* Only the first eight foods will be considered and the variables food energy, protein, and calcium as a percentage of recommended daily allowances are used.
+* The eight foods $(m=8)$ will be partitioned in three clusters (k=3).
+*  
  
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDc1NzUyNzIsODA0MzYxMTg5LC0xMj
+eyJoaXN0b3J5IjpbLTEzODA4NDYyMzAsODA0MzYxMTg5LC0xMj
 cwODIwMjgyLDYwMzcwMzM5MiwxNzc4NTQwMjA2LC0xOTUzNjQ3
 NTgwLC0xMjEzMzgyMTczLDE2OTAwNjQ2NDEsLTEwMjIxOTM2Mz
 AsMjEzOTc1NzM4MCwtMjI0MjI1OTIxLC0xODczMzk0NjI5LC05
