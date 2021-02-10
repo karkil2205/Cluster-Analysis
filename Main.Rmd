@@ -916,16 +916,19 @@ $$
 \frac{2}{m_{l(1)}-1}||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2 
 +\frac{1}{m_{l(1)}-1}
 ||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2-
- ||\bm{x}^1-\bar{\bm{x}}^{l(1)}||^2.
+ ||\bm{x}^1-\bar{\bm{x}}^{l(1)}||^2,
+$$
+which yields 
+$$
+\frac{2}{m_{l(1)}-1}+
 $$
 
 
 
 
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMwMTU1MTk2LDE3Nzg1NDAyMDYsLTE5NT
+eyJoaXN0b3J5IjpbNjAzNzAzMzkyLDE3Nzg1NDAyMDYsLTE5NT
 M2NDc1ODAsLTEyMTMzODIxNzMsMTY5MDA2NDY0MSwtMTAyMjE5
 MzYzMCwyMTM5NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMzOTQ2Mj
 ksLTkwMTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03
