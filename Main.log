@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2021.1.27)  8 FEB 2021 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2021.2.4)  10 FEB 2021 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1013,134 +1013,167 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./Main.toc)
+) (./Main.toc [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 132.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 130.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 136.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 134.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [2]
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 154.
+(Font)              <10> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 154.
+(Font)              <7> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 154.
-[3] [4] [5] [6] [7] <Manhattan.jpg, id=100, 1186.4325pt x 1194.4625pt>
+(Font)              <5> on input line 150.
+[2] <Manhattan.jpg, id=90, 1186.4325pt x 1194.4625pt>
 File: Manhattan.jpg Graphic file (type jpg)
 <use Manhattan.jpg>
-Package pdftex.def Info: Manhattan.jpg used on input line 254.
+Package pdftex.def Info: Manhattan.jpg used on input line 240.
 (pdftex.def)             Requested size: 469.74907pt x 472.92842pt.
-[8 <./Manhattan.jpg>] [9] [10] [11] [12]
+[3] [4 <./Manhattan.jpg>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 399.
-
-<Main_files/figure-latex/unnamed-chunk-4-1.pdf, id=124, 463.7325pt x 315.1775pt
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 375.
+[5]
+<Main_files/figure-latex/unnamed-chunk-4-1.pdf, id=107, 463.7325pt x 315.1775pt
 >
 File: Main_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-4-1.pdf used on 
-input line 411.
+input line 387.
 (pdftex.def)             Requested size: 463.73842pt x 315.18153pt.
-[13 <./Main_files/figure-latex/unnamed-chunk-4-1.pdf>] [14] [15] [16] [17] [18]
-[19] [20]
+[6 <./Main_files/figure-latex/unnamed-chunk-4-1.pdf>] [7] [8]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 711.
+(amsmath)                 on input line 671.
 
-[21] [22] [23] [24] [25] <KAUFMANBinarydata.jpg, id=202, 1247.66125pt x 1022.82
-124pt>
+[9] [10] [11] <KAUFMANBinarydata.jpg, id=154, 1247.66125pt x 1022.82124pt>
 File: KAUFMANBinarydata.jpg Graphic file (type jpg)
 <use KAUFMANBinarydata.jpg>
-Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 914.
+Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 864.
 (pdftex.def)             Requested size: 469.73752pt x 385.0865pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 914--917
+Underfull \hbox (badness 10000) in paragraph at lines 864--867
 [][]
  []
 
-[26 <./KAUFMANBinarydata.jpg>] [27] [28]
-Overfull \hbox (16.57504pt too wide) in alignment at lines 1002--1014
+[12 <./KAUFMANBinarydata.jpg>]
+Overfull \hbox (16.57504pt too wide) in alignment at lines 946--958
  [] [] [] 
  []
 
 
-Overfull \hbox (16.57504pt too wide) in alignment at lines 1014--1061
+Overfull \hbox (16.57504pt too wide) in alignment at lines 958--1005
  [] [] [] 
  []
 
-[29] [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1287--1288
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
 
  []
 
-[32] <flowers.jpg, id=239, 686.565pt x 1009.7725pt>
+<flowers.jpg, id=180, 686.565pt x 1009.7725pt>
 File: flowers.jpg Graphic file (type jpg)
 <use flowers.jpg>
-Package pdftex.def Info: flowers.jpg used on input line 1307.
+Package pdftex.def Info: flowers.jpg used on input line 1242.
 (pdftex.def)             Requested size: 442.23914pt x 650.42773pt.
-[33] [34 <./flowers.jpg>] [35] <Begonia.jpg, id=252, 730.22812pt x 376.40625pt>
+[16] [17 <./flowers.jpg>] <Begonia.jpg, id=189, 730.22812pt x 376.40625pt>
 File: Begonia.jpg Graphic file (type jpg)
 <use Begonia.jpg>
-Package pdftex.def Info: Begonia.jpg used on input line 1352.
+Package pdftex.def Info: Begonia.jpg used on input line 1285.
 (pdftex.def)             Requested size: 469.75114pt x 242.13976pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1352--1353
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1286
 [][]
  []
 
-<Genet.jpeg, id=253, 762.85pt x 572.1375pt>
+<Genet.jpeg, id=190, 762.85pt x 572.1375pt>
 File: Genet.jpeg Graphic file (type jpg)
 <use Genet.jpeg>
-Package pdftex.def Info: Genet.jpeg used on input line 1354.
+Package pdftex.def Info: Genet.jpeg used on input line 1287.
 (pdftex.def)             Requested size: 469.74944pt x 352.31207pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1354--1355
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1288
 [][]
  []
 
-[36 <./Begonia.jpg>] [37 <./Genet.jpeg>]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 136
-8.
+[18 <./Begonia.jpg>]
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 129
+9.
 (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [38] <Daisy.jpg, id=277, 1698.345pt x 843.15pt>
+) [19 <./Genet.jpeg>] <Daisy.jpg, id=209, 1698.345pt x 843.15pt>
 File: Daisy.jpg Graphic file (type jpg)
 <use Daisy.jpg>
-Package pdftex.def Info: Daisy.jpg used on input line 1451.
+Package pdftex.def Info: Daisy.jpg used on input line 1382.
 (pdftex.def)             Requested size: 469.7544pt x 233.2114pt.
-[39 <./Daisy.jpg>] [40] [41] <USAArrest.jpg, id=291, 1548.78625pt x 2018.54124p
-t>
+[20 <./Daisy.jpg>] [21] <USAArrest.jpg, id=219, 1548.78625pt x 2018.54124pt>
 File: USAArrest.jpg Graphic file (type jpg)
 <use USAArrest.jpg>
-Package pdftex.def Info: USAArrest.jpg used on input line 1544.
+Package pdftex.def Info: USAArrest.jpg used on input line 1471.
 (pdftex.def)             Requested size: 469.7441pt x 612.21994pt.
-[42 <./USAArrest.jpg>] [43] [44] [45] [46] [47] [48] [49]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1774.
-[50]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1774.
+[22] [23 <./USAArrest.jpg>] [24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1725
+
+ []
+
+
+<Main_files/figure-latex/unnamed-chunk-21-1.pdf, id=241, 453.695pt x 313.17pt>
+File: Main_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (type pdf)
+<use Main_files/figure-latex/unnamed-chunk-21-1.pdf>
+Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-21-1.pdf used on
+ input line 1735.
+(pdftex.def)             Requested size: 453.6939pt x 313.16922pt.
+[26] <HartiganTable4dot1.jpg, id=247, 1005.7575pt x 1185.42876pt>
+File: HartiganTable4dot1.jpg Graphic file (type jpg)
+<use HartiganTable4dot1.jpg>
+Package pdftex.def Info: HartiganTable4dot1.jpg used on input line 1784.
+(pdftex.def)             Requested size: 444.74458pt x 524.19496pt.
+
+Overfull \hbox (206.53294pt too wide) in paragraph at lines 1783--1786
+[]\T1/lmr/m/n/10 (-20) The data used by the au-thor are pro-vided be-low. [] 
+ []
+
+[27 <./Main_files/figure-latex/unnamed-chunk-21-1.pdf>] <HartiganTable4dot2.jpg
+, id=265, 859.21pt x 1057.9525pt>
+File: HartiganTable4dot2.jpg Graphic file (type jpg)
+<use HartiganTable4dot2.jpg>
+Package pdftex.def Info: HartiganTable4dot2.jpg used on input line 1794.
+(pdftex.def)             Requested size: 444.75966pt x 547.6363pt.
+[28 <./HartiganTable4dot1.jpg>] [29 <./HartiganTable4dot2.jpg>] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 1906--1907
+
+ []
+
+<HartiganTable4dot3.jpg, id=282, 933.4875pt x 871.255pt>
+File: HartiganTable4dot3.jpg Graphic file (type jpg)
+<use HartiganTable4dot3.jpg>
+Package pdftex.def Info: HartiganTable4dot3.jpg used on input line 1963.
+(pdftex.def)             Requested size: 469.7623pt x 438.44482pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1965.
+[31] [32 <./HartiganTable4dot3.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1965.
 (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1774.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1774.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1774.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1965.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1965.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1965.
  ) 
 Here is how much of TeX's memory you used:
- 14147 strings out of 494944
- 201788 string characters out of 6180677
- 313499 words of memory out of 5000000
- 17036 multiletter control sequences out of 15000+600000
- 69858 words of font info for 91 fonts, out of 8000000 for 9000
+ 14190 strings out of 494944
+ 202771 string characters out of 6180678
+ 314746 words of memory out of 5000000
+ 17064 multiletter control sequences out of 15000+600000
+ 70439 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  35i,9n,35p,961b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
@@ -1158,10 +1191,10 @@ fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (50 pages, 1958397 bytes).
+Output written on Main.pdf (32 pages, 2530763 bytes).
 PDF statistics:
- 496 PDF objects out of 1000 (max. 8388607)
- 412 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 12505 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 395 compressed objects within 4 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 12573 words of extra memory for PDF output out of 14400 (max. 10000000)
 

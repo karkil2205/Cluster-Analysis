@@ -1,21 +1,21 @@
 ---
 title: "Distance and dissimilarities"
 output:
-  html_document:
+  pdf_document:
     toc: yes
-    df_print: paged
   html_notebook:
     toc: yes
   word_document:
     toc: yes
-  pdf_document:
+  html_document:
     toc: yes
+    df_print: paged
 ---
 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="200">
  
-\newpage
+
 
 * Required packages
 
@@ -30,7 +30,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-\newpage
+
 
 # Definition of a distance
 
@@ -45,13 +45,13 @@ where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{
 * We should use the term _dissimilarity_ rather than _distance_ when not all the three axioms A1-A3 are valid.
 * Most of the time, we shall use, with some abuse of vocabulary, the term distance.
 
-\newpage
+
 
 # Exercice 1
 
 * Prove that the three axioms A1-A3 imply the non-negativity condition: $$d(\mathbf{x},\mathbf{y})\geq 0.$$
 
-\newpage
+
 
 # Euclidean distance
 
@@ -66,13 +66,13 @@ $$
 * A1-A2 are obvious.
 * The proof of A3 is provided below.
 
-\newpage
+
 
 # Exercice 2
 
 * Is the squared Euclidian distance a true distance?
 
-\newpage
+
 
 # Manhattan distance
 
@@ -85,11 +85,11 @@ $$d(\mathbf{x},\mathbf{y})
 * A3 also holds using the fact that $|a+b|\leq |a|+|b|$ for any reals $a,b$.
 * There exists also a weighted version  of the Manhattan distance called the Canberra distance.
 
-\newpage
+
 
 ![](Manhattan.jpg)
 
-\newpage
+
 
 
 ```{r}
@@ -101,7 +101,7 @@ dist(rbind(x, y), method = "manhattan")
 ```
 
 
-\newpage
+
 
 
 # Canberra distance
@@ -124,7 +124,7 @@ dist(rbind(x, y), method = "canberra")
 6/6+6/6
 ```
 
-\newpage
+
 
 
 # Exercice 3
@@ -132,7 +132,7 @@ dist(rbind(x, y), method = "canberra")
 * Prove that the Canberra distance is a true distance.
 
 
-\newpage
+
 
 
 # Minkowski distance
@@ -157,7 +157,7 @@ $$\|\mathbf{x}\|_p=d(\mathbf{x},\mathbf{0}),$$
 where 
 $\mathbf{0}$ is the null-vetor of $\mathbb{R}^n$.
 
-\newpage
+
 
 
 
@@ -173,7 +173,7 @@ MinkowDist=c(MinkowDist,dist(rbind(x, y), method = "minkowski", p = p))
 ggplot(data =data.frame(x = seq(1,30,.01), y=MinkowDist ) , mapping = aes(x = x, y = y))+geom_point(size=.1,color="red")+xlim(1,11)+xlab("p")+ylab("Minkowski Distance")+ggtitle("Minkowski distance wrt p")
 ```
 
-\newpage
+
 
 
 # Chebyshev distance 
@@ -189,7 +189,7 @@ $$
 \|\mathbf{x}|_\infty=\max_{i=1,\cdots,n}(|x_i|).
 $$
 
-\newpage
+
 
 
 # Minkowski inequality
@@ -215,7 +215,7 @@ $$
  \sum_{i=1}^n|x_i-z_i|^{p}\leq \left(\sum_{i=1}^n |x_i-y_i|^{p}\right)^{1/p}+\left(\sum_{i=1}^n |y_i-z_i|^{p}\right)^{1/p}.
 $$
 
-\newpage
+
 
 
 # Hölder inequality
@@ -260,7 +260,7 @@ $$
 |\mathbf{x\cdot y} | \leq \|\mathbf{x}\|_2 \| \mathbf{y}\|_2.
 $$
 
-\newpage
+
 
 
 # Pearson correlation distance 
@@ -280,7 +280,7 @@ $$
 
 * Note that the Pearson distance does not satisfy A1 since $d(\mathbf{x},\mathbf{x})=0$ for any non-zero vector $\mathbf{x}$. It neither satisfies the triangle inequality. However, the symmetry property is fullfilled. 
 
-\newpage
+
 
 # Cosine correlation distance
 
@@ -296,7 +296,7 @@ d(\mathbf{x},\mathbf{y})=1-\cos(\theta).
 $$
 * It shares similar properties than the Pearson correlation distance. Likewise, Axioms A1 and A3 are not satisfied.
 
-\newpage
+
 
 
 # Spearman correlation distance 
@@ -329,7 +329,7 @@ d(\mathbf{x},\mathbf{y})=\frac{6\sum_{i=1}^n d_i^2}{n(n^2-1)}.
 $$
 
 
-\newpage
+
 
 
 ```{r}
@@ -344,7 +344,7 @@ cor(rank(x),rank(y))
 ```
 
 
-\newpage
+
 
 
 # Kendall tau distance 
@@ -361,7 +361,7 @@ $$\tau =\frac {1}{n(n-1)}\sum_{i=1}^{n}\sum_{j=1}^n\text{sign}(x_j-x_i)\text{sig
 * The Kendall tau distance is then: $$d(\mathbf{x},\mathbf{y})=1-\tau. $$
 * Remark: the triangular inequality may fail in cases where there are ties.
 
-\newpage
+
 
 
 ```{r}
@@ -377,7 +377,7 @@ tau
 cor(x,y, method="kendall")
 ```
 
-\newpage
+
 
 # Variables standardization
 
@@ -395,7 +395,7 @@ $$
 * The result obtained with Pearson correlation measures and standardized Euclidean distances are comparable.
 * For other methods, see: Milligan, G. W., & Cooper, M. C. (1988). A study of standardization of variables in cluster analysis. _Journal of classification_, _5_(2), 181-204.
 
-\newpage
+
 
 
 ```{r}
@@ -407,7 +407,7 @@ scale(x)
 scale(y)
 ```
 
-\newpage
+
 
 # Similarity measures for binary data
 * A common simple situation occurs when all information is of the presence/absence of 2-level qualitative characters.
@@ -439,20 +439,20 @@ scale(y)
 |             |0|$c$|$d$|$c+d$|
 |*Totals*||$a+c$|$b+d$|$n$|
 
-\newpage
+
 
 
 
 ![](KAUFMANBinarydata.jpg)
 *Table from Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons*
 
-\newpage
+
 
 
 * The data shows $8$ people (individuals) and $10$ binary variables:
 * Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
 
-\newpage
+
 
 
 ```{r}
@@ -490,7 +490,7 @@ $$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$
 * A more extensive list can be found in: Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.
 
 
-\newpage
+
 
 
 |Coefficient|$s(\mathbf{x},\mathbf{y})$|$d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y})$|
@@ -534,7 +534,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
 * [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://drive.google.com/file/d/1PUQ7g9HIwwUG0CXbCsLA03hnApWMhjka/view?usp=drivesdk)
 
-\newpage
+
 
 
 # Nominal variables 
@@ -570,7 +570,7 @@ $$
 $$d(\mathbf{x},\mathbf{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.$$
 *  Note that simple matching has exactly the same meaning as in the preceding section.
  
- \newpage
+ 
  
 # Gower’s dissimilarity
 * Gower’s coefficient is a dissimilarity measure specifically
@@ -595,7 +595,7 @@ $$
 $$
 where $R_i$ is the range of variable $i$ over the available data.
 
-\newpage
+
 
 
 * Consider the following data set:
@@ -603,7 +603,7 @@ where $R_i$ is the range of variable $i$ over the available data.
 ![](flowers.jpg)
 *Data from: Struyf, A., Hubert, M., & Rousseeuw, P. (1997). Clustering in an object-oriented environment. _Journal of Statistical Software_, _1_(4), 1-30.*
 
-\newpage
+
 
 
 * The dataset contains 18 flowers and 8 characteristics:
@@ -624,7 +624,7 @@ blue).
 ![](Genet.jpeg)
 *Genêt*
 
-\newpage
+
 
 
 ```{r}
@@ -661,11 +661,11 @@ max(data$Distance)-min(data$Distance)
 $$
 \frac{|1-0|+|0-1|+|0-1|+1+|1-3|/2+|3-15|/17+|150-25|/180+|50-15|/50}{8}\approx 0.8875408
 $$
-\newpage
+
 
 ![](Daisy.jpg)
 
-\newpage
+
 
 
 
@@ -676,28 +676,28 @@ daisy(data[,1:8],metric = "Gower")
 ```
 
 
-\newpage
+
 
 
 # More on distance matrix computation
 
 ![](USAArrest.jpg)
 
-\newpage
+
 
 
 * We use a subset of the data by taking 15 random rows among the 50 rows in the data set.
 * We are using the function sample().
 * We standardize the data using the function scale().
 
-\newpage
+
 
 
 ```{r}
 USArrests
 ```
 
-\newpage
+
 
 
 ```{r}
@@ -708,7 +708,7 @@ df.scaled <- scale(df)
 df.scaled
 ```
 
-\newpage
+
 
 
 * The R functions for computing distances.
@@ -719,7 +719,7 @@ df.scaled
 * Remark: If we want to compute pairwise distances between variables, we must transpe the data to have variables
 in the rows.
 
-\newpage
+
 
 * We first compute Euclidian distances
 
@@ -736,7 +736,7 @@ round(sqrt(sum((df.scaled["Iowa",]
 
 ```
 
-\newpage
+
 
 * We also compute correlation based distances.
 
@@ -749,7 +749,7 @@ round(1-cor(df.scaled["New Mexico",],df.scaled["Indiana",]),1)
 round(1-cor(df.scaled["Iowa",],df.scaled["Indiana",]),1)
 
 ```
-\newpage
+
 
 # Visualizing distance matrices
 * A simple solution for visualizing the distance matrices is to use the function fviz_dist() [factoextra package].  
@@ -759,7 +759,7 @@ round(1-cor(df.scaled["Iowa",],df.scaled["Indiana",]),1)
 library(factoextra)
 fviz_dist(dist.eucl)
 ```
-\newpage
+
 # Partitioning Clustering
 
 * Partitioning clustering are clustering methods used to classify observations within a data set, into multiple groups based on their similarity.
@@ -769,20 +769,20 @@ fviz_dist(dist.eucl)
 2. K-medoids clustering or PAM (Partitioning Around Medoids, Kaufman & Rousseeuw, 1990), in which, each cluster is represented by one of the objects in the cluster. PAM is less sensitive to outliers compared to k-means.
 3. CLARA algorithm (Clustering Large Applications), which is an extension to PAM adapted for large data sets. 
 
-\newpage
+
 
 # K-Means Clustering
 
 * The description of the algorithm is based on:
 * HARTIGAN, John A. _Clustering algorithms_. John Wiley & Sons, Inc., 1975.
 * The data used by the author are provided below.
- ![](HartignTable4dot1.jpg)
+ ![](HartiganTable4dot1.jpg)
 * The principal nutrients in meat, fish, and fowl are listed.
 * Recall that 1oz= 28.34952g. 
 * Estimated daily dietary allowances are: food energy (3200 
 cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * Table 4.2 convents the variables (with the exception of Fat) in percentage of food delivery.
-![](HartignTable4dot2.jpg) 
+![](HartiganTable4dot2.jpg) 
 * For e.g., the first (BB) ligne is obtained in the following way: 
 * $340/3200=11\%\text{(Food Energy)}$. 
 * $20/70=29\%\text{(Protein)}$.
@@ -808,7 +808,7 @@ cheaper computationally to move to the first partition discovered in the neighbo
 * A number of stopping rules are possible.
 * For example, the search stops when $e$ is not reduced by movement to the neighborhood.
 * The present partition is then considered locally optimal in that it is the best partition in its neighborhood.
-\newpage
+
 * Consider partitions of the beef foods BB, BR, BS, BC, and BH ($n=5$) into three clusters ($k=3$).
 * Totally, there are 25 such permutations.
 * A plausible neighborhood for a partition is the set of partitions obtained by transferring an object from one cluster to another.
@@ -824,7 +824,7 @@ cheaper computationally to move to the first partition discovered in the neighbo
 (BB BR BH) (BS) (BC) 
 (BB BR) (BS BH) (BC)
 
-\newpage
+
 
 # K-Means Algorithm
 * Let $\mathbf{x}^j\equiv (x_1^j,\cdots,x_n^j)$ the vector of  values for the object $j$, $j=1,\cdots ,m.$
@@ -855,7 +855,7 @@ where $l(j)$ is the index of the cluster of object $j$.
 * The general procedure is to search for a partition with small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
 
-\newpage
+
 
 STEP 1. Assume initial clusters. Compute the cluster means $\bar{\mathbf{x}}^l$ and the initial error $e$.
 STEP 2. For the first Object, compute for every cluster $l$ 
@@ -873,12 +873,12 @@ Prove that the error variation is indeed given by: $$
 \Delta e=
 \frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
 
-\newpage
+
 # K-MEANS APPLIED TO FOOD NUTRIENT DATA
 * Only the first eight foods will be considered and the variables food energy, protein, and calcium as a percentage of recommended daily allowances are used.
 * The eight foods $(m=8)$ will be partitioned in three clusters (k=3).
   
- ![](HartignTable4dot3.jpg)
+ ![](HartiganTable4dot3.jpg)
 
 
 
