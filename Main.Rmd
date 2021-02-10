@@ -893,12 +893,12 @@ $$
 ||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
 \sum_{j\in C_{l(1)}} ||\bm{x}^j-\bar{\bm{x}}^{l(1)})||^2.
 $$
-A simplification yields
+A first simplification yields
 $$
 \Delta e_{l(1)}=
 2\sum_{j\in C_{l(1)}-\{1\}} 
 (\bm{x}^j-\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
-+\sum_{j\in C_{l(1)}-\{1\}}
++(m_{l(1)}-1)
 ||\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1}||^2-
  ||\bm{x}^1-\bar{\bm{x}}^{l(1)})||^2.
 $$
@@ -917,11 +917,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTQyNjY4MTgsLTE5NTM2NDc1ODAsLT
-EyMTMzODIxNzMsMTY5MDA2NDY0MSwtMTAyMjE5MzYzMCwyMTM5
-NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMzOTQ2MjksLTkwMTgzNj
-YzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03MTc5OTE5NjYs
-LTE3MTExMDI3NiwyODkzMjgwMzIsLTE3Nzk5NDkyODEsMjM0ND
-Q2MTU2LDEzNTA5MzQzNDUsNzM4ODI5MCwtMTQ1ODA4ODY3Niwt
-MTUzNzIyNjE4MV19
+eyJoaXN0b3J5IjpbODAzNzU4MzU0LC0xOTUzNjQ3NTgwLC0xMj
+EzMzgyMTczLDE2OTAwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1
+NzM4MCwtMjI0MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2Mz
+EsLTE3MzU5ODg5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0x
+NzExMTAyNzYsMjg5MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0Nj
+E1NiwxMzUwOTM0MzQ1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1
+MzcyMjYxODFdfQ==
 -->
