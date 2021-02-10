@@ -873,42 +873,7 @@ Prove that the error variation is indeed given by: $$
 \Delta e=
 \frac{m_ld^2(\bm{x}^1,\bar{\bm{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\bm{x}^1,\bar{\bm{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
 
-We have:
-$$
-\begin{cases}
-\Delta e=m_l\sum_{i=1}^n  (\bar{x}_i^l)^2-(m_l+1)\sum_{i=1}^n  (\frac{m_l\bar{x}_i^l+x_i^1}{m_l+1})^2\\
-+m_{l(1)}\sum_{i=1}^n  (\bar{x}_i^{l(1)})^2-(m_{l(1)}-1)\sum_{i=1}^n  (\frac{m_{l(1)}\bar{x}_i^{l(1)}-x_i^1}{m_{l(1)}-1})^2.
-\end{cases}
-$$ 
-This can be rewritten as follows
-$$
-\begin{cases}
-\Delta e=
- m_l\sum_{i=1}^n (\bar{x}_i^l)^2
--\frac{m^2_l }{m_l+1}\sum_{i=1}^n (\bar{x}_i^l)^2 
--2\frac{m_l}{m_l+1}\sum_{i=1}^n \bar{x}_i^l x_i^1 
--\frac{1}{m_l+1}\sum_{i=1}^n  (x_i^1)^2
-\\
-+m_{l(1)} \sum_{i=1}^n  (\bar{x}_i^{l(1)})^2
--\frac{m^2_{l(1)} }{m_{l(1)}-1}\sum_{i=1}^n (\bar{x}_i^l)^2  
-+2\frac{m_{l(1)}}{m_{l(1)}-1}\sum_{i=1}^n  \bar{x}_i^{l(1)} x_i^1
- -\frac{1}{m_{l(1)}-1}\sum_{i=1}^n (x_i^1)^2.
-\end{cases}
-$$
-Simplifying the above expression, we get
-$$
-\begin{cases}
-\Delta e=
- \frac{m_l }{m_l+1}\sum_{i=1}^n (\bar{x}_i^l)^2 
--2\frac{m_l}{m_l+1}\sum_{i=1}^n \bar{x}_i^l x_i^1 
--\frac{1}{m_l+1}\sum_{i=1}^n  (x_i^1)^2
-\\
--\frac{m_{l(1)} }{m_{l(1)}-1} \sum_{i=1}^n  (\bar{x}_i^{l(1)})^2  
-+2\frac{m_{l(1)}}{m_{l(1)}-1}\sum_{i=1}^n  \bar{x}_i^{l(1)} x_i^1
- -\frac{1}{m_{l(1)}-1}\sum_{i=1}^n (x_i^1)^2.
-\end{cases}
-$$
-
+Proof: Oncly clusers $l(1)$ and $l$ are modified. Cluster  contains nom and cluster  
 
 
 
@@ -916,11 +881,11 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxNDY5MzU1LC0xMjEzMzgyMTczLDE2OT
-AwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0MjI1
-OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5ODg5OD
-AsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYsMjg5
-MzI4MDMyLC0xNzc5OTQ5MjgxLDIzNDQ0NjE1NiwxMzUwOTM0Mz
-Q1LDczODgyOTAsLTE0NTgwODg2NzYsLTE1MzcyMjYxODEsLTM1
-MzUyMjVdfQ==
+eyJoaXN0b3J5IjpbLTgzMDg5MjA3NCwtMTIxMzM4MjE3MywxNj
+kwMDY0NjQxLC0xMDIyMTkzNjMwLDIxMzk3NTczODAsLTIyNDIy
+NTkyMSwtMTg3MzM5NDYyOSwtOTAxODM2NjMxLC0xNzM1OTg4OT
+gwLDIwNzMwMzE1ODIsLTcxNzk5MTk2NiwtMTcxMTEwMjc2LDI4
+OTMyODAzMiwtMTc3OTk0OTI4MSwyMzQ0NDYxNTYsMTM1MDkzND
+M0NSw3Mzg4MjkwLC0xNDU4MDg4Njc2LC0xNTM3MjI2MTgxLC0z
+NTM1MjI1XX0=
 -->
