@@ -913,8 +913,7 @@ $$
 After another simplification, we get
 $$
 \Delta e_{l(1)}=
-2 
-(m_{l(1)}\bar{\bm{x}}^{l(1)}-\bm{x}^1-(m_{l(1)}-1)\bar{\bm{x}}^{l(1)})\cdot(\frac{\bar{\bm{x}}^{l(1)}-\bm{x}^1}{m_{l(1)}-1})
+\frac{2}{m_{l(1)}-1}||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2 
 +\frac{1}{m_{l(1)}-1}
 ||{\bar{\bm{x}}^{l(1)}-\bm{x}^1}||^2-
  ||\bm{x}^1-\bar{\bm{x}}^{l(1)}||^2.
@@ -926,7 +925,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NTE4MDc3LDE3Nzg1NDAyMDYsLTE5NT
+eyJoaXN0b3J5IjpbODMwMTU1MTk2LDE3Nzg1NDAyMDYsLTE5NT
 M2NDc1ODAsLTEyMTMzODIxNzMsMTY5MDA2NDY0MSwtMTAyMjE5
 MzYzMCwyMTM5NzU3MzgwLC0yMjQyMjU5MjEsLTE4NzMzOTQ2Mj
 ksLTkwMTgzNjYzMSwtMTczNTk4ODk4MCwyMDczMDMxNTgyLC03
