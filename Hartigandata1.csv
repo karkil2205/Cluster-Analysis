@@ -1,0 +1,28 @@
+"","name","energy","protein","fat","calcium","iron"
+"1","Braised beef",11,29,28,1,26
+"2","Hamburger",8,30,17,1,27
+"3","Roast beef",18,21,39,1,20
+"4","Beefsteak",12,27,32,1,26
+"5","Canned beef",6,31,10,2,37
+"6","Broiled chicken",8,29,3,1,14
+"7","Canned chicken",5,36,7,2,15
+"8","Beef heart",5,37,5,2,59
+"9","Roast lamb leg",8,29,20,1,26
+"10","Roast lamb shoulder",9,26,25,1,23
+"11","Smoked ham",11,29,28,1,25
+"12","Pork roast",11,27,29,1,25
+"13","Pork simmered",11,27,30,1,24
+"14","Beef tongue",6,26,14,1,25
+"15","Veal cutlet",6,33,9,1,27
+"16","Baked bluefish",4,31,4,3,6
+"17","Raw clams",2,16,1,10,60
+"18","Canned clams",1,10,1,9,54
+"19","Canned crabmeat",3,20,2,5,8
+"20","Fried haddock",4,23,5,2,5
+"21","Broiled mackerel",6,27,13,1,10
+"22","Canned mackerel",5,23,9,20,18
+"23","Fried perch",6,23,11,2,13
+"24","Canned salmon",4,24,5,20,7
+"25","Canned sardines",6,31,9,46,25
+"26","Canned tuna",5,36,7,1,12
+"27","Canned shrimp",3,33,1,12,26
