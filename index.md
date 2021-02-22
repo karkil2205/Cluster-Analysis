@@ -5,7 +5,8 @@
 
 # Cluster Analysis
 This is the index.md file for my Github repository.
-You can provide links to files [Test](https://github.com/karkil2205/Cluster-Analysis/tree/master//Main.pdf)
+You can provide links to files [Test](http://rpubs.com/karkil2205/700595).
+
 
 
 
