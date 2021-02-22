@@ -1,5 +1,5 @@
 <img src="45262254.jpeg" width="50">
-<"mailto:karkil2205@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gmail_Icon.svg"/></a>
+<href= "mailto:karkil2205@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gmail_Icon.svg"/></a>
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="300">
 
