@@ -4,8 +4,8 @@
 
 
 # Cluster Analysis
-This is the index.md file for my Github repository.
-You can provide links to files [Test](http://rpubs.com/karkil2205/700595).
+* This is the index.md file of the Github repository Cluster Analysis.
+* The last version of my course can be viewed at this link [Test](http://rpubs.com/karkil2205/700595).
 
 
 
