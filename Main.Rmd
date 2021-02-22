@@ -889,6 +889,7 @@ Prove that the error variation is indeed given by: $$
 
 
 
+<<<<<<< HEAD
 ```{r}
 #library("cluster.datasets")
 #write.csv(rda.meat.fish.fowl.1959,"Hartigandat%a1.csv")
@@ -995,3 +996,14 @@ MatrixC3
 
 
 
+=======
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIxNTc1NjIxMSwyMDc3NTU5ODYsLTEzOD
+A4NDYyMzAsODA0MzYxMTg5LC0xMjcwODIwMjgyLDYwMzcwMzM5
+MiwxNzc4NTQwMjA2LC0xOTUzNjQ3NTgwLC0xMjEzMzgyMTczLD
+E2OTAwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0
+MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5OD
+g5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYs
+Mjg5MzI4MDMyXX0=
+-->
+>>>>>>> 3caf7d63d6017c0a7714fed0a79edcda89457222
