@@ -13,7 +13,8 @@ Syntax highlighted code block
 ### Header 3
 
 
-$$\int_{-\infty}^{infty}$$
+\[\int_{-\infty}^{infty}\]
+
 
 - Bulleted
 - List
