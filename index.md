@@ -1,4 +1,4 @@
-<img src="45262254.jpeg" width="100">
+<img src="45262254.jpeg" width="50">
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="300">
 
