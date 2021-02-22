@@ -5,6 +5,6 @@
 
 # Cluster Analysis
 This is the index.md file for my Github repository.
-You can provide links to files [Test](Main.nb.html)
+You can provide links to files [Test](master/Main.nb.html)
 
 
