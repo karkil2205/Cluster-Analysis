@@ -5,3 +5,7 @@
 
 # Cluster Analysis
 
+```math
+SE = \frac{\sigma}{\sqrt{n}}
+```
+
