@@ -1,0 +1,52 @@
+---
+title: "Typing maths with Latex"
+output: html_notebook
+---
+
+# Simple algebra
+
+In line formula in LATEX $x+3=7$. 
+Display formula in LATEX
+$$x+3=7.
+$$.
+
+$$
+\int_{-\infty}^{+\infty}e^{-x^2/2}  = \sqrt{2 \pi}≈2.50663
+$$
+
+
+
+# Dot product scalar product
+
+$$
+\mathbf{x}\cdot \mathbf{y}=\sum_{i=1}^nx_iy_i.
+$$
+
+
+
+With R
+
+
+```{r}
+set.seed(123)
+x<-round(rnorm(10,20,5),2)
+y<-round(rnorm(10,21,6),2)
+x
+y
+sum(x*y)
+x%*%y
+
+x
+mean(x)
+2*x
+mean(2*x)
+```
+
+
+
+
+
+
+
+
+

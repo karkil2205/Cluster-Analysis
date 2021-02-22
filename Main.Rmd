@@ -12,7 +12,7 @@ output:
     df_print: paged
 ---
 
-BONJOUR   
+
 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="200">
@@ -98,8 +98,12 @@ $$d(\mathbf{x},\mathbf{y})
 x = c(0, 0)
 y = c(6,6)
 dist(rbind(x, y), method = "euclidian")
+dist(rbind(x, y), method = "euclidian",diag=T,upper=T)
+
 6*sqrt(2)
 dist(rbind(x, y), method = "manhattan")
+dist(rbind(x, y), method = "manhattan",diag=T,upper=T)
+
 ```
 
 
@@ -167,12 +171,14 @@ $\mathbf{0}$ is the null-vetor of $\mathbb{R}^n$.
 library("ggplot2")
 x = c(0, 0)
 y = c(6,6)
-MinkowDist=c()
+MinkowDist=c() # Initialiser à vide la liste
 for (p in seq(1,30,.01))
 {
 MinkowDist=c(MinkowDist,dist(rbind(x, y), method = "minkowski", p = p))     
 }
-ggplot(data =data.frame(x = seq(1,30,.01), y=MinkowDist ) , mapping = aes(x = x, y = y))+geom_point(size=.1,color="red")+xlim(1,11)+xlab("p")+ylab("Minkowski Distance")+ggtitle("Minkowski distance wrt p")
+
+ggplot(data =data.frame(x = seq(1,30,.01), y=MinkowDist ) , mapping = aes( x=x, y= y))+geom_point(size=.1,color="red")+
+  xlab("p")+ylab("Minkowski Distance")+ggtitle("Minkowski distance wrt p")
 ```
 
 
