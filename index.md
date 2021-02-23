@@ -7,7 +7,8 @@
 
 
 # Cluster Analysis
-* This is the index.md file of the Github repository Cluster Analysis.
+* This webpages provides various links and information on my Cluster Analysis course.
+* To access to the Github Repository click on the blue link above. 
 * The last version of my course is available on  [Rpubs](http://rpubs.com/karkil2205/700595).
 
 
