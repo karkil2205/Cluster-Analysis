@@ -135,7 +135,7 @@ dist(rbind(x, y), method = "canberra")
 
 # Exercice 3
 
-* Prove that the Canberra distance is a true distance.
+* Prove that the Canberra distance is a true distance, i.e. that it satisfies A1-A3.
 
 
 
@@ -177,9 +177,17 @@ for (p in seq(1,30,.01))
 MinkowDist=c(MinkowDist,dist(rbind(x, y), method = "minkowski", p = p))     
 }
 
-ggplot(data =data.frame(x = seq(1,30,.01), y=MinkowDist ) , mapping = aes( x=x, y= y))+geom_point(size=.1,color="red")+
+ggplot(data =data.frame(x = seq(1,30,.01), y=MinkowDist ) , mapping = aes( x=x, y= y))+
+  geom_point(size=.1,color="red")+
   xlab("p")+ylab("Minkowski Distance")+ggtitle("Minkowski distance wrt p")
 ```
+
+
+
+# Exercice 4
+
+Produce a similar graph using "The Economist" theme. Indicate on the graph the Manhattan, the Euclidian distances as well as the Chebyshev distance introduces below.
+
 
 
 # Chebyshev distance 
@@ -194,7 +202,7 @@ $$
 * The corresponding norm is:
 
 $$
-\|\mathbf{x}|_\infty=\max_{i=1,\cdots,n}(|x_i|).
+\|\mathbf{x}\|_\infty=\max_{i=1,\cdots,n}(|x_i|).
 $$
 
 
@@ -224,7 +232,8 @@ $$
 $$
 
 
-
+# Exercice 5
+To illustarate the Minkowski inequality, draw $100$ times two lists of $100$ draws from the lognormal distribution with mean $1600$ and standard-deviation $300$. Illustrate with a graph the gap between the two drawn lists.
 
 # Hölder inequality
 
@@ -352,6 +361,13 @@ cor(rank(x),rank(y))
 ```
 
 
+# Exercice 6
+For the two vectors $\mathbf{x}=(22,34,1,12,25,56,7)$ and $\mathbf{y}=(2,64,12,2,22,5,8)$ :
+
+* Calculate the ranks for each vector.
+* Deduce the Spearman correlation distance from that ranks.
+* Deduce the Spearman correlation distance from the above dispalyed alternative equation.
+* Calcualate the Spearman correlation distance using the R function. 
 
 
 
@@ -383,6 +399,17 @@ tau=tau/(5*4)
 tau
 cor(x,y, method="kendall")
 ```
+
+# Exercice 7
+For the two vectors $\mathbf{x}=(22,34,1,12,25,56,7)$ and $\mathbf{y}=(2,64,12,2,22,5,8)$ :
+
+* List all pairs of coordinates.
+* How many pairs are there?
+* For each pair and each cector, compute the signs of the differences in coordinates.
+* Deduce the Kendall tau coefficient using the above computations.
+* Calcualte the Kendall tau coefficient using the R function. 
+
+
 
 
 
@@ -535,7 +562,16 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * In some cases, of course, zero_zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
 * But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
-# Exercice 4
+
+# Exercice 8
+
+* Use the data set *animals* available in the package *cluster*.
+* This data set was first used in this textbook [KAUFMAN, Leonard et ROUSSEEUW, Peter J. Finding groups in data: an introduction to cluster analysis. John Wiley & Sons, 2009.](https://github.com/karkil2205/Cluster-Analysis/blob/master/Finding%20Groups%20in%20Data%20An%20Introduction%20to%20Cluster%20Analysis%20by%20Leonard%20Kaufman%2C%20Peter%20J.%20Rousseeuw%20(z-lib.org).pdf)
+
+
+
+# Exercice 9
+
 * Prove that the distances based on the  Simple Matching coefficient and the Jaccard coefficient satisfy A3.
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
 * Hint: Proofs and counterexamples have to be adapted from in the paper: 
@@ -801,7 +837,7 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * Each cluster contains at least one object and each object belongs to only one cluster. 
 * There is a very large number of possible partitions.
 
-# Exercice 5
+# Exercice 9
 What is the number of possible partitions ?
 
 # K-Means
@@ -873,7 +909,7 @@ $$
 * STEP 3. Repeat Step 2 for each object $j$ such that $2\leq j \leq m$.
 * STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
-# Exercice 6
+# Exercice 10
 Prove that the error variation is indeed given by: $$
 \Delta e=
 \frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
@@ -978,32 +1014,19 @@ colMeans(df[cluster==3,])
 * For example, the mean of objects in the first cluster for the first variable, equals (13 + 4)/2 = 8.5 (See Table 4.3 for more.)
 * The error for the initial partition is the sum of squared distances of cases from their cluster means.
 
+
 ```{r}
 MatrixC1=rbind(df[cluster==1,],colMeans(df[cluster==1,]))
-rownames(MatrixC1)[3]<-c("MeanC1")
-MatrixC1
-sum((as.matrix(D)[3,])^2)
-MatrixC2=rbind(df[cluster==2,],colMeans(df[cluster==2,]))
-MatrixC2
-rownames(MatrixC2)[3]<-c("MeanC2")
-MatrixC3=rbind(df[cluster==3,],colMeans(df[cluster==3,]))
-rownames(MatrixC3)[5]<-c("MeanC3")
-MatrixC3
-
+#rownames(MatrixC1)[3]<-c("MeanC1")
+#MatrixC1
+#sum((as.matrix(D)[3,])^2)
+#MatrixC2=rbind(df[cluster==2,],colMeans(df[cluster==2,]))
+#MatrixC2
+#rownames(MatrixC2)[3]<-c("MeanC2")
+#MatrixC3=rbind(df[cluster==3,],colMeans(df[cluster==3,]))
+#rownames(MatrixC3)[5]<-c("MeanC3")
+#MatrixC3
 
 ```
 
 
-
-
-=======
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNTc1NjIxMSwyMDc3NTU5ODYsLTEzOD
-A4NDYyMzAsODA0MzYxMTg5LC0xMjcwODIwMjgyLDYwMzcwMzM5
-MiwxNzc4NTQwMjA2LC0xOTUzNjQ3NTgwLC0xMjEzMzgyMTczLD
-E2OTAwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0
-MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5OD
-g5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYs
-Mjg5MzI4MDMyXX0=
--->
->>>>>>> 3caf7d63d6017c0a7714fed0a79edcda89457222
