@@ -1030,3 +1030,22 @@ MatrixC1=rbind(df[cluster==1,],colMeans(df[cluster==1,]))
 ```
 
 
+<<<<<<< HEAD
+=======
+
+
+=======
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIxNTc1NjIxMSwyMDc3NTU5ODYsLTEzOD
+A4NDYyMzAsODA0MzYxMTg5LC0xMjcwODIwMjgyLDYwMzcwMzM5
+MiwxNzc4NTQwMjA2LC0xOTUzNjQ3NTgwLC0xMjEzMzgyMTczLD
+E2OTAwNjQ2NDEsLTEwMjIxOTM2MzAsMjEzOTc1NzM4MCwtMjI0
+MjI1OTIxLC0xODczMzk0NjI5LC05MDE4MzY2MzEsLTE3MzU5OD
+g5ODAsMjA3MzAzMTU4MiwtNzE3OTkxOTY2LC0xNzExMTAyNzYs
+Mjg5MzI4MDMyXX0=
+-->
+>>>>>>> 3caf7d63d6017c0a7714fed0a79edcda89457222
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDMyMzU0ODMyXX0=
+-->
+>>>>>>> 8caa4cc47f58295532ed8578645f749b91ff0c7f
