@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #install.packages("magrittr")
 #install.packages("cluster")
 #install.packages("factoextra")
-install.packages("cluster.datasets")
+#install.packages("cluster.datasets")
 ```
 
 
@@ -566,8 +566,10 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 # Exercice 8
 
 * Use the data set *animals* available in the package *cluster*.
-* This data set was first used in this textbook [KAUFMAN, Leonard et ROUSSEEUW, Peter J. Finding groups in data: an introduction to cluster analysis. John Wiley & Sons, 2009.](https://github.com/karkil2205/Cluster-Analysis/blob/master/Finding%20Groups%20in%20Data%20An%20Introduction%20to%20Cluster%20Analysis%20by%20Leonard%20Kaufman%2C%20Peter%20J.%20Rousseeuw%20(z-lib.org).pdf)
+* This data set was first used in this textbook [KAUFMAN, Leonard et ROUSSEEUW, Peter J. Finding groups in data: an introduction to cluster analysis. John Wiley & Sons, 2009](https://1lib.fr/book/539806/023f26).
 
+
+TTT
 
 
 # Exercice 9
