@@ -1,4 +1,4 @@
----
+	---
 title: "Cluster Analysis"
 output:
   html_notebook:
@@ -21,7 +21,7 @@ output:
 
 * Required packages
 
-```{r}
+```{r```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 #install.packages("dplyr")
 #install.packages("stargazer")
@@ -29,7 +29,12 @@ knitr::opts_chunk$set(echo = TRUE)
 #install.packages("magrittr")
 #install.packages("cluster")
 #install.packages("factoextra")
-#install.packages("cluster.datasets")
+#install.packages("cluster.datasets"
+
+
+
+}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
@@ -845,15 +850,15 @@ What is the number of possible partitions ?
 # K-Means
 *  The discordance between the data and a given partition is denoted by $e$.
 * We use the technique of local optimization.
-* A neighborhood of partitions is defined for each partition.
+* A neighborhood of partitions is defined for each ption.
 * Starting from an initial partition, search through a set of partitions at each step.
-* Move from the partition to a partition in its neighborhood for which $e$ is minimal.
+* Move from the partition to a partition in its neighborhood for which $e$ is minim.
 * If the neighborhoods are very large, it is cheaper computationally to move to the first partition discovered in the neighborhood where $e$ is reduced from its present value.
 * A number of stopping rules are possible.
 * For example, the search stops when $e$ is not reduced by movement to the neighborhood.
-* The present partition is then considered locally optimal in that it is the best partition in its neighborhood.
-* Consider partitions of the five  ($n=5$) beef foods $\{\text{BB, BR,BS,BC,BH}\}$ into three clusters ($k=3$).
-* Totally, there are 25 such partitions.
+* The present partition is nidered locally optimal in that it is the best partition in its neighborhood.
+* Consider partitions of the five  ($n=5$) beef foods $\{\text{BB, BR,BS,BC, into three clusters ($k=3$).
+* Totally, there are 25 such partiermutations.
 * A plausible neighborhood for a partition is the set of partitions obtained by transferring an object from one cluster to another.
 
 * For the partition (BB BR) (BS) (BC BH), the neighborhood consists of the following ten partitions:
@@ -887,7 +892,7 @@ $$
 * The distance between the object $j$ and the cluster $l$ is $d(\mathbf{x}^j,\bar{\mathbf{x}}^l)$, where $d$ is taken to be the Euclidian distance
 $$d(\mathbf{x}^j,\bar{\mathbf{x}}^l)=||\mathbf{x}^j-\bar{\mathbf{x}}^l||=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
 where $||\mathbf{\cdot}||$ is the Euclidian norm.
-*  The error of the partition is measured by  
+*  The error of the partition is measuredtaken to bye  
 $$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^l)=
 \sum_{l=1}^{k}\sum_{j\in C_l}
 ||\mathbf{x}^j-\bar{\mathbf{x}}^l||^2.
@@ -941,7 +946,15 @@ df
 ```{r}
 # The data contain some errors 
 df[3,1]<-13 # Error in ligne 3
-df[6,1]<-4 # Error in ligne 6
+df[6,1]<-4 # Errhttps://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
+*Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.*
+
+* The records of 11 students including one that had not yet experienced video games (subject 82) are shown in Table 3.5. 
+* The dissimilarity between subjects 1 and 2 can be calculated as follows
+
+$$\frac{0+|2-0|/30+|2-2|/3+0+|2-3|/3+1+0}{7}=0.2.$$
+
+* The variables *like* and *freq* have been treated as or din ligne 6
 df[7,3]<-1 # Error at ligne 7
 df
 rownames(df)<-c("BB","HR","BR","BS","BC","CB","CC","BH")
@@ -951,14 +964,37 @@ df
 ```
 
 * STEP 1. An initial clustering which  works well is based on the object sums.
-* We denote by $s_j$ the onject sum of object $j,\:j=1,\cdots,m$.
-* We set the object $j$ to the cluser $l(j)$ such that 
+* We denote by $s_j$ the onject sum of object $j,\:j=1,\cdots,m$.al variables, as if their ranks were on an interval scale.
+*  This is not ideal but seemed preferable to treating them as nominal variables.
+
+```{r}
+data=read.csv("https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/videogames.csv")
+data[1,]
+data[2,]
+```
+measured characters.
+* *The presence of the character or type is coded $1$ and the absence by 0. 
+* We have have at our disposal two vectors.
+* $\mathbf{x}$ is observed for first indiviual (or object).
+* $\mathbf{y}$ is observed for a second individual. 
+* We setcan the object $j$ to the cluser $l(j)$ such that 
 
 $$
 l(j)= \bigg[k\left(\frac{s_j-\min_{l=1\cdots k}s_l}{\max_{l=1\cdots k}s_l-\min_{l=1\cdots k}s_l}\right)+1\bigg],
 $$
 
-where $[\cdot]$ is the integer part function.
+where $[\cdot]$ is tn calculate the following statistics:
+ 
+   $a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$
+   
+   $b=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i.$
+   
+   $c=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_i(1-y_i).$
+
+   $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).$
+
+* This gives a familiar $2 \times 2$ association table . 
+* The ienteger part function.
 
 ```{r}
 s=rowSums(df)
@@ -981,7 +1017,41 @@ rownames(df)[cluster==3]
 
 
 
-* Hartigan has some errors since he found sums equal to $41,39,35,40,41,34,42,44$.
+* Hartigan has some errors since he found sums equal to $41,39,35,4ries are the counts of matches , $a$ for $(1,1)$,  and $d$ for $(0,0)$.
+* The counts of mismatches are for $b$ for $(1,0)$ and $c$ for $(0,1)$).
+* Obviously, $a+b+c+d=n$.
+
+|    |    |Second individual|||
+|:---|---|:---:|:---:|:---:|
+|  |    |1  |0|*Totals*
+|**First individual**|1|$a$|$b$|$a+b$|
+|             |0|$c$|$d$|$c+d$|
+|*Totals*||$a+c$|$b+d$|$n$|
+
+
+
+
+* We will use data taken from: Kaufman, L., & Rousseeuw, P. J. (2009). _Finding groups in data: an introduction to cluster analysis_ (Vol. 344). John Wiley & Sons.
+
+![KAUFMANBinarydata](KAUFMANBinarydata.jpg)
+
+* For $8$ people, $10$ binary variables were considered:
+* male/female, blue eyes/brown eyes, round face/oval face, and so on.
+* The attribute listed first is always the one coded as 1, for instance blue eyes = 1 and brown eyes = 0.
+* When comparing Ilan with Talia.
+* We make up a table like (16) which yields a = 1, b = 3, c = 1, and d = 5.
+* Note that interchanging Ilan and Talia would permute b and c (while leaving a and d unchanged), so a good similarity or dissimilarity coefficient must treat b and c in the same way in order to satisfy (D3) or (S3). At this point a cruc 
+
+
+
+* A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
+
+data=c(
+"Ilan",1,0,1,1,0,0,1,0,0,0,
+"Jacqueline",0,1,0,0,1,0,0,0,0,0,
+"Kim",0,0,1,0,0,0,1,0,0,1,
+"Lieve",0,1,0,0,0,0,0,1,1,0,
+"Leon",1,1,0,0,41,34,42,44$.
 
 ```{r}
 s=c(41,39,35,40,41,34,42,44)
@@ -990,7 +1060,23 @@ cluster<-trunc(3*(s-min(s))/(max(s)-min(s))+1)
 cluster
 cluster<-sapply(cluster,Myfunc)
 cluster
-```
+```1,0,1,1,0,
+"Peter",1,1,0,0,1,0,1,1,0,0,
+"Talia",0,0,0,1,0,1,0,0,0,0,
+"Tina",0,0,0,1,0,1,0,0,0,0
+)
+data.frame(matrix(data, nrow=8,byrow=T))
+
+
+
+
+|Measure|Formula|
+|---|---|
+|Matching coefficient|$(a+d)/(a+b+c+d)$|
+|Jaccard coefficient|$a/(a+b+c)$|
+|Rogers and Tanimoto (1960)| $(a+d)/[a+2(b+c)+d]$|
+|Gower and Legendre (1986)|$(a+d)/[a+\frac{1}{2}(b+c)+d]$|
+|Gower and Legendre (1986)|$a/[a+\frac{1}{2}(b+c)]$|
 
 
 
@@ -998,7 +1084,7 @@ cluster
 * Thus the initial partition is (BR CB) (HR BS) (BB BC CC BH). 
 
 ```{r}
-rownames(df)[cluster==1]
+rownamreason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero–zero matches (df)[cluster==1]
 rownames(df)[cluster==2]
 rownames(df)[cluster==3]
 ```
@@ -1013,8 +1099,11 @@ colMeans(df[cluster==3,])
 ```
 
 
-* For example, the mean of objects in the first cluster for the first variable, equals (13 + 4)/2 = 8.5 (See Table 4.3 for more.)
-* The error for the initial partition is the sum of squared distances of cases from their cluster means.
+* For example, the mean of objects in Table 3.2).
+* In some cases, of course, zero–zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
+* An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
+* But in othe first cluster fr cases the inclusion or othe first variable, equals (13 + 4)/2 = 8.5 (See Table 4.3 for more.)
+* Trwise of d is more problematic; for example, when the zerror for the initial partition is the sum of squared distances of cases from their cluster means.
 
 
 ```{r}
@@ -1050,4 +1139,26 @@ Mjg5MzI4MDMyXX0=
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDMyMzU0ODMyXX0=
 -->
->>>>>>> 8caa4cc47f58295532ed8578645f749b91ff0c7f
+>>>>>>> 8caa4cc47f58295532ed8578645f749b91ff0c7fo category corresponds to the genuine absence of some property, such as wings in a study of insects. 
+
+
+# Distance matrix computation
+* We’ll use a subset of the data USArrests
+*  We’ll use only a by taking 15 random rows among the 50 rows in the data set. 
+* Next, we standardize the data using the function scale():
+
+```{r}
+install.packages("FactoMineR")
+library("FactoMineR")
+data("USArrests") # Loading
+head(USArrests, 3) # Print the first 3 rows
+set.seed(123)
+ss <- sample(1:50, 15) # Take 15 random rows
+df <- USArrests[ss, ] # Subset the 15 rows
+df.scaled <- scale(df) # Standardize the variables
+```
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM1NzE3NTczOF19
+-->
