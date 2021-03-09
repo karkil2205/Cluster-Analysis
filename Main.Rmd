@@ -1,4 +1,4 @@
-	---
+---
 title: "Cluster Analysis"
 output:
   html_notebook:
@@ -21,7 +21,7 @@ output:
 
 * Required packages
 
-```{r```{r setup, include=TRUE}
+```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 #install.packages("dplyr")
 #install.packages("stargazer")
@@ -31,9 +31,6 @@ knitr::opts_chunk$set(echo = TRUE)
 #install.packages("factoextra")
 #install.packages("cluster.datasets"
 
-
-
-}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -884,7 +881,10 @@ What is the number of possible partitions ?
 * Each of the $m$ objects lies in just one of the $k$ clusters.
 * Note that $\sum_{l=1}^k m_l=m$.
 * The vector of means over the objects in cluster $C_l$ is denoted by $\bar{\mathbf{x}}^{l}$, with
-$$\bar{\mathbf{x}}^{l}\equiv\frac{1}{m_l}\sum_{j\in C_l}\mathbf{x}^{j}=(\bar{x}_1^l,\cdots,\bar{x}_n^l),\:l=1,\cdots, k,$$
+$$
+\bar{\mathbf{x}}^{l}\equiv\frac{1}{m_l}\sum_{j\in C_l}\mathbf{x}^{j}=(\bar{x}_1^l,\cdots,\bar{x}_n^l),\:l=1,\cdots, k,
+$$
+
 where 
 $$
 \bar{x}_i^l\equiv \frac{\sum_{j\in C_l}x_i^{j}}{m_l},\:i=1,\cdots, n; \:l=1,\cdots,k.
@@ -893,12 +893,17 @@ $$
 $$d(\mathbf{x}^j,\bar{\mathbf{x}}^l)=||\mathbf{x}^j-\bar{\mathbf{x}}^l||=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
 where $||\mathbf{\cdot}||$ is the Euclidian norm.
 *  The error of the partition is measuredtaken to bye  
-$$e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^l)=
+$$
+e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^l)=
 \sum_{l=1}^{k}\sum_{j\in C_l}
 ||\mathbf{x}^j-\bar{\mathbf{x}}^l||^2.
 $$
+
 * Alternatively, we have
-$$e=\sum_{j=1}^{m}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\mathbf{x}^j-\bar{\mathbf{x}}^{l(j)}||^2,$$
+
+$$
+e=\sum_{j=1}^{m}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\mathbf{x}^j-\bar{\mathbf{x}}^{l(j)}||^2,
+$$
 
 where $l(j)$ is the index of the cluster of object $j$.
 
@@ -906,9 +911,11 @@ where $l(j)$ is the index of the cluster of object $j$.
 * The search ends when no such movement reduces $e$.
 * STEP 1. Assume initial clusters. Compute the cluster means $\bar{\mathbf{x}}^l$ and the initial error $e$.
 * STEP 2. For the first Object, compute for every cluster $l$ 
+
 $$
 \Delta e=
-\frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).$$
+\frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
+$$
 
 * It corresponds to the error variation in transferring the first object from cluster $l(1)$ to which it belongs to cluster $l$.
 * If the minimum of this quantity over all $l\neq l(1)$ is negative, transfer the first case from cluster $l(1)$ to this minimal $l$.
@@ -917,9 +924,11 @@ $$
 * STEP 4. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to Step 2.
 
 # Exercice 10
-Prove that the error variation is indeed given by: $$
+Prove that the error variation is indeed given by: 
+$$
 \Delta e=
-\frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1). $$
+\frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
+$$
 
 
 # K-MEANS APPLIED TO FOOD NUTRIENT DATA
@@ -932,7 +941,6 @@ Prove that the error variation is indeed given by: $$
 
 
 
-<<<<<<< HEAD
 ```{r}
 #library("cluster.datasets")
 #write.csv(rda.meat.fish.fowl.1959,"Hartigandat%a1.csv")
@@ -940,13 +948,16 @@ df<-read.csv("Hartigandata1.csv")
 print(df)
 df<-df[1:8,c(3,4,6)]
 df
-
 ```
 
 ```{r}
 # The data contain some errors 
 df[3,1]<-13 # Error in ligne 3
-df[6,1]<-4 # Errhttps://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
+df[6,1]<-4 # 
+``` 
+
+https://raw.githubusercontent.com/karkil2205/Usid13Chapter1/master/Table35.jpg)
+
 *Data from Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). Cluster Analysis. –John Wiley & Sons. Ltd., New York, 330.*
 
 * The records of 11 students including one that had not yet experienced video games (subject 82) are shown in Table 3.5. 
@@ -994,7 +1005,7 @@ where $[\cdot]$ is tn calculate the following statistics:
    $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).$
 
 * This gives a familiar $2 \times 2$ association table . 
-* The ienteger part function.
+* The integer part function.
 
 ```{r}
 s=rowSums(df)
@@ -1046,12 +1057,13 @@ rownames(df)[cluster==3]
 
 * A list of some of the similarity measures that have been suggested for binary data is shown in Table 3.3; a more extensive list can be found in Gower and Legendre (1986). 
 
-data=c(
-"Ilan",1,0,1,1,0,0,1,0,0,0,
+```{r}
+data=c("Ilan",1,0,1,1,0,0,1,0,0,0,
 "Jacqueline",0,1,0,0,1,0,0,0,0,0,
 "Kim",0,0,1,0,0,0,1,0,0,1,
 "Lieve",0,1,0,0,0,0,0,1,1,0,
-"Leon",1,1,0,0,41,34,42,44$.
+"Leon",1,1,0,0,41,34,42,44)
+```
 
 ```{r}
 s=c(41,39,35,40,41,34,42,44)
@@ -1060,13 +1072,13 @@ cluster<-trunc(3*(s-min(s))/(max(s)-min(s))+1)
 cluster
 cluster<-sapply(cluster,Myfunc)
 cluster
-```1,0,1,1,0,
+1,0,1,1,0,
 "Peter",1,1,0,0,1,0,1,1,0,0,
 "Talia",0,0,0,1,0,1,0,0,0,0,
 "Tina",0,0,0,1,0,1,0,0,0,0
 )
 data.frame(matrix(data, nrow=8,byrow=T))
-
+```
 
 
 
@@ -1158,7 +1170,3 @@ df <- USArrests[ss, ] # Subset the 15 rows
 df.scaled <- scale(df) # Standardize the variables
 ```
 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NzE3NTczOF19
--->
