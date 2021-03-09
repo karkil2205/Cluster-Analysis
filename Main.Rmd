@@ -569,7 +569,7 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * This data set was first used in this textbook [KAUFMAN, Leonard et ROUSSEEUW, Peter J. Finding groups in data: an introduction to cluster analysis. John Wiley & Sons, 2009](https://1lib.fr/book/539806/023f26).
 
 
-TTT
+
 
 
 # Exercice 9
