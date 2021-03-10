@@ -18,8 +18,7 @@ editor_options:
 
 ```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
-#install.packages("dplyr","ade4","magrittr","cluster","factoextra","cluster.datasets","xtable")
-
+#install.packages("dplyr","ade4","magrittr","cluster","factoextra","cluster.datasets","xtable","kableExtra","knitr","summarytools")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -436,42 +435,297 @@ row.names(data)=c("Ilan","Jacqueline","Kim","Lieve","Leon","Peter","Talia","Tina
 names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Round Face", "Pessimist", "Evening Type", "Is an Only Child", "Left-Handed")
 ```
 
-
-
-
-
+* We are comparing the records for Ilan with Talia.
 
 ```{r, echo=TRUE,results='asis',message=FALSE}
 library(knitr)
 library(xtable)
 library(stargazer)
 library(texreg)
+library(kableExtra)
+library(summarytools)
 
 set.seed(893)
-Col <- sample(c('A','B','C'),100,replace=TRUE)
-Row <- sample(c('D','E','F'),100,replace=TRUE)
-```
+datat<-as.data.frame(t(data))
+datat=lapply(datat,as.factor)
+Ilan=datat$Ilan
+Talia =datat$Talia
+print(ctable(Ilan,Talia,prop = 'n',style = "rmarkdown"))
 
-```{r, echo=TRUE,results='asis',message=FALSE}
-x <- xtabs(~Row+Col)
-x
-kable(x)
-kable(x,format='html')
-kable(x,format='html',output = TRUE)
-xx <- xtable(format(x))
-print(xx,type='html')
-stargazer(x)
-
-f <-ftable(Row,Col)
-f
-kable(f,format='html')
-kable(f,format='html',output = TRUE)
-xf <- xtable(format(f))
-print(xf,type='html')
-stargazer(f)
 ```
 
 
+* Therefore: $a = 1,\:b = 3,\: c = 1,\: d = 5$.
+* Note that interchanging Ilan and Talia would permute $b$ and $c$ while leaving $a$ and $d$ unchanged.
+* A good similarity or dissimilarity coefficient must treat $b$ and $c$ symmetrically.
+* A similarity measure is denoted by: $s(\mathbf{x},\mathbf{y})$.
+* The corresponding distance is then defined as: 
+ $$d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y}).$$
+* Alternatively, we have:
+$$d(\mathbf{x},\mathbf{y})=\sqrt{1-s(\mathbf{x},\mathbf{y})}.$$ 
+* A list of some of the similarity measures $s(\mathbf{x},\mathbf{y})$ that have been suggested for binary data is shown below.
+* An more complete list can be found in: [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48](https://booksc.org/book/6755353/c44198).
+
+|Coefficient|$s(\mathbf{x},\mathbf{y})$|$d(\mathbf{x},\mathbf{y})=1-s(\mathbf{x},\mathbf{y})$|
+|:---|:---:|:---:|
+|Simple matching|$\frac{a+d}{a+b+c+d}$ |$\frac{b+c}{a+b+c+d}$|
+|Jaccard|$\frac{a}{a+b+c}$|$\frac{b+c}{a+b+c}$|
+|Rogers and Tanimoto (1960)| $\frac{a+d}{a+2(b+c)+d}$|$\frac{2(b+c)}{a+2(b+c)+d}$|
+|Gower and Legendre (1986)|$\frac{2(a+d)}{2(a+d)+b+c}$|$\frac{b+c}{2(a+d)+b+c}]$|
+|Gower and Legendre (1986)|$\frac{2a}{2a+b+c}$|$\frac{b+c}{2a+b+c}$|
+
+
+* To calculate these coefficients, we use the function: [dist.binary().](https://www.rdocumentation.org/packages/ade4/versions/1.7-16/topics/dist.binary) available in the **ade4** package.  
+
+* All the distances  in the **ade4** package are of type  $d(\mathbf{x}.\mathbf{y})= \sqrt{1 - s(\mathbf{x}.\mathbf{y})}$.
+
+```{r,echo=T,results='asis'}
+library(ade4)
+a=1
+b=3
+c=1
+d=5
+dist.binary(data[c("Ilan","Talia"),],method=2)^2
+1-(a+d )/(a+b+c+d)
+dist.binary(data[c("Ilan","Talia"),],method=1)^2
+1-a/(a+b+c)
+dist.binary(data[c("Ilan","Talia"),],method=4)^2
+1-(a+d )/(a+2*(b+c)+d)
+# One Gower coefficient is missing
+dist.binary(data[c("Ilan","Talia"),],method=5)^2
+1-2*a/(2*a+b+c)
+```
+
+
+* The reason for such a large number of possible measures has to do with the apparent uncertainty as to how to deal with the count of zero-zero matches $d$.
+* The measues embedding $d$ are sometimes called symmetrical.
+* The other measues are called assymmetrical.
+* In some cases, of course, zero_zero matches are completely equivalent to one–one matches, and therefore should be included in the calculated similarity measure.
+* An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
+* But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
+
+# Exercice 8
+
+* Use the data set *animals* available in the package *cluster*.
+* This data set was first used in this textbook [KAUFMAN, Leonard et ROUSSEEUW, Peter J. Finding groups in data: an introduction to cluster analysis. John Wiley & Sons, 2009](https://book4you.org/book/669277/d2cf59).
+* Identify the missing measurements.
+* Explain the way how KAUFMAN and ROUSSEEUW pp. 296-297 treat the missing measurements.
+
+![KAUFMAN and ROUSSEEUW p. 296](ExerciceKauffman1.jpg)
+
+![KAUFMAN and ROUSSEEUW p. 297](ExerciceKauffman2.jpg)
+
+
+
+# Exercice 9
+
+* Prove that the distances based on the  Simple Matching coefficient and the Jaccard coefficient satisfy A3.
+* Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
+* Hint: Proofs and counterexamples have to be adapted from in the paper: [Gower, J. C., & Legendre, P. (1986). Metric and Euclidean properties of dissimilarity coefficients. _Journal of classification_, _3_(1), 5-48.](https://booksc.org/book/6755353/c44198)
+
+
+# Nominal variables 
+
+* We previously studied above binary variables which can only take on two states coded as $0,1$.
+* We generalize this approach to nominal variables which may take on more than two states.
+* Eye's color may have for example four states: blue, brown, green, grey . 
+* Le $M$ be the number of states and code the outcomes as $1, \cdots, M$. 
+* We may choose $1 =\text{blue},$ $2 =\text{brown},$ $3 =\text{green},$ and $4 =\text{grey}$.
+* These states are not ordered in any way
+* One strategy would be creating a new binary variable for each of the $M$ nominal states.
+* Then to put it equal to $1$ if the corresponding state occurs and to $0$ otherwise. 
+* After that, one could resort to one of the dissimilarity coefficients of the previous subsection. 
+* The most common way of measuring the similarity or dissimilarity between two objects through categorial variables is the simple matching approach. 
+* If $\mathbf{x},\mathbf{y},$ are both $n$ nominal records for two individuals,
+* Let define the function: 
+$$\delta(x_i,y_i)\equiv \begin{cases}0,
+\text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}$$
+
+* Let  $N_{a+d}$ be the number of attributes of the two individuals on which the two records match:
+$$N_{a+d}=\sum_{i=1}^n\delta(x_i,y_i).$$
+* Let $N_{b+c}$ be the number of attributes on which the two records do not match:
+$$N_{b+c}= n - N_{a+d}.$$
+* Let $N_d$ be the number of attributes on which the two records match in a “not applicable” category:
+  $$N_{d}=\sum_{i=1}^n\delta(x_i,y_i).$$
+
+* The distance corresponding to the simple matching approach is: 
+$$
+d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
+$$
+* Therefore:
+$$
+d(\mathbf{x},\mathbf{y})=\frac{N_{a+d}}{N_{a+d}+N_{b+c}}.
+$$
+*  Note that simple matching has exactly the same meaning as in the preceding section.
+ 
+# Gower’s dissimilarity
+* Gower’s coefficient is a dissimilarity measure specifically
+designed for handling mixed attribute types or variables.
+* See: GOWER, John C. A general coefficient of similarity and some of its properties. _Biometrics_, 1971, p. 857-871.
+* The coefficient is calculated as the weighted average of attribute contributions.
+* Weights usually used only to indicate which attribute values could actually be compared meaningfully.
+* The formula is:
+$$
+d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i \delta(x_i,y_i)}{\sum_{i=1}^n w_i}.
+$$
+* The wheight $w_i$  is put equal to $1$ when both measurements $x_i$ and $y_i$ are nonmissing, 
+* The number $\delta(x_i,y_i)$ is the contribution of the $i$th measure or variable to the dissimilarity measure.
+* It the $i$th measure is nominal, we take  
+$$
+\delta(x_i,y_i)\equiv \begin{cases}0,
+\text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}
+$$
+*  If the $i$th measure is  interval-scaled, we take instead: 
+$$
+\delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i},
+$$
+where $R_i$ is the range of variable $i$ over the available data.
+
+
+
+
+* Consider the following data set:
+
+![](flowers.jpg)
+*Data from: Struyf, A., Hubert, M., & Rousseeuw, P. (1997). Clustering in an object-oriented environment. _Journal of Statistical Software_, _1_(4), 1-30.*
+
+ 
+* The dataset contains 18 flowers and 8 characteristics:
+1. Winters: binary, indicates whether the plant may be left in the garden when it freezes.
+2. Shadow: binary, shows whether the plant needs to stand in the shadow.
+3. Tubers (Tubercule): asymmetric binary, distinguishes between plants with tubers and plants that grow in any other way.
+4. Color: nominal, specifies the flower’s color (1=white, 2=yellow, 3= pink, 4=red, 5=
+blue).
+5. Soil: ordinal, indicates whether the plant grows in dry (1), normal (2), or wet (3) soil.
+6. Preference: ordinal, someone’s preference ranking, going from 1 to 18.
+7. Height: interval scaled, the plant’s height in centimeters.
+8. Distance: interval scaled, the distance in centimeters that should be left between the plants.
+ * The dissimilarity between Begonia  and Broom (Genêt) can be calculated as follows:
+ 
+![](Begonia.jpg)
+*Begonia*
+
+![](Genet.jpeg)
+*Genêt*
+
+
+```{r}
+library(cluster)
+library(dplyr)
+data <-flower %>% 
+rename(Winters=V1,Shadow=V2,Tubers=V3,Color=V4,Soil=V5,Preference=V6,Height=V7,Distance=V8) %>%
+mutate(Winters=recode(Winters,"1"="Yes","0"="No"),
+      Shadow=recode(Shadow,"1"="Yes","0"="No"),
+      Tubers=recode(Tubers,"1"="Yes","0"="No"),
+      Color=recode(Color,"1"="white", "2"="yellow", "3"= "pink", "4"="red", "5"="blue"),
+      Soil=recode(Soil,"1"="dry", "2"="normal", "3"= "wet")
+      ) 
+```
+
+
+```{r,result = 'asis'}
+res=lapply(data,class)  
+res=as.data.frame(res)
+res[1,] %>% 
+knitr::kable()
+```
+
+```{r}
+flower[1:2,]
+```
+
+```{r}
+max(data$Height)-min(data$Height)
+max(data$Distance)-min(data$Distance)
+
+```
+
+
+$$
+\frac{|1-0|+|0-1|+|0-1|+1+|1-3|/2+|3-15|/17+|150-25|/180+|50-15|/50}{8}\approx 0.8875408
+$$
+ 
+ # Daisy function
+
+![](Daisy.jpg)
+
+
+
+```{r}
+library(cluster)
+(abs(1-0)+abs(0-1)+abs(0-1)+1+abs(1-3)/2+abs(3-15)/17+abs(150-25)/180+abs(50-15)/50)/8
+daisy(data[,1:8],metric = "Gower") 
+```
+
+
+# More on distance matrix computation
+
+![](USAArrest.jpg)
+
+* We use a subset of the data by taking 15 random rows among the 50 rows in the data set.
+* We are using the function sample().
+* We standardize the data using the function scale().
+
+
+```{r,results='asis', echo = TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+stargazer(USArrests,header=TRUE, type='html',summary=FALSE,digits=1)
+```
+
+
+
+
+```{r,results='asis', echo = TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+set.seed(123)
+ss <- sample(1:50,15) 
+df <- USArrests[ss, ] 
+df.scaled <- scale(df) 
+stargazer(df.scaled,header=TRUE, type='html',summary=FALSE,digits=1)
+
+```
+
+
+* The R functions for computing distances.
+1. dist() function accepts only numeric data.
+2. get_dist() function [factoextra package] accepts only numeric data. it supports correlation-based distance measures.
+3. daisy() function [cluster package] is able to handle other variable types (nominal, ordinal, ...). 
+* Remark: All these functions compute distances between rows of the data.
+* Remark: If we want to compute pairwise distances between variables, we must transpose the data to have variables in the rows.
+
+* We first compute Euclidian distances
+
+```{r,results='asis', echo = TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+dist.eucl <- dist(df.scaled, method = "euclidean",upper = TRUE)
+
+
+stargazer(as.data.frame(as.matrix(dist.eucl)[1:3, 1:3]),header=TRUE, type='html',summary=FALSE,digits=1)
+
+
+round(sqrt(sum((df.scaled["New Mexico",]-df.scaled["Iowa",])^2)),1)
+round(sqrt(sum((df.scaled["New Mexico",]-df.scaled["Indiana",])^2)),1)
+round(sqrt(sum((df.scaled["Iowa",]
+-df.scaled["Indiana",])^2)),1)
+
+```
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
 
 
 
