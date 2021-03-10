@@ -1,12 +1,12 @@
 ---
 title: "Cluster Analysis"
 output:
-  word_document:
-    toc: yes
   html_document:
     toc: yes
     toc_float: yes
   pdf_document:
+    toc: yes
+  word_document:
     toc: yes
 editor_options:
   chunk_output_type: console
@@ -18,7 +18,7 @@ editor_options:
 
 ```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
-#install.packages("dplyr","ade4","magrittr","cluster","factoextra","cluster.datasets")
+#install.packages("dplyr","ade4","magrittr","cluster","factoextra","cluster.datasets","xtable")
 
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -38,6 +38,456 @@ knitr::opts_chunk$set(echo = TRUE)
 where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{z}=(z_1,\cdots,z_n)$ are all vectors of $\mathbb{R}^n$.
 * We should use the term _dissimilarity_ rather than _distance_ when not all the three axioms A1-A3 are valid.
 * Most of the time, we shall use, with some abuse of vocabulary, the term distance.
+
+
+
+# Exercice 1
+
+* Prove that the three axioms A1-A3 imply the non-negativity condition: $$d(\mathbf{x},\mathbf{y})\geq 0.$$
+
+
+
+# Euclidean distance
+
+* It is defined by:
+
+$$
+d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.
+$$
+
+* A1-A2 are obvious.
+* The proof of A3 is provided below.
+
+# Exercice 2
+
+* Is the squared Euclidian distance a true distance?
+
+# Manhattan distance
+
+* The Manhattan distance also called  taxi-cab metric or city-block metric is defined by:
+
+$$d(\mathbf{x},\mathbf{y})
+=\sum_{i=1}^n |x_i-y_i|.$$
+
+* A1-A2 hold.
+* A3 also holds using the fact that $|a+b|\leq |a|+|b|$ for any reals $a,b$.
+* There exists also a weighted version  of the Manhattan distance called the Canberra distance.
+
+![](Manhattan.jpg)
+
+```{r}
+x = c(0, 0)
+y = c(6,6)
+dist(rbind(x, y), method = "euclidian")
+dist(rbind(x, y), method = "euclidian",diag=T,upper=T)
+6*sqrt(2)
+dist(rbind(x, y), method = "manhattan")
+dist(rbind(x, y), method = "manhattan",diag=T,upper=T)
+
+```
+
+# Canberra distance
+
+* It is defined by:
+
+$$d(\mathbf{x},\mathbf{y})
+=\sum_{i=1}^n
+ \frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
+
+* Note that the term $|x_i-y_i|/(|x_i|+|y_i|)$ is not properly defined as: $x_i=y_i=0$.
+* By convention we set that term to be zero in that case.
+* The Canberra distance is specially sensitive to small changes near zero.
+
+```{r}
+x = c(0, 0)
+y = c(6,6)
+dist(rbind(x, y), method = "canberra")
+6/6+6/6
+```
+
+# Exercice 3
+
+* Prove that the Canberra distance is a true distance, i.e. that it satisfies A1-A3.
+
+# Minkowski distance
+* Both the Euclidian and the Manattan distances are special cases of  the Minkowski distance which is defined, for $p\geq 1$, by: 
+$$
+d(\mathbf{x},\mathbf{y})=
+\left[\sum_{i=1} |x_i-y_i|^{p}\right]^{1/p}.
+$$
+ * For $p=1$, we get the Manhattan distance.
+ * For $p=2$, we get the Euclidian distance.
+* Let us also define: 
+$$\|\mathbf{x}\|_p\equiv\left[\sum_{i=1}^n |x_i|^{p}\right]^{1/p},$$
+where $\|\mathbf{\cdot}\|_p$ is known as the $p$-norm or Minkowski norm.
+* Note that the Minkowski distance and norm are related by:
+
+$$d(\mathbf{x},\mathbf{y})=\|\mathbf{x}-\mathbf{y}\|_p.$$
+
+* Conversely, we have:
+
+$$\|\mathbf{x}\|_p=d(\mathbf{x},\mathbf{0}),$$
+
+where 
+$\mathbf{0}$ is the null-vetor of $\mathbb{R}^n$.
+
+```{r}
+library("ggplot2")
+x = c(0, 0)
+y = c(6,6)
+MinkowDist=c() # Initialiser à vide la liste
+for (p in seq(1,30,.01))
+{
+MinkowDist=c(MinkowDist,dist(rbind(x, y), method = "minkowski", p = p))     
+}
+
+ggplot(data =data.frame(x = seq(1,30,.01), y=MinkowDist ) , mapping = aes( x=x, y= y))+
+  geom_point(size=.1,color="red")+
+  xlab("p")+ylab("Minkowski Distance")+ggtitle("Minkowski distance wrt p")
+```
+
+# Exercice 4
+
+Produce a similar graph using "The Economist" theme. Indicate on the graph the Manhattan, the Euclidian distances as well as the Chebyshev distance introduced below.
+
+# Chebyshev distance 
+
+* At the limit, we get the Chebyshev distance which is defined by:
+$$
+d(\mathbf{x},\mathbf{y})=\max_{i=1,\cdots,n}(|x_i-y_i|)=\lim_{p\rightarrow\infty}
+\left[\sum_{i=1} |x_i-y_i|^{p}\right]^{1/p}.
+$$
+
+* The corresponding norm is:
+
+$$
+\|\mathbf{x}\|_\infty=\max_{i=1,\cdots,n}(|x_i|).
+$$
+
+# Minkowski inequality
+
+* The proof of the triangular inequality A3 is based on the Minkowski inequality:
+* For any nonnegative real numbers $a_1,\cdots,a_n$; $b_1,\cdots,b_n$, and for any $p\geq 1$, we have:
+$$
+\left[\sum_{i=1}^n (a_i+b_i)^{p}\right]^{1/p}\leq
+\left[\sum_{i=1}^n a_i^{p}\right]^{1/p}
++\left[\sum_{i=1}^n b_i^{p}\right]^{1/p}.
+$$
+* To prove that the Minkowski distance satisfies A3, notice that 
+$$
+ \sum_{i=1}^n|x_i-z_i|^{p}= \sum_{i=1}^n|(x_i-y_i)+(y_i-z_i)|^{p}.
+$$
+* Since for any reals $x,y$, we have: $|x+y|\leq |x|+|y|$, and using the fact that $x^p$ is increasing in $x\geq 0$, we obtain:
+$$
+ \sum_{i=1}^n|x_i-z_i|^{p}\leq \sum_{i=1}^n(|x_i-y_i|+|y_i-z_i|)^{p}.
+$$
+
+* Applying the Minkowski inequality with $a_i=|x_i-y_i|$ and $b_i=|y_i-z_i|$, $i=1,\cdots,n$, we get:
+$$
+ \sum_{i=1}^n|x_i-z_i|^{p}\leq \left(\sum_{i=1}^n |x_i-y_i|^{p}\right)^{1/p}+\left(\sum_{i=1}^n |y_i-z_i|^{p}\right)^{1/p}.
+$$
+
+# Exercice 5
+To illustrate the Minkowski inequality, draw $100$ times two lists of $100$ draws from the lognormal distribution with mean $1600$ and standard-deviation $300$. Illustrate with a graph the gap between the two drawn lists.
+
+# Hölder inequality
+
+* The proof of the Minkowski inequality itself requires the Hölder inequality:
+* For any nonnegative real numbers $a_1,\cdots,a_n$; $b_1,\cdots,b_n$, and any $p,q>1$ with $1/p+1/q=1$, we have:
+$$
+\sum_{i=1}^n a_ib_i\leq
+\left[\sum_{i=1}^n a_i^{p}\right]^{1/p}
+\left[\sum_{i=1}^n b_i^{q}\right]^{1/q}
+$$
+* The proof of the Hölder inequality relies on the Young inequality:
+* For any $a,b>0$, we have
+$$
+ab\leq \frac{a^p}{p}+\frac{b^q}{q},
+$$
+with equality occuring iff: $a^p=b^q$. 
+* To prove the Young inequality, one can use the (strict) convexity of the exponential function.
+* For any reals $x,y$, we have:
+$$
+e^{\frac{x}{p}+\frac{y}{q} }\leq \frac{e^{x}}{p}+\frac{e^{y}}{q}. 
+$$
+* We then set: $x=p\ln a$ and $y=q\ln b$ to get the Young inequality.
+* A good reference on inequalities is: [Z. Cvetkovski,  Inequalities: theorems, techniques and selected problems, 2012, Springer Science & Business Media](https://book4you.org/book/1228394/3ec0fb).
+
+ # Cauchy-Schwartz inequality
+
+* Note that the triangular inequality for the Minkowski distance implies: 
+$$
+\sum_{i=1}^n |x_i|\leq
+\left[\sum_{i=1}^n |x_i|^{p}\right]^{1/p}.
+$$
+* Note that for $p=2$, we have $q=2$. The Hölder inequality implies for that special case
+$$
+\sum_{i=1}^n|x_iy_i|\leq\sqrt{\sum_{i=1}^n x_i^2}\sqrt{\sum_{i=1}^n y_i^2}. 
+$$
+* Since the LHS od thes above inequality is greater then $|\sum_{i=1}^nx_iy_i|$, we get the Cauchy-Schwartz inequality
+$$
+|\sum_{i=1}^nx_iy_i|\leq\sqrt{\sum_{i=1}^n x_i^2}\sqrt{\sum_{i=1}^n y_i^2}. 
+$$
+* Using the dot product notation called also scalar product notation: $\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i$, and the norm notation $\|\mathbf{\cdot}\|_2$, the Cauchy-Schwartz inequality is:
+$$
+|\mathbf{x\cdot y} | \leq \|\mathbf{x}\|_2 \| \mathbf{y}\|_2.
+$$
+
+
+# Pearson correlation distance 
+
+* The Pearson correlation coefficient is a similarity measure on $\mathbb{R}^n$ defined by:
+$$
+\rho(\mathbf{x},\mathbf{y})=
+\frac{\sum_{i=1}^n (x_i-\bar{\mathbf{x}})(y_i-\bar{\mathbf{y}})}{{\sqrt{\sum_{i=1}^n (x_i-\bar{\mathbf{x}})^2\sum_{i=1}^n (y_i-\bar{\mathbf{y}})^2}}},
+$$
+where $\bar{\mathbf{x}}$ is the mean of the vector $\mathbf{x}$ defined by: 
+$$\bar{\mathbf{x}}=\frac{1}{n}\sum_{i=1}^n x_i,$$
+* Note that the Pearson correlation coefficient satisfies P2 and  is invariant to any positive linear transformation, i.e.: $$\rho(\alpha\mathbf{x},\mathbf{y})=\rho(\mathbf{x},\mathbf{y}),$$ for any $\alpha>0$.
+* The Pearson distance (or correlation distance) is defined by:
+$$
+d(\mathbf{x},\mathbf{y})=1-\rho(\mathbf{x},\mathbf{y}).
+$$
+
+* Note that the Pearson distance does not satisfy A1 since $d(\mathbf{x},\mathbf{x})=0$ for any non-zero vector $\mathbf{x}$. It neither satisfies the triangle inequality. However, the symmetry property is fullfilled. 
+
+# Cosine correlation distance
+
+
+* The cosine of the angle $\theta$ between two vectors $\mathbf{x}$ and $\mathbf{y}$ is a measure of similarity given by:
+$$
+\cos(\theta)=\frac{\mathbf{x}\cdot \mathbf{y}}{\|\mathbf{x}\|_2\|\mathbf{y}\|_2}=\frac{\sum_{i=1}^n x_i y_i}{{\sqrt{\sum_{i=1}^n x_i^2\sum_{i=1}^n y_i^2}}}.
+$$
+* Note that the cosine of the angle between the two centred vectors $\mathbf{x}-\bar{\mathbf{x}}\mathbf{1}$ and $\mathbf{y}-\bar{\mathbf{y}}\mathbf{1}$ coincides with the Pearson correlation coefficient of $\mathbf{x}$ and $\mathbf{y}$, where $\mathbf{1}$ is a vector of units of $\mathbb{R}^n$.
+* The cosine correlation distance is defined by:
+$$
+d(\mathbf{x},\mathbf{y})=1-\cos(\theta).
+$$
+* It shares similar properties than the Pearson correlation distance. Likewise, Axioms A1 and A3 are not satisfied.
+
+
+
+
+# Spearman correlation distance 
+
+* To calculate the Spearman's rank-order correlation, we need to map seperately each of the vectors to ranked data values: 
+$$\mathbf{x}\rightarrow \text{rank}(\mathbf{x})=(x_1^r,\cdots,x_n^r).$$
+* Here, $x_i^r$ is the rank of $x_i$ among the set of values of $\mathbf{x}$.
+* We illustrate this transformation with a simple example:
+* If $\mathbf{x}=(3, 1, 4, 15, 92)$, then the rank-order vector is $\text{rank}(\mathbf{x})=(2,1,3,4,5)$.  
+
+```{r}
+x=c(3, 1, 4, 15, 92)
+rank(x)
+```
+
+* The Spearman's rank correlation of two numerical variables $\mathbf{x}$  and $\mathbf{y}$ is simply the Pearson correlation of the two correspnding rank-order variables $\text{rank}(\mathbf{x})$ and $\text{rank}(\mathbf{y})$, i.e. $\rho(\text{rank}(\mathbf{x}),\text{rank}(\mathbf{y}))$. This measure is is useful because it is more robust against outliers than the Pearson correlation.
+* If all  the $n$  ranks are distinct, it can be computed using the following formula:
+$$
+\rho(\text{rank}(\mathbf{x}),\text{rank}(\mathbf{y}))=1-\frac{6\sum_{i=1}^n d_i^2}{n(n^2-1)},
+$$
+where $d_i=x_i^r-y_i^r,\:i=1,\cdots,n$.
+ * The spearman distance is then defined by:
+$$
+d(\mathbf{x},\mathbf{y})=1-\rho(\text{rank}(\mathbf{x}),\text{rank}(\mathbf{y})).
+$$
+* It can be shown that easaly that it is not a proper distance.
+* If all  the $n$  ranks are distinct, we get:
+$$
+d(\mathbf{x},\mathbf{y})=\frac{6\sum_{i=1}^n d_i^2}{n(n^2-1)}.
+$$
+
+
+
+
+
+```{r}
+x=c(3, 1, 4, 15, 92)
+rank(x)
+y=c(30,2 , 9, 20, 48)
+rank(y)
+d=rank(x)-rank(y)
+d
+cor(rank(x),rank(y))
+1-6*sum(d^2)/(5*(5^2-1))
+```
+
+
+# Exercice 6
+* For the two vectors $\mathbf{x}=(22,34,1,12,25,56,7)$ and $\mathbf{y}=(2,64,12,2,22,5,8)$ :
+* Calculate the ranks for each vector.
+* Deduce the Spearman correlation distance from that ranks.
+* Deduce the Spearman correlation distance from the above dispalyed alternative equation.
+* Calculate the Spearman correlation distance using the **R** function. 
+
+# Kendall tau distance 
+
+* The Kendall rank correlation coefficient is calculated from the number of correspondances between the rankings of $\mathbf{x}$ and the rankings of $\mathbf{y}$.
+*   The number of pairs of observations among $n$ observations or values is: 
+$${n \choose 2} =\frac{n(n-1)}{2}.$$
+* The pairs of observations $(x_{i},x_{j})$  and  $(y_{i},y_{j})$ are said to be _concordant_ if: $$\text{sign}(x_j-x_i)=\text{sign}(y_j-y_i),$$ and to be _discordant_ if:  $$\text{sign}(x_j-x_i)=-\text{sign}(y_j-y_i),$$
+where $\text{sign}(\cdot)$ returns  $1$ for positive numbers and  $-1$ negative numbers and $0$ otherwise.
+* If $x_i=x_j$ or $y_i=y_j$ (or both), there is a tie.
+* The Kendall $\tau$ coefficient is defined by (neglecting ties):
+$$\tau =\frac {1}{n(n-1)}\sum_{i=1}^{n}\sum_{j=1}^n\text{sign}(x_j-x_i)\text{sign}(y_j-y_i).$$
+* Let $n_c$ (resp. $n_d$) be the number of concordant (resp. discordant) pairs, we have $$\tau =\frac {2(n_c-n_d)}{n(n-1)}.$$ 
+* The Kendall tau distance is then: $$d(\mathbf{x},\mathbf{y})=1-\tau. $$
+* Remark: the triangular inequality may fail in cases where there are ties.
+
+
+
+```{r}
+x=c(3, 1, 4, 15, 92)
+y=c(30,2 , 9, 20, 48)
+tau=0
+for (i in 1:5)
+{  
+tau=tau+sign(x -x[i])%*%sign(y -y[i])
+}
+tau=tau/(5*4)
+tau
+cor(x,y, method="kendall")
+```
+
+# Exercice 7
+* For the two vectors $\mathbf{x}=(22,34,1,12,25,56,7)$ and $\mathbf{y}=(2,64,12,2,22,5,8)$ :
+* List all pairs of coordinates.
+* How many pairs are there?
+* For each pair and each cector, compute the signs of the differences in coordinates.
+* Deduce the Kendall tau coefficient using the above computations.
+* Calculate the Kendall tau coefficient using the R function. 
+
+# Variables standardization
+
+* Variables are often standardized before measuring dissimilarities.
+* Standardization converts the original variables into uniteless variables.
+* A well known method is the z-score transformation: 
+$$
+\mathbf{x}\rightarrow (\frac{x_1-\bar{\mathbf{x}}}{s_\mathbf{x}},\cdots,\frac{x_n-\bar{\mathbf{x}}}{s_\mathbf{x}}),
+$$ 
+where $s_\mathbf{x}$ is the sample standard deviation given by:
+$$
+s_\mathbf{x}=\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{\mathbf{x}})^2.
+$$
+* The transformed variable will have a mean of $0$ and a variance of $1$.
+* The result obtained with Pearson correlation measures and standardized Euclidean distances are comparable.
+* For other methods, see: [Milligan, G. W., & Cooper, M. C. (1988). A study of standardization of variables in cluster analysis. _Journal of classification_, _5_(2), 181-204](https://booksc.org/book/6755563/66358a)
+
+```{r}
+x=c(3, 1, 4, 15, 92)
+y=c(30,2 , 9, 20, 48)
+(x-mean(x))/sd(x)
+scale(x)
+(y-mean(y))/sd(y)
+scale(y)
+```
+
+
+# Similarity measures for binary data
+* A common simple situation occurs when all information is of the presence/absence of 2-level qualitative characters.
+* We assume there are $n$ characters.
+* *The presence of the character is coded by $1$ and the absence by 0. 
+* We have have at our disposal two vectors.
+* $\mathbf{x}$ is observed for a first individual (or object).
+* $\mathbf{y}$ is observed for a second individual. 
+* We can then calculate the following four statistics:
+ 
+   $a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$
+   
+   $b=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_i(1-y_i).$
+   
+   $c=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i.$
+
+   $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).$
+
+* The counts of  matches are $a$ for $(1,1)$ and $d$ for $(0,0)$;
+* The counts of mismatches are $b$ for $(1,0)$ and $c$ for $(0,1)$.
+* Note that obviously: $a+b+c+d= n$.
+* This gives a very useful $2 \times 2$ association table. 
+
+
+|    |    |Second individual|||
+|:---|---|:---:|:---:|:---:|
+|  |    |1  |0|*Totals*
+|**First individual**|1|$a$|$b$|$a+b$|
+|             |0|$c$|$d$|$c+d$|
+|*Totals*||$a+c$|$b+d$|$n$|
+
+
+![](KAUFMANBinarydata.jpg)
+*Table from [Kaufman, L., & Rousseeuw, P. J. (2009). Finding groups in data: an introduction to cluster analysis (Vol. 344). John Wiley & Sons](https://book4you.org/book/669277/d2cf59)*
+
+* The data shows $8$ people (individuals) and $10$ binary variables:
+* Sex, Married, Fair Hair, Blue Eyes, Wears Glasses, Round Face, Pessimist, Evening Type, Is an Only Child, Left-Handed.
+
+```{r}
+data=c(
+1,0,1,1,0,0,1,0,0,0,
+0,1,0,0,1,0,0,0,0,0,
+0,0,1,0,0,0,1,0,0,1,
+0,1,0,0,0,0,0,1,1,0,
+1,1,0,0,1,1,0,1,1,0,
+1,1,0,0,1,0,1,1,0,0,
+0,0,0,1,0,1,0,0,0,0,
+0,0,0,1,0,1,0,0,0,0
+)
+data=data.frame(matrix(data, nrow=8,byrow=T))
+row.names(data)=c("Ilan","Jacqueline","Kim","Lieve","Leon","Peter","Talia","Tina")
+names(data)=c("Sex", "Married", "Fair Hair", "Blue Eyes", "Wears Glasses", "Round Face", "Pessimist", "Evening Type", "Is an Only Child", "Left-Handed")
+```
+
+
+
+
+
+
+```{r, echo=TRUE,results='asis',message=FALSE}
+library(knitr)
+library(xtable)
+library(stargazer)
+library(texreg)
+
+set.seed(893)
+Col <- sample(c('A','B','C'),100,replace=TRUE)
+Row <- sample(c('D','E','F'),100,replace=TRUE)
+```
+
+```{r, echo=TRUE,results='asis',message=FALSE}
+x <- xtabs(~Row+Col)
+x
+kable(x)
+kable(x,format='html')
+kable(x,format='html',output = TRUE)
+xx <- xtable(format(x))
+print(xx,type='html')
+stargazer(x)
+
+f <-ftable(Row,Col)
+f
+kable(f,format='html')
+kable(f,format='html',output = TRUE)
+xf <- xtable(format(f))
+print(xf,type='html')
+stargazer(f)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
