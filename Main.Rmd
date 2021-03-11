@@ -26,19 +26,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Definition of a distance
 
-
-* A distance function or a metric on $\mathbb{R}^n,\:n\geq 1$, is a function $d:\mathbb{R}^n\times\mathbb{R}^n\rightarrow \mathbb{R}$.
+* A distance function or a metric on $\mathbb{R}^m,\:m\geq 1$, is a function $d:\mathbb{R}^m\times\mathbb{R}^m\rightarrow \mathbb{R}$.
 * A distance function must satisfy some required properties or axioms. 
 * There are three main axioms.
 * A1. $d(\mathbf{x},\mathbf{y})= 0\iff \mathbf{x}=\mathbf{y}$ (identity of indiscernibles);
 * A2. $d(\mathbf{x},\mathbf{y})= d(\mathbf{y},\mathbf{x})$ (symmetry);
 
 * A3. $d(\mathbf{x},\mathbf{z})\leq d(\mathbf{x},\mathbf{y})+d(\mathbf{y},\mathbf{z})$  (triangle inequality),
-where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{z}=(z_1,\cdots,z_n)$ are all vectors of $\mathbb{R}^n$.
+where $\mathbf{x}=(x_1,\cdots,x_m)$, $\mathbf{y}=(y_1,\cdots,y_m)$ and $\mathbf{z}=(z_1,\cdots,z_m)$ are all vectors of $\mathbb{R}^m$.
 * We should use the term _dissimilarity_ rather than _distance_ when not all the three axioms A1-A3 are valid.
 * Most of the time, we shall use, with some abuse of vocabulary, the term distance.
-
-
 
 # Exercice 1
 
@@ -51,7 +48,7 @@ where $\mathbf{x}=(x_1,\cdots,x_n)$, $\mathbf{y}=(y_1,\cdots,y_n)$ and $\mathbf{
 * It is defined by:
 
 $$
-d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{i=1}^n (x_i-y_i)^2}.
+d(\mathbf{x},\mathbf{y})=\sqrt{\sum_{j=1}^m (x_j-y_j)^2}.
 $$
 
 * A1-A2 are obvious.
@@ -66,7 +63,7 @@ $$
 * The Manhattan distance also called  taxi-cab metric or city-block metric is defined by:
 
 $$d(\mathbf{x},\mathbf{y})
-=\sum_{i=1}^n |x_i-y_i|.$$
+=\sum_{j=1}^m |x_j-y_j|.$$
 
 * A1-A2 hold.
 * A3 also holds using the fact that $|a+b|\leq |a|+|b|$ for any reals $a,b$.
@@ -90,10 +87,10 @@ dist(rbind(x, y), method = "manhattan",diag=T,upper=T)
 * It is defined by:
 
 $$d(\mathbf{x},\mathbf{y})
-=\sum_{i=1}^n
- \frac{|x_i-y_i|}{|x_i|+|y_i|}.$$
+=\sum_{j=1}^m
+ \frac{|x_j-y_j|}{|x_j|+|y_j|}.$$
 
-* Note that the term $|x_i-y_i|/(|x_i|+|y_i|)$ is not properly defined as: $x_i=y_i=0$.
+* Note that the term $|x_j-y_j|/(|x_j|+|y_j|)$ is not properly defined as: $x_j=y_j=0$.
 * By convention we set that term to be zero in that case.
 * The Canberra distance is specially sensitive to small changes near zero.
 
@@ -112,12 +109,12 @@ dist(rbind(x, y), method = "canberra")
 * Both the Euclidian and the Manattan distances are special cases of  the Minkowski distance which is defined, for $p\geq 1$, by: 
 $$
 d(\mathbf{x},\mathbf{y})=
-\left[\sum_{i=1} |x_i-y_i|^{p}\right]^{1/p}.
+\left[\sum_{j=1} |x_j-y_j|^{p}\right]^{1/p}.
 $$
  * For $p=1$, we get the Manhattan distance.
  * For $p=2$, we get the Euclidian distance.
 * Let us also define: 
-$$\|\mathbf{x}\|_p\equiv\left[\sum_{i=1}^n |x_i|^{p}\right]^{1/p},$$
+$$\|\mathbf{x}\|_p\equiv\left[\sum_{j=1}^m |x_j|^{p}\right]^{1/p},$$
 where $\|\mathbf{\cdot}\|_p$ is known as the $p$-norm or Minkowski norm.
 * Note that the Minkowski distance and norm are related by:
 
@@ -128,7 +125,7 @@ $$d(\mathbf{x},\mathbf{y})=\|\mathbf{x}-\mathbf{y}\|_p.$$
 $$\|\mathbf{x}\|_p=d(\mathbf{x},\mathbf{0}),$$
 
 where 
-$\mathbf{0}$ is the null-vetor of $\mathbb{R}^n$.
+$\mathbf{0}$ is the null-vetor of $\mathbb{R}^m$.
 
 ```{r}
 library("ggplot2")
@@ -153,37 +150,37 @@ Produce a similar graph using "The Economist" theme. Indicate on the graph the M
 
 * At the limit, we get the Chebyshev distance which is defined by:
 $$
-d(\mathbf{x},\mathbf{y})=\max_{i=1,\cdots,n}(|x_i-y_i|)=\lim_{p\rightarrow\infty}
-\left[\sum_{i=1} |x_i-y_i|^{p}\right]^{1/p}.
+d(\mathbf{x},\mathbf{y})=\max_{j=1,\cdots,n}(|x_j-y_j|)=\lim_{p\rightarrow\infty}
+\left[\sum_{j=1} |x_j-y_j|^{p}\right]^{1/p}.
 $$
 
 * The corresponding norm is:
 
 $$
-\|\mathbf{x}\|_\infty=\max_{i=1,\cdots,n}(|x_i|).
+\|\mathbf{x}\|_\infty=\max_{j=1,\cdots,n}(|x_j|).
 $$
 
 # Minkowski inequality
 
 * The proof of the triangular inequality A3 is based on the Minkowski inequality:
-* For any nonnegative real numbers $a_1,\cdots,a_n$; $b_1,\cdots,b_n$, and for any $p\geq 1$, we have:
+* For any nonnegative real numbers $a_1,\cdots,a_m$; $b_1,\cdots,b_m$, and for any $p\geq 1$, we have:
 $$
-\left[\sum_{i=1}^n (a_i+b_i)^{p}\right]^{1/p}\leq
-\left[\sum_{i=1}^n a_i^{p}\right]^{1/p}
-+\left[\sum_{i=1}^n b_i^{p}\right]^{1/p}.
+\left[\sum_{j=1}^m (a_j+b_j)^{p}\right]^{1/p}\leq
+\left[\sum_{j=1}^m a_j^{p}\right]^{1/p}
++\left[\sum_{j=1}^m b_j^{p}\right]^{1/p}.
 $$
 * To prove that the Minkowski distance satisfies A3, notice that 
 $$
- \sum_{i=1}^n|x_i-z_i|^{p}= \sum_{i=1}^n|(x_i-y_i)+(y_i-z_i)|^{p}.
+ \sum_{j=1}^m|x_j-z_j|^{p}= \sum_{j=1}^m|(x_j-y_j)+(y_j-z_j)|^{p}.
 $$
 * Since for any reals $x,y$, we have: $|x+y|\leq |x|+|y|$, and using the fact that $x^p$ is increasing in $x\geq 0$, we obtain:
 $$
- \sum_{i=1}^n|x_i-z_i|^{p}\leq \sum_{i=1}^n(|x_i-y_i|+|y_i-z_i|)^{p}.
+ \sum_{j=1}^m|x_j-z_j|^{p}\leq \sum_{j=1}^m(|x_j-y_j|+|y_j-z_j|)^{p}.
 $$
 
-* Applying the Minkowski inequality with $a_i=|x_i-y_i|$ and $b_i=|y_i-z_i|$, $i=1,\cdots,n$, we get:
+* Applying the Minkowski inequality with $a_j=|x_j-y_j|$ and $b_j=|y_j-z_j|$, $j=1,\cdots,n$, we get:
 $$
- \sum_{i=1}^n|x_i-z_i|^{p}\leq \left(\sum_{i=1}^n |x_i-y_i|^{p}\right)^{1/p}+\left(\sum_{i=1}^n |y_i-z_i|^{p}\right)^{1/p}.
+ \sum_{j=1}^m|x_j-z_j|^{p}\leq \left(\sum_{j=1}^m |x_j-y_j|^{p}\right)^{1/p}+\left(\sum_{j=1}^m |y_j-z_j|^{p}\right)^{1/p}.
 $$
 
 # Exercice 5
@@ -192,11 +189,11 @@ To illustrate the Minkowski inequality, draw $100$ times two lists of $100$ draw
 # Hölder inequality
 
 * The proof of the Minkowski inequality itself requires the Hölder inequality:
-* For any nonnegative real numbers $a_1,\cdots,a_n$; $b_1,\cdots,b_n$, and any $p,q>1$ with $1/p+1/q=1$, we have:
+* For any nonnegative real numbers $a_1,\cdots,a_m$; $b_1,\cdots,b_m$, and any $p,q>1$ with $1/p+1/q=1$, we have:
 $$
-\sum_{i=1}^n a_ib_i\leq
-\left[\sum_{i=1}^n a_i^{p}\right]^{1/p}
-\left[\sum_{i=1}^n b_i^{q}\right]^{1/q}
+\sum_{j=1}^m a_jb_j\leq
+\left[\sum_{j=1}^m a_j^{p}\right]^{1/p}
+\left[\sum_{j=1}^m b_j^{q}\right]^{1/q}
 $$
 * The proof of the Hölder inequality relies on the Young inequality:
 * For any $a,b>0$, we have
@@ -216,18 +213,18 @@ $$
 
 * Note that the triangular inequality for the Minkowski distance implies: 
 $$
-\sum_{i=1}^n |x_i|\leq
-\left[\sum_{i=1}^n |x_i|^{p}\right]^{1/p}.
+\sum_{j=1}^m |x_j|\leq
+\left[\sum_{j=1}^m |x_j|^{p}\right]^{1/p}.
 $$
 * Note that for $p=2$, we have $q=2$. The Hölder inequality implies for that special case
 $$
-\sum_{i=1}^n|x_iy_i|\leq\sqrt{\sum_{i=1}^n x_i^2}\sqrt{\sum_{i=1}^n y_i^2}. 
+\sum_{j=1}^m|x_jy_j|\leq\sqrt{\sum_{j=1}^m x_j^2}\sqrt{\sum_{j=1}^m y_j^2}. 
 $$
-* Since the LHS od thes above inequality is greater then $|\sum_{i=1}^nx_iy_i|$, we get the Cauchy-Schwartz inequality
+* Since the LHS od thes above inequality is greater then $|\sum_{j=1}^mx_jy_j|$, we get the Cauchy-Schwartz inequality
 $$
-|\sum_{i=1}^nx_iy_i|\leq\sqrt{\sum_{i=1}^n x_i^2}\sqrt{\sum_{i=1}^n y_i^2}. 
+|\sum_{j=1}^mx_jy_j|\leq\sqrt{\sum_{j=1}^m x_j^2}\sqrt{\sum_{j=1}^m y_j^2}. 
 $$
-* Using the dot product notation called also scalar product notation: $\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i$, and the norm notation $\|\mathbf{\cdot}\|_2$, the Cauchy-Schwartz inequality is:
+* Using the dot product notation called also scalar product notation: $\mathbf{x\cdot y}=\sum_{j=1}^mx_jy_j$, and the norm notation $\|\mathbf{\cdot}\|_2$, the Cauchy-Schwartz inequality is:
 $$
 |\mathbf{x\cdot y} | \leq \|\mathbf{x}\|_2 \| \mathbf{y}\|_2.
 $$
@@ -235,13 +232,13 @@ $$
 
 # Pearson correlation distance 
 
-* The Pearson correlation coefficient is a similarity measure on $\mathbb{R}^n$ defined by:
+* The Pearson correlation coefficient is a similarity measure on $\mathbb{R}^m$ defined by:
 $$
 \rho(\mathbf{x},\mathbf{y})=
-\frac{\sum_{i=1}^n (x_i-\bar{\mathbf{x}})(y_i-\bar{\mathbf{y}})}{{\sqrt{\sum_{i=1}^n (x_i-\bar{\mathbf{x}})^2\sum_{i=1}^n (y_i-\bar{\mathbf{y}})^2}}},
+\frac{\sum_{j=1}^m (x_j-\bar{\mathbf{x}})(y_j-\bar{\mathbf{y}})}{{\sqrt{\sum_{j=1}^m (x_j-\bar{\mathbf{x}})^2\sum_{j=1}^m (y_j-\bar{\mathbf{y}})^2}}},
 $$
 where $\bar{\mathbf{x}}$ is the mean of the vector $\mathbf{x}$ defined by: 
-$$\bar{\mathbf{x}}=\frac{1}{n}\sum_{i=1}^n x_i,$$
+$$\bar{\mathbf{x}}=\frac{1}{n}\sum_{j=1}^m x_j,$$
 * Note that the Pearson correlation coefficient satisfies P2 and  is invariant to any positive linear transformation, i.e.: $$\rho(\alpha\mathbf{x},\mathbf{y})=\rho(\mathbf{x},\mathbf{y}),$$ for any $\alpha>0$.
 * The Pearson distance (or correlation distance) is defined by:
 $$
@@ -252,12 +249,11 @@ $$
 
 # Cosine correlation distance
 
-
 * The cosine of the angle $\theta$ between two vectors $\mathbf{x}$ and $\mathbf{y}$ is a measure of similarity given by:
 $$
-\cos(\theta)=\frac{\mathbf{x}\cdot \mathbf{y}}{\|\mathbf{x}\|_2\|\mathbf{y}\|_2}=\frac{\sum_{i=1}^n x_i y_i}{{\sqrt{\sum_{i=1}^n x_i^2\sum_{i=1}^n y_i^2}}}.
+\cos(\theta)=\frac{\mathbf{x}\cdot \mathbf{y}}{\|\mathbf{x}\|_2\|\mathbf{y}\|_2}=\frac{\sum_{j=1}^m x_j y_j}{{\sqrt{\sum_{j=1}^m x_j^2\sum_{j=1}^m y_j^2}}}.
 $$
-* Note that the cosine of the angle between the two centred vectors $\mathbf{x}-\bar{\mathbf{x}}\mathbf{1}$ and $\mathbf{y}-\bar{\mathbf{y}}\mathbf{1}$ coincides with the Pearson correlation coefficient of $\mathbf{x}$ and $\mathbf{y}$, where $\mathbf{1}$ is a vector of units of $\mathbb{R}^n$.
+* Note that the cosine of the angle between the two centred vectors $\mathbf{x}-\bar{\mathbf{x}}\mathbf{1}$ and $\mathbf{y}-\bar{\mathbf{y}}\mathbf{1}$ coincides with the Pearson correlation coefficient of $\mathbf{x}$ and $\mathbf{y}$, where $\mathbf{1}$ is a vector of units of $\mathbb{R}^m$.
 * The cosine correlation distance is defined by:
 $$
 d(\mathbf{x},\mathbf{y})=1-\cos(\theta).
@@ -265,13 +261,11 @@ $$
 * It shares similar properties than the Pearson correlation distance. Likewise, Axioms A1 and A3 are not satisfied.
 
 
-
-
 # Spearman correlation distance 
 
 * To calculate the Spearman's rank-order correlation, we need to map seperately each of the vectors to ranked data values: 
-$$\mathbf{x}\rightarrow \text{rank}(\mathbf{x})=(x_1^r,\cdots,x_n^r).$$
-* Here, $x_i^r$ is the rank of $x_i$ among the set of values of $\mathbf{x}$.
+$$\mathbf{x}\rightarrow \text{rank}(\mathbf{x})=(x_1^r,\cdots,x_m^r).$$
+* Here, $x_j^r$ is the rank of $x_j$ among the set of values of $\mathbf{x}$.
 * We illustrate this transformation with a simple example:
 * If $\mathbf{x}=(3, 1, 4, 15, 92)$, then the rank-order vector is $\text{rank}(\mathbf{x})=(2,1,3,4,5)$.  
 
@@ -280,12 +274,12 @@ x=c(3, 1, 4, 15, 92)
 rank(x)
 ```
 
-* The Spearman's rank correlation of two numerical variables $\mathbf{x}$  and $\mathbf{y}$ is simply the Pearson correlation of the two correspnding rank-order variables $\text{rank}(\mathbf{x})$ and $\text{rank}(\mathbf{y})$, i.e. $\rho(\text{rank}(\mathbf{x}),\text{rank}(\mathbf{y}))$. This measure is is useful because it is more robust against outliers than the Pearson correlation.
+* The Spearman's rank correlation of two numerical vectors $\mathbf{x}$  and $\mathbf{y}$ is simply the Pearson correlation of the two correspnding rank-order vectors $\text{rank}(\mathbf{x})$ and $\text{rank}(\mathbf{y})$, i.e. $\rho(\text{rank}(\mathbf{x}),\text{rank}(\mathbf{y}))$. This measure is is useful because it is more robust against outliers than the Pearson correlation.
 * If all  the $n$  ranks are distinct, it can be computed using the following formula:
 $$
-\rho(\text{rank}(\mathbf{x}),\text{rank}(\mathbf{y}))=1-\frac{6\sum_{i=1}^n d_i^2}{n(n^2-1)},
+\rho(\text{rank}(\mathbf{x}),\text{rank}(\mathbf{y}))=1-\frac{6\sum_{j=1}^m d_j^2}{n(n^2-1)},
 $$
-where $d_i=x_i^r-y_i^r,\:i=1,\cdots,n$.
+where $d_j=x_j^r-y_j^r,\:j=1,\cdots,n$.
  * The spearman distance is then defined by:
 $$
 d(\mathbf{x},\mathbf{y})=1-\rho(\text{rank}(\mathbf{x}),\text{rank}(\mathbf{y})).
@@ -293,10 +287,8 @@ $$
 * It can be shown that easaly that it is not a proper distance.
 * If all  the $n$  ranks are distinct, we get:
 $$
-d(\mathbf{x},\mathbf{y})=\frac{6\sum_{i=1}^n d_i^2}{n(n^2-1)}.
+d(\mathbf{x},\mathbf{y})=\frac{6\sum_{j=1}^m d_j^2}{n(n^2-1)}.
 $$
-
-
 
 
 
@@ -324,11 +316,11 @@ cor(rank(x),rank(y))
 * The Kendall rank correlation coefficient is calculated from the number of correspondances between the rankings of $\mathbf{x}$ and the rankings of $\mathbf{y}$.
 *   The number of pairs of observations among $n$ observations or values is: 
 $${n \choose 2} =\frac{n(n-1)}{2}.$$
-* The pairs of observations $(x_{i},x_{j})$  and  $(y_{i},y_{j})$ are said to be _concordant_ if: $$\text{sign}(x_j-x_i)=\text{sign}(y_j-y_i),$$ and to be _discordant_ if:  $$\text{sign}(x_j-x_i)=-\text{sign}(y_j-y_i),$$
+* The pairs of observations $(x_{i},x_{j})$  and  $(y_{i},y_{j})$ are said to be _concordant_ if: $$\text{sign}(x_j-x_j)=\text{sign}(y_j-y_j),$$ and to be _discordant_ if:  $$\text{sign}(x_j-x_j)=-\text{sign}(y_j-y_j),$$
 where $\text{sign}(\cdot)$ returns  $1$ for positive numbers and  $-1$ negative numbers and $0$ otherwise.
-* If $x_i=x_j$ or $y_i=y_j$ (or both), there is a tie.
+* If $x_j=x_j$ or $y_j=y_j$ (or both), there is a tie.
 * The Kendall $\tau$ coefficient is defined by (neglecting ties):
-$$\tau =\frac {1}{n(n-1)}\sum_{i=1}^{n}\sum_{j=1}^n\text{sign}(x_j-x_i)\text{sign}(y_j-y_i).$$
+$$\tau =\frac {1}{n(n-1)}\sum_{j=1}^{n}\sum_{j=1}^m\text{sign}(x_j-x_j)\text{sign}(y_j-y_j).$$
 * Let $n_c$ (resp. $n_d$) be the number of concordant (resp. discordant) pairs, we have $$\tau =\frac {2(n_c-n_d)}{n(n-1)}.$$ 
 * The Kendall tau distance is then: $$d(\mathbf{x},\mathbf{y})=1-\tau. $$
 * Remark: the triangular inequality may fail in cases where there are ties.
@@ -356,30 +348,47 @@ cor(x,y, method="kendall")
 * Deduce the Kendall tau coefficient using the above computations.
 * Calculate the Kendall tau coefficient using the R function. 
 
-# Variables standardization
+# Standardization
 
-* Variables are often standardized before measuring dissimilarities.
+* Variables or measurements are often standardized before calculating dissimilarities.
 * Standardization converts the original variables into uniteless variables.
-* A well known method is the z-score transformation: 
+* A well known method is the z-score transformation.
+* Let $\mathbf{v}\equiv (v_1,\cdots,v_n )$ a vector of measurements recrded for $n$ individuals or objects. 
 $$
-\mathbf{x}\rightarrow (\frac{x_1-\bar{\mathbf{x}}}{s_\mathbf{x}},\cdots,\frac{x_n-\bar{\mathbf{x}}}{s_\mathbf{x}}),
+\mathbf{v}\rightarrow (\frac{v_1-\bar{\mathbf{v}}}{s_\mathbf{v}},\cdots,\frac{v_n-\bar{\mathbf{v}}}{s_\mathbf{v}}),
 $$ 
-where $s_\mathbf{x}$ is the sample standard deviation given by:
+where $\bar{\mathbf{v}},s_\mathbf{v}$ are the sample mean and standard-deviation, respectively,  given by:
 $$
-s_\mathbf{x}=\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{\mathbf{x}})^2.
+\bar{\mathbf{v}}=\frac{1}{n}\sum_{i=1}^n v_i,\:
+s_\mathbf{v}=\frac{1}{n-1}\sum_{i=1}^n(v_i-\bar{\mathbf{v}})^2.
 $$
 * The transformed variable will have a mean of $0$ and a variance of $1$.
 * The result obtained with Pearson correlation measures and standardized Euclidean distances are comparable.
 * For other methods, see: [Milligan, G. W., & Cooper, M. C. (1988). A study of standardization of variables in cluster analysis. _Journal of classification_, _5_(2), 181-204](https://booksc.org/book/6755563/66358a)
 
 ```{r}
-x=c(3, 1, 4, 15, 92)
-y=c(30,2 , 9, 20, 48)
-(x-mean(x))/sd(x)
-scale(x)
-(y-mean(y))/sd(y)
-scale(y)
+v=c(3, 1, 4, 15, 92)
+w=c(30,2 , 9, 20, 48)
+(v-mean(v))/sd(v)
+scale(v)
+(w-mean(w))/sd(w)
+scale(w)
 ```
+
+
+# Exercice 8
+
+* Consider the following example 
+[From Kaufman & Rousseeuw, p. 6-8](ExercicekauffmanScale.jpg)
+* Plot the data using a nice scatter plot.
+* Transform the Height from centimeters (cm) into feet (ft).
+* Display your data in a table. 
+* Plot the data within a new scatter plot.
+* What do you observe?
+* Standardize the two variables Age and Height.
+* Display your data in a table.
+* Plot the standardized data within a new scatter plot.
+* Conclude.
 
 
 # Similarity measures for binary data
@@ -391,13 +400,13 @@ scale(y)
 * $\mathbf{y}$ is observed for a second individual. 
 * We can then calculate the following four statistics:
  
-   $a=\mathbf{x\cdot y}=\sum_{i=1}^nx_iy_i.$
+   $a=\mathbf{x\cdot y}=\sum_{j=1}^mx_jy_j.$
    
-   $b=\mathbf{x\cdot (1-y)}=\sum_{i=1}^nx_i(1-y_i).$
+   $b=\mathbf{x\cdot (1-y)}=\sum_{j=1}^mx_j(1-y_j).$
    
-   $c=\mathbf{(1-x)\cdot y}=\sum_{i=1}^n(1-x_i)y_i.$
+   $c=\mathbf{(1-x)\cdot y}=\sum_{j=1}^m(1-x_j)y_j.$
 
-   $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{i=1}^n(1-x_i)(1-y_i).$
+   $d=\mathbf{(1-x)\cdot (1-y)}=\sum_{j=1}^m(1-x_j)(1-y_j).$
 
 * The counts of  matches are $a$ for $(1,1)$ and $d$ for $(0,0)$;
 * The counts of mismatches are $b$ for $(1,0)$ and $c$ for $(0,1)$.
@@ -504,20 +513,20 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * An example is gender, where there is no preference as to which of the two categories should be coded zero or one.
 * But in other cases the inclusion or otherwise of $d$ is more problematic; for example, when the zero category corresponds to the genuine absence of some property, such as wings in a study of insects. 
 
-# Exercice 8
+# Exercice 9
 
 * Use the data set *animals* available in the package *cluster*.
 * This data set was first used in this textbook [KAUFMAN, Leonard et ROUSSEEUW, Peter J. Finding groups in data: an introduction to cluster analysis. John Wiley & Sons, 2009](https://book4you.org/book/669277/d2cf59).
 * Identify the missing measurements.
-* Explain the way how KAUFMAN and ROUSSEEUW pp. 296-297 treat the missing measurements.
+* Explain the way how KAUFMAN and ROUSSEEUW, pp. 296-297 treat the missing measurements.
 
-![KAUFMAN and ROUSSEEUW p. 296](ExerciceKauffman1.jpg)
+![KAUFMAN and ROUSSEEUW, p. 296](ExerciceKauffman1.jpg)
 
 ![KAUFMAN and ROUSSEEUW p. 297](ExerciceKauffman2.jpg)
 
 
 
-# Exercice 9
+# Exercice 10
 
 * Prove that the distances based on the  Simple Matching coefficient and the Jaccard coefficient satisfy A3.
 * Prove that the distances proposed by Gower and Legendre (1986) do not satisfy A3.
@@ -538,19 +547,19 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * The most common way of measuring the similarity or dissimilarity between two objects through categorial variables is the simple matching approach. 
 * If $\mathbf{x},\mathbf{y},$ are both $n$ nominal records for two individuals,
 * Let define the function: 
-$$\delta(x_i,y_i)\equiv \begin{cases}0,
-\text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}$$
+$$\delta(x_j,y_j)\equiv \begin{cases}0,
+\text{ if } x_j=y_j;\\1,\text{ if } x_j \neq y_j.\end{cases}$$
 
 * Let  $N_{a+d}$ be the number of attributes of the two individuals on which the two records match:
-$$N_{a+d}=\sum_{i=1}^n\delta(x_i,y_i).$$
+$$N_{a+d}=\sum_{j=1}^m\delta(x_j,y_j).$$
 * Let $N_{b+c}$ be the number of attributes on which the two records do not match:
 $$N_{b+c}= n - N_{a+d}.$$
 * Let $N_d$ be the number of attributes on which the two records match in a “not applicable” category:
-  $$N_{d}=\sum_{i=1}^n\delta(x_i,y_i).$$
+  $$N_{d}=\sum_{j=1}^m\delta(x_j,y_j).$$
 
 * The distance corresponding to the simple matching approach is: 
 $$
-d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n\delta(x_i,y_i)}{n}.
+d(\mathbf{x},\mathbf{y})=\frac{\sum_{j=1}^m\delta(x_j,y_j)}{n}.
 $$
 * Therefore:
 $$
@@ -566,20 +575,20 @@ designed for handling mixed attribute types or variables.
 * Weights usually used only to indicate which attribute values could actually be compared meaningfully.
 * The formula is:
 $$
-d(\mathbf{x},\mathbf{y})=\frac{\sum_{i=1}^n w_i \delta(x_i,y_i)}{\sum_{i=1}^n w_i}.
+d(\mathbf{x},\mathbf{y})=\frac{\sum_{j=1}^m w_j \delta(x_j,y_j)}{\sum_{j=1}^m w_j}.
 $$
-* The wheight $w_i$  is put equal to $1$ when both measurements $x_i$ and $y_i$ are nonmissing, 
-* The number $\delta(x_i,y_i)$ is the contribution of the $i$th measure or variable to the dissimilarity measure.
-* It the $i$th measure is nominal, we take  
+* The wheight $w_j$  is put equal to $1$ when both measurements $x_j$ and $y_j$ are nonmissing, 
+* The number $\delta(x_j,y_j)$ is the contribution of the $j$th measure or variable to the dissimilarity measure.
+* If the $j$th measure is nominal, we take  
 $$
-\delta(x_i,y_i)\equiv \begin{cases}0,
-\text{ if } x_i=y_i;\\1,\text{ if } x_i \neq y_i.\end{cases}
+\delta(x_j,y_j)\equiv \begin{cases}0,
+\text{ if } x_j=y_j;\\1,\text{ if } x_j \neq y_j.\end{cases}
 $$
-*  If the $i$th measure is  interval-scaled, we take instead: 
+*  If the $j$th measure is  interval-scaled, we take instead: 
 $$
-\delta(x_i,y_i)\equiv \frac{|x_i-y_i|}{R_i},
+\delta(x_j,y_j)\equiv \frac{|x_j-y_j|}{R_j},
 $$
-where $R_i$ is the range of variable $i$ over the available data.
+where $R_j$ is the range of variable $i$ over the available data.
 
 
 
