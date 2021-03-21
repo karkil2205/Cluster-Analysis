@@ -379,7 +379,8 @@ scale(w)
 # Exercice 8
 
 * Consider the following example 
-[From Kaufman & Rousseeuw, p. 6-8](ExercicekauffmanScale.jpg)
+![From Kaufman & Rousseeuw, p. 6-8](ExercicekauffmanScale.jpg)
+
 * Plot the data using a nice scatter plot.
 * Transform the Height from centimeters (cm) into feet (ft).
 * Display your data in a table. 
