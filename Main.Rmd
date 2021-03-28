@@ -1,11 +1,11 @@
 ---
 title: "Cluster Analysis"
 output:
-  pdf_document:
-    toc: yes
   html_document:
     toc: yes
     toc_float: yes
+  pdf_document:
+    toc: yes
   word_document:
     toc: yes
 editor_options:
@@ -521,6 +521,11 @@ dist.binary(data[c("Ilan","Talia"),],method=5)^2
 * This data set was first used in this textbook [KAUFMAN, Leonard et ROUSSEEUW, Peter J. Finding groups in data: an introduction to cluster analysis. John Wiley & Sons, 2009](https://book4you.org/book/669277/d2cf59).
 * Identify the missing measurements.
 * Explain the way how KAUFMAN and ROUSSEEUW, pp. 296-297 treat the missing measurements.
+* Compute a distance matrix for the completed data.
+* Propose a graphical way to represent that distance matrix.
+* Which group of animals look close?
+* Change the method of calculating and observe if it has some effect of the graph.
+
 
 ![KAUFMAN and ROUSSEEUW, p. 296](ExerciceKauffman1.jpg)
 ![KAUFMAN and ROUSSEEUW p. 297](ExerciceKauffman2.jpg)
