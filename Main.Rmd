@@ -971,9 +971,59 @@ ggtheme = theme_minimal()
 ```
 
 
+# Partitioning Around Medoids (PAM, k-medoids))
+
+* The algorithm used in the program PAM search for $k$ representative objects among the objects of the data set.
+* These objects should represent various aspects of the structure of the data.
+* In the PAM algorithm the representative objects are the so-called medoids of the clusters.
+* After finding a set of $k$ representative objects, the $k$ clusters are constructed by assigning each object of the data set to the nearest representative object.
+* To illustrate the PAM  algorithm, consider the data set containing 10 objects ($n = 10$) and two variables ($m = 2$).
+* Suppose the data set must be divided into two subsets or clusters ($k = 2$).
+* The  algorithm first considers possible choices of two representative objects and then constructs the clusters around these representative objects.
+
+![](KaufmanTable1.jpg)
+
+
+![](KaufmanFigure1.jpg)
 
 
 
+* As an example, suppose objects 1 and 5 are the selected representative objects.
+* In Table 2 the dissimilarities (Euclidean distance) from each of the objects to the two selected objects are given, as well as the smallest of these two dissimilarities and the corresponding representative object. 
+* The average dissimilarity is 9.37.
+
+![](KaufmanTable2.jpg)
+
+* In Table 3 the assignment is carried out for the case objects 4 and 8 are selected as representative objects.
+
+![](KaufmanTable3.jpg)
+
+![](KaufmanFigure2.jpg)
+
+* The average dissimilarity for the case objects 4 and 8 are selected is 2.30, which is considerably less than the value of 9.37, found when 1 and 5 were the representative objects.
+
+* Alternatively a PAM program can be used by entering a matrix of dissimilarities between objects.
+
+# Description of the Algorithm 
+* The algorithm we are using in PAM consists of two phases.
+* In a first phase, called **BUILD**, an initial clustering is obtained by the successive selection of representative objects until $k$ objects have been found.
+* The first object is the one for which the sum of the dissimilarities to all other objects is as small as possible.
+* This object is the most centrally located in the set of objects.
+* Subsequently, at each step another object is selected.
+* This object is the one which decreases the objective function as much as possible.
+* To find this object, the following steps are carried out:
+**STEP 1.** Consider an object $i$ which has not yet been selected. 
+**STEP 2.** Consider a non-selected object $i^\prime$ and calculate the difference between its dissimilarity $D_{i^\prime}$ with the most similar previously selected object, and its dissimilarity $d( i^\prime, i)$ with object $i$.
+**STEP 3.** If this difference is positive, object $i^\prime$ will contribute to the decision to select object $i$. Therefore we calculate
+$$C_{i^\prime i} = max(D_{i^\prime} - d(i^\prime, i),O)$$
+**STEP 4.** Calculate the total gain obtained by selecting object $i$:
+$$\sum_{i^\prime} C_{i^\prime i} $$.
+**STEP 5.** Choose the not yet selected object $i$ corresponding to
+$$
+\arg\max \sum_{i^\prime} C_{i^\prime i}.
+$$
+
+This process is continued until $k$ objects have been found. 
 
 
 
