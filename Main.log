@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2021.3.10)  22 MAR 2021 07:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2021.3.25)  28 MAR 2021 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1126,29 +1126,29 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 159.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 159.
-[2] <Manhattan.jpg, id=89, 1186.4325pt x 1194.4625pt>
+[2] <Manhattan.jpg, id=95, 1186.4325pt x 1194.4625pt>
 File: Manhattan.jpg Graphic file (type jpg)
 <use Manhattan.jpg>
 Package pdftex.def Info: Manhattan.jpg used on input line 249.
 (pdftex.def)             Requested size: 469.74907pt x 472.92842pt.
-[3 <./Manhattan.jpg>] [4]
+[3] [4 <./Manhattan.jpg>] [5]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 409.
 
-<Main_files/figure-latex/unnamed-chunk-3-1.pdf, id=101, 463.7325pt x 315.1775pt
+<Main_files/figure-latex/unnamed-chunk-3-1.pdf, id=113, 463.7325pt x 315.1775pt
 >
 File: Main_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-3-1.pdf used on 
 input line 420.
 (pdftex.def)             Requested size: 463.73842pt x 315.18153pt.
-[5] [6 <./Main_files/figure-latex/unnamed-chunk-3-1.pdf>] [7] [8] [9]
+[6 <./Main_files/figure-latex/unnamed-chunk-3-1.pdf>] [7] [8] [9]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 746.
 
-[10] [11] <ExercicekauffmanScale.jpg, id=159, 1572.87625pt x 609.27625pt>
+[10] [11] <ExercicekauffmanScale.jpg, id=165, 1572.87625pt x 609.27625pt>
 File: ExercicekauffmanScale.jpg Graphic file (type jpg)
 <use ExercicekauffmanScale.jpg>
 Package pdftex.def Info: ExercicekauffmanScale.jpg used on input line 922.
@@ -1158,8 +1158,8 @@ Overfull \hbox (133.36124pt too wide) in paragraph at lines 921--924
 []\T1/lmr/m/n/10 (-20) Consider the fol-low-ing ex-am-ple [] 
  []
 
-[12 <./ExercicekauffmanScale.jpg>] <KAUFMANBinarydata.jpg, id=166, 1247.66125pt
- x 1022.82124pt>
+[12] [13 <./ExercicekauffmanScale.jpg>] <KAUFMANBinarydata.jpg, id=179, 1247.66
+125pt x 1022.82124pt>
 File: KAUFMANBinarydata.jpg Graphic file (type jpg)
 <use KAUFMANBinarydata.jpg>
 Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 994.
@@ -1169,7 +1169,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 994--998
 [][]
  []
 
-[13] [14 <./KAUFMANBinarydata.jpg>]
+[14 <./KAUFMANBinarydata.jpg>]
 LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 104
 5.
 (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
@@ -1184,84 +1184,123 @@ Overfull \hbox (4.4551pt too wide) in alignment at lines 1113--1123
  [] [] [] 
  []
 
-[15] [16] <ExerciceKauffman1.jpg, id=199, 861.2175pt x 1033.8625pt>
+[15] [16] <ExerciceKauffman1.jpg, id=206, 861.2175pt x 1033.8625pt>
 File: ExerciceKauffman1.jpg Graphic file (type jpg)
 <use ExerciceKauffman1.jpg>
-Package pdftex.def Info: ExerciceKauffman1.jpg used on input line 1264.
+Package pdftex.def Info: ExerciceKauffman1.jpg used on input line 1273.
 (pdftex.def)             Requested size: 469.76817pt x 563.94083pt.
-<ExerciceKauffman2.jpg, id=200, 242.9075pt x 559.08875pt>
+<ExerciceKauffman2.jpg, id=207, 242.9075pt x 559.08875pt>
 File: ExerciceKauffman2.jpg Graphic file (type jpg)
 <use ExerciceKauffman2.jpg>
-Package pdftex.def Info: ExerciceKauffman2.jpg used on input line 1265.
+Package pdftex.def Info: ExerciceKauffman2.jpg used on input line 1274.
 (pdftex.def)             Requested size: 242.90689pt x 559.08737pt.
 [17] [18 <./ExerciceKauffman1.jpg>] [19 <./ExerciceKauffman2.jpg>] <GanMaYuTabl
-e2.jpg, id=216, 1830.84pt x 1172.38pt>
+e2.jpg, id=224, 1830.84pt x 1172.38pt>
 File: GanMaYuTable2.jpg Graphic file (type jpg)
 <use GanMaYuTable2.jpg>
-Package pdftex.def Info: GanMaYuTable2.jpg used on input line 1349.
+Package pdftex.def Info: GanMaYuTable2.jpg used on input line 1358.
 (pdftex.def)             Requested size: 469.74944pt x 300.80446pt.
 [20] [21pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1361 \end{itemize}
+l.1370 \end{itemize}
                      <./GanMaYuTable2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1390--1391
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1400
 
  []
 
-<flowers.jpg, id=232, 686.565pt x 1009.7725pt>
+<flowers.jpg, id=240, 686.565pt x 1009.7725pt>
 File: flowers.jpg Graphic file (type jpg)
 <use flowers.jpg>
-Package pdftex.def Info: flowers.jpg used on input line 1404.
+Package pdftex.def Info: flowers.jpg used on input line 1413.
 (pdftex.def)             Requested size: 442.23914pt x 650.42773pt.
-[22] [23 <./flowers.jpg>] <Begonia.jpg, id=243, 730.22812pt x 376.40625pt>
+[22] [23 <./flowers.jpg>] <Begonia.jpg, id=251, 730.22812pt x 376.40625pt>
 File: Begonia.jpg Graphic file (type jpg)
 <use Begonia.jpg>
-Package pdftex.def Info: Begonia.jpg used on input line 1448.
+Package pdftex.def Info: Begonia.jpg used on input line 1457.
 (pdftex.def)             Requested size: 469.75114pt x 242.13976pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1448--1449
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1458
 [][]
  []
 
-<Genet.jpeg, id=244, 762.85pt x 572.1375pt>
+<Genet.jpeg, id=252, 762.85pt x 572.1375pt>
 File: Genet.jpeg Graphic file (type jpg)
 <use Genet.jpeg>
-Package pdftex.def Info: Genet.jpeg used on input line 1450.
+Package pdftex.def Info: Genet.jpeg used on input line 1459.
 (pdftex.def)             Requested size: 469.74944pt x 352.31207pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1450--1451
+Underfull \hbox (badness 10000) in paragraph at lines 1459--1460
 [][]
  []
 
-[24 <./Begonia.jpg>] [25 <./Genet.jpeg>] <Daisy.jpg, id=263, 1698.345pt x 843.1
+[24 <./Begonia.jpg>] [25 <./Genet.jpeg>] <Daisy.jpg, id=271, 1698.345pt x 843.1
 5pt>
 File: Daisy.jpg Graphic file (type jpg)
 <use Daisy.jpg>
-Package pdftex.def Info: Daisy.jpg used on input line 1550.
+Package pdftex.def Info: Daisy.jpg used on input line 1535.
 (pdftex.def)             Requested size: 469.7544pt x 233.2114pt.
-[26 <./Daisy.jpg>] [27] <USAArrest.jpg, id=273, 1548.78625pt x 2018.54124pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1535--1538
+[]
+ []
+
+<USAArrest.jpg, id=273, 1548.78625pt x 2018.54124pt>
 File: USAArrest.jpg Graphic file (type jpg)
 <use USAArrest.jpg>
-Package pdftex.def Info: USAArrest.jpg used on input line 1639.
+Package pdftex.def Info: USAArrest.jpg used on input line 1567.
 (pdftex.def)             Requested size: 469.7441pt x 612.21994pt.
-[28] [29 <./USAArrest.jpg>] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2428.
-[40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2428.
+[26 <./Daisy.jpg>] [27 <./USAArrest.jpg>] [28] [29] [30] [31] [32] [33] [34] [3
+5] [36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 2414--2417
+
+ []
+
+
+<Main_files/figure-latex/unnamed-chunk-20-1.pdf, id=330, 453.695pt x 313.17pt>
+File: Main_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
+<use Main_files/figure-latex/unnamed-chunk-20-1.pdf>
+Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-20-1.pdf used on
+ input line 2427.
+(pdftex.def)             Requested size: 453.6939pt x 313.16922pt.
+[38] <HartiganTable4dot1.jpg, id=336, 1005.7575pt x 1185.42876pt>
+File: HartiganTable4dot1.jpg Graphic file (type jpg)
+<use HartiganTable4dot1.jpg>
+Package pdftex.def Info: HartiganTable4dot1.jpg used on input line 2476.
+(pdftex.def)             Requested size: 444.74458pt x 524.19496pt.
+
+Overfull \hbox (206.53294pt too wide) in paragraph at lines 2475--2478
+[]\T1/lmr/m/n/10 (-20) The data used by the au-thor are pro-vided be-low. [] 
+ []
+
+[39 <./Main_files/figure-latex/unnamed-chunk-20-1.pdf>] <HartiganTable4dot2.jpg
+, id=354, 859.21pt x 1057.9525pt>
+File: HartiganTable4dot2.jpg Graphic file (type jpg)
+<use HartiganTable4dot2.jpg>
+Package pdftex.def Info: HartiganTable4dot2.jpg used on input line 2489.
+(pdftex.def)             Requested size: 469.76132pt x 578.42107pt.
+
+Overfull \hbox (65.57819pt too wide) in paragraph at lines 2489--2491
+[][]\T1/lmr/m/n/10 (-20) {width=``60%'',
+ []
+
+[40 <./HartiganTable4dot1.jpg>] [41 <./HartiganTable4dot2.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2520.
+[42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2520.
 (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2428.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2428.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2428.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2520.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2520.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2520.
  ) 
 Here is how much of TeX's memory you used:
- 15465 strings out of 494944
- 220257 string characters out of 6180677
- 338646 words of memory out of 5000000
- 18283 multiletter control sequences out of 15000+600000
- 70260 words of font info for 95 fonts, out of 8000000 for 9000
+ 15507 strings out of 494944
+ 221083 string characters out of 6180677
+ 340830 words of memory out of 5000000
+ 18303 multiletter control sequences out of 15000+600000
+ 70509 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  35i,10n,35p,898b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
@@ -1279,10 +1318,10 @@ fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (40 pages, 2849369 bytes).
+Output written on Main.pdf (42 pages, 3305206 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 115 named destinations out of 1000 (max. 500000)
- 12565 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 557 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 12612 words of extra memory for PDF output out of 14400 (max. 10000000)
 

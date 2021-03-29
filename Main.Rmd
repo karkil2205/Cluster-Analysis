@@ -4,9 +4,9 @@ output:
   html_document:
     toc: yes
     toc_float: yes
-  pdf_document:
-    toc: yes
   word_document:
+    toc: yes
+  pdf_document:
     toc: yes
 editor_options:
   chunk_output_type: console
@@ -626,7 +626,7 @@ blue).
 *Genêt*
 
 
-```{r}
+```{r, message = FALSE}
 library(cluster)
 library(dplyr)
 data <-flower %>% 
@@ -637,6 +637,10 @@ mutate(Winters=recode(Winters,"1"="Yes","0"="No"),
       Color=recode(Color,"1"="white", "2"="yellow", "3"= "pink", "4"="red", "5"="blue"),
       Soil=recode(Soil,"1"="dry", "2"="normal", "3"= "wet")
       ) 
+row.names(data)=c("Begonia","Broom","Camellia","Dahlia","Forget-me-not","Fuchsia",
+ "Geranium", "Gladiolus","Heather","Hydrangea","Iris","Lily","Lily-of-the-valley",
+ "Peony","Pink Carnation","Red Rose","Scotch Rose","Tulip")
+  
 ```
 
 
@@ -654,7 +658,6 @@ flower[1:2,]
 ```{r}
 max(data$Height)-min(data$Height)
 max(data$Distance)-min(data$Distance)
-
 ```
 
 
@@ -662,16 +665,17 @@ $$
 \frac{|1-0|+|0-1|+|0-1|+1+|1-3|/2+|3-15|/17+|150-25|/180+|50-15|/50}{8}\approx 0.8875408
 $$
  
- # Daisy function
+# Daisy function
 
 ![](Daisy.jpg)
+[Cluster package description available at this link](https://www.google.com/search?q=daisy+package+r&oq=daisy+&aqs=chrome.1.69i57j35i19i39j35i39j69i59j46i67i433.4466j0j7&client=tablet-android-samsung-nf-rev1&sourceid=chrome-mobile&ie=UTF-8).
 
 
-
-```{r}
+```{r, message= F, echo=T,warning=F }
 library(cluster)
 (abs(1-0)+abs(0-1)+abs(0-1)+1+abs(1-3)/2+abs(3-15)/17+abs(150-25)/180+abs(50-15)/50)/8
-daisy(data[,1:8],metric = "Gower") 
+dist<-daisy(data[,1:8],metric = "Gower")
+as.matrix(dist)[1:2,1:2]
 ```
 
 
@@ -726,17 +730,203 @@ round(sqrt(sum((df.scaled["Iowa",]
 
 
 
+* We also compute correlation based distances.
+
+```{r,message=F}
+library("factoextra")
+dist.cor <- get_dist(df.scaled, method = "pearson")
+round(as.matrix(dist.cor)[1:3, 1:3], 1)
+round(1-cor(df.scaled["New Mexico",],df.scaled["Iowa",]),1)
+round(1-cor(df.scaled["New Mexico",],df.scaled["Indiana",]),1)
+round(1-cor(df.scaled["Iowa",],df.scaled["Indiana",]),1)
+
+```
 
  
  
- 
- 
- 
- 
+
+# Visualizing distance matrices
+* A simple solution for visualizing the distance matrices is to use the function fviz_dist() [factoextra package].  
+* Other specialized methods will be  described later on.
+
+```{r}
+library(factoextra)
+fviz_dist(dist.eucl)
+```
+
+
+
+# Partitioning Clustering
+
+* Partitioning clustering are clustering methods used to classify observations within a data set, into multiple groups based on their similarity.
+* The algorithms require the analyst to specify the number of clusters to be generated.
+*  This chapter describes the commonly used partitioning clustering, including:
+1. K-means clustering (MacQueen, 1967), in which, each cluster is represented by the center or means of the data points belonging to the cluster. The K-means method is sensitive to anomalous data points and outliers.
+2. K-medoids clustering or PAM (Partitioning Around Medoids, Kaufman & Rousseeuw, 1990), in which, each cluster is represented by one of the objects in the cluster. PAM is less sensitive to outliers compared to k-means.
+3. CLARA algorithm (Clustering Large Applications), which is an extension to PAM adapted for large data sets. 
+
+
+# K-Means Clustering
+
+* The description of the algorithm is based on:
+* HARTIGAN, John A. _Clustering algorithms_. John Wiley & Sons, Inc., 1975.
+* The data used by the author are provided below.
+ ![](HartiganTable4dot1.jpg)
+* The principal nutrients in meat, fish, and fowl are listed.
+* Recall that 1oz= 28.34952g. 
+* Estimated daily dietary allowances are: food energy (3200 
+cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
+* Table 4.2 convents the variables (with the exception of Fat) in percentage of food delivery.
+
+
+
+![Data](HartiganTable4dot2.jpg){width="60%", height="150px"}
+
+
+* For e.g., the first (BB) ligne is obtained in the following way: 
+* $340/3200=11\%\text{(Food Energy)}$. 
+* $20/70=29\%\text{(Protein)}$.
+* ${0.009}/{0.8}=1\%\text{ (Calcium)}$.
+* ${2.6}/{10}= 26\%\text{ (Iron)}$.
+* An argument could be made that iron is less important than calories or protein and so should be given less weight or ignored entirely.
+* There are $n$ objects and $k$ clusters, $k\leq n$.
+* Our purpose is to partition the $n$ objects (here  foods) so that objects within clusters are close and objects in different clusters are distant.
+* Each cluster contains at least one object and each object belongs to only one cluster. 
+* There is a very large number of possible partitions.
+
+# Exercice 11
+What is the number of possible partitions ?
+
+
+# K-Means
+*  The discordance between the data and a given partition is denoted by $e$.
+* We use the technique of local optimization.
+* A neighborhood of partitions is defined for each ption.
+* Starting from an initial partition, search through a set of partitions at each step.
+* Move from the partition to a partition in its neighborhood for which $e$ is minim.
+* If the neighborhoods are very large, it is cheaper computationally to move to the first partition discovered in the neighborhood where $e$ is reduced from its present value.
+* A number of stopping rules are possible.
+* For example, the search stops when $e$ is not reduced by movement to the neighborhood.
+* The present partition is locally optimal in that it is the best partition in its neighborhood.
+* Consider partitions of the five  ($n=5$) beef foods $\{\text{BB, BR,BS,BC, into three clusters ($k=3$).
+* Totally, there are 25 such ??.
+* A plausible neighborhood for a partition is the set of partitions obtained by transferring an object from one cluster to another.
+
+* For the partition (BB BR) (BS) (BC BH), the neighborhood consists of the following ten partitions:
+
+1. (BR) (BB BS) (BC BH)
+2. (BR) (BS) (BB BC BH) 
+3. (BB) (BR BS) (BC BH) 
+4. (BB) (BS) (BR BC BH) 
+5. (BB BR BS) O (BC BH) 
+6. (BB BR) O (BS BC BH) 
+7. (BB BR BC) (BS) (BH)
+8. (BB BR) (BS BC) (BH) 
+9. (BB BR BH) (BS) (BC) 
+10. (BB BR) (BS BH) (BC)
+
+# K-Means Algorithm
+* Let $\mathbf{x}^j\equiv (x_1^j,\cdots,x_n^j)$ the vector of  values for the object $j$, $j=1,\cdots ,m.$
+* The variables are assumed scaled.
+* The partition has   $k$ disjoint clusters  clusters $C_1,\cdots,C_k$, which are the indices of the objects in the various clusters.
+* Let $m_l$ be the number of objects in cluster $C_l$.
+* Each of the $m$ objects lies in just one of the $k$ clusters.
+* Note that $\sum_{l=1}^k m_l=m$.
+* The vector of means over the objects in cluster $C_l$ is denoted by $\bar{\mathbf{x}}^{l}$, with
+$$
+\bar{\mathbf{x}}^{l}\equiv\frac{1}{m_l}\sum_{j\in C_l}\mathbf{x}^{j}=(\bar{x}_1^l,\cdots,\bar{x}_n^l),\:l=1,\cdots, k,
+$$
+where 
+$$
+\bar{x}_i^l\equiv \frac{\sum_{j\in C_l}x_i^{j}}{m_l},\:i=1,\cdots, n; \:l=1,\cdots,k.
+$$
+* The distance between the object $j$ and the cluster $l$ is $d(\mathbf{x}^j,\bar{\mathbf{x}}^l)$, where $d$ is taken to be the Euclidian distance
+$$d(\mathbf{x}^j,\bar{\mathbf{x}}^l)=||\mathbf{x}^j-\bar{\mathbf{x}}^l||=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
+where $||\mathbf{\cdot}||$ is the Euclidian norm.
+*  The error of the partition is measuredtaken to bye  
+$$
+e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^l)=
+\sum_{l=1}^{k}\sum_{j\in C_l}
+||\mathbf{x}^j-\bar{\mathbf{x}}^l||^2.
+$$
+
+* Alternatively, we have
+
+$$
+e=\sum_{j=1}^{m}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\mathbf{x}^j-\bar{\mathbf{x}}^{l(j)}||^2,
+$$
+
+where $l(j)$ is the index of the cluster of object $j$.
+
+* The general procedure is to search for a partition with a small error $e$ by moving cases from one cluster to another.
+* The search ends when no such movement reduces $e$.
+* **STEP 1**. Assume initial clusters. Compute the cluster means $\bar{\mathbf{x}}^l$ and the initial error $e$.
+* **STEP 2**. For the first Object, compute for every cluster $l$ 
+
+$$
+\Delta e=
+\frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
+$$
+
+* It corresponds to the error variation in transferring the first object from cluster $l(1)$ to which it belongs to cluster $l$.
+* If the minimum of this quantity over all $l\neq l(1)$ is negative, transfer the first case from cluster $l(1)$ to this minimal $l$.
+* Adjust the cluster means of $l(1)$ and the minimal $l$ and add the error variation (which is negative) to $e$.
+* **STEP 3**. Repeat STEP 2 for each object $j$ such that $2\leq j \leq m$.
+* **STEP 4**. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to STEP 2.
+
+
+# Exercice 12
+Prove that the error variation is indeed given by: 
+$$
+\Delta e=
+\frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
+$$
+
+# K-MEANS APPLIED TO FOOD NUTRIENT DATA
+* Only the first eight foods will be considered.
+* Only three variables, food energy, protein, and calcium as a percentage of recommended daily allowances are used.
+* The eight foods $(m=8)$ are partitioned into three clusters ($k=3$).
+
+# Exercice 13
+
+* Explain in details tne k-means algorithm based on the following pages of Hartigan.
+
+  
+ ![](HartiganTable4dot3.jpg)
+
+ ![](HartiganAlgo1.jpg)
+![](HartiganAlgo2.jpg)
+
+
+```{r}
+#library("cluster.datasets")
+#write.csv(rda.meat.fish.fowl.1959,"Hartigandat%a1.csv")
+df<-read.csv("Hartigandata1.csv")
+print(df)
+df<-df[1:8,c(3,4,6)]
+df
+```
+
+```{r}
+# The data contain some errors 
+df[3,1]<-13 # Error in line 3
+df[6,1]<-4 # Error at line 6
+df[7,3]<-1 # Error at line 7
+df
+rownames(df)<-c("BB","HR","BR","BS","BC","CB","CC","BH")
+df
+colnames(df)<-c("Energy","Protein","Calcium")
+df
+``` 
 
 
 
 
+
+
+```{r}
+kmeans(df,3)
+```
 
 
 
