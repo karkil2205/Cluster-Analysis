@@ -4,9 +4,9 @@ output:
   html_document:
     toc: yes
     toc_float: yes
-  word_document:
-    toc: yes
   pdf_document:
+    toc: yes
+  word_document:
     toc: yes
 editor_options:
   chunk_output_type: console
@@ -808,7 +808,7 @@ What is the number of possible partitions ?
 * A number of stopping rules are possible.
 * For example, the search stops when $e$ is not reduced by movement to the neighborhood.
 * The present partition is locally optimal in that it is the best partition in its neighborhood.
-* Consider partitions of the five  ($n=5$) beef foods $\{\text{BB, BR,BS,BC, into three clusters ($k=3$).
+* Consider partitions of the five  ($n=5$) beef foods $\{\text{BB, BR,BS,BC,BH}\}$ into three clusters ($k=3$).
 * Totally, there are 25 such ??.
 * A plausible neighborhood for a partition is the set of partitions obtained by transferring an object from one cluster to another.
 
@@ -877,11 +877,11 @@ $$
 
 # Exercice 12
 Prove that the error variation is indeed given by: 
+
 $$
 \Delta e=
 \frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
 $$
-
 # K-MEANS APPLIED TO FOOD NUTRIENT DATA
 * Only the first eight foods will be considered.
 * Only three variables, food energy, protein, and calcium as a percentage of recommended daily allowances are used.
@@ -889,7 +889,7 @@ $$
 
 # Exercice 13
 
-* Explain in details tne k-means algorithm based on the following pages of Hartigan.
+* Explain in details tne k-means algorithm based on the following pages of Hartigan (1975).
 
   
  ![](HartiganTable4dot3.jpg)
@@ -921,25 +921,54 @@ df
 
 
 
-
-
-
 ```{r}
-kmeans(df,3)
+km.res<-kmeans(df,3)
+km.res
 ```
 
+# Exercice 14
+
+* Produce a heatmap for the data by rearranging the lines according to the found clusters (k=3).
+
+
+# Exercice 15
+
+* Produce the Table 4.4 of Hartigan (1975).
+
+ ![](HartiganAlgo3.jpg)
+
+# Exercice 16
+
+* Use ggplot2 to draw an x-y plot with the number of clusters on the x-axis and the error on the y-axis.
 
 
 
+**Remark:** The location of a knee is generally considered as an appropriate number of clusters.
+
+# More on kmeans()
+
+```{r}
+km.res$cluster # cluster number   
+km.res$size # Cluster size
+km.res$centers # Cluster means
+```
 
  
+# Visualizing k-means clusters
 
+```{r}
+library(ggplot2)
+library(factoextra)
+fviz_cluster(km.res, df, ellipse.type = "norm")
 
-
-
-
-
-
+fviz_cluster(km.res, data = df,
+palette = c("#2E9FDF", "#00AFBB", "#E7B800"),
+ellipse.type = "euclid", # Concentration ellipse
+star.plot = TRUE, # Add segments from centroids to items
+repel = TRUE, # Avoid label overplotting (slow)
+ggtheme = theme_minimal()
+)
+```
 
 
 
