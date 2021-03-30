@@ -9,7 +9,7 @@ output:
   word_document:
     toc: yes
 editor_options:
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="200">
@@ -760,7 +760,7 @@ fviz_dist(dist.eucl)
 
 * Partitioning clustering are clustering methods used to classify observations within a data set, into multiple groups based on their similarity.
 * The algorithms require the analyst to specify the number of clusters to be generated.
-*  This chapter describes the commonly used partitioning clustering, including:
+*  We describe the commonly used partitioning clustering, including:
 1. K-means clustering (MacQueen, 1967), in which, each cluster is represented by the center or means of the data points belonging to the cluster. The K-means method is sensitive to anomalous data points and outliers.
 2. K-medoids clustering or PAM (Partitioning Around Medoids, Kaufman & Rousseeuw, 1990), in which, each cluster is represented by one of the objects in the cluster. PAM is less sensitive to outliers compared to k-means.
 3. CLARA algorithm (Clustering Large Applications), which is an extension to PAM adapted for large data sets. 
@@ -795,7 +795,7 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * There is a very large number of possible partitions.
 
 # Exercice 11
-What is the number of possible partitions ?
+What is the number of possible partitions?
 
 
 # K-Means
@@ -809,7 +809,13 @@ What is the number of possible partitions ?
 * For example, the search stops when $e$ is not reduced by movement to the neighborhood.
 * The present partition is locally optimal in that it is the best partition in its neighborhood.
 * Consider partitions of the five  ($n=5$) beef foods $\{\text{BB, BR,BS,BC,BH}\}$ into three clusters ($k=3$).
-* Totally, there are 25 such ??.
+* Totally, there are 25 such partitions.
+
+```{r,warning=FALSE,message=FALSE}
+library(gmp)
+Stirling2(5,3)
+```
+
 * A plausible neighborhood for a partition is the set of partitions obtained by transferring an object from one cluster to another.
 
 * For the partition (BB BR) (BS) (BC BH), the neighborhood consists of the following ten partitions:
@@ -826,52 +832,55 @@ What is the number of possible partitions ?
 10. (BB BR) (BS BH) (BC)
 
 # K-Means Algorithm
-* Let $\mathbf{x}^j\equiv (x_1^j,\cdots,x_n^j)$ the vector of  values for the object $j$, $j=1,\cdots ,m.$
+* Let $\mathbf{x}_i\equiv (x_i^1,\cdots,x_i^m)$ the vector of  values for the object $i$, $i=1,\cdots ,n.$
 * The variables are assumed scaled.
-* The partition has   $k$ disjoint clusters  clusters $C_1,\cdots,C_k$, which are the indices of the objects in the various clusters.
-* Let $m_l$ be the number of objects in cluster $C_l$.
-* Each of the $m$ objects lies in just one of the $k$ clusters.
-* Note that $\sum_{l=1}^k m_l=m$.
-* The vector of means over the objects in cluster $C_l$ is denoted by $\bar{\mathbf{x}}^{l}$, with
+* The partition has   $k$ disjoint clusters: $C_1,\cdots,C_k$, which are the indices of the objects in the various clusters.
+* Let $n_l$ be the number of objects in cluster $C_l$.
+* Each of the $n$ objects lies in just one of the $k$ clusters.
+* Note that $\sum_{l=1}^k n_l=n$.
+* The vector of means over the objects in cluster $C_l$ is denoted by $\bar{\mathbf{x}}_{l}$, with
 $$
-\bar{\mathbf{x}}^{l}\equiv\frac{1}{m_l}\sum_{j\in C_l}\mathbf{x}^{j}=(\bar{x}_1^l,\cdots,\bar{x}_n^l),\:l=1,\cdots, k,
+\bar{\mathbf{x}}_{l}\equiv\frac{1}{n_l}\sum_{i\in C_l}\mathbf{x}_{i}=(\bar{x}_l^1,\cdots,\bar{x}_l^m),\:l=1,\cdots, k,
 $$
 where 
 $$
-\bar{x}_i^l\equiv \frac{\sum_{j\in C_l}x_i^{j}}{m_l},\:i=1,\cdots, n; \:l=1,\cdots,k.
+\bar{x}_l^j\equiv \frac{\sum_{i\in C_l}x_i^{j}}{n_l},\:j=1,\cdots, m; \:l=1,\cdots,k.
 $$
-* The distance between the object $j$ and the cluster $l$ is $d(\mathbf{x}^j,\bar{\mathbf{x}}^l)$, where $d$ is taken to be the Euclidian distance
-$$d(\mathbf{x}^j,\bar{\mathbf{x}}^l)=||\mathbf{x}^j-\bar{\mathbf{x}}^l||=\bigg[\sum_{i=1}^n(x_i^j-\bar{x}_i^l)^2\bigg]^{1/2},\:j=1,\cdots,m;\:l=1,\cdots,k.$$ 
+* The distance between the object $j$ and the cluster $l$ is $d(\mathbf{x}_i,\bar{\mathbf{x}}_l)$, where $d$ is taken to be the Euclidian distance
+$$
+d(\mathbf{x}_i,\bar{\mathbf{x}}_l)=||\mathbf{x}_i-\bar{\mathbf{x}}_l||=\bigg[\sum_{j=1}^m(x_i^j-\bar{x}_l^j)^2\bigg]^{1/2},\:i=1,\cdots,m;\:l=1,\cdots,k.
+$$ 
 where $||\mathbf{\cdot}||$ is the Euclidian norm.
-*  The error of the partition is measuredtaken to bye  
+
+*  The error of the partition is taken to be  
+
 $$
-e=\sum_{l=1}^{k}\sum_{j\in C_l}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^l)=
-\sum_{l=1}^{k}\sum_{j\in C_l}
-||\mathbf{x}^j-\bar{\mathbf{x}}^l||^2.
+e=
+\sum_{l=1}^{k}\sum_{i\in C_l}
+||\mathbf{x}_i-\bar{\mathbf{x}}_l||^2.
 $$
 
 * Alternatively, we have
-
 $$
-e=\sum_{j=1}^{m}d^2(\mathbf{x}^j,\bar{\mathbf{x}}^{l(j)})=\sum_{j=1}^{m}\sum_{i=1}^n||\mathbf{x}^j-\bar{\mathbf{x}}^{l(j)}||^2,
+e=\sum_{i=1}^{n}\sum_{j=1}^m||\mathbf{x}_i-\bar{\mathbf{x}}_{l(j)}||^2,
 $$
 
-where $l(j)$ is the index of the cluster of object $j$.
+where $l(i)$ is the index of the cluster of object $i$.
 
 * The general procedure is to search for a partition with a small error $e$ by moving cases from one cluster to another.
 * The search ends when no such movement reduces $e$.
-* **STEP 1**. Assume initial clusters. Compute the cluster means $\bar{\mathbf{x}}^l$ and the initial error $e$.
-* **STEP 2**. For the first Object, compute for every cluster $l$ 
+* **STEP 1**. Assume initial clusters. Compute the cluster means $\bar{\mathbf{x}}_l$ and the initial error $e$.
+* **STEP 2**. For the first object, compute for every cluster $l$ 
 
 $$
 \Delta e=
-\frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
+\frac{n_ld^2(\mathbf{x}_1,\bar{\mathbf{x}}_l)}{n_l+1}-\frac{n_{l(1)}d^2(\mathbf{x}_1,\bar{\mathbf{x}}_{l(1)})}{n_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
 $$
 
 * It corresponds to the error variation in transferring the first object from cluster $l(1)$ to which it belongs to cluster $l$.
 * If the minimum of this quantity over all $l\neq l(1)$ is negative, transfer the first case from cluster $l(1)$ to this minimal $l$.
 * Adjust the cluster means of $l(1)$ and the minimal $l$ and add the error variation (which is negative) to $e$.
-* **STEP 3**. Repeat STEP 2 for each object $j$ such that $2\leq j \leq m$.
+* **STEP 3**. Repeat STEP 2 for each object $i$ such that $2\leq i \leq n$.
 * **STEP 4**. lf no movement of an object from one cluster to another occurs for any case, stop. Otherwise, return to STEP 2.
 
 
@@ -880,18 +889,19 @@ Prove that the error variation is indeed given by:
 
 $$
 \Delta e=
-\frac{m_ld^2(\mathbf{x}^1,\bar{\mathbf{x}}^l)}{m_l+1}-\frac{m_{l(1)}d^2(\mathbf{x}^1,\bar{\mathbf{x}}^{l(1)})}{m_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
+\frac{n_ld^2(\mathbf{x}_1,\bar{\mathbf{x}}_l)}{n_l+1}-\frac{n_{l(1)}d^2(\mathbf{x}_1,\bar{\mathbf{x}}_{l(1)})}{n_{l(1)}-1},\:l=1,\cdots, k,\:l\neq l(1).
 $$
+
 # K-MEANS APPLIED TO FOOD NUTRIENT DATA
+
 * Only the first eight foods will be considered.
 * Only three variables, food energy, protein, and calcium as a percentage of recommended daily allowances are used.
 * The eight foods $(m=8)$ are partitioned into three clusters ($k=3$).
 
 # Exercice 13
 
-* Explain in details tne k-means algorithm based on the following pages of Hartigan (1975).
+* Explain in details the k-means algorithm based on the following pages of Hartigan (1975).
 
-  
  ![](HartiganTable4dot3.jpg)
 
  ![](HartiganAlgo1.jpg)
@@ -908,7 +918,7 @@ df
 ```
 
 ```{r}
-# The data contain some errors 
+# The data set contains some errors 
 df[3,1]<-13 # Error in line 3
 df[6,1]<-4 # Error at line 6
 df[7,3]<-1 # Error at line 7
@@ -918,12 +928,23 @@ df
 colnames(df)<-c("Energy","Protein","Calcium")
 df
 ``` 
-
+# More on kmeans() output
 
 
 ```{r}
-km.res<-kmeans(df,3)
-km.res
+km.res<-kmeans(df[1:8,],3)
+km.res$cluster
+km.res$centers
+km.res$totss
+sum((df[1:8,]$Energy-mean(df[1:8,]$Energy))^2)+
+sum((df[1:8,]$Protein-mean(df[1:8,]$Protein))^2)+
+sum((df[1:8,]$Calcium-mean(df[1:8,]$Calcium))^2)
+7*var(df[1:8,]$Energy)+7*var(df[1:8,]$Protein)+7*var(df[1:8,]$Calcium)
+km.res$withinss
+km.res$tot.withinss
+km.res$betweenss
+km.res$size
+km.res$iter
 ```
 
 # Exercice 14
@@ -945,23 +966,20 @@ km.res
 
 **Remark:** The location of a knee is generally considered as an appropriate number of clusters.
 
-# More on kmeans()
-
-```{r}
-km.res$cluster # cluster number   
-km.res$size # Cluster size
-km.res$centers # Cluster means
-```
 
  
 # Visualizing k-means clusters
+
+* The results are visualized using fviz_cluster() function.
+* It draws a scatter plot of data points colored by cluster numbers.
+* If the data contains more than 2 variables, the Principal Component Analysis (PCA) algorithm is used to reduce the dimensionality of the data.
+* The first two principal dimensions are used to plot the data.
 
 ```{r}
 library(ggplot2)
 library(factoextra)
 fviz_cluster(km.res, df, ellipse.type = "norm")
-
-fviz_cluster(km.res, data = df,
+fviz_cluster(km.res, data = df[1:8,],
 palette = c("#2E9FDF", "#00AFBB", "#E7B800"),
 ellipse.type = "euclid", # Concentration ellipse
 star.plot = TRUE, # Add segments from centroids to items
@@ -969,7 +987,70 @@ repel = TRUE, # Avoid label overplotting (slow)
 ggtheme = theme_minimal()
 )
 ```
+```{r}
+pca=prcomp(df[1:8,], scale = TRUE)
+summary(pca)
 
+```
+
+
+# More on PCA
+
+```{r}
+data(decathlon2)
+decathlon.active <- decathlon2[1:23, 1:10]
+res.pca <- prcomp(decathlon.active, scale = TRUE)
+summary(res.pca)
+fviz_pca_biplot(res.pca)
+```
+
+
+
+# Silouhette
+
+* Assume the data are clustered into $k$ clusters.
+* For $i=1,\cdots,n$, let:
+$$
+a_i=\frac{1}{n_{l(i)}-1}\sum_{i^\prime \in i\in C_{l(i)}\setminus\{i\}}d(i,i^\prime),
+$$
+be the mean distance between $i$ and all the points of the same cluster.
+* If $n_{l(i)}=1$, we set $a_i=0$.
+* It is  interpreted as a measure of how well $i$ is assigned to its cluster (smaller the value, better is the assignment).
+* Let also
+$$ b_i=\min_{l\neq l(i)}{\frac {1}{|n_{l}|}}\sum_{i^\prime\in C_l}d(i,i^\prime),$$
+be the "neighboring cluster" of  $i$.
+* We now define a  *silhouette* of $i$ as 
+ $$ s_i=\frac {b_i-a_i}{\max(a_i,b_i)} \text{ if }n_{l(i)}>1,$$
+and
+$$
+s_i=0\text{ if }n_{l(i)}=1.
+$$
+* From the above definition it is clear that
+$$ -1\leq s_i\leq 1$$
+* For  $s_i$ to be close to 1 we require  $a_i<<b_i$.
+* If $s_i$ is close to $-1$, $i$ is more appropriately clustered in its neighbouring cluster.
+* An $s_i$ near zero means that the $i$ is on the border of two natural clusters.
+
+# Exercice 17
+* We are using the data of the paper which introduces the **Silouhette** method some years ago: [ROUSSEEUW, Peter J. Silhouettes: a graphical aid to the interpretation and validation of cluster analysis. Journal of computational and applied mathematics, 1987, vol. 20, p. 53-65.](https://booksc.org/book/3006616/528309).
+
+![](SilouhetteTable1.jpg)
+* The author obtain the following two figures.
+
+![](SilouhetteFig2.jpg)
+
+![](SilouhetteFig3.jpg)
+
+* Your task is to produce the same figures using modern dataviz tools.
+* What did you learn from theses graphs?
+
+# Exercice 18 
+
+* Provide a silouhette graph for the Hartigan (75) data
+
+# Exercice 19
+
+* Provide a k-means clustering analysis of the US Arrest data
 
 # Partitioning Around Medoids (PAM, k-medoids))
 
@@ -1001,29 +1082,11 @@ ggtheme = theme_minimal()
 ![](KaufmanFigure2.jpg)
 
 * The average dissimilarity for the case objects 4 and 8 are selected is 2.30, which is considerably less than the value of 9.37, found when 1 and 5 were the representative objects.
-
 * Alternatively a PAM program can be used by entering a matrix of dissimilarities between objects.
+* The algorithms are rather sophisticated and are not detailed here.
 
-# Description of the Algorithm 
-* The algorithm we are using in PAM consists of two phases.
-* In a first phase, called **BUILD**, an initial clustering is obtained by the successive selection of representative objects until $k$ objects have been found.
-* The first object is the one for which the sum of the dissimilarities to all other objects is as small as possible.
-* This object is the most centrally located in the set of objects.
-* Subsequently, at each step another object is selected.
-* This object is the one which decreases the objective function as much as possible.
-* To find this object, the following steps are carried out:
-**STEP 1.** Consider an object $i$ which has not yet been selected. 
-**STEP 2.** Consider a non-selected object $i^\prime$ and calculate the difference between its dissimilarity $D_{i^\prime}$ with the most similar previously selected object, and its dissimilarity $d( i^\prime, i)$ with object $i$.
-**STEP 3.** If this difference is positive, object $i^\prime$ will contribute to the decision to select object $i$. Therefore we calculate
-$$C_{i^\prime i} = max(D_{i^\prime} - d(i^\prime, i),O)$$
-**STEP 4.** Calculate the total gain obtained by selecting object $i$:
-$$\sum_{i^\prime} C_{i^\prime i} $$.
-**STEP 5.** Choose the not yet selected object $i$ corresponding to
-$$
-\arg\max \sum_{i^\prime} C_{i^\prime i}.
-$$
 
-This process is continued until $k$ objects have been found. 
+
 
 
 
