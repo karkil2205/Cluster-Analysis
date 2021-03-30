@@ -1017,14 +1017,28 @@ be the mean distance between $i$ and all the points of the same cluster.
 * If $n_{l(i)}=1$, we set $a_i=0$.
 * It is  interpreted as a measure of how well $i$ is assigned to its cluster (smaller the value, better is the assignment).
 * Let also
-$$ b_i=\min_{l\neq l(i)}{\frac {1}{|n_{l}|}}\sum_{i^\prime\in C_l}d(i,i^\prime),$$
+$$
+b_i=\min_{l\neq l(i)}{\frac {1}{|n_{l}|}}\sum_{i^\prime\in C_l}d(i,i^\prime),
+$$
 be the "neighboring cluster" of  $i$.
 * We now define a  *silhouette* of $i$ as 
- $$ s_i=\frac {b_i-a_i}{\max(a_i,b_i)} \text{ if }n_{l(i)}>1,$$
+$$
+s_i=\frac {b_i-a_i}{\max(a_i,b_i)} \text{ if }n_{l(i)}>1,
+$$
 and
 $$
 s_i=0\text{ if }n_{l(i)}=1.
 $$
+* Alternatively, we have
+$$
+s_i=
+\begin{cases}
+1-a_i/b_i,&\:\text{if } a_i<b_i;\\
+0,&\:\text{if } a_i=b_i;\\
+b_i/a_i-1,&\:\text{if } a_i>b_i.
+\end{cases}
+$$
+
 * From the above definition it is clear that
 $$ -1\leq s_i\leq 1$$
 * For  $s_i$ to be close to 1 we require  $a_i<<b_i$.
