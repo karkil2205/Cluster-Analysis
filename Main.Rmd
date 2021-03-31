@@ -795,7 +795,18 @@ cal), protein (70 g), calcium (0.8 g), and iron (10 mg).
 * There is a very large number of possible partitions.
 
 # Exercice 11
-What is the number of possible partitions?
+
+* What is the number of possible partitions?
+* Hint use the Stirling numbers of the second kind [Wikipedia](https://en.m.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind).
+* Example of functions in R.
+
+```{r}
+library(multicool)
+Stirling2(8,3)
+Stirling2(8,1)
+Stirling2(3,2)
+
+```
 
 
 # K-Means
