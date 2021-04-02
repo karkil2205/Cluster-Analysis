@@ -1,11 +1,11 @@
 ---
 title: "Cluster Analysis"
 output:
-  pdf_document:
-    toc: yes
   html_document:
     toc: yes
     toc_float: yes
+  pdf_document:
+    toc: yes
   word_document:
     toc: yes
 editor_options:
@@ -1070,7 +1070,7 @@ relocate(Food)->slobj
 
 slobj%>%
 arrange(,cluster)->slobj
-knitr::kable(slobj, caption = "Silhouettes for Food data",digits = 4,col.names = c("Food","Cluster","Neighbor","Silhouette width"),align=c("l","c","c","c"),booktabs = TRUE)%>%
+knitr::kable(slobj, caption = "Silhouettes values for the food example",digits = 4,col.names = c("Food","Cluster","Neighbor","Silhouette width"),align=c("l","c","c","c"),booktabs = TRUE)%>%
 kable_classic(latex_options = "hold_position")%>%
 row_spec(1:2,background = "#2EFEF7")%>%
 row_spec(3:5,background = "#F3F781")%>%
