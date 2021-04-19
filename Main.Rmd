@@ -4,12 +4,14 @@ output:
   html_document:
     toc: yes
     toc_float: yes
+    code_download: true  
   pdf_document:
     toc: yes
   word_document:
     toc: yes
 editor_options:
   chunk_output_type: inline
+    
 ---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Logo_cnam.gif" width="200">
