@@ -1286,3 +1286,55 @@ max(apply(MClus,2,max))<min(apply(MHClus,2,min))
 
 ```
 
+# Multidimensional scaling
+
+* It is oten  used to represent the clusters in a two-dimensional space.
+* Let the data of distances between  ten US cites [see KRUSKAL, Joseph B. Multidimensional scaling. Sage, 1978](https://book4you.org/book/1063766/424a0c) and 
+[TAKANE, Yoshio. 11 applications of multidimensional scaling in psychometrics. Handbook of statistics, 2006, vol. 26, pp. 359-400](https://book4you.org/book/505608/58b214).
+
+
+
+
+
+![](Takanedata.jpg)
+
+![](KruskalMap.jpg)
+
+* The role of MDS is to construct a map like
+the one in the following Figure for those who do not know the “geography” in certain areas.
+
+![](KruskalMDS.jpg)
+
+```{r}
+df<-read.csv("FlyingMileage.csv",sep = ";")
+df%>%kable(booktabs = TRUE)%>%
+kable_classic(latex_options = "hold_position")
+
+```
+
+* We denote this matrix of distances (or dissimilarities) by $D$ with compnents $d_{i,i^\prime},\:i,i^\prime=1\cdots n.$. 
+* The puprpose of the the basic MDS method is to build $n$ points in the $\mathbb{R}^p$ space, or using $p$ dimensions.
+* The coordinates of the point $i$ are $(x_i^1,\cdots,x_i^p)$.
+such as the matrix of distance between the points fits the observed matrix distances $D$.
+* The MDS distance between points are assumed to be
+$$\hat{d}_{i,i^\prime}=\sqrt{\sum_{l=1}^p(x_{i^\prime}^l-x_{i}^l)^2}.$$
+
+* Kruskal’s STRESS formula one is given by
+
+$$
+S_1=\sqrt{\frac{\sum_{i,i^\prime}(\hat{d}_{i,i^\prime}-d_{i,i^\prime})^2}{\sum_{i,i^\prime}d_{i,i^\prime}^2}}
+$$
+* The numerator  is squared error, indicating the sum of differences between the observed distance and model-derived distance.  The denominator  is normalizing factor.
+* We want to find vectors which produce the smallest possible value for stress.
+
+```{r}
+mds<-df%>%select(2:11)%>%
+cmdscale(,2)
+mds<-mds$points%>% as_tibble()
+colnames(mds) <- c("Dim.1", "Dim.2")
+ggplot(mds,aes(x = Dim.1,y=Dim.2))+
+geom_point()+geom_text(label=df$X,,hjust=0.5, vjust=3, size=2)
+
+```
+
+

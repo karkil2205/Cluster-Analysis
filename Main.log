@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2021.3.25)  6 APR 2021 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2021.4.7)  19 APR 2021 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1126,16 +1126,16 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 147.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [2] <Manhattan.jpg, id=126, 1186.4325pt x 1194.4625pt>
+) [2] [3] <Manhattan.jpg, id=143, 1186.4325pt x 1194.4625pt>
 File: Manhattan.jpg Graphic file (type jpg)
 <use Manhattan.jpg>
 Package pdftex.def Info: Manhattan.jpg used on input line 250.
 (pdftex.def)             Requested size: 375.81012pt x 378.35367pt.
-[3] [4 <./Manhattan.jpg>] [5]
+[4 <./Manhattan.jpg>] [5]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 410.
 
-<Main_files/figure-latex/unnamed-chunk-3-1.pdf, id=153, 463.7325pt x 315.1775pt
+<Main_files/figure-latex/unnamed-chunk-3-1.pdf, id=155, 463.7325pt x 315.1775pt
 >
 File: Main_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-3-1.pdf>
@@ -1148,24 +1148,23 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 747.
 
-[10] [11] <ExercicekauffmanScale.jpg, id=206, 1572.87625pt x 609.27625pt>
+[10] [11] <ExercicekauffmanScale.jpg, id=207, 1572.87625pt x 609.27625pt>
 File: ExercicekauffmanScale.jpg Graphic file (type jpg)
 <use ExercicekauffmanScale.jpg>
 Package pdftex.def Info: ExercicekauffmanScale.jpg used on input line 928.
 (pdftex.def)             Requested size: 234.86525pt x 90.97842pt.
-[12pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+[12] [13pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.937   T
-         ransform the Height from centimeters (cm) into feet (ft). <./Exercicek
-auffmanScale.jpg>] <KAUFMANBinarydata.jpg, id=214, 1247.66125pt x 1022.82124pt>
+l.1003 \end{longtable}
+                       <./ExercicekauffmanScale.jpg>] <KAUFMANBinarydata.jpg, i
+d=223, 1247.66125pt x 1022.82124pt>
 File: KAUFMANBinarydata.jpg Graphic file (type jpg)
 <use KAUFMANBinarydata.jpg>
 Package pdftex.def Info: KAUFMANBinarydata.jpg used on input line 1007.
 (pdftex.def)             Requested size: 234.86876pt x 192.54324pt.
-[13]
 LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 106
 0.
 (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
@@ -1175,8 +1174,8 @@ File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1090 \end{longtable}
-                       <./KAUFMANBinarydata.jpg>]
+l.1071 \end{Shaded}
+                    <./KAUFMANBinarydata.jpg>]
 Overfull \hbox (4.4551pt too wide) in alignment at lines 1123--1128
  [] [] [] 
  []
@@ -1186,18 +1185,18 @@ Overfull \hbox (4.4551pt too wide) in alignment at lines 1128--1138
  [] [] [] 
  []
 
-[15] <ExerciceKauffman1.jpg, id=245, 861.2175pt x 1033.8625pt>
+[15] <ExerciceKauffman1.jpg, id=247, 861.2175pt x 1033.8625pt>
 File: ExerciceKauffman1.jpg Graphic file (type jpg)
 <use ExerciceKauffman1.jpg>
 Package pdftex.def Info: ExerciceKauffman1.jpg used on input line 1288.
 (pdftex.def)             Requested size: 469.76817pt x 563.94083pt.
-<ExerciceKauffman2.jpg, id=246, 242.9075pt x 559.08875pt>
+<ExerciceKauffman2.jpg, id=248, 242.9075pt x 559.08875pt>
 File: ExerciceKauffman2.jpg Graphic file (type jpg)
 <use ExerciceKauffman2.jpg>
 Package pdftex.def Info: ExerciceKauffman2.jpg used on input line 1289.
 (pdftex.def)             Requested size: 242.90689pt x 559.08737pt.
 [16] [17 <./ExerciceKauffman1.jpg>] [18 <./ExerciceKauffman2.jpg>] <GanMaYuTabl
-e2.jpg, id=262, 1830.84pt x 1172.38pt>
+e2.jpg, id=264, 1830.84pt x 1172.38pt>
 File: GanMaYuTable2.jpg Graphic file (type jpg)
 <use GanMaYuTable2.jpg>
 Package pdftex.def Info: GanMaYuTable2.jpg used on input line 1373.
@@ -1213,17 +1212,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1414--1415
 
  []
 
-<flowers.jpg, id=279, 686.565pt x 1009.7725pt>
+<flowers.jpg, id=281, 686.565pt x 1009.7725pt>
 File: flowers.jpg Graphic file (type jpg)
 <use flowers.jpg>
 Package pdftex.def Info: flowers.jpg used on input line 1428.
 (pdftex.def)             Requested size: 234.87471pt x 345.4444pt.
-[21] <Begonia.jpg, id=286, 730.22812pt x 376.40625pt>
+[21] <Begonia.jpg, id=289, 730.22812pt x 376.40625pt>
 File: Begonia.jpg Graphic file (type jpg)
 <use Begonia.jpg>
 Package pdftex.def Info: Begonia.jpg used on input line 1475.
 (pdftex.def)             Requested size: 234.87pt x 121.067pt.
-<Genet.jpeg, id=287, 762.85pt x 572.1375pt>
+<Genet.jpeg, id=290, 762.85pt x 572.1375pt>
 File: Genet.jpeg Graphic file (type jpg)
 <use Genet.jpeg>
 Package pdftex.def Info: Genet.jpeg used on input line 1481.
@@ -1240,7 +1239,7 @@ l.1501 \end{Shaded}
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1501 \end{Shaded}
-                    <./Begonia.jpg> <./Genet.jpeg>] <Daisy.jpg, id=308, 1698.34
+                    <./Begonia.jpg> <./Genet.jpeg>] <Daisy.jpg, id=310, 1698.34
 5pt x 843.15pt>
 File: Daisy.jpg Graphic file (type jpg)
 <use Daisy.jpg>
@@ -1251,7 +1250,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1559--1562
 []
  []
 
-[24 <./Daisy.jpg>] <USAArrest.jpg, id=315, 1548.78625pt x 2018.54124pt>
+[24 <./Daisy.jpg>] <USAArrest.jpg, id=317, 1548.78625pt x 2018.54124pt>
 File: USAArrest.jpg Graphic file (type jpg)
 <use USAArrest.jpg>
 Package pdftex.def Info: USAArrest.jpg used on input line 1591.
@@ -1283,19 +1282,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 1848--1851
  []
 
 
-<Main_files/figure-latex/unnamed-chunk-20-1.pdf, id=337, 453.695pt x 313.17pt>
+<Main_files/figure-latex/unnamed-chunk-20-1.pdf, id=339, 453.695pt x 313.17pt>
 File: Main_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-20-1.pdf>
 Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-20-1.pdf used on
  input line 1861.
 (pdftex.def)             Requested size: 453.6939pt x 313.16922pt.
-[28] <HartiganTable4dot1.jpg, id=343, 1005.7575pt x 1185.42876pt>
+[28] <HartiganTable4dot1.jpg, id=345, 1005.7575pt x 1185.42876pt>
 File: HartiganTable4dot1.jpg Graphic file (type jpg)
 <use HartiganTable4dot1.jpg>
 Package pdftex.def Info: HartiganTable4dot1.jpg used on input line 1911.
 (pdftex.def)             Requested size: 234.86443pt x 276.82124pt.
 [29 <./Main_files/figure-latex/unnamed-chunk-20-1.pdf>] <HartiganTable4dot2.jpg
-, id=361, 859.21pt x 1057.9525pt>
+, id=363, 859.21pt x 1057.9525pt>
 File: HartiganTable4dot2.jpg Graphic file (type jpg)
 <use HartiganTable4dot2.jpg>
 Package pdftex.def Info: HartiganTable4dot2.jpg used on input line 1929.
@@ -1307,29 +1306,29 @@ same identifier (name{figure.6}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.2052 \begin{Shaded}
                       <./HartiganTable4dot2.jpg>] [32] <HartiganTable4dot3.jpg,
- id=390, 933.4875pt x 871.255pt>
+ id=392, 933.4875pt x 871.255pt>
 File: HartiganTable4dot3.jpg Graphic file (type jpg)
 <use HartiganTable4dot3.jpg>
 Package pdftex.def Info: HartiganTable4dot3.jpg used on input line 2223.
 (pdftex.def)             Requested size: 234.8669pt x 219.2091pt.
-<HartiganAlgo1.jpg, id=391, 1334.9875pt x 790.955pt> [33]
+<HartiganAlgo1.jpg, id=393, 1334.9875pt x 790.955pt> [33]
 File: HartiganAlgo1.jpg Graphic file (type jpg)
 <use HartiganAlgo1.jpg>
 Package pdftex.def Info: HartiganAlgo1.jpg used on input line 2225.
 (pdftex.def)             Requested size: 234.8689pt x 139.15541pt.
-<HartiganAlgo2.jpg, id=399, 1076.02pt x 1042.89626pt>
+<HartiganAlgo2.jpg, id=401, 1076.02pt x 1042.89626pt>
 File: HartiganAlgo2.jpg Graphic file (type jpg)
 <use HartiganAlgo2.jpg>
 Package pdftex.def Info: HartiganAlgo2.jpg used on input line 2227.
 (pdftex.def)             Requested size: 234.86981pt x 227.63968pt.
 [34 <./HartiganTable4dot3.jpg> <./HartiganAlgo1.jpg> <./HartiganAlgo2.jpg>] [35
-] [36] <HartiganAlgo3.jpg, id=414, 1046.91125pt x 1226.5825pt>
+] [36] <HartiganAlgo3.jpg, id=416, 1046.91125pt x 1226.5825pt>
 File: HartiganAlgo3.jpg Graphic file (type jpg)
 <use HartiganAlgo3.jpg>
 Package pdftex.def Info: HartiganAlgo3.jpg used on input line 2477.
 (pdftex.def)             Requested size: 234.87393pt x 275.18307pt.
 [37 <./HartiganAlgo3.jpg>]
-<Main_files/figure-latex/unnamed-chunk-26-1.pdf, id=423, 457.71pt x 316.18124pt
+<Main_files/figure-latex/unnamed-chunk-26-1.pdf, id=425, 457.71pt x 316.18124pt
 >
 File: Main_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-26-1.pdf>
@@ -1341,7 +1340,7 @@ Overfull \vbox (1.50629pt too high) detected at line 2536
  []
 
 [38 <./Main_files/figure-latex/unnamed-chunk-26-1.pdf>]
-<Main_files/figure-latex/unnamed-chunk-26-2.pdf, id=439, 457.71pt x 316.18124pt
+<Main_files/figure-latex/unnamed-chunk-26-2.pdf, id=441, 457.71pt x 316.18124pt
 >
 File: Main_files/figure-latex/unnamed-chunk-26-2.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-26-2.pdf>
@@ -1349,7 +1348,7 @@ Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-26-2.pdf used on
  input line 2543.
 (pdftex.def)             Requested size: 457.72984pt x 316.19493pt.
 [39 <./Main_files/figure-latex/unnamed-chunk-26-2.pdf>]
-<Main_files/figure-latex/unnamed-chunk-28-1.pdf, id=455, 463.7325pt x 316.18124
+<Main_files/figure-latex/unnamed-chunk-28-1.pdf, id=457, 463.7325pt x 316.18124
 pt>
 File: Main_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-28-1.pdf>
@@ -1364,50 +1363,50 @@ duplicate ignored
                                                   \fi \fi 
 l.2682 \begin{Shaded}
                      ]
-<Main_files/figure-latex/unnamed-chunk-30-1.pdf, id=477, 457.71pt x 299.1175pt>
+<Main_files/figure-latex/unnamed-chunk-30-1.pdf, id=479, 457.71pt x 299.1175pt>
 File: Main_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-30-1.pdf>
 Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-30-1.pdf used on
  input line 2696.
 (pdftex.def)             Requested size: 457.72984pt x 299.13045pt.
-<SilhouetteTable1.jpg, id=479, 2168.1pt x 916.42375pt>
+<SilhouetteTable1.jpg, id=481, 2168.1pt x 916.42375pt>
 File: SilhouetteTable1.jpg Graphic file (type jpg)
 <use SilhouetteTable1.jpg>
 Package pdftex.def Info: SilhouetteTable1.jpg used on input line 2712.
 (pdftex.def)             Requested size: 234.85266pt x 99.26874pt.
-<SilhouetteFig2.jpg, id=480, 1742.51pt x 1306.8825pt>
+<SilhouetteFig2.jpg, id=482, 1742.51pt x 1306.8825pt>
 File: SilhouetteFig2.jpg Graphic file (type jpg)
 <use SilhouetteFig2.jpg>
 Package pdftex.def Info: SilhouetteFig2.jpg used on input line 2720.
 (pdftex.def)             Requested size: 234.85646pt x 176.14235pt.
-<SilhouetteFig3.jpg, id=481, 1764.5925pt x 1389.19pt> [42 <./Main_files/figure-
+<SilhouetteFig3.jpg, id=483, 1764.5925pt x 1389.19pt> [42 <./Main_files/figure-
 latex/unnamed-chunk-30-1.pdf> <./SilhouetteTable1.jpg>]
 File: SilhouetteFig3.jpg Graphic file (type jpg)
 <use SilhouetteFig3.jpg>
 Package pdftex.def Info: SilhouetteFig3.jpg used on input line 2722.
 (pdftex.def)             Requested size: 234.87094pt x 184.90408pt.
-[43 <./SilhouetteFig2.jpg> <./SilhouetteFig3.jpg>] <KaufmanTable1.jpg, id=503, 
+[43 <./SilhouetteFig2.jpg> <./SilhouetteFig3.jpg>] <KaufmanTable1.jpg, id=505, 
 1615.03375pt x 1010.77625pt>
 File: KaufmanTable1.jpg Graphic file (type jpg)
 <use KaufmanTable1.jpg>
 Package pdftex.def Info: KaufmanTable1.jpg used on input line 2776.
 (pdftex.def)             Requested size: 234.87624pt x 146.99835pt.
-<KaufmanFigure1.jpg, id=504, 1125.20375pt x 692.5875pt>
+<KaufmanFigure1.jpg, id=506, 1125.20375pt x 692.5875pt>
 File: KaufmanFigure1.jpg Graphic file (type jpg)
 <use KaufmanFigure1.jpg>
 Package pdftex.def Info: KaufmanFigure1.jpg used on input line 2791.
 (pdftex.def)             Requested size: 234.87471pt x 144.57051pt.
-<KaufmanTable2.jpg, id=505, 1663.21375pt x 1083.04625pt>
+<KaufmanTable2.jpg, id=507, 1663.21375pt x 1083.04625pt>
 File: KaufmanTable2.jpg Graphic file (type jpg)
 <use KaufmanTable2.jpg>
 Package pdftex.def Info: KaufmanTable2.jpg used on input line 2806.
 (pdftex.def)             Requested size: 234.85324pt x 152.93098pt.
-<KaufmanTable3.jpg, id=506, 1505.625pt x 985.6825pt>
+<KaufmanTable3.jpg, id=508, 1505.625pt x 985.6825pt>
 File: KaufmanTable3.jpg Graphic file (type jpg)
 <use KaufmanTable3.jpg>
 Package pdftex.def Info: KaufmanTable3.jpg used on input line 2815.
 (pdftex.def)             Requested size: 234.86276pt x 153.75682pt.
-<KaufmanFigure2.jpg, id=507, 715.67375pt x 803.0pt> [44pdfTeX warning (ext4): d
+<KaufmanFigure2.jpg, id=509, 715.67375pt x 803.0pt> [44pdfTeX warning (ext4): d
 estination with the same identifier (name{figure.7}) has been already used, dup
 licate ignored
 
@@ -1420,7 +1419,7 @@ File: KaufmanFigure2.jpg Graphic file (type jpg)
 <use KaufmanFigure2.jpg>
 Package pdftex.def Info: KaufmanFigure2.jpg used on input line 2817.
 (pdftex.def)             Requested size: 234.87355pt x 263.53273pt.
-<Main_files/figure-latex/unnamed-chunk-31-1.pdf, id=513, 457.71pt x 313.17pt>
+<Main_files/figure-latex/unnamed-chunk-31-1.pdf, id=515, 457.71pt x 313.17pt>
 File: Main_files/figure-latex/unnamed-chunk-31-1.pdf Graphic file (type pdf)
 <use Main_files/figure-latex/unnamed-chunk-31-1.pdf>
 Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-31-1.pdf used on
@@ -1430,28 +1429,37 @@ Package pdftex.def Info: Main_files/figure-latex/unnamed-chunk-31-1.pdf used on
 x/unnamed-chunk-31-1.pdf>] [47]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 2999.
-<isolated.jpg, id=533, 840.13875pt x 1214.5375pt>
+<isolated.jpg, id=535, 840.13875pt x 1214.5375pt>
 File: isolated.jpg Graphic file (type jpg)
 <use isolated.jpg>
 Package pdftex.def Info: isolated.jpg used on input line 3001.
 (pdftex.def)             Requested size: 234.8783pt x 339.54927pt.
-[48 <./isolated.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3082.
-[49]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3082.
+[48 <./isolated.jpg>] <KruskalTable.jpg, id=544, 1080.035pt x 747.79375pt>
+File: KruskalTable.jpg Graphic file (type jpg)
+<use KruskalTable.jpg>
+Package pdftex.def Info: KruskalTable.jpg used on input line 3095.
+(pdftex.def)             Requested size: 469.74551pt x 325.242pt.
+<KruskalMap.jpg, id=545, 873.2625pt x 677.53125pt>
+File: KruskalMap.jpg Graphic file (type jpg)
+<use KruskalMap.jpg>
+Package pdftex.def Info: KruskalMap.jpg used on input line 3097.
+(pdftex.def)             Requested size: 469.75586pt x 364.46576pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3099.
+[49 <./KruskalTable.jpg>] [50 <./KruskalMap.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3099.
 (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3082.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3082.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3082.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3099.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3099.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3099.
  ) 
 Here is how much of TeX's memory you used:
- 15746 strings out of 494944
- 225500 string characters out of 6180677
- 347839 words of memory out of 5000000
- 18443 multiletter control sequences out of 15000+600000
+ 15761 strings out of 494944
+ 225762 string characters out of 6180678
+ 347888 words of memory out of 5000000
+ 18453 multiletter control sequences out of 15000+600000
  81595 words of font info for 113 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,10n,35p,898b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,10n,35p,898b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
@@ -1470,10 +1478,10 @@ r/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmtko10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (49 pages, 7360803 bytes).
+Output written on Main.pdf (50 pages, 7680494 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 694 compressed objects within 7 object streams
- 194 named destinations out of 1000 (max. 500000)
- 12862 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 837 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 12880 words of extra memory for PDF output out of 14400 (max. 10000000)
 
